@@ -1,0 +1,87 @@
+<header>
+  <h3 class="title_header">Lista de cancelaciones</h3>
+</header>
+&nbsp;
+<section class="panel panel-default">
+  <div class="panel-heading">Filtros</div>
+  <div class="panel-body cancellation-receive">
+    <fieldset>
+      <div class="col-lg-3 form-group">
+          <label for="uuid">Folio Fiscal (UUID)</label>
+          <input type="text" id="p_uuid" class="form-control" placeholder="Folio Fiscal (UUID)">
+      </div>
+      <div class="col-lg-2 form-group">
+        <label for="date-from-pro">Fecha de Cancelaci&oacute;n</label>
+        <div class="input-group date" id="date-from-pro">
+          <input type='text' class="form-control" id="date-from-pro-res" placeholder="Desde"/>
+          <span class="input-group-addon">
+            <i class="fa fa-calendar"></i>
+          </span>
+        </div>
+      </div>
+      <div class="col-lg-2 form-group">
+        <label for="date-to-pro">Fecha de Cancelaci&oacute;n</label>
+        <div class="input-group date" id="date-to-pro">
+          <input type='text' class="form-control" id="date-to-pro-res" placeholder="Hasta"/>
+          <span class="input-group-addon">
+            <i class="fa fa-calendar"></i>
+          </span>
+        </div>
+      </div>
+      <div class="col-lg-1 form-group">
+        <label for="estatus_cancelacion">Estatus</label>
+        <select id="p_estatus_cancelacion" class="selectpicker form-control" data-hide-disabled="true" data-live-search="true">
+          <option value="A" selected="selected">Todos</option>
+          <option value="C">Cancelado con aceptación</option>
+          <option value="D">Cancelado Plazo Vencido</option>
+          <option value="W">Cancelado sin aceptación</option>
+        </select>
+      </div>
+      <div class="col-lg-2 form-group">
+        <label for="rtaxpayer_id_e">R.F.C. Emisor</label>
+        <input type="text" id="p_taxpayer_id_e" class="form-control" placeholder="R.F.C. Emisor">
+      </div>
+      <div class="col-lg-1 form-group">
+        <label for="invoice_type">Tipo</label>
+        <select id="p_invoice_type" class="selectpicker form-control" data-hide-disabled="true" data-live-search="true">
+          <option value="A" selected="selected">Todos</option>
+          <option value="I">Ingreso</option>
+          <option value="E">Egreso</option>
+          <option value="P">Pago</option>
+          <option value="T">Traslado</option>
+          <option value="N">N&oacute;mina</option>
+        </select>
+      </div>
+      <div class="col-lg-1 form-group">
+        <label for="clean-d">Filtros</label>
+            <button type="button" id="p_clean-d-provider" class="form-control btn btn-primary" title="Limpiar campos"><i class="fa fa-eraser"></i>&nbsp;&nbsp;Limpiar</button>
+      </div>
+    </fieldset>  
+  </div>
+</section>
+<section class="panel panel-default">
+  <div class="panel-heading">
+    <div class="pull-right">
+      <a id="p_refresh_emisor" title="Refrescar" href="#">
+        <span class="fa fa-sync-alt"></span>
+      </a>
+    </div>
+    Solicitudes
+  </div>
+  <div class="panel-body cancellation-emisor">
+    <table id="cancellation-provider-table" class="table table-striped table-bordered nowrap" style="width: 100%">
+      <thead>
+        <tr>
+          <th>Folio Fiscal (UUID)</th>
+          <th>Fecha de Emision</th>
+          <th>Fecha de Cancelaci&oacute;n</th>
+          <th>R.F.C. Emisor</th>
+          <th>R.F.C. Receptor</th>
+          <th>Tipo Comprobante</th>
+          <th>Estatus Cancelaci&oacute;n</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</section>

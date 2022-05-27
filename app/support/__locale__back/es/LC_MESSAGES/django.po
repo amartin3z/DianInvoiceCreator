@@ -1,0 +1,275 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-03 19:30-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: app/support/templates/list_tickets.html:79
+msgid "Tickets"
+msgstr "Tickets"
+
+#: app/support/templates/list_tickets.html:86
+#: app/support/templates/list_tickets.html:138
+msgid "Filters"
+msgstr "Fltros"
+
+#: app/support/templates/list_tickets.html:91
+#: app/support/templates/list_tickets.html:93
+msgid "Ticket ID"
+msgstr "Ticket ID"
+
+#: app/support/templates/list_tickets.html:97
+#: app/support/templates/list_tickets.html:99
+#: app/support/templates/list_tickets.html:165
+#: app/support/templates/modals/add_ticket.html:17
+#: app/support/templates/modals/solved_ticket.html:17
+#: app/support/templates/modals/solved_ticket.html:18
+#: app/support/templates/modals/update_ticket.html:17
+#: app/support/templates/modals/update_ticket.html:18
+#: app/support/templates/modals/update_ticket.html:39
+msgid "Subject"
+msgstr "Asunto"
+
+#: app/support/templates/list_tickets.html:103
+#: app/support/templates/list_tickets.html:164
+msgid "Status"
+msgstr "Estatus"
+
+#: app/support/templates/list_tickets.html:106
+#: app/support/templates/list_tickets.html:119
+#: app/support/templates/list_tickets.html:130
+msgid "All"
+msgstr "Todos"
+
+#: app/support/templates/list_tickets.html:107
+#: app/support/templates/strings/status.html:3
+msgid "Open"
+msgstr "Abierto"
+
+#: app/support/templates/list_tickets.html:108
+#: app/support/templates/strings/status.html:5
+msgid "Reopen"
+msgstr "Re-abierto"
+
+#: app/support/templates/list_tickets.html:109
+msgid "Solved"
+msgstr "Solucionado"
+
+#: app/support/templates/list_tickets.html:110
+#: app/support/templates/strings/status.html:9
+msgid "Closed"
+msgstr "Cerrado"
+
+#: app/support/templates/list_tickets.html:111
+msgid "Duplicates"
+msgstr "Duplicado"
+
+#: app/support/templates/list_tickets.html:116
+#: app/support/templates/list_tickets.html:168
+msgid "Categories"
+msgstr "Categorias"
+
+#: app/support/templates/list_tickets.html:127
+#: app/support/templates/list_tickets.html:169
+#: app/support/templates/modals/add_ticket.html:39
+msgid "Priority"
+msgstr "Prioridad"
+
+#: app/support/templates/list_tickets.html:131
+#: app/support/templates/strings/priority.html:5
+msgid "High"
+msgstr "Alta"
+
+#: app/support/templates/list_tickets.html:132
+#: app/support/templates/modals/add_ticket.html:42
+#: app/support/templates/strings/priority.html:7
+msgid "Medium"
+msgstr "Media"
+
+#: app/support/templates/list_tickets.html:133
+#: app/support/templates/modals/add_ticket.html:43
+#: app/support/templates/strings/priority.html:9
+msgid "Low"
+msgstr "Baja"
+
+#: app/support/templates/list_tickets.html:139
+#: app/support/templates/list_tickets.html:140
+msgid "Clean"
+msgstr "Limpiar"
+
+#: app/support/templates/list_tickets.html:149
+msgid "Ticket list"
+msgstr "Listado de tickets"
+
+#: app/support/templates/list_tickets.html:151
+msgid "Refresh"
+msgstr "Refrescar"
+
+#: app/support/templates/list_tickets.html:158
+#: app/support/templates/modals/add_ticket.html:9
+msgid "Add Ticket"
+msgstr "Agregat Ticket"
+
+#: app/support/templates/list_tickets.html:163
+msgid "ID"
+msgstr "ID"
+
+#: app/support/templates/list_tickets.html:166
+msgid "Creation date"
+msgstr "Fecha de creación"
+
+#: app/support/templates/list_tickets.html:167
+msgid "Modification date"
+msgstr "Fecha de modificación"
+
+#: app/support/templates/list_tickets.html:170
+msgid "Options"
+msgstr "Opciones"
+
+#: app/support/templates/modals/add_ticket.html:18
+#: app/support/templates/modals/add_ticket.html:57
+msgid "subject"
+msgstr "Asunto"
+
+#: app/support/templates/modals/add_ticket.html:25
+#: app/support/templates/modals/add_ticket.html:26
+#: app/support/templates/modals/update_ticket.html:25
+#: app/support/templates/modals/update_ticket.html:26
+msgid "Description"
+msgstr "Descipción"
+
+#: app/support/templates/modals/add_ticket.html:33
+msgid "Category"
+msgstr "Categoria"
+
+#: app/support/templates/modals/add_ticket.html:41
+msgid "high"
+msgstr "Alta"
+
+#: app/support/templates/modals/add_ticket.html:51
+#: app/support/templates/modals/update_ticket.html:33
+msgid "Attached"
+msgstr "Adjunto"
+
+#: app/support/templates/modals/add_ticket.html:55
+#: app/support/templates/modals/update_ticket.html:37
+msgid "Upload"
+msgstr "Subir"
+
+#: app/support/templates/modals/add_ticket.html:59
+#: app/support/templates/modals/update_ticket.html:41
+msgid "Remove"
+msgstr "Quitar"
+
+#: app/support/templates/modals/add_ticket.html:70
+#: app/support/templates/modals/followup_ticket.html:15
+#: app/support/templates/modals/solved_ticket.html:35
+#: app/support/templates/modals/update_ticket.html:52
+msgid "Close"
+msgstr "Cerrar"
+
+#: app/support/templates/modals/add_ticket.html:71
+msgid "Create"
+msgstr "Crear"
+
+#: app/support/templates/modals/followup_ticket.html:9
+msgid "Track ticket"
+msgstr "Seguimiento de ticket"
+
+#: app/support/templates/modals/solved_ticket.html:9
+msgid "Solve ticket"
+msgstr "Sulucionar ticket"
+
+#: app/support/templates/modals/solved_ticket.html:25
+#: app/support/templates/modals/solved_ticket.html:26
+msgid "Notes"
+msgstr "Notas"
+
+#: app/support/templates/modals/solved_ticket.html:36
+msgid "Solve"
+msgstr "Solucionar"
+
+#: app/support/templates/modals/update_ticket.html:9
+msgid "Ticket response"
+msgstr "Respuesta del ticket"
+
+#: app/support/templates/modals/update_ticket.html:53
+#: app/support/templates/strings/options.html:5
+msgid "Reply"
+msgstr "Responder"
+
+#: app/support/templates/strings/followup_support.html:8
+msgid "Helpdesk support"
+msgstr "Soporte técnico"
+
+#: app/support/templates/strings/options.html:2
+msgid "Show tracing"
+msgstr "Ver seguimiento"
+
+#: app/support/templates/strings/options.html:6
+msgid "Mark as solved"
+msgstr "Marcar como solucionado"
+
+#: app/support/templates/strings/priority.html:3
+msgid "Critical"
+msgstr "Critica"
+
+#: app/support/templates/strings/priority.html:9
+#, fuzzy
+#| msgid "Low"
+msgid "low"
+msgstr "Baja"
+
+#: app/support/templates/strings/priority.html:11
+msgid "Very low"
+msgstr "Muy baja"
+
+#: app/support/templates/strings/status.html:7
+#, fuzzy
+#| msgid "Solved"
+msgid "Resolved"
+msgstr "Solucionado"
+
+#: app/support/templates/strings/status.html:11
+#, fuzzy
+#| msgid "Duplicates"
+msgid "Duplicate"
+msgstr "Duplicado"
+
+#: app/support/views.py:112
+msgid "Ticket created successfully"
+msgstr "Ticket creado exitosamente"
+
+#: app/support/views.py:136
+msgid "Answer Sent successfully"
+msgstr "Respuesta enviada exitosamente"
+
+#: app/support/views.py:139
+msgid "Permission denied for this Ticket"
+msgstr "Permiso denegado para este ticket"
+
+#: app/support/views.py:155
+#, fuzzy
+#| msgid "Ticket list"
+msgid "Ticket Solved"
+msgstr "Listado de tickets"
+
+#: app/support/views.py:177
+msgid "Option not valid"
+msgstr "Opción no valida"
+
+#~ msgid "Add ticket"
+#~ msgstr "Agregat Ticket"

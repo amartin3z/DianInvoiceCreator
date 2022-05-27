@@ -1,0 +1,80 @@
+<header>
+  <h3 class="title_header">Historial de solicitudes recibidas de cancelaci&oacute;n</h3>
+</header>
+&nbsp;
+<section class="panel panel-default">
+  <div class="panel-heading">Filtros</div>
+  <div class="panel-body cancellation-receive">
+    <fieldset>
+      <div class="col-lg-3 form-group">
+        <label for="uuid_finished">Folio Fiscal (UUID)</label>
+        <input type="text" id="uuid_finished" class="form-control" placeholder="Folio Fiscal (UUID)">
+      </div>
+      <div class="col-lg-2 form-group">
+        <label for="date-from-d">Fecha Inicial</label>
+        <div class="input-group date" id="date-from-d">
+          <input type='text' class="form-control" id="date-from-d-res" placeholder="Fecha Inicial"/>
+          <span class="input-group-addon">
+            <i class="fa fa-calendar"></i>
+          </span>
+        </div>
+      </div>
+      <div class="col-lg-2 form-group">
+        <label for="date-to-d">Fecha Final</label>
+        <div class="input-group date" id="date-to-d">
+          <input type='text' class="form-control" id="date-to-d-res" placeholder="Fecha Final"/>
+          <span class="input-group-addon">
+            <i class="fa fa-calendar"></i>
+          </span>
+        </div>
+      </div>
+      <div class="col-lg-2 form-group">
+        <label for="answer">Respuesta</label>
+        <select id="answer" class="selectpicker form-control" data-hide-disabled="true" data-live-search="true">
+          <option value="B" selected="selected">Todos</option>
+          <option value="A">Aceptadas</option>
+          <option value="R">Rechazadas</option>
+          <option value="U">Desconocidas</option>
+        </select>
+      </div>
+      <div class="col-lg-2 form-group">
+        <label for="estado_sat_finished">Estado SAT</label>
+        <select id="estado_sat_finished" class="selectpicker form-control" data-hide-disabled="true" data-live-search="true">
+          <option value="A" selected="selected">Todos</option>
+          <option value="V">Vigentes</option>
+          <option value="C">Cancelados</option>
+        </select>
+      </div>
+      <div class="col-lg-1 form-group">
+        <label for="clean-d">Filtros</label>
+        <button type="button" id="clean-d-receiver-finished" class="form-control btn btn-primary" title="Limpiar campos"><i class="fa fa-eraser"></i>&nbsp;&nbsp;Limpiar</button>
+      </div>
+    </fieldset>  
+  </div>
+</section>
+<section class="panel panel-default">
+  <div class="panel-heading">
+    <div class="pull-right">
+      <a id="refresh_receiver-finished" title="Refrescar" href="#">
+        <span class="fa fa-sync-alt"></span>
+      </a>
+    </div>
+    Solicitudes
+  </div>
+  <div class="panel-body cancellation-receiver">
+    <table id="cancellation-receiver-table-f" class="table table-striped table-bordered nowrap" style="width: 100%">
+      <thead>
+        <tr>
+          <th>Usuario</th>
+          <th>Folio Fiscal (UUID)</th>
+          <th>Fecha Respuesta</th>
+          <th>Respuesta</th>
+          <th>Estado SAT</th>
+          <th>Opciones</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</section>
+
+{% include 'modal/table_history.html' %}

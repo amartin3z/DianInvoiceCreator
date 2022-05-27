@@ -1,0 +1,13 @@
+{% if status == 'F' %}
+  <button title="Timbrado" class="btn btn-success btn-xs" ><strong>Timbrado</strong></button>
+{% elif status == 'C' %}
+  <a href="javascript:;" class="btn btn-danger btn-xs" data-toggle="popover" data-content="{{ error }}"><strong>Cancelado</strong></a>
+{% elif status == 'E' %}
+  <a href="javascript:;" class="btn btn-danger btn-xs" data-html="true" data-toggle="popover" data-content="{% for message in error_messages.error %}<strong>{{ message.error }}</strong><hr/><ul><li>{{ message.incident }}</li>{% if message.extra_info %}<li>{{ message.extra_info }}</li>{% endif%}</ul>{% endfor %}"><strong>Error</strong></a>
+{% elif status == 'A'%}
+  <a href="javascript:;" class="btn btn-warning btn-xs" data-html="true" data-toggle="popover" data-content="{% for message in error_messages.error %}<strong>{{ message.error }}</strong><hr/><ul><li>{{ message.incident }}</li>{% if message.extra_info %}<li>{{ message.extra_info }}</li>{% endif%}</ul>{% endfor %}"><strong>Solicitando Cancelación</strong></a>
+{% elif status in 'RP'%}
+  <a href="javascript:;" class="btn btn-warning btn-xs" data-html="true" data-toggle="popover" data-content="{% for message in error_messages.error %}<strong>{{ message.error }}</strong><hr/><ul><li>{{ message.incident }}</li>{% if message.extra_info %}<li>{{ message.extra_info }}</li>{% endif%}</ul>{% endfor %}"><strong>En Cancelación</strong></a>
+{% else %}
+  <a href="javascript:;" class="btn btn-info btn-xs" data-html="true" data-toggle="popover" data-content="{% for message in error_messages.error %}<strong>{{ message.error }}</strong><hr/><ul><li>{{ message.incident }}</li>{% if message.extra_info %}<li>{{ message.extra_info }}</li>{% endif%}</ul>{% endfor %}"><strong>Sin Timbrar</strong></a>
+{% endif %}

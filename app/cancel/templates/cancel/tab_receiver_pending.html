@@ -1,0 +1,77 @@
+<header>
+  <h3 class="title_header">Lista de solicitudes recibidas pendientes de cancelaci&oacute;n</h3>
+</header>
+&nbsp;
+<section class="panel panel-default">
+  <div class="panel-heading">Filtros</div>
+  <div class="panel-body cancellation-receive">
+    <fieldset>
+      <div class="col-lg-3 form-group">
+        <label for="uuid_p">Folio Fiscal (UUID)</label>
+        <input type="text" id="uuid_p" class="form-control" placeholder="Folio Fiscal (UUID)">
+      </div>
+
+      <div class="col-lg-2 form-group">
+        <label for="taxpayer_p">RFC Emisor</label>
+        <input type="text" id="taxpayer_p" class="form-control" placeholder="RFC Emisor">
+      </div>
+      <div class="col-lg-2 form-group">
+        <label for="date-from-pending">Fecha Inicial</label>
+        <div class="input-group date" id="date-from-pending">
+          <input type='text' class="form-control" id="date-from-pending-res" placeholder="Fecha Inicial"/>
+          <span class="input-group-addon">
+            <i class="fa fa-calendar"></i>
+          </span>
+        </div>
+      </div>
+      <div class="col-lg-2 form-group">
+        <label for="date-to-pending">Fecha Final</label>
+        <div class="input-group date" id="date-to-pending">
+          <input type='text' class="form-control" id="date-to-pending-res" placeholder="Fecha Final"/>
+          <span class="input-group-addon">
+            <i class="fa fa-calendar"></i>
+          </span>
+        </div>
+      </div>
+      <!--<div class="col-lg-2 form-group">
+        <label for="invoice_type">Tipo</label>
+        <select id="invoice_type" class="selectpicker form-control" data-hide-disabled="true" data-live-search="true">
+          <option value="A" selected="selected">Todos</option>
+          <option value="I">Ingreso</option>
+          <option value="P">Pago</option>
+          <option value="T">Traslado</option>
+        </select>
+      </div>-->
+      <div class="col-lg-1 form-group">
+        <label for="clean-d">Filtros</label>
+        <button type="button" id="clean-d-receiver-pending" class="form-control btn btn-primary" title="Limpiar campos"><i class="fa fa-eraser"></i>&nbsp;&nbsp;Limpiar</button>
+      </div>
+    </fieldset>  
+  </div>
+</section>
+<section class="panel panel-default">
+  <div class="panel-heading">
+    <div class="pull-right">
+      <a id="refresh_receiver-pending" title="Refrescar" href="#">
+        <span class="fa fa-sync-alt"></span>
+      </a>
+    </div>
+    Solicitudes
+  </div>
+  <div class="panel-body cancellation-receiver">
+    <table id="cancellation-receiver-table-p" class="table table-striped table-bordered nowrap" style="width: 100%">
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Vencimiento</th>
+          <th>Folio Fiscal (UUID)</th>
+          <th>R.F.C. Emisor</th>
+          <th>Tipo de Comprobante </th>
+          <th>Total</th>
+          <th>Respuesta</th>
+          <th>Opciones</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</section>

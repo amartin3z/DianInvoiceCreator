@@ -1,0 +1,95 @@
+{% load i18n %}
+<style>
+  .popover-title {
+    background-color: #337AB7;
+    color: #FFFFFF;
+    text-align: center;
+  }
+</style>
+<div class="modal fade" id="modal-add-ticket" tabindex="-1" role="dialog" aria-labelledby="edit-eruleLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" id="close-ticket" class="close" data-dismiss="modal" aria-label="Close"
+          style="float: right;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 id="edit-title-payroll" class="modal-title text-center text-bold txt-col-bk" id="edit-eruleLabel">
+          {% trans 'Add Ticket' %}</h3>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <div class="well" id='general-info'>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 text-center">
+                  <label class="text-bold txt-col-bk">*{% trans 'Subject' %}:</label>
+                  <input type="text" id="ticket_subject" class="form-control text-center"
+                    placeholder="{% trans 'subject' %}" required>
+                  <small id="ticket_subject_help" class="form-text legend"></small>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 text-center">
+                  <label class="text-bold txt-col-bk" for="modal-emails">*{% trans 'Description' %}</label>
+                  <textarea class="form-control text-center" id="ticket_desc" rows="5"
+                    placeholder="{% trans 'Description' %}" required></textarea>
+                  <small id="ticket_desc_help" class="form-text legend"></small>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-sm-6 col-md-6 text-center">
+                  <label class="text-bold txt-col-bk">*{% trans 'Category' %}:</label>
+                  <select id="ticket_queue" class="selectpicker form-control text-center" data-hide-disabled="true"
+                    data-live-search="true">
+                  </select>
+                  <small id="ticket_priorty_help" class="form-text legend"></small>
+                </div>
+                <div class="col-sm-6 col-md-6 text-center">
+                  <label class="text-bold txt-col-bk">*{% trans 'Priority' %}:</label>
+                  <select id="ticket_priorty" class="selectpicker form-control text-center" data-hide-disabled="true"
+                    data-live-search="true">
+                    <option value="2">1 - {% trans 'high' %}</option>
+                    <option value="3" selected="">2 - {% trans 'Medium' %}</option>
+                    <option value="4">3 - {% trans 'Low' %}</option>
+                  </select>
+                  <small id="ticket_priorty_help" class="form-text legend"></small>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 text-center">
+                  <label class="text-bold txt-col-bk">{% trans 'Attached' %}</label>
+                  <div class="form-group">
+                    <div class="input-group input-file" name="Fichier1">
+                      <span class="input-group-btn">
+                        <button class="btn btn-primary btn-choose text-bold" type="button"><i
+                            class="glyphicon glyphicon-paperclip text-bold"
+                            aria-hidden="true"></i>&nbsp;{% trans 'Upload' %}</button>
+                      </span>
+                      <input type="text" class="form-control" id="ticket_file1"
+                        placeholder="{% trans 'subject' %}Selecciona algun archivo" />
+                      <span class="input-group-btn">
+                        <button class="btn btn-default btn-reset text-bold" type="button"><i class="fa fa-trash"
+                            aria-hidden="true"></i>&nbsp;{% trans 'Remove' %}</button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="close_ticket" class="btn btn-secondary text-bold"
+          data-dismiss="modal">{% trans 'Close' %}</button>
+        <button type="button" class="btn btn-success save_ticket text-bold"><i class="fa fa-plus"
+            aria-hidden="true"></i>&nbsp;{% trans 'Create' %}</button>
+      </div>
+    </div>
+  </div>
+</div>

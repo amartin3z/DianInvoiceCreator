@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+{% block title %}Branch{% endblock %}
+{% load staticfiles %}
+
+{% block css %}
+  <link href="{% static 'css/datatables/dataTables.bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/fileinput/fileinput.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/smartwizard/smart_wizard.css' %}" rel="stylesheet">
+  <link href="{% static 'css/smartwizard/smart_wizard_theme_circles.css' %}" rel="stylesheet">
+  <link href="{% static 'css/smartwizard/smart_wizard_theme_arrows.css' %}" rel="stylesheet">
+  <link href="{% static 'css/smartwizard/smart_wizard_theme_dots.css' %}" rel="stylesheet">
+  <style type="text/css">
+    @media screen and (max-width: 1045px) and (min-width: 835px) {
+        .priority-5{
+          display:none;
+        }
+        .priority-4{
+          display:none;
+        }
+      }
+      
+      @media screen and (max-width: 565px) and (min-width: 300px) {
+        .priority-5{
+          display:none;
+        }
+        .priority-4{
+          display:none;
+        }
+        .priority-3{
+          display:none;
+        }
+      }
+      
+      @media screen and (max-width: 300px) {
+        .priority-5{
+          display:none;
+        }
+        .priority-4{
+          display:none;
+        }
+        .priority-3{
+          display:none;
+        }
+        .priority-2{
+          display:none;
+        }
+      
+      }
+      .header-modal{
+        font-weight: bold;
+        border-bottom: 2px solid #337AB7;
+      }
+      .header-info{
+        font-weight: bold;
+      }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <div class="row" style="margin-top: 60px;">
+    <div class="container-fluid" style="margin: 20px;">
+      <h3 class="title_header">Sucursales</h3>
+      <section class="panel panel-default">
+            <div class="panel-heading">Filtros</div>
+            <div class="panel-body cancellation-receive">
+              <fieldset>
+                <div class="col-lg-3 form-group" style="width: 18%">
+                    <label for="branch">Sucursal</label>
+                    <input type="text" id="branch_filter" class="form-control" placeholder="Nombre de la sucursal">
+                </div>
+                <!--div class="col-lg-3 form-group" style="width: 18%">
+                    <label for="state">Estado</label>
+                    <input type="text" id="state_filter" class="form-control" placeholder="Estado">
+                </div-->
+                <div class="col-lg-2 form-group" style="width: 18%">
+                  <label for="state">Estado</label>
+                  <select id="state_filter" class="selectpicker form-control">
+                        <optgroup label="Estados">
+                        <option value="">Todos</option>
+                        <option value="AGUASCALIENTES">Aguascalientes</option>
+                        <option value="BAJA CALIFORNIA">Baja California</option>
+                        <option value="BAJA CALIFORNIA SUR">Baja California Sur</option>
+                        <option value="CAMPECHE">Campeche</option>
+                        <option value="CHIHUAHUA">Chihuahua</option>
+                        <option value="CHIAPAS">Chiapas</option>
+                        <option value="COAHUILA">Coahuila</option>
+                        <option value="COLIMA">Colima</option>
+                        <option value="DISTRITO FEDERAL">Distrito Federal</option>
+                        <option value="DURANGO">Durango</option>
+                        <option value="GUANAJUATO">Guanajuato</option>
+                        <option value="GUERRERO">Guerrero</option>
+                        <option value="HIDALGO">Hidalgo</option>
+                        <option value="JALISCO">Jalisco</option>
+                        <option value="ESTADO DE MEXICO">México</option>
+                        <option value="MICHOACAN">Michoacán</option>
+                        <option value="MORELOS">Morelos</option>
+                        <option value="NAYARIT">Nayarit</option>
+                        <option value="NUEVO LEON">Nuevo León</option>
+                        <option value="OAXACA">Oaxaca</option>
+                        <option value="PUEBLA">Puebla</option>
+                        <option value="QUERETARO">Querétaro</option>
+                        <option value="QUINTANA ROO">Quintana Roo</option>
+                        <option value="SAN LUIS POTOSI">San Luis Potosí</option>
+                        <option value="SINALOA">Sinaloa</option>
+                        <option value="SONORA">Sonora</option>
+                        <option value="TABASCO">Tabasco</option>
+                        <option value="TAMAULIPAS">Tamaulipas</option>
+                        <option value="TLAXCALA">Tlaxcala</option>
+                        <option value="VERACRUZ">Veracruz</option>
+                        <option value="YUCATAN">Yucatán</option>
+                        <option value="ZACATECAS">Zacatecas</option>
+                 </select>
+                </div>
+                <div class="col-lg-3 form-group" style="width: 18%">
+                    <label for="state">Código Postal</label>
+                    <input type="text" id="zipcode_filter" class="form-control" placeholder="Código Postal">
+                </div>
+                <div class="col-lg-1 form-group">
+                  <label for="clean-d">Filtros</label>
+                      <button type="button" id="clean-branch" class="form-control btn btn-primary" title="Limpiar campos"><i class="fa fa-eraser"></i>&nbsp;&nbsp;Limpiar</button>
+                </div>
+                <div class="col-lg-1 form-group">
+                  <label for="clean-d">&nbsp;&nbsp;Mapa</label>
+                      <button type="button" sucursal="{{ sucursal }}" longitude="{{ longitude }}" latitude="{{ latitude }}"  class="form-control btn btn-primary" id="location_branch" title="Ubicar Sucursales"><i class="fa fa-map-marker"></i></butto>
+                </div>
+                <div class="col-lg-2 form-group">
+                  <label for="add-user">&nbsp;&nbsp;</label>
+                  <button type="button" class="form-control btn btn-primary" id="add-branch" data-toggle="modal" data-target="#modal-add-branch" title="Registrar nueva sucursal">
+                      <i class="fa fa-plus" aria-hidden="true"></i>
+                      <span class="hide_text">&nbsp;&nbsp;Agregar nueva sucursal</span>
+                  </button>
+                </div>
+              </fieldset>  
+            </div>
+          </section>
+      <section class="panel panel-default">
+        <div class="panel-heading"> <div class="pull-right"> <a id="refresh_branch" title="Refrescar" href="#/"> <span class="fa fa-sync-alt"></span> </a> </div> Sucursales </div>
+        <div class="panel-body">
+          <div id="toolbar_branch"></div>
+          <table id="tbranch" class="table table-striped table-bordered hover" style="width:100%">
+            <thead>
+              <tr>
+                <th class="priority-1">Sucursal</th>
+                <th class="priority-3">Estado</th>
+                <th class="priority-1">Municipio</th>
+                <th class="priority-1">Colonia</th>
+                <th class="priority-3">Código Postal</th>
+                 <th class="priority-3">Opciones</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  {% comment %}
+  {% include 'business/modal/add.html' %}
+  {% endcomment %}
+  {% include 'business/modal/table_csd.html' %}
+  {% include 'business/modal/table_efirma.html' %}
+  {% include 'business/modal/form_info.html' %}
+  {% include 'business/modal/form_info_branch.html' %}
+  {% include 'business/modal/form_add_csd.html' %}
+  {% include 'business/modal/edit_branch.html' %}
+  {% include 'business/modal/add_branch.html' %}
+  {% include 'business/modal/branch_location_modal.html' %}
+{% endblock %}
+
+{% block js%}
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9_bzdtsFE6OVu86WSpheoFPP9OkG_LKE&callback=myMap"></script>
+  <script src="{% static 'js/datatables/jquery.dataTables.js' %}"></script>
+  <script src="{% static 'js/datatables/dataTables.bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/smartwizard/jquery.smartWizard.js' %}"></script>
+  <script src="{% static 'js/validator/validator.min.js' %}"></script>
+  <script src="{% static 'js/fileinput/fileinput.min.js' %}"></script>
+  <script src="{% static 'js/apps/core/business.js' %}"></script>
+{% endblock %}

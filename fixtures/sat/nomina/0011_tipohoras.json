@@ -1,0 +1,1 @@
+[{"model": "sat.tipohoras", "pk": 1, "fields": {"clave": "01", "descripcion": "Dobles"}}, {"model": "sat.tipohoras", "pk": 2, "fields": {"clave": "02", "descripcion": "Triples"}}, {"model": "sat.tipohoras", "pk": 3, "fields": {"clave": "03", "descripcion": "Simples"}}]

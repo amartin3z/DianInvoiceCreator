@@ -1,0 +1,40 @@
+{% load i18n %}
+<div class="modal fade" id="modal-solved-ticket" tabindex="-1" role="dialog" aria-labelledby="edit-eruleLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float: right;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 id="edit-title-payroll" class="modal-title text-center txt-col-bk" id="edit-eruleLabel">{% trans 'Solve ticket' %}<strong id="ticket-solved-id"></strong></h3>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <div class="well" id='general-info'>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 text-center">
+                  <label class="text-bold txt-col-bk">*{% trans 'Subject' %}:</label>
+                  <input type="text" id="ticket-solved-subject" class="form-control text-center text-bold txt-col-bk" placeholder="{% trans 'Subject' %}" readonly required>
+                  <small id="ticket_subject_help" class="form-text legend"></small>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 text-center">
+                  <label class="text-bold txt-col-bk" for="modal-emails">*{% trans 'Notes' %}</label>
+                  <textarea class="form-control text-center" id="ticket-solved-desc" rows="7" placeholder="{% trans 'Notes' %}Descripción del Ticket" required></textarea>
+                  <small id="ticket-solved-desc-help" class="form-text legend"></small>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary text-bold" data-dismiss="modal">{% trans 'Close' %}</button>
+        <button type="button" data-solved-id="" class="btn btn-success solved_ticket text-bold"><i class="glyphicon glyphicon-send" aria-hidden="true"></i>&nbsp;&nbsp;{% trans 'Solve' %}</button>
+      </div>
+    </div>
+  </div>
+</div>

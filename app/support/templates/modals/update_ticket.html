@@ -1,0 +1,57 @@
+{% load i18n %}
+<div class="modal fade" id="modal-update-ticket" tabindex="-1" role="dialog" aria-labelledby="edit-eruleLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float: right;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 id="edit-title-payroll" class="modal-title text-center txt-col-bk" id="edit-eruleLabel">{% trans 'Ticket response' %} <strong id="ticket-up-id"></strong></h3>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <div class="well" id='general-info'>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 text-center">
+                  <label class="text-bold txt-col-bk">*{% trans 'Subject' %}:</label>
+                  <input type="text" id="ticket-up-subject" class="form-control text-center text-bold txt-col-bk" placeholder="{% trans 'Subject' %}" readonly required>
+                  <small id="ticket_subject_help" class="form-text legend"></small>
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 text-center">
+                  <label class="text-bold txt-col-bk" for="modal-emails">*{% trans 'Description' %}</label>
+                  <textarea class="form-control text-center" id="ticket-up-desc" rows="7" placeholder="{% trans 'Description' %}" required></textarea>
+                  <small id="ticket-up-desc-help" class="form-text legend"></small>
+                </div>
+              </div>  
+              <br>
+              <div class="row">
+                <div class="col-sm-12 col-md-12 text-center">
+                  <label class="text-bold txt-col-bk">{% trans 'Attached' %}:</label>
+                   <div class="form-group">
+                    <div class="input-group input-file2" name="Fichier2">
+                      <span class="input-group-btn">
+                            <button class="btn btn-primary btn-choose text-bold" type="button"><i class="glyphicon glyphicon-paperclip text-bold" aria-hidden="true"></i>&nbsp;{% trans 'Upload' %}</button>
+                        </span>
+                        <input type="text" class="form-control" id="ticket_file2" placeholder="{% trans 'Subject' %}Selecciona algun archivo"/>
+                        <span class="input-group-btn">
+                             <button class="btn btn-default btn-reset2 text-bold" type="button"><i class="fa fa-trash" aria-hidden="true"></i>&nbsp;{% trans 'Remove' %}</button>
+                        </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary text-bold" data-dismiss="modal">{% trans 'Close' %}</button>
+        <button type="button" data-up-id="" class="btn btn-success update_ticket text-bold"><i class="glyphicon glyphicon-send" aria-hidden="true"></i>&nbsp;&nbsp;{% trans 'Reply' %}</button>
+      </div>
+    </div>
+  </div>
+</div>

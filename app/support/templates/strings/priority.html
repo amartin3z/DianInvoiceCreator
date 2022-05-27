@@ -1,0 +1,12 @@
+{% load i18n %}
+{% if ticket.priority == 1 %}
+	<button title="{% trans 'Critical' %}" class="btn btn-danger btn-sm" style="font-weight: bold; pointer-events: none; width: 90%;">{% trans 'Critical' %}</button>
+{% elif ticket.priority == 2 %}
+	<button title="{% trans 'High' %}" class="btn btn-warning btn-sm" style="font-weight: bold; pointer-events: none; width: 90%;">{% trans 'High' %}</button>
+{% elif ticket.priority == 3 %}
+	<button title="{% trans 'Medium' %}" class="btn btn-success btn-sm" style="font-weight: bold;pointer-events: none; width: 90%;">{% trans 'Medium' %}</button>
+{% elif ticket.priority == 4 %}
+	<button title="{% trans 'Low' %}" class="btn btn-info btn-sm" style="font-weight: bold; pointer-events: none; width: 90%;">{% trans 'low' %}</button>
+{% elif ticket.priority == 5 %}
+	<button title="{% trans 'Very low' %}" class="btn btn-basic btn-sm" style="font-weight: bold; pointer-events: none; width: 90%;">{% trans 'Very low' %}</button>
+{% endif %}

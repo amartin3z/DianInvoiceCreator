@@ -1,0 +1,296 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-19 17:30-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: app/users/management/commands/create_sellers.py:26
+msgid ""
+"That email address doesn't have an associated user account. Are you sure "
+"you've registered?"
+msgstr ""
+
+#: app/users/management/commands/create_sellers.py:27
+msgid ""
+"The user account associated with this email address cannot reset the "
+"password."
+msgstr ""
+
+#: app/users/management/commands/create_sellers.py:29
+msgid "Email"
+msgstr ""
+
+#: app/users/templates/django_registration/password_change_done.html:3
+#: app/users/templates/django_registration/password_change_form.html:4
+#: app/users/templates/registration/password_change_done.html:3
+#: app/users/templates/registration/password_change_form.html:4
+msgid "Documentation"
+msgstr ""
+
+#: app/users/templates/django_registration/password_change_done.html:3
+#: app/users/templates/django_registration/password_change_form.html:4
+#: app/users/templates/registration/password_change_done.html:3
+#: app/users/templates/registration/password_change_form.html:4
+msgid "Change password"
+msgstr ""
+
+#: app/users/templates/django_registration/password_change_done.html:3
+#: app/users/templates/django_registration/password_change_form.html:4
+#: app/users/templates/registration/password_change_done.html:3
+#: app/users/templates/registration/password_change_form.html:4
+msgid "Log out"
+msgstr ""
+
+#: app/users/templates/django_registration/password_change_done.html:6
+#: app/users/templates/django_registration/password_change_form.html:7
+#: app/users/templates/django_registration/password_reset_complete.html:6
+#: app/users/templates/django_registration/password_reset_done.html:6
+#: app/users/templates/django_registration/password_reset_form.html:6
+#: app/users/templates/registration/password_change_done.html:6
+#: app/users/templates/registration/password_change_form.html:7
+#: app/users/templates/registration/password_reset_complete.html:6
+#: app/users/templates/registration/password_reset_done.html:6
+#: app/users/templates/registration/password_reset_form.html:6
+#: app/users/templates/users/password_reset/reset_admin.html:7
+msgid "Home"
+msgstr ""
+
+#: app/users/templates/django_registration/password_change_done.html:7
+#: app/users/templates/django_registration/password_change_form.html:8
+#: app/users/templates/registration/password_change_done.html:7
+#: app/users/templates/registration/password_change_form.html:8
+msgid "Password change"
+msgstr ""
+
+#: app/users/templates/django_registration/password_change_done.html:14
+#: app/users/templates/registration/password_change_done.html:14
+msgid "Your password was changed."
+msgstr ""
+
+#: app/users/templates/django_registration/password_change_form.html:21
+#: app/users/templates/registration/password_change_form.html:21
+msgid "Please correct the error below."
+msgstr ""
+
+#: app/users/templates/django_registration/password_change_form.html:21
+#: app/users/templates/registration/password_change_form.html:21
+msgid "Please correct the errors below."
+msgstr ""
+
+#: app/users/templates/django_registration/password_change_form.html:26
+#: app/users/templates/registration/password_change_form.html:26
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+
+#: app/users/templates/django_registration/password_change_form.html:32
+#: app/users/templates/registration/password_change_form.html:32
+msgid "Old password"
+msgstr ""
+
+#: app/users/templates/django_registration/password_change_form.html:37
+#: app/users/templates/registration/password_change_form.html:37
+msgid "New password"
+msgstr ""
+
+#: app/users/templates/django_registration/password_change_form.html:42
+#: app/users/templates/registration/password_change_form.html:42
+msgid "Password (again)"
+msgstr ""
+
+#: app/users/templates/django_registration/password_change_form.html:48
+#: app/users/templates/registration/password_change_form.html:48
+#: app/users/templates/users/password_reset/reset.html:32
+#: app/users/templates/users/password_reset/reset_admin.html:32
+msgid "Change my password"
+msgstr ""
+
+#: app/users/templates/django_registration/password_reset_complete.html:7
+#: app/users/templates/django_registration/password_reset_done.html:7
+#: app/users/templates/django_registration/password_reset_form.html:7
+#: app/users/templates/registration/password_reset_complete.html:7
+#: app/users/templates/registration/password_reset_done.html:7
+#: app/users/templates/registration/password_reset_form.html:7
+msgid "Password reset"
+msgstr ""
+
+#: app/users/templates/django_registration/password_reset_complete.html:16
+#: app/users/templates/registration/password_reset_complete.html:16
+msgid "Your password has been set.  You may go ahead and log in now."
+msgstr ""
+
+#: app/users/templates/django_registration/password_reset_complete.html:18
+#: app/users/templates/registration/password_reset_complete.html:18
+msgid "Log in"
+msgstr ""
+
+#: app/users/templates/django_registration/password_reset_confirm_2.html:51
+#: app/users/templates/registration/password_reset_confirm_2.html:51
+#: app/users/templates/users/password_reset/reset.html:38
+#: app/users/templates/users/password_reset/reset_admin.html:38
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
+msgstr ""
+
+#: app/users/templates/django_registration/password_reset_done.html:15
+#: app/users/templates/registration/password_reset_done.html:15
+msgid ""
+"We've emailed you instructions for setting your password. You should be "
+"receiving them shortly."
+msgstr ""
+
+#: app/users/templates/django_registration/password_reset_done.html:17
+#: app/users/templates/registration/password_reset_done.html:17
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+
+#: app/users/templates/django_registration/password_reset_email.html:2
+#: app/users/templates/registration/password_reset_email.html:2
+#: app/users/templates/users/password_reset/email.html:2
+#, python-format
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr ""
+
+#: app/users/templates/django_registration/password_reset_email.html:4
+#: app/users/templates/registration/password_reset_email.html:4
+#: app/users/templates/users/password_reset/email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr ""
+
+#: app/users/templates/django_registration/password_reset_email.html:8
+#: app/users/templates/registration/password_reset_email.html:8
+#: app/users/templates/users/password_reset/email.html:8
+msgid "Your username, in case you've forgotten:"
+msgstr ""
+
+#: app/users/templates/django_registration/password_reset_email.html:10
+#: app/users/templates/registration/password_reset_email.html:10
+#: app/users/templates/users/password_reset/email.html:10
+msgid "Thanks for using our site!"
+msgstr ""
+
+#: app/users/templates/django_registration/password_reset_email.html:12
+#: app/users/templates/registration/password_reset_email.html:12
+#: app/users/templates/users/password_reset/email.html:12
+#, python-format
+msgid "The %(site_name)s team"
+msgstr ""
+
+#: app/users/templates/django_registration/password_reset_form.html:15
+#: app/users/templates/registration/password_reset_form.html:15
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+msgstr ""
+
+#: app/users/templates/django_registration/password_reset_form.html:19
+#: app/users/templates/registration/password_reset_form.html:19
+msgid "Email address:"
+msgstr ""
+
+#: app/users/templates/django_registration/password_reset_form.html:19
+#: app/users/templates/registration/password_reset_form.html:19
+msgid "Reset my password"
+msgstr ""
+
+#: app/users/templates/users/login.html:9
+#: app/users/templates/users/login.html:35
+msgid "Login"
+msgstr ""
+
+#: app/users/templates/users/login.html:39
+msgid "User"
+msgstr ""
+
+#: app/users/templates/users/login.html:43
+msgid "Password"
+msgstr ""
+
+#: app/users/templates/users/login.html:46
+msgid "Forgot your password?"
+msgstr ""
+
+#: app/users/templates/users/login.html:53
+msgid "Remember"
+msgstr ""
+
+#: app/users/templates/users/login.html:59
+msgid "Sign in"
+msgstr ""
+
+#: app/users/templates/users/login.html:63
+msgid "Create your account"
+msgstr ""
+
+#: app/users/templates/users/login.html:63
+msgid "Sign up"
+msgstr ""
+
+#: app/users/templates/users/password_reset/reset.html:18
+#: app/users/templates/users/password_reset/reset_admin.html:18
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+
+#: app/users/templates/users/password_reset/reset.html:24
+#: app/users/templates/users/password_reset/reset_admin.html:24
+msgid "New password:"
+msgstr ""
+
+#: app/users/templates/users/password_reset/reset.html:29
+#: app/users/templates/users/password_reset/reset_admin.html:29
+msgid "Confirm password:"
+msgstr ""
+
+#: app/users/templates/users/password_reset/reset_admin.html:8
+msgid "Password reset confirmation"
+msgstr ""
+
+#: app/users/templates/users/password_reset/subject.txt:2
+#, python-format
+msgid "%(site_name)s: Reestablecer Contraseña "
+msgstr ""
+
+#: app/users/views.py:218 app/users/views.py:256
+msgid "Cuenta bloqueada por múltiples intentos fallidos"
+msgstr ""
+
+#: app/users/views.py:235 app/users/views.py:242
+msgid "Usuario Activo"
+msgstr ""
+
+#: app/users/views.py:246
+msgid "Cuenta bloqueada por múltiples intentos fallidos."
+msgstr ""
+
+#: app/users/views.py:249
+msgid "Usuario inactivo"
+msgstr ""
+
+#: app/users/views.py:261
+msgid "El usuario {} ingreso una contraseña incorrecta ({} intento)"
+msgstr ""
+
+#: app/users/views.py:264
+msgid "Se intento iniciar sesión con el usuario {}, y este es inexistente"
+msgstr ""

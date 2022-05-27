@@ -1,0 +1,78 @@
+            {% load i18n %}
+            <div class="form-group">
+                <div class="form-group col-sm-12">
+                    <h4 class="col-sm-12 col-md-12 col-lg-12"><button id="title__totales_0" class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#div_totales"><i class="fa fa-caret-down" aria-hidden="true"></i></button> {% trans 'Payment Terms - Notes - totals' %}</h4>
+                </div>
+                <div class="form-group col-sm-12 col-md-12 col-lg-12 collapse in" id="div_totales">
+                    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                        <div class="row">
+                            {% if add_concept != "pagos" %}
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <label for="notes">{% trans 'Note' %}:</label>
+                                    <textarea rows="4" class="form-control" id="notes"></textarea>
+                                </div>
+                                {% comment %}
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="display: none;">
+                                    <label for="payment_conditions">{% trans 'Payment Terms' %} :</label>
+                                    <textarea rows="2" class="form-control" id="payment_conditions" pattern="[^|]{1,1000}"></textarea>
+                                </div>
+                                {% endcomment %}
+                            {% else %}
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <label for="notes">{% trans 'Note' %}:</label>
+                                    <textarea rows="4" class="form-control" id="notes"></textarea>
+                                </div>
+                            {% endif %}
+                        </div>
+                        {% comment %}
+                            <h4>Total con letra: <small class="" id="total-letter" style="font-size: 0.8em;"></small></h4>
+                        {% endcomment %}
+                    </div>                        
+                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 pull-right">
+                        <table class="table table-striped">
+                        <tr>
+                            <td class="text-center">
+                                <strong>{% trans 'SubTotal' %}: </strong>
+                            </td>
+                            <td>
+                                <span class="label label-default" style="font-size: 1em;"><strong id="subtotal-invoice">$ 0.00</strong></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <strong>{% trans 'Discounts' %}: </strong>
+                            </td>
+                            <td>
+                                <span class="label label-default" style="font-size: 1em;"><strong id="discount-invoice">$ 0.00</strong></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <strong>{% trans 'Taxes' %}: </strong>
+                            </td>
+                            <td>
+                                <span class="label label-default" style="font-size: 1em;"><strong id="totaltras-invoice">$ 0.00</strong></span>
+                            </td>
+                        </tr>
+                        {% comment %}
+                            <tr>
+                                <td class="text-center">
+                                    <strong>Total Retenidos: </strong>
+                                </td>
+                                <td>
+                                    <span class="label label-default" style="font-size: 1em;"><strong id="totalret-invoice">$ 0.00</strong></span>
+                                </td>
+                            </tr>
+                        {% endcomment %}
+                        <tr>
+                            <td class="text-center">
+                                <strong>{% trans 'Total' %}: </strong>
+                            </td>
+                            <td>
+                                <span class="label label-success" style="font-size: 1em;"><strong id="total-invoice">$ 0.00</strong></span>
+                            </td>
+                        </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>

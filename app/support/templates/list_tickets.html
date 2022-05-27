@@ -1,0 +1,207 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load i18n %}
+{% block title %}{% trans 'My Tickets' %}{% endblock %}
+
+{% block css %}
+  <link href="{% static 'css/datatables/dataTables.bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/datatables/responsive.bootstrap.min.css' %}" rel="stylesheet" >
+  <link href="{% static 'css/bootstrap/bootstrap-datetimepicker.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/select-input/bootstrap-select.css' %}" media="all" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/select2/select2.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/select2/select2-bootstrap.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/btn/btn-styles.css' %}" rel="stylesheet">
+  <link href="{% static 'css/fileinput/fileinput.min.css' %}" rel="stylesheet">
+  <!--link href="{% static 'css/base/message.css' %}" rel="stylesheet"-->
+  <style>
+    .clickable-mobile {
+        z-index: 10;
+    }
+    .text-bold{
+      font-weight: bold;
+    }
+    .text-center{
+      text-align: center;
+    }    
+    .txt-title{
+      font-weight: bold;
+      color: #2d2d2d;
+    }
+    .txt-title-dt{
+      font-weight: bold;
+      color: #000;
+    }
+    a:hover {
+      color: #DE8286;
+    }
+    .btn-float{
+      width:60px;
+      height:60px;
+      border-radius:100%;
+      background-color:#337AB7;
+      right:0;
+      bottom:0;
+      position:absolute;
+      margin-right:16px;
+      margin-bottom:16px;
+      border:none;
+      outline:none;
+      color:#FFF;
+      transition:.3s;  
+    }
+    .btn-float:hover{
+      color: #fff;
+      background-color: #195f9c;
+      border-color: #12538c;
+    }
+
+    @media screen and (max-width: 1652px) {
+    .hide_text {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .hide_text {
+      display: inline;
+    }
+  }
+  </style>
+{% endblock %}
+
+{% block content %}
+<div class="row" >
+  <div class="container-fluid" style="margin: 20px;">
+    <section class="panel">
+      <section class="panel-body">
+        {% block message %}
+          <div id="wis-message" class="alert alert-warning" role="alert" class="auto" style="display: none;"></div>
+        {% endblock %}
+        <header class="title_header"><h3 class="text-bold"><i class="fa fa-headphones"></i>&nbsp;&nbsp;<strong class="txt-col-bk">{% trans 'Tickets' %}</strong></h3></header>
+        &nbsp;
+        <section class="panel panel-default">
+            <div class="panel-heading">
+            <a id="hide-panel" class="pull-right pull-right clickable" pnl="#panel-body-filter" href="javascript:;">
+                <span class="glyphicon glyphicon-chevron-up" style="color:#337AB7;"></span>
+            </a>
+            {% trans 'Filters' %}</div>
+            <div class="panel-body" id="panel-body-filter">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="col-md-2">
+                      <span class="text-bold">{% trans 'Ticket ID' %}</span>
+                      <div class="form-group">                      
+                          <input id="ticket_id" type="number" class="form-control" placeholder="{% trans 'Ticket ID' %}">
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <span class="text-bold">{% trans 'Subject' %}</span>
+                      <div class="form-group">
+                          <input id="tickets_subject" type="text" class="form-control" placeholder="{% trans 'Subject' %}">
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <span class="text-bold">{% trans 'Status' %}</span>
+                      <div class="form-group">
+                          <select id="ticket_status" class="selectpicker form-control"data-hide-disabled="true" data-live-search="true">
+                            <option value="T" selected>{% trans 'All' %}</option>
+                            <option value="1">{% trans 'Open' %}</option>
+                            <option value="2">{% trans 'Reopen' %}</option>
+                            <option value="3">{% trans 'Solved' %}</option>
+                            <option value="4">{% trans 'Closed' %}</option>
+                            <option value="5">{% trans 'Duplicates' %}</option>
+                          </select>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <span class="text-bold">{% trans 'Categories' %}</span>
+                      <div class="form-group">
+                          <select id="ticket_category" name="status" class="selectpicker form-control"data-hide-disabled="true" data-live-search="true">
+                            <option value="T" selected>{% trans 'All' %}</option>
+                            {% for queue in queues %}
+                                <option value="{{ queue.id }}">{{ queue.title }}</option>
+                            {% endfor %}
+                          </select>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <span class="text-bold">{% trans 'Priority' %}</span>
+                      <div class="form-group">
+                          <select id="ticket_priority" name="status" class="selectpicker form-control"data-hide-disabled="true" data-live-search="true">
+                            <option value="T" selected>{% trans 'All' %}</option>
+                            <option value="2">{% trans 'High' %}</option>
+                            <option value="3">{% trans 'Medium' %}</option>
+                            <option value="4">{% trans 'Low' %}</option>
+                          </select>
+                      </div>
+                    </div>
+                    <div class="col-md-1">
+                      <span class="text-bold">{% trans 'Filters' %}</span>
+                      <button type="button" id="clean" title="{% trans 'Clean' %}" class="form-control btn btn-primary">
+                        {% trans 'Clean' %}</b>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section class="panel panel-default">
+         <div class="panel-heading">
+          {% trans 'Ticket list' %}
+          <div class="pull-right">
+              <a id="refresh_downloads" title="{% trans 'Refresh' %}" href="javascript:;">
+                  <span class="fa fa-sync-alt" ></span>
+              </a>
+          </div>
+         </div>
+          <div class="panel-body">
+              <div class="col-sm-4 col-md-2 col-lg-2 form-group pull-right clickable-mobile">
+                  <button type="button" id="add_ticket" class="form-control btn btn-success text-bold"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;&nbsp;{% trans 'Add Ticket' %}</button>
+              </div>
+              <table id="table-tickets" class="table table-striped table-bordered responsive" style="width: 100%">
+                  <thead>
+                      <tr>
+                          <th class="txt-title-dt">{% trans 'ID' %}</th>
+                          <th class="txt-title-dt">{% trans 'Status' %}</th>
+                          <th class="txt-title-dt">{% trans 'Subject' %}</th>
+                          <th class="txt-title-dt">{% trans 'Creation date' %}</th>
+                          <th class="txt-title-dt">{% trans 'Modification date' %}</th>
+                          <th class="txt-title-dt">{% trans 'Categories' %}</th>
+                          <th class="txt-title-dt">{% trans 'Priority' %}</th>
+                          <th class="txt-title-dt">{% trans 'Options' %}</th>
+                      </tr>
+                  </thead>
+              </table>
+          </div>
+        </section>
+      </section>
+    </section>
+    {% comment %}
+      <button class="btn-float" title="{% trans 'Add ticket' %}" id="add_new_ticket">
+        <i class="fa fa-plus" style="font-size: 20px;" aria-hidden="true"></i>
+      </button>
+    {% endcomment %}
+  </div>
+</div>
+
+{% include 'modals/add_ticket.html' %}
+{% include 'modals/followup_ticket.html' %}
+{% include 'modals/update_ticket.html' %}
+{% include 'modals/solved_ticket.html' %}
+
+{% endblock %}
+
+
+{% block js %}
+  <script src="{% static 'js/datatables/jquery.dataTables.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/datatables/dataTables.bootstrap.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/datatables/dataTables.buttons.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/datatables/dataTables.responsive.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/bootstrap/buttons.bootstrap.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/bootstrap/bootstrap-select.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/apps/support/list_tickets.js' %}" type="text/javascript"></script>
+  <script >
+    var CSRF_TOKEN = '{{ csrf_token }}';
+    var TICKETS_OPTIONS = "{% url 'tickets_options' %}";
+    //var tipo = '{{ type }}';
+  </script>
+{% endblock %}

@@ -1,0 +1,101 @@
+[
+    {
+        "pk": 1,
+        "model": "peppol.UNCL1001INV",
+        "fields": {
+            "code": "80",
+            "name": "Debit note related to goods or services",
+            "description": "Debit information related to a transaction for goods or services to the relevant party."
+        }
+    },
+    {
+        "pk": 2,
+        "model": "peppol.UNCL1001INV",
+        "fields": {
+            "code": "82",
+            "name": "Metered services invoice",
+            "description": "Document/message claiming payment for the supply of metered services (e.g., gas, electricity, etc.) supplied to a fixed meter whose consumption is measured over a period of time."
+        }
+    },
+    {
+        "pk": 3,
+        "model": "peppol.UNCL1001INV",
+        "fields": {
+            "code": "84",
+            "name": "Debit note related to financial adjustments",
+            "description": "Document/message for providing debit information related to financial adjustments to the relevant party."
+        }
+    },
+    {
+        "pk": 4,
+        "model": "peppol.UNCL1001INV",
+        "fields": {
+            "code": "380",
+            "name": "Commercial invoice",
+            "description": "(1334) Document/message claiming payment for goods or services supplied under conditions agreed between seller and buyer."
+        }
+    },
+    {
+        "pk": 5,
+        "model": "peppol.UNCL1001INV",
+        "fields": {
+            "code": "383",
+            "name": "Debit note",
+            "description": "Document/message for providing debit information to the relevant party."
+        }
+    },
+    {
+        "pk": 6,
+        "model": "peppol.UNCL1001INV",
+        "fields": {
+            "code": "386",
+            "name": "Prepayment invoice",
+            "description": "An invoice to pay amounts for goods and services in advance; these amounts will be subtracted from the final invoice."
+        }
+    },
+    {
+        "pk": 7,
+        "model": "peppol.UNCL1001INV",
+        "fields": {
+            "code": "393",
+            "name": "Factored invoice",
+            "description": "Invoice assigned to a third party for collection."
+        }
+    },
+    {
+        "pk": 8,
+        "model": "peppol.UNCL1001INV",
+        "fields": {
+            "code": "395",
+            "name": "Consignment invoice",
+            "description": "Commercial invoice that covers a transaction other than one involving a sale."
+        }
+    },
+    {
+        "pk": 9,
+        "model": "peppol.UNCL1001INV",
+        "fields": {
+            "code": "575",
+            "name": "Insurer's invoice",
+            "description": "Document/message issued by an insurer specifying the cost of an insurance which has been effected and claiming payment therefore."
+        }
+    },
+    {
+        "pk": 10,
+        "model": "peppol.UNCL1001INV",
+        "fields": {
+            "code": "623",
+            "name": "Forwarder's invoice",
+            "description": "Invoice issued by a freight forwarder specifying services rendered and costs incurred and claiming payment therefore."
+        }
+    },
+    {
+        "pk": 11,
+        "model": "peppol.UNCL1001INV",
+        "fields": {
+            "code": "780",
+            "name": "Freight invoice",
+            "description": "Document/message issued by a transport operation specifying freight costs and charges incurred for a transport operation and stating conditions of payment."
+        }
+    }
+]

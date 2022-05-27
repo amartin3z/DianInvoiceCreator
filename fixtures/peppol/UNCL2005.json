@@ -1,0 +1,26 @@
+[
+    {
+        "pk": 1,
+        "model": "peppol.UNCL2005",
+        "fields": {
+            "code": "3",
+            "name": "Invoice document issue date time"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "peppol.UNCL2005",
+        "fields": {
+            "code": "35",
+            "name": "Delivery date/time, actual"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "peppol.UNCL2005",
+        "fields": {
+            "code": "432",
+            "name": "Paid to date"
+        }
+    }
+]

@@ -1,0 +1,56 @@
+<style type="text/css">
+  #owner_status {
+    font-size: 15px;
+  }
+</style>
+
+<div class="modal fade" id="modal-owner-details" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title header-modal" ><strong>Informaci&oacute;n del propietario</strong>.</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                      <div class="col col-md-12 col-sm-12">
+                        <div class="well" id="">
+                          <div class="row">
+                            <div class="col col-sm-5">
+                              <label><strong>RFC Receptor:</strong></label>
+                              <input type="text" class="form-control" id="owner_taxpayer_id" disabled>
+                            </div>
+                            <div class="col col-sm-7">
+                              <label><strong>Raz&oacute;n Social/Nombre:</strong></label>
+                              <input type="text" class="form-control" id="owner_name" disabled>
+                            </div>
+                          </div>
+                          <br>
+                          <div class="row">
+                            <div class="col col-sm-12">
+                              <label><strong>R&eacute;gimen Fiscal:</strong></label>
+                              <input type="text" class="form-control" id="owner_reg_fiscal" disabled>
+                            </div>
+                          </div>
+                          <br>
+                          <div class="row">
+                            <div class="col col-sm-7">
+                              <label><strong>Email:</strong></label><br>
+                              <input type="text" class="form-control" disabled id="owner_email">
+                            </div>
+
+                            <div class="col col-sm-5">
+                              <label><strong>Estatus:</strong></label><br>
+                              <label id="owner_status"></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>

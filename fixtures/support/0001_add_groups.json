@@ -1,0 +1,82 @@
+[
+    {
+        "fields": {
+            "name": "admins",
+            "permissions": []
+        },
+        "model": "auth.group",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "name": "staff",
+            "permissions": []
+        },
+        "model": "auth.group",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "name": "billing",
+            "permissions": []
+        },
+        "model": "auth.group",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "name": "cancelacion",
+            "permissions": []
+        },
+        "model": "auth.group",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "name": "clients",
+            "permissions": []
+        },
+        "model": "auth.group",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "name": "invoicing",
+            "permissions": []
+        },
+        "model": "auth.group",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "name": "sat",
+            "permissions": []
+        },
+        "model": "auth.group",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "name": "support",
+            "permissions": []
+        },
+        "model": "auth.group",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "name": "logs",
+            "permissions": []
+        },
+        "model": "auth.group",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "name": "usuarios",
+            "permissions": []
+        },
+        "model": "auth.group",
+        "pk": 10
+    }
+]

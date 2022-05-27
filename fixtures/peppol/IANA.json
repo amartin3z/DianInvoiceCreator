@@ -1,0 +1,50 @@
+[
+    {
+        "pk": 1,
+        "model": "peppol.MIMECODE",
+        "fields": {
+            "code": "text/csv",
+            "name": "text/csv"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "peppol.MIMECODE",
+        "fields": {
+            "code": "application/pdf",
+            "name": "application/pdf"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "peppol.MIMECODE",
+        "fields": {
+            "code": "image/png",
+            "name": "image/png"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "peppol.MIMECODE",
+        "fields": {
+            "code": "image/jpeg",
+            "name": "image/jpeg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "peppol.MIMECODE",
+        "fields": {
+            "code": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "name": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "peppol.MIMECODE",
+        "fields": {
+            "code": "application/vnd.oasis.opendocument.spreadsheet",
+            "name": "application/vnd.oasis.opendocument.spreadsheet"
+        }
+    }
+]

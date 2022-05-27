@@ -1,0 +1,29 @@
+{% load i18n %}
+<div class="row">
+  <div class="col-lg-12">
+    <ul class="list-group">
+      <li class="list-group-item text-muted" contenteditable="false">{% trans 'Profile' %} <i class="fa fa-info-circle"></i></li>
+      <li class="list-group-item text-right"><span class="pull-left"><strong class="">{% trans 'Email' %}:</strong></span>
+        {% if data.email %}
+          {{ data.email }}
+        {% else %}
+          {% trans 'Not registered' %}
+        {% endif %}
+      </li>
+      <li class="list-group-item text-right"><span class="pull-left"><strong class="">{% trans 'Joined date' %}:</strong></span>
+        {% if request.user.date_joined %}
+          {{ request.user.date_joined|date:"M d, Y" }}
+        {% else %}
+          {% trans 'Not registered' %}
+        {% endif %}
+      </li>
+      <li class="list-group-item text-right"><span class="pull-left"><strong class="">{% trans 'Last login' %}:</strong></span>
+        {% if request.user.last_login %}
+          {{ request.user.last_login|date:"M d, Y" }}
+        {% else %}
+          {% trans 'Not registered' %}
+        {% endif %}
+      </li>
+    </ul>
+  </div>
+</div>

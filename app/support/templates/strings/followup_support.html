@@ -1,0 +1,35 @@
+{% load i18n %}
+<li>
+  <div class="timeline-badge primary"><i class="fa fa-comment"></i></div>
+  <div class="timeline-panel">
+    <div class="timeline-heading">
+      <div class="col-md-12">
+        <div class="col-md-10">
+          <h4 class="timeline-title text-bold" style="text-align: right;">{% trans 'Helpdesk support' %}</h4>
+        </div>
+        <div class="col-md-2">
+          <img src="/static/img/apps/support/agent.png" alt="" class="avatar">
+        </div>
+      </div>
+    </div>
+    <div class="timeline-body">
+      <p style="margin-top:50px;" id="timeline-comment">
+        {% if 'Asignado' in followup.title %}
+          Ticket {{ followup.title}}
+         {% else %}
+          {{ followup.comment}}
+         {% endif %}
+      </p>
+      <p style="text-align: right;"><small class="text-muted text-bold">
+        <i class="glyphicon glyphicon-time"></i>{{ followup.date }}
+      </small></p>
+    </div>
+    {% if attachment %}
+    <hr>
+      <div class="attachments"><ul>
+        <li><a target="_blank"  href="{{attachment.file.url}}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{attachment.filename}}</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&nbsp;({{ attachment.mime_type }}, {{ attachment.size|filesizeformat }})
+        </font></font></li>
+        </ul></div>
+    {% endif %}
+  </div>
+</li>

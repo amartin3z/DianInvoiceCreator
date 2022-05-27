@@ -1,0 +1,16 @@
+{% load i18n %}
+{% if group == '' %}
+<button class="btn btn-default btn-sm" title="{% trans 'Without Group' %}"><strong>{% trans 'Without Group' %}</strong></button>
+{% endif %}  
+{% if group == 'providers' %}
+<button class="btn btn-info btn-sm" title="{% trans 'Provider' %}"><strong>{% trans 'Provider' %}</strong></button>
+{% endif %}
+{% if group == 'staff' %}
+<button class="btn btn-warning btn-sm" title="{% trans 'Staff' %}"><strong>{% trans 'Staff' %}</strong></button>
+{% endif %}
+{% if group == 'agents' %}
+<button class="btn btn-success btn-sm" title="{% trans 'Employee' %}"><strong>{% trans 'Employee' %}</strong></button>
+{% endif %}
+{% if group == 'clients' %}
+<button class="btn btn-danger btn-sm" title="{% trans 'Client' %}"><strong>{% trans 'Client' %}</strong></button>
+{% endif %}

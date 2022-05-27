@@ -1,0 +1,25 @@
+            {% load crispy_forms_tags %}
+            <div id="div_docto_0" class="form-group col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                    <h4 class="visible-xs-block visible-sm-block visible-md-inline-block visible-lg-inline-block"><button id="title_0" class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#docto_0"><i class="fa fa-caret-down" aria-hidden="true"></i></button>Documento Relacionado</h4>
+                    <h4 class="visible-xs-block visible-sm-block visible-md-inline-block visible-lg-inline-block">
+                        {% comment %}
+                        <small id="subtitle_0" style="font-weight: bold; color: #337ab7;">{{ concept_name }}</small>
+                        {% endcomment %}
+                    </h4>
+                </div>
+                <div id="docto_0" class="form-group col-sm-12 col-md-12 col-lg-12 collapse in">
+                    <div class="form-group row">
+                        {% crispy invoice_form invoice_form.helper_docto 'bootstrap3' %}
+                            {% comment %}
+                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 fix-button">
+                                    <button type="button" class="btn btn-success btn-xs btn-inverse add-docto btn-fix" title="Agregar Documento Relacionado" id="add-docto" name="add-docto"><i class="fa fa-plus fa-fw"></i></button>
+                                    <button type="button" class="btn btn-danger btn-xs btn-inverse remove-concept btn-fix" title="Borrar Documento Relacionado"><i class="fa fa-trash fa-fw"></i></button>
+                                </div>
+                            {% endcomment %}
+                    </div>
+                    {% include 'invoicing/invoice/invoice-divisor.html' %}
+                </div>
+            </div>
+
+        

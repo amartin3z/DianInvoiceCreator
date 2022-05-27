@@ -1,0 +1,5 @@
+<div class="btn-group" role="group" arial-label="business-options">
+    <a class="btn btn-default btn-sm si" title="Informaci&oacute;n" business="{{ business.encrypt }}"><i class="fa fa-info" aria-hidden="true" title="Informaci&oacute;n"></i></a>
+    <a class="btn btn-{% if csd %}primary{% else %}danger{% endif %} btn-sm sc" business="{{ business.encrypt }}" title="Ver CSD"><i class="fa fa-shield-alt" aria-hidden="true"></i></a>
+    {% comment %} <a class="btn btn-{% if fiel %}primary{% else %}danger{% endif %} btn-sm sf" business="{{ business.encrypt }}" title="Ver FIEL"><i class="fa fa-key" aria-hidden="true"></i></a> {% endcomment %}
+</div>

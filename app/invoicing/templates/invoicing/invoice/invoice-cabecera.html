@@ -1,0 +1,74 @@
+            {% load crispy_forms_tags %}
+            {% load static %}
+            {% load i18n %}
+            <div class="form-group">
+                {% comment %} <div class="form-group">
+                    <div class="form-group col-sm-12 col-md-12 hide-lg">
+                        <h4 class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block hidden-lg"><button id="title__emisor_0" class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#div_emisor"><i class="fa fa-caret-down" aria-hidden="true"></i></button> Emisor</h4>
+                        <h4 class="visible-xs-inline-block visible-sm-inline-block hidden-md hidden-lg"><small id="emisor_name" style="font-weight: bold; color: #337ab7;">{{business_taxpayer_id}}</small></h4>
+                    </div>
+                    <div class="form-group col-sm-12 col-md-12 col-lg-4 collapse in" id="div_emisor">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            {% if logo %}
+                            <div class="col-sm-12 col-md-12 col-lg-4">
+                                <img src="{{ logo }}" alt="" class="img-rounded img-responsive center-block" />
+                            </div>
+                            {% endif %}
+                            <div class="col-sm-12 col-md-12 col-lg-8">
+                                <h4 class="visible-xs-block visible-sm-block visible-md-block visible-lg-block text-center"><b>{{ business_taxpayer_id }}</b></h4>
+                                <h4 class="visible-xs-block visible-sm-block visible-md-block visible-lg-block text-center"> {{ business_name }} </h4>
+                                <h5 class="visible-xs-block visible-sm-block visible-md-block visible-lg-block text-center">{{ business_fiscal_regime }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    {% include 'invoicing/invoice/invoice-divisor.html' with show_xs="visible-xs-inline-block" show_sm="visible-sm-inline-block" show_md="visible-md-inline-block" show_lg="hidden-lg" show_div_lg="hidden-lg" %}
+                </div> {% endcomment %}
+                <div class="form-group">
+                  <div class="form-group col-sm-12">
+                    <h4 class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block visible-xl-inline-block"><button id="title__comprobante_0" class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#div_comprobante"><i class="fa fa-caret-down" aria-hidden="true"></i></button> {%trans 'Invoice' %}</h4>
+                  </div>
+                  <div class="form-group col-sm-12 col-md-12 col-lg-12 collapse in" id="div_comprobante">
+                    {% crispy invoice_form invoice_form.helper_header 'bootstrap3' %}
+                    {% comment %}
+                        <h4 class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block visible-xl-inline-block" style="padding-left:3rem;"> CFDI Relacionado <buttton class="btn btn-success btn-inverse btn-xs" id="button_add_related"><i class="fa fa-plus"></i></buttton></h4>
+                    {% endcomment %}
+                    <div class="form-group hidden" style="padding-left:3rem;" id="div_uuid_relacionados">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <div id="div_id_tiporelacion" class="form-group">
+                                <label for="id_relation_type" class="control-label ">Tipo Relación</label>
+                                <select id="id_relation_type" name="relation_type" class="form-control">
+                                    {% for relation_type in relations_type %}
+                                        <option value="{{ relation_type.clave }}" {% if relation_type.clave == "04" %}selected{% endif %}>{{ relation_type.clave }} - {{ relation_type.descripcion }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" id="div_uuidsrelacionado">
+                            <div class="form-group" id="div_uuidrelacionado_0">
+                                <label for="id_uuid_related" class="control-label">* UUID Relacionados</label>
+                                <div class="col-xs-11">
+                                    <div class="form-group">
+                                        <label for="id_uuid_related" class="control-label sr-only">UUID Relacionado</label>
+                                        <input type="text" name="id_uuid_related" class="textinput textInput form-control" id="id_uuid_related_0" pattern="[a-f0-9A-F]{8}-[a-f0-9A-F]{4}-[a-f0-9A-F]{4}-[a-f0-9A-F]{4}-[a-f0-9A-F]{12}">
+                                    </div>
+                                </div>
+                                <div class="col-xs-1">
+                                    <buttton class="btn btn-success btn-inverse btn-sm add-uuid"><i class="fa fa-plus"></i></buttton>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  {% include 'invoicing/invoice/invoice-divisor.html' with show_xs="visible-xs-inline-block" show_sm="visible-sm-inline-block" show_md="visible-md-inline-block" show_lg="visible-lg-inline-block" %}
+                </div>
+                {% comment %} <div class="form-group">
+                  <div class="form-group col-sm-12">
+                    
+                    {% include 'invoicing/invoice/invoice-divisor.html' with show_xs="visible-xs-inline-block" show_sm="visible-sm-inline-block" show_md="visible-md-inline-block" show_lg="visible-lg-inline-block" %}
+                  </div>
+                  {% comment %} <div class="form-group col-sm-12 col-md-12 col-lg-12 collapse in" id="div_comprobante">
+                    {% crispy invoice_form invoice_form.helper_header 'bootstrap3' %}
+                  </div>
+                </div> {% endcomment %}
+            </div>
+            

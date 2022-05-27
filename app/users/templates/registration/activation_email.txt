@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--title>{{ title }}</title-->
+    <style type="text/css">
+
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; }
+      body {
+        background-color: #FFFFFF;
+        font-family: sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0; 
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; }
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%;
+      }
+      table td {
+          font-family: sans-serif;
+          font-size: 14px;
+          vertical-align: top;
+        }
+
+      /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
+
+      .body {
+        background-color: #FFFFFF;
+        width: 100%; }
+
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .container {
+        display: block;
+        Margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 600px;
+        padding: 10px;
+        width: 600px; }
+
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .content {
+        box-sizing: border-box;
+        display: block;
+        Margin: 0 auto;
+        max-width: 600px;
+        padding: 10px; }
+
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #fff;
+        /*
+        border-radius: 3px;
+        */
+        width: 100%; }
+
+      .wrapper {
+        box-sizing: border-box;
+        padding-top: 40px;
+      }
+
+      .footer {
+        clear: both;
+        padding-top: 10px;
+        text-align: center;
+        width: 100%; }
+        .footer td,
+        .footer p,
+        .footer span,
+        .footer a {
+          color: #999999;
+          font-size: 12px;
+          text-align: center;
+      }
+
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000000;
+        font-family: sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        Margin-bottom: 30px; }
+
+      h1 {
+        font-size: 35px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: capitalize; }
+
+      p,
+      ul,
+      ol {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        Margin-bottom: 15px; }
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px; }
+
+      a {
+        color: #3498db;
+        text-decoration: none;
+      }
+
+      .powered-by a {
+        text-decoration: none;
+      }
+
+      hr {
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        Margin: 20px 0;
+      }
+      #logo {
+        height: 45px;
+        width: 180px;
+        float: left;
+      }
+      div.header {
+        height: 10%;
+        color: #FFFFFF;
+        font-size: 28px;
+        line-height: 53px;
+        text-align: center;
+        vertical-align: middle;
+        background-color: #a82535;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p.message {
+        color: #666768;
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      p.greeting {
+        color: #4a4b4c;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .active-btn {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      table.main {
+        border-bottom: 3px solid #a82535;
+      }
+      a.activate {
+        background-: transparent;
+        background-color: #a82535;
+        border: 5px solid #a82535;
+        border-radius: 60px;
+        color: #FFFFFF;
+        display: block;
+        margin: auto;
+        width: 220px;
+        font-size: 17;
+        font-family: Arial, Helvetica, sans-serif;
+        outline:none;
+        text-align: center;
+        text-decoration: none;
+      }
+      /*
+      a.activate:hover {
+        background-color: #87212e;
+        border-color: #87212e;
+        border-radius: 60px;
+        outline:none;
+        text-align: center;
+        text-decoration: none;
+      }
+      */
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; }
+        table[class=body] p,
+        table[class=body] ul,
+        table[class=body] ol,
+        table[class=body] td,
+        table[class=body] span,
+        table[class=body] a {
+          font-size: 16px !important; }
+        table[class=body] .wrapper,
+        table[class=body] .article {
+          padding: 10px !important; }
+        table[class=body] .content {
+          padding: 0 !important; }
+        table[class=body] .container {
+          padding: 0 !important;
+          width: 100% !important; }
+        table[class=body] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; }
+        table[class=body] .btn table {
+          width: 100% !important; }
+        table[class=body] .btn a {
+          width: 100% !important; }
+        table[class=body] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; }}
+
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; } 
+        .btn-primary table td:hover {
+          background-color: #fff !important; }
+        .btn-primary a:hover {
+          /*background-color: #34495e !important;*/
+          /*color: #fff;*/
+          font-weight: bold;
+          /*border-color: #34495e !important;*/ } }
+    </style>
+  </head>
+  <body class="">
+    <table border="0" cellpadding="0" cellspacing="0" class="body">
+      <tr>
+        <td>&nbsp;</td>
+        <td class="container">
+          <div class="content">
+            <div class="header">
+              <!--b>AMEXIPROC, A.C.</b-->
+              <img id="logo" src="http://ipage.mx/amexiproc/wp-content/uploads/sites/31/2018/04/amex_logo2.png" alt="AMEXIPROC, A.C."/>
+            </div>
+            <table class="main">
+              <tr>
+                <td class="wrapper">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <p class="greeting"><b>¡Activa tu cuenta!</b></p>
+                        <p class="message">S&oacute;lo un paso m&aacute;s, activa tu cuenta ingresando con los accesos proporcionados en este mensaje para terminar de registrarte.</p>
+                        <br>
+                        <p class="message"><b>Usuario:</b> {{ user }}</p>
+                        <p class="message"><b>Contrase&ntilde;a:</b> {{ pass }}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="active-btn">
+                        <br>
+                        <a role="button" class="activate" href="{{ activation_url }}"><strong>Activar cuenta</strong></a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- START FOOTER -->
+            <div class="footer">
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="content-block powered-by">
+                    <span class="apple-link"><a href="#">Aviso de privacidad</a> | <a href="http://www.amexiproc.org.mx/asociacion-mexicana-de-proveedores-certificados/" target="_blank">Acerca de nosotros</a> | <a href="http://www.amexiproc.org.mx/asociacion-mexicana-de-proveedores-certificados/#contacto" target="_blank">Contáctanos</a></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="content-block powered-by">
+                    <span class="apple-link">Copyright &copy; 2018 AMEXIPROC. Todos los derechos reservados</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- END FOOTER -->
+          </div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>

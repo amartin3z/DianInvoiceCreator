@@ -1,0 +1,65 @@
+{% load i18n %}
+<div class="modal fade bs-example-modal-md form_DelecteAccount" data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="ModalDeleteAccount">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="text-bold" style="color: #1b1b1bd1;">{% trans 'Disable my account' %}</h3>
+        <h5 class="text-bold" style="color: #1b1b1bd1;">{% trans 'Confirms disable process'%}</h5>
+      </div>
+      <div class="modal-body">
+        <div class="row datasss_">
+          <div class="col-sm-12">
+            <p>{% trans 'Before disable your account' %} {{ request.user.username}}, {% trans 'keep in mind:' %}</p>
+            <ul>
+              <li>{% trans 'Your account will remain disabled until you enable it again.' %}</li>
+              <li>{% trans 'Your information will be 100%% safe.' %}</li>
+              <li>{% trans "Your won''t be able to access to platform." %}</li>
+            </ul>
+          </div>
+          <div class="col-sm-12">
+            <h4 class="text-bold" style="color: #1b1b1bd1;">{% trans 'Contact information.' %}</h4>
+            <p align="justify">{% trans 'These information will be used to contact you and confirm de process.' %}</p>
+            <div class="row info_contact">
+              <div class="form-group col-sm-12">
+                <label>* {% trans 'Name' %}:</label>
+                <input type="text" class="form-control requerid name_account" placeholder="{% trans 'Name' %}">
+              </div>
+              <div class="form-group col-sm-6">
+                <label>* {% trans 'Phone' %}:</label>
+                <input type="text" class="form-control requerid phone_account number" placeholder="{% trans 'Phone' %}">
+              </div>
+              <div class="form-group col-sm-6">
+                <label>{% trans 'Email' %}:</label>
+                <input type="text" class="form-control email_account" placeholder="{% trans 'Email' %}">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12" style="padding-top: 1rem;">
+            <div class="row whys_s">
+              <div class="form-group  col-md-12">
+                <span class="text-bold" style="display: block; padding-bottom: 1rem; color: #1b1b1bd1;">* {% trans 'Reason to disable your account' %}:</span>
+                <textarea style="min-width: 100%; max-width: 100%" class="form-control the_why" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
+          
+          {% comment %}
+          <div class="col-sm-12">
+            <h4 class="text-bold" style="color: #1b1b1bd1;">Descargar tu información.</h4>
+            <p>Puedes descargar una copia de tu información antes de desactivar la cuenta.</p>
+            <button type="button" class="btn btn-info download"><i class="fa fa-download"></i><span style="padding-left: 1rem;">Descargar información.</span></button>
+          </div>
+          {% endcomment %}
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row">
+          <div class="col-sm-12" style="justify-content: space-between; display: flex!important;">
+            <button type="button" class="btn btn-success cancel">{% trans 'Cancel' %}</button>
+            <button type="button" class="btn btn-danger desactivate">{% trans 'Accept' %}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

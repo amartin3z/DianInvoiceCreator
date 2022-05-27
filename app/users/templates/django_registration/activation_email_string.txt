@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>¡Reg&iacute;strate en Finkok!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+	<style type="text/css">
+		.header-email {
+			background-color: rgb(45, 45, 45);
+		}
+		.body-email {
+			margin: 30px;
+			border: 2px solid #db0202;
+			-webkit-border-radius: 17px 17px 17px 17px;
+		}
+		.btn-primary {
+    		color: #fff;
+    		background-color: #007bff;
+    		border-color: #007bff;
+		}
+		.btn {
+    		display: inline-block;
+    		font-weight: 400;
+    		text-align: center;
+    		white-space: nowrap;
+    		vertical-align: middle;
+    		-webkit-user-select: none;
+    		-moz-user-select: none;
+    		-ms-user-select: none;
+    		user-select: none;
+    		border: 1px solid transparent;
+        	border-top-color: transparent;
+        	border-right-color: transparent;
+        	border-bottom-color: transparent;
+        	border-left-color: transparent;
+    		padding: 0.6rem 1.8rem;
+    		font-size: 1rem;
+    		line-height: 1.5;
+    		border-radius: .25rem;
+    		transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+		}
+		a {
+    		color: #007bff;
+    		text-decoration: none;
+    		background-color: transparent;
+    		-webkit-text-decoration-skip: objects;
+		}
+		body {
+    		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    		font-size: 1rem;
+    		font-weight: 400;
+    		line-height: 1.5;
+    		color: #212529;
+    		text-align: left;
+		}
+		html {
+	    	font-family: sans-serif;
+	    	line-height: 1.15;
+	    	-webkit-text-size-adjust: 100%;
+		}
+		
+		b, strong {
+	    	font-weight: bolder;
+		}
+		*, ::after, ::before {
+	    	box-sizing: border-box;
+		}
+		* {
+			color: #000000;
+		}
+		.h2, h2 {
+	    	font-size: 2rem;
+		}
+		.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	    	font-weight: 500;
+	    	line-height: 1.2;
+		}
+		.btn {
+			color: #FFF !important;
+		}
+		#text-email {
+			font-size: 1.0rem;
+		}
+		@media only screen and (max-width: 450px) {
+			#text-email {
+				margin: 20px;
+			}
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="col-lg-12 header-email" align="center">
+    	<!--<div class="col-lg-12 header-email" align="center">-->
+        <img id="logo" src="https://www.ipage.mx/amexiproc/wp-content/uploads/sites/31/2018/04/amex_logo3.png" width="250px;" alt="AMEXIPROC, A.C."/>
+      <!--</div>-->
+    </div>
+	<div class="body-email" align="center">
+		<h2><b>Bienvenido a Finkok</b></h2>
+		<p id="text-email">Te has registrado en nuestra plataforma para generar facturas de forma sin costo, solo hace falta activar tu cuenta y podras utilizarla inmediatamente. <br> Activa tu <b>Cuenta Gratuita</b> haciendo click sobre el siguiente enlace:</p>
+        <br>
+		<a href="{{ activation_url }}" type="button" class="btn btn-primary btn-lg">ACT&Iacute;VATE</a><br><br>
+	</div>
+    <div class="col-sm-12" align="center">
+    	<hr>
+        <p>Ante cualquier duda o comentario, p&oacute;ngase en contacto con nuestra <a href="mailto:soporte@finkok.com">&aacute;rea de soporte</a>
+    </div>
+</body>
+</html>

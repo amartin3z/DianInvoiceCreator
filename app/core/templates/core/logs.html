@@ -1,0 +1,176 @@
+{% extends 'base.html'%}
+{% load i18n %}
+{% block title %}{% trans 'Logs' %}{% endblock %}
+{% load staticfiles %}
+
+{% block css %}
+  <link href="{% static 'css/datatables/dataTables.bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+  <link href="{% static 'css/select-input/bootstrap-select.css' %}" media="all" rel="stylesheet" type="text/css" />
+  <link href="{% static 'css/bootstrap/bootstrap-datetimepicker.min.css' %}" rel="stylesheet">
+  <style type="text/css">
+    @media screen and (max-width: 1045px) and (min-width: 835px) {
+        .priority-5{
+          display:none;
+        }
+        .priority-4{
+          display:none;
+        }
+      }
+      
+      @media screen and (max-width: 565px) and (min-width: 300px) {
+        .priority-5{
+          display:none;
+        }
+        .priority-4{
+          display:none;
+        }
+        .priority-3{
+          display:none;
+        }
+      }
+      
+      @media screen and (max-width: 300px) {
+        .priority-5{
+          display:none;
+        }
+        .priority-4{
+          display:none;
+        }
+        .priority-3{
+          display:none;
+        }
+        .priority-2{
+          display:none;
+        }
+      
+      }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <div class="row" style="margin-top: 60px;">
+    <div class="container-fluid" style="margin: 20px;">
+      {% block message %}
+          <div id="wis-message" class="alert alert-warning" role="alert" style="display: none;"></div>
+        {% endblock %}
+      <h3 class="title_header">{% trans 'Logs' %}</h3>
+      <section class="panel panel-default">
+        
+        <div class="panel-heading"><a id="hide-panel" class="pull-right pull-right clickable" pnl="#panel-body-filter" href="javascript:;">
+        <span class="glyphicon glyphicon-chevron-up" style="color: #337AB7;"></span>
+        </a>{% trans 'Filters' %}</div>
+        <div class="panel-body" id="panel-body-filter">
+          
+          <fieldset>
+            {% if request.user.is_superuser %}        
+            <div class="col-lg-1 form-group">
+              <label for="log-admin">{% trans 'Admin' %}</label>
+              <div class="pretty p-switch p-fill">
+                <input type="checkbox" id="log-admin"/>
+                <div class="state p-success">
+                  <label>&nbsp;</label>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+            <div class="col-lg-1 form-group">
+              <label for="exception-logs">{% trans 'Exceptions' %}</label>
+              <div class="pretty p-switch p-fill">
+                <input type="checkbox" name="exception-logs" id="exception-logs">
+                <div class="state p-success">
+                  <label>&nbsp;</label>
+                </div>
+              </div>
+            </div>        
+            <div class="col-lg-2 form-group">
+              <label for="log-user">{% trans 'User' %}</label>
+              <input type="text" id="log-user" class="form-control" placeholder="{% trans 'User' %}">
+            </div>
+            <div class="col-lg-1 form-group">
+              <label for="-log-action">{% trans 'Action' %}</label>
+              <select id="log-action" class="selectpicker form-control" data-hide-disabled="true" data-live-search="true">
+                <option value="T" selected="selected">{% trans 'All' %}</option>
+                <option value="C">{% trans 'Create' %}</option>
+                <option value="R">{% trans 'Read' %}</option>
+                <option value="U">{% trans 'Update' %}</option>
+                <option value="D">{% trans 'Delete' %}</option>
+              </select>
+            </div>
+            <div class="col-lg-2 form-group">
+              <label for="log-module">{% trans 'Module' %}</label>
+              <select id="log-module" class="selectpicker form-control" data-hide-disabled="true" data-live-search="true">
+                <option value="T" selected="selected">{% trans 'All' %}</option>
+                <option value="S">{% trans 'Emission' %}</option>
+                <option value="I">{% trans 'Invoicing' %}</option>
+                <option value="D">{% trans 'Download' %}</option>
+                <option value="P">{% trans 'Providers' %}</option>
+                <option value="A">{% trans 'Cancellation' %}</option>
+                <option value="U">{% trans 'Users' %}</option>
+                <option value="L">{% trans 'Logs' %}</option>
+                <option value="C">{% trans 'Business' %}</option>
+              </select>
+            </div>
+            <div class="col-lg-2 form-group">
+              <label for="log-date-from">{% trans 'Date (From)' %}</label>
+              <div class="input-group date" id="log-date-from">
+                <input type='text' class="form-control" id="log-date-from-val" placeholder="{% trans 'Date (From)' %}"/>
+                <span class="input-group-addon">
+                  <i class="fa fa-calendar"></i>
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-2 form-group">
+              <label for="log-date-to">{% trans 'Date (To)' %}</label>
+              <div class="input-group date" id="log-date-to">
+                <input type='text' class="form-control" id="log-date-to-val" placeholder="{% trans 'Date (To)' %}"/>
+                <span class="input-group-addon">
+                  <i class="fa fa-calendar"></i>
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-1 form-group">
+              <label for="clean-logs">{% trans 'Filters' %}</label>
+              <button type="button" id="clean-logs" class="form-control btn btn-primary" title="{% trans 'reset fields' %}">{% trans 'Clean' %}</button>
+            </div>
+          </fieldset>
+        </div>
+      </section>
+      <section class="panel panel-default">
+        <div class="panel-heading">
+          <div class="pull-right">
+            <a id="refresh_logs" title="Refrescar" href="#/">
+              <span class="fa fa-sync-alt"></span>
+            </a>
+          </div>
+          {% trans 'Actions' %}
+        </div>
+        <div class="panel-body">
+          <table id="tlogs" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+              <tr>
+                <th class="priority-1">{% trans 'User' %}</th>
+                <th class="priority-1">{% trans 'Action' %}</th>
+                <th class="priority-2">{% trans 'Module' %}</th>
+                <th class="priority-1">{% trans 'Information' %}</th>
+                <th class="priority-3">{% trans 'Date' %}</th>
+                <th class="priority-1">{% trans 'Options' %}</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
+{% include 'core/modal/show_err_exception_modal.html' %}
+{% endblock %}
+
+{% block js%}
+<script src="{% static 'js/datatables/jquery.dataTables.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/datatables/dataTables.bootstrap.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/datatables/dataTables.select.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/bootstrap/bootstrap-datetimepicker.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/select-input/bootstrap-select.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/apps/core/logs.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/bootsraptagsinput/bootstrap-tagsinput.js' %}"></script>
+<script type="text/javascript" src="{% url 'javascript-catalog' %}"></script>
+{% endblock %}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>¡Reg&iacute;strate en Amexiproc!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+	<style type="text/css">
+		.row {
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+		.col-lg-12 {
+		    width: 100%;
+		    position: relative;
+			min-height: 1px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		.col-lg-6 {
+		    width: 50%;
+		    position: relative;
+			min-height: 1px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+
+		.header-email {
+			background-color: rgb(45, 45, 45);
+			border-top-right-radius: 1em;
+			border-top-left-radius: 1em;
+		}
+		.body-email {
+			margin-top: -30px;
+			background-color: #dbdbdb;
+			margin-bottom: -15px;
+			/*margin: 30px;
+			border: 2px solid #db0202;
+			-webkit-border-radius: 17px 17px 17px 17px;*/
+		}
+		.label {
+			display: inline;
+			padding: .2em .6em .3em;
+			font-size: 75%;
+			font-weight: bold;
+			line-height: 1;
+			color:
+			#ffffff;
+			text-align: center;
+			white-space: nowrap;
+			vertical-align: baseline;
+			border-radius: .25em;
+		}
+		.label-danger {
+			color: #FFF !important;
+			background-color: #ff2d55;
+		}
+		.label-warning {
+        	background-color: #ffcc00;
+        }
+        .label-primary {
+        	background-color: #007aff;
+        }
+        .label-success {
+        	background-color: #4cd964;
+        }
+		.btn-primary {
+    		color: #fff;
+    		background-color: #007bff;
+    		border-color: #007bff;
+		}
+		.btn-mine {
+			color: #FFF;
+			background-color: #696a6a;
+			border-color: #696a6a;
+		}
+		.btn {
+    		display: inline-block;
+    		font-weight: 400;
+    		text-align: center;
+    		white-space: nowrap;
+    		vertical-align: middle;
+    		-webkit-user-select: none;
+    		-moz-user-select: none;
+    		-ms-user-select: none;
+    		user-select: none;
+    		border: 1px solid transparent;
+        	border-top-color: transparent;
+        	border-right-color: transparent;
+        	border-bottom-color: transparent;
+        	border-left-color: transparent;
+    		padding: 0.6rem 1.8rem;
+    		font-size: 1rem;
+    		line-height: 1.5;
+    		border-radius: .25rem;
+    		transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+		}
+		a {
+    		color: #007bff;
+    		text-decoration: none;
+    		background-color: transparent;
+    		-webkit-text-decoration-skip: objects;
+		}
+		body {
+    		font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    		font-size: 1rem;
+    		font-weight: 400;
+    		line-height: 1.5;
+    		color: #212529;
+    		text-align: left;
+		}
+		html {
+	    	font-family: sans-serif;
+	    	line-height: 1.15;
+	    	-webkit-text-size-adjust: 100%;
+		}
+		
+		b, strong {
+	    	font-weight: bolder;
+		}
+		*, ::after, ::before {
+	    	box-sizing: border-box;
+		}
+		/** {
+			color: #000000;
+		}*/
+		.h2, h2 {
+	    	font-size: 2rem;
+		}
+		.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	    	font-weight: 500;
+	    	line-height: 1.2;
+		}
+		.btn {
+			color: #FFF !important;
+		}
+		.text-email {
+			font-size: 20px;
+		}
+		.moderada {
+			font-size: 15px;
+		}
+		.footer {
+			background-color: rgb(45, 45, 45);
+			border-bottom-right-radius: 1em;
+			border-bottom-left-radius: 1em;
+		}
+		.footer p {
+			color: #FFF !important;
+		}
+		.logo {
+			margin-top: 20px;
+		}
+		@media only screen and (max-width: 450px) {
+			.text-email {
+				margin: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="col-lg-12 header-email" align="center">
+    	<div class="col-lg-12">
+	    	<!--img class="logo" src="https://pngtransparent.com/images/security-shield-png-256x256_b137b534.png" alt="PORTAL" width="100px;"-->
+	    	<br>
+        	<img id="logo" src="https://www.ipage.mx/amexiproc/wp-content/uploads/sites/31/2018/04/amex_logo3.png" width="250px;" alt="AMEXIPROC, A.C."/>
+	    	<br><br>
+	    </div>
+    </div>
+	<div class="body-email" align="center">
+		<br>
+		<h2><span class="label label-primary"><b>Bienvenido a Amexiproc</b></span></h2>
+		<br>
+		<p class="text-email">Fuiste invitado para registrarte en el portal Amexiproc como <b>{{ role }}</b><br>Ingresa al siguiente link para concluir con tu registro:</p>
+        <br><br>
+		<a href="{{ registration_url }}"type="button" class="btn btn-mine btn-lg">REG&Iacute;STRATE</a><br><br>
+	</div>
+    <div class="col-sm-12 footer" align="center">
+    	<hr>
+        <p>Ante cualquier duda o comentario, póngase en contacto con nuestra<a href="mailto:soporte@amexiproc.com"> &aacute;rea de soporte</a></p>
+        <br>
+    </div>
+</body>
+</html>

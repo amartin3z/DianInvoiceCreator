@@ -1,0 +1,586 @@
+[
+    {
+        "pk": 1,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0002",
+            "name": "System Information et Repertoire des Entreprise et des Etablissements: SIRENE"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0007",
+            "name": "Organisationsnummer (Swedish legal entities)"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0009",
+            "name": "SIRET-CODE"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0037",
+            "name": "LY-tunnus"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0060",
+            "name": "Data Universal Numbering System (D-U-N-S Number)"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0088",
+            "name": "EAN Location Code"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0096",
+            "name": "DANISH CHAMBER OF COMMERCE Scheme (EDIRA compliant)"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0097",
+            "name": "FTI - Ediforum Italia, (EDIRA compliant)"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0106",
+            "name": "\"Vereniging van Kamers van Koophandel en Fabrieken in Nederland (Association of Chambers of Commerce and Industry in the Netherlands), Scheme (EDIRA compliant)\""
+        }
+    },
+    {
+        "pk": 10,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0130",
+            "name": "Directorates of the European Commission"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0135",
+            "name": "SIA Object Identifiers"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0142",
+            "name": "SECETI Object Identifiers"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0151",
+            "name": "Australian Business Number (ABN) Scheme"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0183",
+            "name": "Num\u00e9ro d'identification suisse des enterprises (IDE), Swiss Unique Business Identification Number (UIDB)"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0184",
+            "name": "DIGSTORG"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0190",
+            "name": "Dutch Originator's Identification Number"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0191",
+            "name": "Centre of Registers and Information Systems of the Ministry of Justice"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0192",
+            "name": "Enhetsregisteret ved Bronnoysundregisterne"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0193",
+            "name": "UBL.BE party identifier"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0195",
+            "name": "Singapore UEN identifier"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0196",
+            "name": "Kennitala - Iceland legal id for individuals and legal entities"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0198",
+            "name": "ERSTORG"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0199",
+            "name": "Legal Entity Identifier (LEI)"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0200",
+            "name": "Legal entity code (Lithuania)"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0201",
+            "name": "Codice Univoco Unit\u00e0 Organizzativa iPA"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0202",
+            "name": "Indirizzo di Posta Elettronica Certificata"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "0204",
+            "name": "Leitweg-ID"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9901",
+            "name": "Danish Ministry of the Interior and Health"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9906",
+            "name": "Ufficio responsabile gestione partite IVA"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9907",
+            "name": "TAX Authority"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9910",
+            "name": "Hungary VAT number"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9913",
+            "name": "Business Registers Network"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9914",
+            "name": "\u00d6sterreichische Umsatzsteuer-Identifikationsnummer"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9915",
+            "name": "\"\u00d6sterreichisches Verwaltungs bzw. Organisationskennzeichen\""
+        }
+    },
+    {
+        "pk": 35,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9918",
+            "name": "\"SOCIETY FOR WORLDWIDE INTERBANK FINANCIAL, TELECOMMUNICATION S.W.I.F.T\""
+        }
+    },
+    {
+        "pk": 36,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9919",
+            "name": "Kennziffer des Unternehmensregisters"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9920",
+            "name": "Agencia Espa\u00f1ola de Administraci\u00f3n Tributaria"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9922",
+            "name": "Andorra VAT number"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9923",
+            "name": "Albania VAT number"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9924",
+            "name": "Bosnia and Herzegovina VAT number"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9925",
+            "name": "Belgium VAT number"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9926",
+            "name": "Bulgaria VAT number"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9927",
+            "name": "Switzerland VAT number"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9928",
+            "name": "Cyprus VAT number"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9929",
+            "name": "Czech Republic VAT number"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9930",
+            "name": "Germany VAT number"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9931",
+            "name": "Estonia VAT number"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9932",
+            "name": "United Kingdom VAT number"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9933",
+            "name": "Greece VAT number"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9934",
+            "name": "Croatia VAT number"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9935",
+            "name": "Ireland VAT number"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9936",
+            "name": "Liechtenstein VAT number"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9937",
+            "name": "Lithuania VAT number"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9938",
+            "name": "Luxemburg VAT number"
+        }
+    },
+    {
+        "pk": 55,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9939",
+            "name": "Latvia VAT number"
+        }
+    },
+    {
+        "pk": 56,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9940",
+            "name": "Monaco VAT number"
+        }
+    },
+    {
+        "pk": 57,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9941",
+            "name": "Montenegro VAT number"
+        }
+    },
+    {
+        "pk": 58,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9942",
+            "name": "Macedonia, the former Yugoslav Republic of VAT number"
+        }
+    },
+    {
+        "pk": 59,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9943",
+            "name": "Malta VAT number"
+        }
+    },
+    {
+        "pk": 60,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9944",
+            "name": "Netherlands VAT number"
+        }
+    },
+    {
+        "pk": 61,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9945",
+            "name": "Poland VAT number"
+        }
+    },
+    {
+        "pk": 62,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9946",
+            "name": "Portugal VAT number"
+        }
+    },
+    {
+        "pk": 63,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9947",
+            "name": "Romania VAT number"
+        }
+    },
+    {
+        "pk": 64,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9948",
+            "name": "Serbia VAT number"
+        }
+    },
+    {
+        "pk": 65,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9949",
+            "name": "Slovenia VAT number"
+        }
+    },
+    {
+        "pk": 66,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9950",
+            "name": "Slovakia VAT number"
+        }
+    },
+    {
+        "pk": 67,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9951",
+            "name": "San Marino VAT number"
+        }
+    },
+    {
+        "pk": 68,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9952",
+            "name": "Turkey VAT number"
+        }
+    },
+    {
+        "pk": 69,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9953",
+            "name": "Holy See (Vatican City State) VAT number"
+        }
+    },
+    {
+        "pk": 70,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9955",
+            "name": "Swedish VAT number"
+        }
+    },
+    {
+        "pk": 71,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9956",
+            "name": "Belgian Crossroad Bank of Enterprises"
+        }
+    },
+    {
+        "pk": 72,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9957",
+            "name": "French VAT number"
+        }
+    },
+    {
+        "pk": 73,
+        "model": "peppol.EAS",
+        "fields": {
+            "code": "9958",
+            "name": "German Leitweg ID"
+        }
+    }
+]

@@ -1,0 +1,333 @@
+{% extends "base.html" %}
+{% load auth_extras %}
+{% load static %}
+{% block css %}
+{% load i18n %}
+<link rel="stylesheet" type="text/css" href="{% static 'DataTables/css/dataTables.bootstrap4.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'DataTables/css/responsive.dataTables.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/profile/wizard.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/profile/pages.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/profile/bootstrap-select.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/profile/styles.css' %}">
+<!--link href="{% static 'css/base/message.css' %}" rel="stylesheet"-->
+<link href="{% static 'css/toast/jquery.toast.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'css/toogle/bootstrap-toggle.min.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+<link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.css"
+  rel="stylesheet" />
+<style>
+  #pills-tab>li.nav-item.active:focus,
+  #pills-tab>li.nav-item.active:hover {
+    background-color: transparent !important;
+  }
+
+  .nav>li.active>a:focus,
+  .nav>li.active>a:hover {
+    background-color: transparent !important;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="header_background"></div>
+<div class="col-sm-12">
+  <div class="contents_all">
+    <div class="row">
+      {% block message %}
+      <div id="wis-message" class="alert alert-warning" role="alert" class="auto" style="display: none;"></div>
+      {% endblock %}
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-sm-12">
+            {% if not request.user.is_superuser and not request.user|has_groups:"sat" %}
+            {% if data %}
+            <div class="panel panel-default" style="border-bottom: none;">
+
+              <div class="panel-body navs-profile" style="padding: 0px;">
+
+                <ul class="nav nav-tabs nav-justified" id="pills-tab" role="tablist" style="padding-top: 2rem;">
+                  <li class="{% if data %}active{% endif %} nav-item">
+                    <a class="nav-link active" id="pills-fisca-tab" data-toggle="pill" href="#pills-fiscal" role="tab"
+                      aria-controls="pills-fiscal" aria-selected="true">{% trans 'Fiscal Data' %}</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-csd-tab" data-toggle="pill" href="#pills-csd" role="tab"
+                      aria-controls="pills-csd" aria-selected="false"><span
+                        class="view">{% trans 'Certificates' %}</span><span
+                        class="view_2">{% trans 'Certificates' %}</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-serie-tab" data-toggle="pill" href="#pills-serie" role="tab"
+                      aria-controls="pills-serie" aria-selected="false">{% trans 'Serial' %}</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-notify-tab" data-toggle="pill" href="#pills-notify" role="tab"
+                      aria-controls="pills-notify" aria-selected="false">{% trans 'Email' %}</a>
+                  </li>
+                  <li class="{% if data %}nav-item{% else %}active{% endif %}">
+                    <a class="nav-link" id="pills-settings-tab" data-toggle="pill" href="#pills-settings" role="tab"
+                      aria-controls="pills-settings" aria-selected="false">{% trans 'Password' %}</a>
+                  </li>
+
+                  {% comment %}
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-manifest-tab" data-toggle="pill" href="#pills-manifest" role="tab"
+                      aria-controls="pills-manifest" aria-selected="false">{% trans 'Manifest' %}</a>
+                  </li>
+                  {% endcomment %}
+                </ul>
+              </div>
+            </div>
+            {% endif %}
+            {% endif %}
+          </div>
+          <div class="col-sm-12">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="tab-content" id="pills-tabContent">
+                  {% if not request.user.is_superuser and not request.user|has_groups:"sat" %}
+                  <div class="tab-pane fade {% if data %}active in{% endif %}" id="pills-fiscal" role="tabpanel"
+                    aria-labelledby="pills-fiscal-tab">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        {% include 'profile/form_fiscaldata.html' %}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-notify" role="tabpanel" aria-labelledby="pills-notify-tab">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        {% include 'profile/form_email.html' %}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-csd" role="tabpanel" aria-labelledby="pills-csd-tab">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        {% include 'profile/form_csd.html' %}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-serie" role="tabpanel" aria-labelledby="pills-serie-tab">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        {% include 'profile/form_serie.html' %}
+                      </div>
+                    </div>
+                  </div>
+
+                  {% comment %}
+
+
+                  <div class="tab-pane fade" id="pills-manifest" role="tabpanel" aria-labelledby="pills-manifest-tab">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        {% include 'profile/form_manifest.html' %}
+                      </div>
+                    </div>
+                  </div>
+                  {% endcomment %}
+
+                  {% endif %}
+                  <div class="tab-pane fade {% if not data %}active in{% endif %}" id="pills-settings" role="tabpanel"
+                    aria-labelledby="pills-settings-tab">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        {% include 'profile/form_password.html' %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="img-hover" style="width: 200px;">
+              <img class="img-fluid img-radius img_logo" style="width: 200px; height:200px;"
+                src="{% if data %}{{ data.profile_logo}}{% else %}/static/img/logos/default_avatar_male.jpg{%endif%}"
+                alt="round-img">
+              <div class="img-overlay img-radius">
+                <span>
+                  {% if not request.user.is_superuser and not request.user|has_groups:"sat" %}
+                  {% if  data %}
+                  <button class="btn btn-primary btn_edit_logo" title="Cambiar logotipo"><i
+                      class="fa fa-edit"></i></button>
+                  {% endif %}
+                  {% endif %}
+                </span>
+              </div>
+            </div>
+            <div class="text-center" style="padding-top: 2rem">
+              {% if data %}
+              {% if data.name and data.name != 'None' %}
+              <h2 class="text-bold name">{{data.name}}</h2>
+              {% else %}
+              {% if request.user.is_superuser and request.user.is_active %}
+              <h2 class="text-bold name">{{request.user.username}}</h2>
+              {% else %}
+              <h2 class="text-bold name">{% trans 'Not established' %}</h2>
+              {% endif %}
+              {% endif %}
+              {% endif %}
+
+              <!-- <button type="button" class="btn btn-primary"><i class="fa fa-building"></i><span style="padding-left: 0.8rem">Agrega un negocio</span></button> -->
+            </div>
+            <div style="padding-top: 2rem">
+              {% include "profile/info.html" %}
+            </div>
+            <div class="text-right">
+              {% if not request.user.is_superuser and not request.user|has_groups:"sat" %}
+              <button type="button" class="btn btn-danger delete_account"><i class="fa fa-building"></i><span
+                  style="padding-left: 0.8rem">{% trans 'Disable my account.' %}</span></button>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include 'profile/modal/delete_account.html' %}
+{% include 'profile/modal/notification.html' %}
+{% include 'profile/modal/serie_editar.html' %}
+{% include 'profile/modal/password.html' %}
+
+{% endblock  %}
+
+{% block js %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+<script type="text/javascript">
+  var CSRF_TOKEN = '{{ csrf_token }}';
+  var PROFILE_OPTIONS = "{% url 'core:profile_options' %}";
+  var regime_fiscal = '{{data.fiscal_regime}}';
+  var user = '{{request.user.username}}';
+  var WIZARD_STUFFS_URL = "{% url  'wizard_stuff' %}";
+  var country = '{{data.address.country}}' !== '' ? '{{data.address.country}}' : 'N';
+  $('#tax_regime').val(regime_fiscal);
+  $('.country').val(country);
+
+  $('#schemeID').select2({
+    ajax: {
+      url: WIZARD_STUFFS_URL,
+      method: 'POST',
+      width: 'resolve',
+      dataType: 'json',
+      delay: 250,
+      data: params => {
+        return {
+          oper: 'get-SchemeID',
+          csrfmiddlewaretoken: getCookie('csrftoken'),
+          code: params.term
+        }
+      },
+      processResults: data => {
+        return {
+          results: $.map(data, (item, idx) => {
+            return {
+              text: `${item.code} - ${item.name}`,
+              id: item.code,
+            }
+          }),
+        }
+      },
+      cache: true
+    },
+    language: "es",
+    inputTooShort: left => {
+      return '{% trans 'Enter X more characters.' %}';
+    },
+    placeholder: "{% trans 'schemeID' %}",
+    minimumInputLength: 2,
+    allowClear: true,
+    width: 'resolve',
+    theme: "bootstrap"
+  });
+
+  var language = "{{ LANGUAGE_CODE }}";
+
+  // //cdn.datatables.net/plug-ins/1.10.21/i18n/English.json
+  ENGLISH_LANGUAGE = {
+    "sEmptyTable": "No data available in table",
+    "sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
+    "sInfoEmpty": "Showing 0 to 0 of 0 entries",
+    "sInfoFiltered": "(filtered from _MAX_ total entries)",
+    "sInfoPostFix": "",
+    "sInfoThousands": ",",
+    "sLengthMenu": "Show _MENU_ entries",
+    "sLoadingRecords": "Loading...",
+    "sProcessing": "Processing...",
+    "sSearch": "Search:",
+    "sZeroRecords": "No matching records found",
+    "oPaginate": {
+      "sFirst": "First",
+      "sLast": "Last",
+      "sNext": "Next",
+      "sPrevious": "Previous"
+    },
+    "oAria": {
+      "sSortAscending": ": activate to sort column ascending",
+      "sSortDescending": ": activate to sort column descending"
+    }
+  }
+
+  // //cdn.datatables.net/plug-ins/1.10.21/i18n/French.json
+  FRENCH_LANGUAGE = {
+    "sEmptyTable": "Aucune donnée disponible dans le tableau",
+    "sInfo": "Affichage de l'élément _START_ à _END_ sur _TOTAL_ éléments",
+    "sInfoEmpty": "Affichage de l'élément 0 à 0 sur 0 élément",
+    "sInfoFiltered": "(filtré à partir de _MAX_ éléments au total)",
+    "sInfoPostFix": "",
+    "sInfoThousands": ",",
+    "sLengthMenu": "Afficher _MENU_ éléments",
+    "sLoadingRecords": "Chargement...",
+    "sProcessing": "Traitement...",
+    "sSearch": "Rechercher :",
+    "sZeroRecords": "Aucun élément correspondant trouvé",
+    "oPaginate": {
+      "sFirst": "Premier",
+      "sLast": "Dernier",
+      "sNext": "Suivant",
+      "sPrevious": "Précédent"
+    },
+    "oAria": {
+      "sSortAscending": ": activer pour trier la colonne par ordre croissant",
+      "sSortDescending": ": activer pour trier la colonne par ordre décroissant"
+    },
+    "select": {
+      "rows": {
+        "_": "%d lignes sélectionnées",
+        "0": "Aucune ligne sélectionnée",
+        "1": "1 ligne sélectionnée"
+      }
+    }
+  }
+
+  switch (language) {
+    case 'es':
+      language_datatable = datatable_language;
+      break;
+    case 'en':
+      language_datatable = ENGLISH_LANGUAGE;
+      break;
+    case 'fr':
+      language_datatable = FRENCH_LANGUAGE;
+      break;
+  }
+</script>
+<script type="text/javascript" src="{% static 'DataTables/js/jquery.dataTables.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'DataTables/js/dataTables.bootstrap4.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'DataTables/js/dataTables.responsive.min.js' %}"></script>
+<script src="{% static 'js/profile/profile.js' %}"></script>
+<script src="{% static 'js/profile/utils.js' %}"></script>
+<script src="{% static 'js/profile/dt_email.js' %}"></script>
+<script src="{% static 'js/profile/dt_csd.js' %}"></script>
+<script src="{% static 'js/profile/dt_series.js' %}"></script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.13.4/jquery.mask.min.js"></script>
+{% endblock  %}

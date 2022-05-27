@@ -1,0 +1,22 @@
+{% load i18n %}
+{% if err_exception != "" %}
+<style>
+    .popover-title {
+        color: #0072B8;
+        font-size: 15px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .popover-content {
+        color: #DC3545;
+        font-size: 13px;
+        border-left: 4px solid #0072B8;
+    }
+</style>
+<button type="button" title="{% trans 'Show Exception' %}" class="btn btn-danger btn-xs se" data-toggle="popover"
+    data-placement="bottom" data-content="{{ err_exception }}"><i class="glyphicon glyphicon-remove"></i></button>
+<script>
+    $('[data-toggle="popover"]').popover({});
+</script>
+{% endif %}

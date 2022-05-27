@@ -1,0 +1,75 @@
+<style type="text/css">
+    #sign-manifest{
+        margin-top: 25px;
+    }
+
+</style>
+{% load i18n %}
+<form action="#" id="add-cer-form" role="form" method="POST" accept-charset="utf-8" data-toggle="validator">
+    {% csrf_token %}
+    
+    <div id="sign_manifest_form" style="display: block;">
+        
+
+    {% if not sign_manifest %}
+        
+        
+        <div class="[ form-group ]">
+            <input type="checkbox" name="checkbox-manifest" id="checkbox-manifest" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="checkbox-manifest" class="[ btn btn-default ]">
+                    <span class="[ glyphicon glyphicon-ok ]"></span>
+                    <span> </span>
+                </label>
+                <label for="checkbox-manifest" class="[ btn btn-default active ]" style="background-color: #195f9c; color: #FFF;">
+                    {% trans 'Accept agreement' %}
+                </label>
+            </div>
+        </div>
+        <small id="checkbox-manifest-help" class=""></small>
+        
+        <div class="alert alert-info" id="message_alert">
+            <strong>{% trans 'Important!' %}</strong> {% trans 'Please, upload your private and public certificate to signing the manifest, or if you prefer you could sign the manifest later.' %}
+        </div>
+        
+
+        <div class="row">
+            <div class="form-group col-sm-6 col-md-6">
+                <label for="input-b3">{% trans 'Private certificate' %}:</label>
+                <input id="input-b3" name="input-b3" type="file" class="form-control file" data-show-preview="false" data-show-upload="false" data-validate="true" data-key data-allowed-file-extensions='["key"]'>
+                <span id="key-help" class="help-block with-errors"></span>
+            </div>
+            <div class="form-group col-sm-6 col-md-6">
+                <label for="input-b4">{% trans 'Public certificate' %}</label>
+                <input id="input-b4" name="input-b4" type="file" class="form-control  file" data-show-preview="false" data-show-upload="false" data-validate="true" data-cer data-allowed-file-extensions='["cer"]'>
+                <span class="help-block with-errors"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-6 col-md-6">
+                <label for="password-key">{% trans 'Private key password' %}:</label>
+                <input type="password" class="form-control" id="password-key" name="password"  autocomplete="off"  placeholder="{% trans 'Private key password' %}" data-pwd>
+                <span id="password-help-block" class="help-block with-errors"></span>
+            </div>
+
+            <div class="form-group col-sm-6 col-sm-6">
+                <button class="btn btn-primary form-control" id="sign-manifest">{% trans 'Sign' %}&nbsp;<i class="fa fa-edit"></i></button>
+            </div>
+        </div>
+    {% endif %}
+    </div>
+
+    {% if sign_manifest %}
+    <div id="signed_manifest">
+        <div class="alert alert-success" style="float: inline-end; display: inline-block;">
+            <strong>{% trans 'Important!' %}</strong> {% trans 'You already signed the manifest, you could download it clicking the button below.' %}
+            <input type="hidden" name="show_contract" id="show_contract_hidden" value="{{ show_pdf }}">
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-12 col-md-12">
+                <button id="download_contracts" value="{{ business_id }}" class="btn btn-primary form-control">{% trans 'Download' %}&nbsp;&nbsp;<i class="fa fa-download"></i></button>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</form>

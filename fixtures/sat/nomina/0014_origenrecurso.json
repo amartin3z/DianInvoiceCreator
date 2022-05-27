@@ -1,0 +1,1 @@
+[{"model": "sat.origenrecurso", "pk": 1, "fields": {"clave": "IP", "descripcion": "Ingresos propios."}}, {"model": "sat.origenrecurso", "pk": 2, "fields": {"clave": "IF", "descripcion": "Ingreso federales."}}, {"model": "sat.origenrecurso", "pk": 3, "fields": {"clave": "IM", "descripcion": "Ingresos mixtos."}}]

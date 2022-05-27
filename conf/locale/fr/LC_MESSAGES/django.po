@@ -1,0 +1,3140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-17 14:22-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+
+#: app/core/catalogs.py:390 templates/base.html:301
+msgid "Create invoice"
+msgstr "Créer une facture"
+
+#: app/core/catalogs.py:391
+#: app/invoicing/templates/invoicing/new-invoice.html:5
+msgid "Manual billing"
+msgstr "Facturation manuelle"
+
+#: app/core/catalogs.py:395 app/core/templates/core/logs.html:108
+#: app/users/templates/users/users.html:109 templates/base.html:356
+msgid "Users"
+msgstr "Usagers"
+
+#: app/core/catalogs.py:398
+msgid "Other"
+msgstr "Autres"
+
+#: app/core/templates/business/templates_string/csd.html:4
+#: app/core/templates/profile/strings/csd_additional.html:4
+#: app/core/templates/profile/strings/status_series.html:3
+#: app/invoicing/templates/invoicing/modal/close-new-invoice.html:26
+msgid "Yes"
+msgstr "Oui"
+
+#: app/core/templates/business/templates_string/csd.html:6
+#: app/core/templates/profile/strings/csd_additional.html:6
+#: app/core/templates/profile/strings/status_series.html:5
+#: app/invoicing/templates/invoicing/modal/close-new-invoice.html:27
+msgid "No"
+msgstr "Non"
+
+#: app/core/templates/business/templates_string/csd.html:10
+#: app/users/templates/users/template_strings/users_status.html:3
+#: app/users/templates/users/users.html:96 app/users/views.py:532
+msgid "Active"
+msgstr "Actif"
+
+#: app/core/templates/business/templates_string/csd.html:12
+#, fuzzy
+#| msgid "Suspend"
+msgid "Suspended"
+msgstr "Suspendu"
+
+#: app/core/templates/business/templates_string/csd.html:14
+msgid "Revoked"
+msgstr ""
+
+#: app/core/templates/core/home.html:3
+#: app/users/templates/django_registration/password_change_done.html:6
+#: app/users/templates/django_registration/password_change_form.html:7
+#: app/users/templates/django_registration/password_reset_complete.html:6
+#: app/users/templates/django_registration/password_reset_done.html:6
+#: app/users/templates/django_registration/password_reset_form.html:6
+#: app/users/templates/registration/password_change_done.html:6
+#: app/users/templates/registration/password_change_form.html:7
+#: app/users/templates/registration/password_reset_complete.html:6
+#: app/users/templates/registration/password_reset_done.html:6
+#: app/users/templates/registration/password_reset_form.html:6
+#: app/users/templates/users/password_reset/reset_admin.html:7
+#: templates/home_sat.html:3
+msgid "Home"
+msgstr "Accueil"
+
+#: app/core/templates/core/home.html:59
+#: app/core/templates/core/invoices_sat.html:79 templates/base.html:394
+msgid "Reports"
+msgstr "Rapports"
+
+#: app/core/templates/core/invoices_sat.html:4
+#: app/core/templates/core/invoices_sat.html:29
+#: app/core/templates/core/invoices_sat.html:96
+#: app/invoicing/templates/invoicing/invoices.html:7
+#: app/invoicing/templates/invoicing/invoices.html:109 templates/base.html:309
+#: templates/base.html:375 templates/base_sat.html:102 templates/home.html:61
+#: templates/home.html:146
+msgid "Invoices"
+msgstr "Factures"
+
+#: app/core/templates/core/invoices_sat.html:32
+#: app/core/templates/core/invoices_sat.html:88
+#: app/core/templates/core/logs.html:61 app/core/templates/core/logs.html:132
+#: app/invoicing/templates/invoicing/invoices.html:40
+#: app/invoicing/templates/invoicing/invoices.html:101
+#: app/invoicing/templates/invoicing/prodservs.html:38
+#: app/invoicing/templates/invoicing/prodservs.html:72
+#: app/invoicing/templates/invoicing/receivers.html:44
+#: app/support/templates/list_tickets.html:86
+#: app/support/templates/list_tickets.html:138
+#: app/users/templates/users/users.html:59
+msgid "Filters"
+msgstr "Filtres"
+
+#: app/core/templates/core/invoices_sat.html:36
+#: app/core/templates/core/invoices_sat.html:37
+#: app/core/templates/core/invoices_sat.html:110
+msgid "UUID"
+msgstr "UUID"
+
+#: app/core/templates/core/invoices_sat.html:40
+#: app/core/templates/core/invoices_sat.html:41
+#: app/core/templates/profile/form_fiscaldata.html:5
+#: app/core/templates/profile/form_fiscaldata.html:8
+msgid "Taxpayer id"
+msgstr "Id contribuable"
+
+#: app/core/templates/core/invoices_sat.html:44
+#: app/core/templates/core/invoices_sat.html:111
+msgid "Type"
+msgstr "Type"
+
+#: app/core/templates/core/invoices_sat.html:46
+#: app/core/templates/core/logs.html:92 app/core/templates/core/logs.html:102
+#: app/support/templates/list_tickets.html:106
+#: app/support/templates/list_tickets.html:119
+#: app/support/templates/list_tickets.html:130
+#: app/users/templates/users/users.html:77
+#: app/users/templates/users/users.html:95
+msgid "All"
+msgstr "Tout"
+
+#: app/core/templates/core/invoices_sat.html:47 app/core/views.py:97
+msgid "Income"
+msgstr "Revenu"
+
+#: app/core/templates/core/invoices_sat.html:48 app/core/views.py:98
+msgid "Expenses"
+msgstr "Dépenses"
+
+#: app/core/templates/core/invoices_sat.html:49 app/core/views.py:99
+msgid "Payments"
+msgstr "Paiements"
+
+#: app/core/templates/core/invoices_sat.html:65
+#: app/core/templates/core/invoices_sat.html:67
+msgid "From"
+msgstr "De"
+
+#: app/core/templates/core/invoices_sat.html:72
+#: app/core/templates/core/invoices_sat.html:74
+msgid "To"
+msgstr "Vers"
+
+#: app/core/templates/core/invoices_sat.html:82
+#: app/core/templates/profile/form_fiscaldata.html:141
+msgid "Choose"
+msgstr "Choisir"
+
+#: app/core/templates/core/invoices_sat.html:83
+msgid "CSV file"
+msgstr "CSVfile"
+
+#: app/core/templates/core/invoices_sat.html:89
+msgid "Reset"
+msgstr "Reset"
+
+#: app/core/templates/core/invoices_sat.html:107
+msgid "Issuer taxpayer id"
+msgstr "ID du contribuable émetteur"
+
+#: app/core/templates/core/invoices_sat.html:108
+msgid "Recipient taxpayer id"
+msgstr "ID du contribuable receveur"
+
+#: app/core/templates/core/invoices_sat.html:109
+msgid "Name taxpayer id"
+msgstr "ID nom du contribuable"
+
+#: app/core/templates/core/invoices_sat.html:112
+#: app/invoicing/templates/invoicing/invoice/header.html:14
+#: app/invoicing/templates/invoicing/invoice/invoice-totales.html:72
+msgid "Total"
+msgstr "Total"
+
+#: app/core/templates/core/invoices_sat.html:113
+#: app/core/templates/profile/form_csd.html:51
+msgid "Emission date"
+msgstr "Date d'émission"
+
+#: app/core/templates/core/invoices_sat.html:114
+#: app/core/templates/core/logs.html:156
+#: app/invoicing/templates/invoicing/invoices.html:137
+#: app/invoicing/templates/invoicing/prodservs.html:100
+#: app/invoicing/templates/invoicing/receivers.html:95
+#: app/support/templates/list_tickets.html:170
+#: app/users/templates/users/users.html:125
+msgid "Options"
+msgstr "Les options"
+
+#: app/core/templates/core/logs.html:3 app/core/templates/core/logs.html:56
+#: app/core/templates/core/logs.html:109 templates/base.html:362
+msgid "Logs"
+msgstr "Logs"
+
+#: app/core/templates/core/logs.html:67
+#: app/users/templates/users/modal/add_user.html:58
+#: app/users/templates/users/users.html:78
+msgid "Admin"
+msgstr "Admin"
+
+#: app/core/templates/core/logs.html:77
+msgid "Exceptions"
+msgstr "Exceptions"
+
+#: app/core/templates/core/logs.html:86 app/core/templates/core/logs.html:87
+#: app/core/templates/core/logs.html:151
+#: app/users/templates/users/login.html:39
+#: app/users/templates/users/modal/add_user.html:31
+msgid "User"
+msgstr "Usager"
+
+#: app/core/templates/core/logs.html:90 app/core/templates/core/logs.html:152
+#: app/core/templates/profile/form_email.html:35
+#: app/core/templates/profile/form_serie.html:39
+msgid "Action"
+msgstr "Action"
+
+#: app/core/templates/core/logs.html:93
+#: app/invoicing/templates/invoicing/invoices.html:118
+#: app/support/templates/modals/add_ticket.html:91
+msgid "Create"
+msgstr "Créer"
+
+#: app/core/templates/core/logs.html:94
+msgid "Read"
+msgstr "Lire"
+
+#: app/core/templates/core/logs.html:95
+#: app/core/templates/profile/form_password.html:29
+#: app/users/templates/users/modal/edit_user.html:100
+msgid "Update"
+msgstr "Actualiser"
+
+#: app/core/templates/core/logs.html:96
+#: app/core/templates/profile/strings/action.html:3
+msgid "Delete"
+msgstr "Effacer"
+
+#: app/core/templates/core/logs.html:100 app/core/templates/core/logs.html:153
+msgid "Module"
+msgstr "Module"
+
+#: app/core/templates/core/logs.html:103
+msgid "Emission"
+msgstr "Émission"
+
+#: app/core/templates/core/logs.html:104
+msgid "Invoicing"
+msgstr "Facturation"
+
+#: app/core/templates/core/logs.html:105
+#: app/core/templates/core/strings/opciones.html:3
+#: app/core/templates/wizard/form_csd.html:70
+msgid "Download"
+msgstr "Téléchargement"
+
+#: app/core/templates/core/logs.html:106
+msgid "Providers"
+msgstr "Fournisseurs"
+
+#: app/core/templates/core/logs.html:107
+msgid "Cancellation"
+msgstr "Annulation"
+
+#: app/core/templates/core/logs.html:110
+#: app/invoicing/templates/invoicing/receivers.html:4
+#: app/invoicing/templates/invoicing/receivers.html:37
+#: app/invoicing/templates/invoicing/receivers.html:75 templates/base.html:315
+#: templates/home.html:66 templates/home.html:169
+msgid "Business"
+msgstr "Entreprises"
+
+#: app/core/templates/core/logs.html:114 app/core/templates/core/logs.html:116
+#, fuzzy
+#| msgid "Creation Date (From)"
+msgid "Date (From)"
+msgstr "Date de création (de)"
+
+#: app/core/templates/core/logs.html:123 app/core/templates/core/logs.html:125
+#, fuzzy
+#| msgid "Creation Date (To)"
+msgid "Date (To)"
+msgstr "Date de création (vers)"
+
+#: app/core/templates/core/logs.html:133
+msgid "reset fields"
+msgstr "champs de réinitialisation"
+
+#: app/core/templates/core/logs.html:133
+#: app/invoicing/templates/invoicing/invoices.html:102
+#: app/invoicing/templates/invoicing/prodservs.html:73
+#: app/invoicing/templates/invoicing/receivers.html:68
+#: app/support/templates/list_tickets.html:139
+#: app/support/templates/list_tickets.html:140
+#: app/users/templates/users/users.html:102
+msgid "Clean"
+msgstr "Net"
+
+#: app/core/templates/core/logs.html:145
+msgid "Actions"
+msgstr "Actions"
+
+#: app/core/templates/core/logs.html:154
+msgid "Information"
+msgstr "Information"
+
+#: app/core/templates/core/logs.html:155
+msgid "Date"
+msgstr "Date"
+
+#: app/core/templates/core/modal/modal_close_session.html:8
+#: app/core/templates/wizard/form_csd.html:32
+#: app/core/templates/wizard/form_csd.html:65
+msgid "Important!"
+msgstr "Important!"
+
+#: app/core/templates/core/modal/modal_close_session.html:11
+msgid "For security reasons after a period of inactivity of "
+msgstr "Pour des raisons de sécurité, après une période d'inactivité de "
+
+#: app/core/templates/core/modal/modal_close_session.html:11
+msgid "5 minutes"
+msgstr "5 minutes"
+
+#: app/core/templates/core/modal/modal_close_session.html:11
+msgid "the current session has been closed."
+msgstr "la session actuelle a été fermée."
+
+#: app/core/templates/core/modal/modal_close_session.html:14
+#: app/users/templates/django_registration/password_reset_complete.html:18
+#: app/users/templates/django_registration/registration_form.html:9
+#: app/users/templates/django_registration/registration_form.html:61
+#: app/users/templates/registration/password_reset_complete.html:18
+#: app/users/templates/users/login.html:59 templates/registration/login.html:10
+msgid "Log in"
+msgstr "Se connecter"
+
+#: app/core/templates/core/modal/show_err_exception_modal.html:22
+msgid "Show exceptions"
+msgstr "Afficher les exceptions"
+
+#: app/core/templates/core/modal/show_err_exception_modal.html:33
+msgid "close"
+msgstr "Fermer"
+
+#: app/core/templates/core/strings/log_options.html:17
+#, fuzzy
+#| msgid "Show Exceptions"
+msgid "Show Exception"
+msgstr "Afficher les exceptions"
+
+#: app/core/templates/profile/form_csd.html:3
+msgid "Certificate management"
+msgstr "Gestion de certificats"
+
+#: app/core/templates/profile/form_csd.html:4
+msgid "At this section you are able to management your certificates."
+msgstr "Dans cette section, vous pouvez gérer vos certificats."
+
+#: app/core/templates/profile/form_csd.html:9
+#: app/core/templates/profile/form_csd.html:13
+msgid "Upload private certificate"
+msgstr "Charger un certificat privé"
+
+#: app/core/templates/profile/form_csd.html:12
+#: app/core/templates/profile/form_csd.html:22
+#: app/core/templates/profile/form_email.html:25
+#: app/core/templates/profile/form_serie.html:28
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:289
+#: app/invoicing/templates/invoicing/modal/prodserv.html:154
+#: app/invoicing/templates/invoicing/prodservs.html:89
+#: app/invoicing/templates/invoicing/receivers.html:85
+#: app/users/templates/users/modal/add_user.html:133
+msgid "Add"
+msgstr "Ajouter"
+
+#: app/core/templates/profile/form_csd.html:14
+msgid "remove"
+msgstr "Quitter"
+
+#: app/core/templates/profile/form_csd.html:19
+#: app/core/templates/profile/form_csd.html:23
+msgid "Upload public certificate"
+msgstr "Charger un certificat public"
+
+#: app/core/templates/profile/form_csd.html:24
+#: app/core/templates/profile/form_csd.html:34
+#: app/core/templates/profile/form_email.html:14
+#: app/support/templates/modals/add_ticket.html:77
+#: app/support/templates/modals/update_ticket.html:41
+msgid "Remove"
+msgstr "Quitter"
+
+#: app/core/templates/profile/form_csd.html:29
+#: app/core/templates/profile/form_csd.html:33
+#: app/core/templates/wizard/form_csd.html:50
+#: app/core/templates/wizard/form_csd.html:51
+msgid "Private key password"
+msgstr "Mot de passe de la clé privée"
+
+#: app/core/templates/profile/form_csd.html:40
+msgid "Add New"
+msgstr "Ajouter du nouveau"
+
+#: app/core/templates/profile/form_csd.html:41
+#: app/core/templates/profile/form_fiscaldata.html:283
+#: app/core/templates/profile/form_password.html:30
+#: app/core/templates/profile/form_serie.html:29
+#: app/core/templates/profile/modal/notification.html:16
+msgid "Save"
+msgstr "Sauvegarder"
+
+#: app/core/templates/profile/form_csd.html:42
+#: app/core/templates/profile/form_fiscaldata.html:284
+#: app/core/templates/profile/form_password.html:31
+#: app/core/templates/profile/form_serie.html:30
+#: app/core/templates/profile/modal/delete_account.html:59
+#: app/core/templates/profile/modal/notification.html:15
+#: app/core/templates/profile/modal/serie_editar.html:15
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:114
+#: app/invoicing/templates/invoicing/modal/prodserv.html:156
+#: app/invoicing/templates/invoicing/modal/send_email.html:72
+msgid "Cancel"
+msgstr "Annuler"
+
+#: app/core/templates/profile/form_csd.html:49
+#: app/support/templates/list_tickets.html:103
+#: app/support/templates/list_tickets.html:164
+#: app/users/templates/users/users.html:93
+#: app/users/templates/users/users.html:120
+msgid "Status"
+msgstr "Statut"
+
+#: app/core/templates/profile/form_csd.html:50
+#: app/core/templates/profile/form_serie.html:9
+#: app/core/templates/profile/form_serie.html:36
+msgid "Serie"
+msgstr "Série"
+
+#: app/core/templates/profile/form_csd.html:52
+msgid "Expiration date"
+msgstr "Date d'expiration"
+
+#: app/core/templates/profile/form_csd.html:53
+#: app/core/templates/profile/form_serie.html:38
+#: app/core/templates/profile/strings/action_serie.html:5
+msgid "Default"
+msgstr "Défaut"
+
+#: app/core/templates/profile/form_email.html:10
+msgid "New Email"
+msgstr "Nouveau courriel"
+
+#: app/core/templates/profile/form_email.html:29
+msgid "Mailing list"
+msgstr "Liste d'adresses"
+
+#: app/core/templates/profile/form_email.html:30
+msgid ""
+"At this section you are able to add, edit or delete your email addresses."
+msgstr ""
+"Dans cette section, vous pouvez ajouter, modifier ou supprimer vos adresses "
+"électroniques."
+
+#: app/core/templates/profile/form_email.html:34
+#: app/core/templates/profile/form_fiscaldata.html:105
+#: app/core/templates/profile/form_fiscaldata.html:108
+#: app/core/templates/profile/info.html:6
+#: app/core/templates/profile/modal/delete_account.html:32
+#: app/core/templates/profile/modal/delete_account.html:33
+#: app/core/templates/profile/profile.html:66
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:96
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:78
+#: app/invoicing/templates/invoicing/modal/show-receiver-details.html:79
+#: app/invoicing/templates/invoicing/receivers.html:56
+#: app/invoicing/templates/invoicing/receivers.html:57
+#: app/invoicing/templates/invoicing/receivers.html:94
+#: app/users/management/commands/create_sellers.py:29
+#: app/users/templates/django_registration/registration_form.html:38
+msgid "Email"
+msgstr "Courriel"
+
+#: app/core/templates/profile/form_fiscaldata.html:14
+#: app/core/templates/profile/modal/delete_account.html:24
+#: app/core/templates/profile/modal/delete_account.html:25
+#: app/core/templates/wizard/form_account.html:39
+#: app/core/templates/wizard/form_account.html:42
+#: app/invoicing/templates/invoicing/invoice/header.html:10
+#: app/invoicing/templates/invoicing/modal/prodserv.html:51
+#: app/invoicing/templates/invoicing/receivers.html:53
+#: app/users/templates/users/modal/add_user.html:40
+#: app/users/templates/users/modal/add_user.html:41
+#: app/users/templates/users/modal/edit_user.html:34
+#: app/users/templates/users/users.html:71
+#: app/users/templates/users/users.html:72
+#: app/users/templates/users/users.html:122
+msgid "Name"
+msgstr "Nom"
+
+#: app/core/templates/profile/form_fiscaldata.html:74
+#, fuzzy
+#| msgid "Schema ID:"
+msgid "SchemeID"
+msgstr "ID du régime"
+
+#: app/core/templates/profile/form_fiscaldata.html:77
+#, fuzzy
+#| msgid "Choose your zip code"
+msgid "Choose your schemeID"
+msgstr "Choisissez votre code postal"
+
+#: app/core/templates/profile/form_fiscaldata.html:87
+#: app/core/templates/profile/form_fiscaldata.html:90
+#: app/core/templates/wizard/form_account.html:155
+#: app/core/templates/wizard/form_account.html:158
+msgid "Organization ID"
+msgstr "ID de l'organisation"
+
+#: app/core/templates/profile/form_fiscaldata.html:96
+#: app/core/templates/profile/form_fiscaldata.html:99
+msgid "Seller electronic address"
+msgstr "Adresse électronique du vendeur"
+
+#: app/core/templates/profile/form_fiscaldata.html:128
+#: app/core/templates/profile/form_fiscaldata.html:131
+#: app/core/templates/profile/modal/delete_account.html:28
+#: app/core/templates/profile/modal/delete_account.html:29
+msgid "Phone"
+msgstr "Téléphone"
+
+#: app/core/templates/profile/form_fiscaldata.html:137
+#: app/core/templates/wizard/form_account.html:111
+#: app/invoicing/forms/invoice.py:189
+msgid "Country"
+msgstr "Pays"
+
+#: app/core/templates/profile/form_fiscaldata.html:168
+#: app/core/templates/profile/form_fiscaldata.html:171
+msgid "Country Sub entity"
+msgstr "Sous-entité de pays"
+
+#: app/core/templates/profile/form_fiscaldata.html:177
+#: app/core/templates/profile/form_fiscaldata.html:180
+#: app/core/templates/wizard/form_account.html:133
+#: app/core/templates/wizard/form_account.html:136
+msgid "City"
+msgstr "Ville"
+
+#: app/core/templates/profile/form_fiscaldata.html:186
+#: templates/base_wizard.html:237
+msgid "Zip Code"
+msgstr "Code postal"
+
+#: app/core/templates/profile/form_fiscaldata.html:189
+msgid "Zip code"
+msgstr "Code Zip"
+
+#: app/core/templates/profile/form_fiscaldata.html:229
+#: app/core/templates/wizard/form_account.html:146
+#: app/core/templates/wizard/form_account.html:149
+msgid "Street"
+msgstr "Nom de rue"
+
+#: app/core/templates/profile/form_fiscaldata.html:232
+msgid "Street name"
+msgstr "Nom de rue"
+
+#: app/core/templates/profile/form_fiscaldata.html:262
+#: app/core/templates/profile/form_fiscaldata.html:265
+msgid "External number"
+msgstr "Numéro externe"
+
+#: app/core/templates/profile/form_fiscaldata.html:270
+#: app/core/templates/profile/form_fiscaldata.html:273
+msgid "Internal Number"
+msgstr "Numéro interne"
+
+#: app/core/templates/profile/form_fiscaldata.html:282
+#: app/core/templates/profile/strings/action.html:2
+#: app/core/templates/profile/strings/action_serie.html:3
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:113
+#: app/invoicing/templates/invoicing/modal/prodserv.html:155
+msgid "Edit"
+msgstr "Éditer"
+
+#: app/core/templates/profile/form_manifest.html:4
+msgid "Manifest"
+msgstr "Manifeste"
+
+#: app/core/templates/profile/form_manifest.html:5
+msgid "At this section you be able to download the signed manifest."
+msgstr "Dans cette section, vous pouvez télécharger le document signé."
+
+#: app/core/templates/profile/form_manifest.html:12
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:5
+msgid "Download XML file"
+msgstr "Télécharger le XML"
+
+#: app/core/templates/profile/form_manifest.html:17
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:6
+msgid "Download PDF file"
+msgstr "Télécharger le PDF"
+
+#: app/core/templates/profile/form_manifest.html:22
+msgid "Download ZIP file"
+msgstr "Télécharger le ZIP"
+
+#: app/core/templates/profile/form_password.html:6
+#: app/core/templates/profile/form_password.html:9
+msgid "Current password"
+msgstr "Mot de passe actuel"
+
+#: app/core/templates/profile/form_password.html:14
+#: app/core/templates/profile/form_password.html:17
+#: app/users/templates/django_registration/password_change_form.html:37
+#: app/users/templates/registration/password_change_form.html:37
+msgid "New password"
+msgstr "Nouveau mot de passe "
+
+#: app/core/templates/profile/form_password.html:22
+#: app/core/templates/profile/form_password.html:25
+msgid "Confirm password"
+msgstr "Confirmer le mot de passe"
+
+#: app/core/templates/profile/form_password.html:35
+msgid "Your password must have"
+msgstr "Votre mot de passe doit avoir"
+
+#: app/core/templates/profile/form_password.html:38
+msgid "Required"
+msgstr "Requis"
+
+#: app/core/templates/profile/form_password.html:39
+msgid "Your password must have a number."
+msgstr "Votre mot de passe doit comporter un numéro."
+
+#: app/core/templates/profile/form_password.html:40
+msgid "Your password must have at least 8 characters."
+msgstr "Votre mot de passe doit comporter au moins 8 caractères."
+
+#: app/core/templates/profile/form_password.html:41
+msgid "Your password must have a uppercase letter."
+msgstr "Votre mot de passe doit comporter au moins une majuscule"
+
+#: app/core/templates/profile/form_password.html:42
+msgid "Your password must have a special character."
+msgstr "Votre mot de passe doit comporter un caractere special"
+
+#: app/core/templates/profile/form_password.html:45
+msgid "Your password must have a lowercase letter."
+msgstr "Votre mot de passe doit comporter au moins une minuscule"
+
+#: app/core/templates/profile/form_password.html:46
+msgid "Your password must not have contain any space."
+msgstr "Votre mot de passe ne doit pas comporter un espace vide."
+
+#: app/core/templates/profile/form_password.html:47
+msgid "Your password must be different than previous one."
+msgstr "Votre mot de passe doit être différent du précédent."
+
+#: app/core/templates/profile/form_serie.html:4
+msgid "Serie and Folio Management"
+msgstr "Gestion des séries et des folios"
+
+#: app/core/templates/profile/form_serie.html:5
+msgid "At this section you are able to management your series and folios."
+msgstr "Dans cette section, vous pouvez gérer vos séries et folios"
+
+#: app/core/templates/profile/form_serie.html:13
+msgid "Set the serie"
+msgstr ""
+
+#: app/core/templates/profile/form_serie.html:18
+#: app/core/templates/profile/form_serie.html:37
+msgid "Folio"
+msgstr "Folio"
+
+#: app/core/templates/profile/form_serie.html:22
+msgid "Set the folio"
+msgstr ""
+
+#: app/core/templates/profile/info.html:5 templates/base.html:387
+#: templates/base_sat.html:111
+msgid "Profile"
+msgstr "Profil"
+
+#: app/core/templates/profile/info.html:10
+#: app/core/templates/profile/info.html:17
+#: app/core/templates/profile/info.html:24
+msgid "Not registered"
+msgstr "Non enregistré"
+
+#: app/core/templates/profile/info.html:13
+msgid "Joined date"
+msgstr "Date d'adhésion"
+
+#: app/core/templates/profile/info.html:20
+msgid "Last login"
+msgstr "Dernière connexion"
+
+#: app/core/templates/profile/modal/delete_account.html:6
+msgid "Disable my account"
+msgstr "Désactiver mon compte"
+
+#: app/core/templates/profile/modal/delete_account.html:7
+msgid "Confirms disable process"
+msgstr "Confirme le processus de désactivation"
+
+#: app/core/templates/profile/modal/delete_account.html:12
+msgid "Before disable your account"
+msgstr "Avant de désactiver votre compte"
+
+#: app/core/templates/profile/modal/delete_account.html:12
+msgid "keep in mind:"
+msgstr "Garder à l'esprit:"
+
+#: app/core/templates/profile/modal/delete_account.html:14
+msgid "Your account will remain disabled until you enable it again."
+msgstr ""
+"Votre compte restera désactivé jusqu'à ce que vous l'activiez à nouveau."
+
+#: app/core/templates/profile/modal/delete_account.html:15
+#, python-format
+msgid "Your information will be 100%%%% safe."
+msgstr "Vos informations seront sécurisées à 100 %%%%."
+
+#: app/core/templates/profile/modal/delete_account.html:16
+msgid "Your won''t be able to access to platform."
+msgstr "Vous ne pourrez pas accéder à la plate-forme."
+
+#: app/core/templates/profile/modal/delete_account.html:20
+#, fuzzy
+msgid "Contact information."
+msgstr "Information"
+
+#: app/core/templates/profile/modal/delete_account.html:21
+msgid "These information will be used to contact you and confirm de process."
+msgstr ""
+"Ces informations seront utilisées pour vous contacter et confirmer le "
+"processus."
+
+#: app/core/templates/profile/modal/delete_account.html:40
+msgid "Reason to disable your account"
+msgstr "Raison de la désactivation de votre compte"
+
+#: app/core/templates/profile/modal/delete_account.html:60
+#: app/core/templates/profile/modal/password.html:15
+#: app/core/templates/profile/modal/serie_editar.html:16
+#: app/core/templates/wizard/agreement.html:21
+#: app/core/templates/wizard/agreement.html:44
+msgid "Accept"
+msgstr "Accepter"
+
+#: app/core/templates/profile/modal/password.html:9
+msgid "Your password was update!"
+msgstr "Votre mot de passe est actualisé"
+
+#: app/core/templates/profile/modal/password.html:10
+msgid "Please, Sign in again to complete the process"
+msgstr "Veuillez vous connecter à nouveau pour terminer la procédure"
+
+#: app/core/templates/profile/modal/password.html:11
+msgid "This action will close session in all devices."
+msgstr "Cette action clôturera la session dans tous les appareils."
+
+#: app/core/templates/profile/profile.html:52
+msgid "Fiscal Data"
+msgstr "Données fiscales"
+
+#: app/core/templates/profile/profile.html:57
+#: app/core/templates/profile/profile.html:58
+msgid "Certificates"
+msgstr "Certificats."
+
+#: app/core/templates/profile/profile.html:62
+msgid "Serial"
+msgstr "Sériel"
+
+#: app/core/templates/profile/profile.html:70
+#: app/users/templates/django_registration/registration_form.html:42
+#: app/users/templates/registration/registration_user.html:102
+#: app/users/templates/users/login.html:43
+msgid "Password"
+msgstr "Mot de passe "
+
+#: app/core/templates/profile/profile.html:175
+msgid "Not established"
+msgstr "Pas établi"
+
+#: app/core/templates/profile/profile.html:188
+msgid "Disable my account."
+msgstr "Désactiver mon compte"
+
+#: app/core/templates/profile/profile.html:245 templates/base_wizard.html:235
+#: templates/base_wizard.html:381
+msgid "Enter X more characters."
+msgstr "Entrez X caractères supplémentaires."
+
+#: app/core/templates/profile/profile.html:247 templates/base_wizard.html:383
+#, fuzzy
+#| msgid "TaxScheme: ID"
+msgid "schemeID"
+msgstr "ID TaxScheme"
+
+#: app/core/templates/profile/strings/action_serie.html:6
+msgid "Deactivate"
+msgstr ""
+
+#: app/core/templates/profile/strings/action_serie.html:9
+msgid "Activate"
+msgstr "Activer"
+
+#: app/core/templates/profile/strings/csd_additional.html:10
+msgid "Activated"
+msgstr "Activé"
+
+#: app/core/templates/profile/strings/csd_additional.html:12
+msgid "Deactivated"
+msgstr "Désactivé"
+
+#: app/core/templates/profile/strings/csd_additional.html:14
+msgid "Cancelled"
+msgstr "Supprimé"
+
+#: app/core/templates/wizard/agreement.html:7
+msgid "Service contract"
+msgstr "Contrat de service"
+
+#: app/core/templates/wizard/agreement.html:30
+#: app/core/templates/wizard/wizard.html:41
+#: app/core/templates/wizard/wizard.html:179
+msgid "Privacy policy"
+msgstr "Politique de confidentialité"
+
+#: app/core/templates/wizard/form_account.html:5
+msgid "Identification Scheme"
+msgstr "ID du régime d'identification"
+
+#: app/core/templates/wizard/form_account.html:16
+#: app/core/templates/wizard/form_account.html:49
+#: app/core/templates/wizard/form_account.html:52
+#: app/invoicing/forms/invoice.py:163
+#: app/invoicing/templates/invoicing/invoice/header.html:13
+#: app/invoicing/templates/invoicing/invoices.html:125
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:25
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:48
+#: app/invoicing/templates/invoicing/modal/invoice-success.html:17
+#: app/invoicing/templates/invoicing/modal/show-receiver-details.html:14
+#: app/invoicing/templates/invoicing/receivers.html:48
+#: app/invoicing/templates/invoicing/receivers.html:49
+#: app/invoicing/templates/invoicing/receivers.html:92
+#: app/users/templates/registration/registration_user.html:49
+#: app/users/templates/users/modal/add_user.html:89
+#: app/users/templates/users/modal/add_user.html:90
+#: app/users/templates/users/users.html:63
+#: app/users/templates/users/users.html:64
+#: app/users/templates/users/users.html:123
+msgid "Tax Identifier Number"
+msgstr "Numéro d'identification fiscale"
+
+#: app/core/templates/wizard/form_account.html:90
+#: app/core/templates/wizard/form_account.html:93
+msgid "zip code"
+msgstr "Code postal"
+
+#: app/core/templates/wizard/form_account.html:114
+msgid "Choose your Country"
+msgstr "Choisir le pays"
+
+#: app/core/templates/wizard/form_csd.html:25
+msgid "Accept agreement"
+msgstr "Accepter l'accord"
+
+#: app/core/templates/wizard/form_csd.html:32
+msgid ""
+"Please, upload your private and public certificate to signing the manifest, "
+"or if you prefer you could sign the manifest later."
+msgstr ""
+"Veuillez télécharger votre certificat privé et public pour signer le "
+"manifeste, ou si vous préférez, vous pouvez signer le manifeste plus tard."
+
+#: app/core/templates/wizard/form_csd.html:38
+#, fuzzy
+msgid "Private certificate"
+msgstr "Charger un certificat privé"
+
+#: app/core/templates/wizard/form_csd.html:43
+msgid "Public certificate"
+msgstr "Charger un certificat public"
+
+#: app/core/templates/wizard/form_csd.html:56
+msgid "Sign"
+msgstr "Signer"
+
+#: app/core/templates/wizard/form_csd.html:65
+msgid ""
+"You already signed the manifest, you could download it clicking the button "
+"below."
+msgstr ""
+"Vous avez déjà signé le manifeste, vous pouvez le télécharger en cliquant "
+"sur le bouton ci-dessous."
+
+#: app/core/templates/wizard/wizard.html:13
+msgid "Registration wizard"
+msgstr "Assistant d'enregistrement"
+
+#: app/core/templates/wizard/wizard.html:26
+msgid "Account information"
+msgstr "Information sur le compte"
+
+#: app/core/templates/wizard/wizard.html:34
+#: app/core/templates/wizard/wizard.html:95
+msgid "Agreement"
+msgstr "Accord"
+
+#: app/core/templates/wizard/wizard.html:69
+#: app/core/templates/wizard/wizard.html:164
+#: app/core/templates/wizard/wizard.html:172
+msgid "Taxpayer information"
+msgstr "Information du contribuable"
+
+#: app/core/templates/wizard/wizard.html:83
+#: app/core/templates/wizard/wizard.html:117
+msgid "Continue"
+msgstr "Continuer"
+
+#: app/core/templates/wizard/wizard.html:116
+#: app/core/templates/wizard/wizard.html:142
+msgid "Back"
+msgstr "Revenir"
+
+#: app/core/templates/wizard/wizard.html:129
+msgid "Privacy Policy"
+msgstr "Politique de confidentialité"
+
+#: app/core/templates/wizard/wizard.html:143
+msgid "Sign in"
+msgstr "Entrer"
+
+#: app/core/templates/wizard/wizard.html:147
+#: app/core/templates/wizard/wizard.html:198
+msgid "Completed"
+msgstr "Complété"
+
+#: app/core/templates/wizard/wizard.html:149
+msgid "You registered your information successfully."
+msgstr "Vous avez enregistré vos informations avec succès."
+
+#: app/core/templates/wizard/wizard.html:150
+#: app/core/templates/wizard/wizard.html:151
+#: templates/helpdesk/navigation.html:20 templates/helpdesk/navigation.html:97
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: app/core/templates/wizard/wizard.html:200
+msgid "Your register is under review."
+msgstr "Votre inscription est à l'étude."
+
+#: app/core/utils/profile.py:177
+msgid "Serie and folio are to long."
+msgstr "La série et folio sont trop longs"
+
+#: app/core/utils/wizard.py:17
+msgid "Taxpayer id is valid."
+msgstr "Le contribuable est validé"
+
+#: app/core/utils/wizard.py:22
+msgid "Taxpayer id does not match with the pattern."
+msgstr ""
+"Le numéro d'identification du contribuable ne correspond pas au modèle."
+
+#: app/core/utils/wizard.py:25
+msgid "Taxpayer id was register previously."
+msgstr ""
+"Le numéro d'identification du contribuable était enregistré auparavant."
+
+#: app/core/utils/wizard.py:33
+msgid "An error occurred while validating the taxpayer id."
+msgstr ""
+"Une erreur s'est produite lors de la validation de l'identité du "
+"contribuable."
+
+#: app/core/utils/wizard.py:39
+msgid "The tax regime is valid."
+msgstr "Le régime fiscal est valide."
+
+#: app/core/utils/wizard.py:41
+msgid "The tax regime {} was not found in the SAT catalog."
+msgstr "Le régime fiscal {} n'a pas été trouvé dans le catalogue du SAT."
+
+#: app/core/utils/wizard.py:46
+msgid "An error occurred while validating tax regime"
+msgstr "Une erreur s'est produite lors de la validation du régime fiscal"
+
+#: app/core/utils/wizard.py:52
+msgid "Zip code is valid."
+msgstr "Le code postal es valide"
+
+#: app/core/utils/wizard.py:54
+msgid "Zip code {} was not found in the SAT catalog."
+msgstr "Le code postal {} n'a pas été trouvé dans le catalogue du SAT."
+
+#: app/core/utils/wizard.py:58
+msgid "An error occurred while validation Zip code"
+msgstr "Une erreur s'est produite lors de la validation du code postal"
+
+#: app/core/views.py:100
+msgid "Transfers"
+msgstr "Transfers"
+
+#: app/core/views.py:101
+msgid "Payroll"
+msgstr "Registre des salaires"
+
+#: app/core/views.py:135
+msgid "Logs were listed"
+msgstr ""
+
+#: app/core/views.py:161
+#, fuzzy
+#| msgid "An exception occurred at login"
+msgid "An exception occurred in the Logs view"
+msgstr "Une exception s'est produite lors de la connexion"
+
+#: app/core/views.py:214 app/core/views.py:1127
+msgid "All fields * are required."
+msgstr "Tous les champs * sont obligatoires."
+
+#: app/core/views.py:252 app/core/views.py:255
+msgid "Account successfully registered."
+msgstr "Compte enregistré avec succès."
+
+#: app/core/views.py:266
+msgid "Account previously registered."
+msgstr "Compte enregistré antérieurement"
+
+#: app/core/views.py:267
+#, fuzzy
+#| msgid "Account previously registered."
+msgid "Account previously registered"
+msgstr "Compte enregistré antérieurement"
+
+#: app/core/views.py:274
+msgid "Enter the password for the private key."
+msgstr "Entrer le mot de passe de la clé privée"
+
+#: app/core/views.py:289
+msgid ""
+"Private key is not valid, it is possible that it is corrupt or the password "
+"is not correct."
+msgstr ""
+"La clé privée n'est pas valide, il est possible qu'elle soit corrompue ou "
+"que le mot de passe ne soit pas correct."
+
+#: app/core/views.py:290
+#, fuzzy
+#| msgid ""
+#| "Private key is not valid, it is possible that it is corrupt or the "
+#| "password is not correct."
+msgid ""
+"The key is not valid, it is possible that it is corrupt or the password is "
+"not correct"
+msgstr ""
+"La clé privée n'est pas valide, il est possible qu'elle soit corrompue ou "
+"que le mot de passe ne soit pas correct."
+
+#: app/core/views.py:306
+#, python-brace-format
+msgid "The user {request.user} does not have taxpayer id."
+msgstr "L'utilisateur {request.user} n'a pas de numéro de contribuable."
+
+#: app/core/views.py:330
+msgid "The private key is not valid, it may be corrupted."
+msgstr "La clé privée n'est pas valide, elle peut être corrompue."
+
+#: app/core/views.py:343
+msgid "Certificates are not type FIEL."
+msgstr "Les certificats ne sont pas de type FIEL."
+
+#: app/core/views.py:355
+msgid "Certificate validity period begins on {}"
+msgstr "La période de validité du certificat commence le {}"
+
+#: app/core/views.py:360
+msgid "Certificate validity period ended on {}"
+msgstr "La période de validité du certificat se termine le {}"
+
+#: app/core/views.py:371
+msgid "The certificates do not match."
+msgstr "Les certificats ne correspondent pas."
+
+#: app/core/views.py:375
+msgid "The electronic signature does not correspond to the taxpayer"
+msgstr "La signature électronique ne correspond pas au contribuable."
+
+#: app/core/views.py:578 app/core/views.py:624
+msgid "Manifest signed correctly."
+msgstr "Manifeste signé correctement."
+
+#: app/core/views.py:584 app/core/views.py:590 app/core/views.py:595
+#: app/core/views.py:612
+msgid "An error occurred while signing the manifest."
+msgstr "Une erreur s'est produite lors de la signature du manifeste."
+
+#: app/core/views.py:586 app/core/views.py:614
+#, fuzzy
+#| msgid "An error occurred while signing the manifest."
+msgid "An error occurred when signing the manifest"
+msgstr "Une erreur s'est produite lors de la signature du manifeste."
+
+#: app/core/views.py:600
+msgid "You need to accept the contract."
+msgstr "Vous devez accepter le contrat."
+
+#: app/core/views.py:606
+msgid "An error occurred, could not get taxpayer information."
+msgstr ""
+"Une erreur s'est produite, il n'a pas été possible d'obtenir les "
+"informations du contribuable"
+
+#: app/core/views.py:626
+msgid "User does not have any taxpayer information registered."
+msgstr ""
+"L'utilisateur ne dispose d'aucune information de contribuable enregistrée."
+
+#: app/core/views.py:662 app/core/views.py:667
+msgid "Business was not found."
+msgstr "L'entreprise n'a pas été trouvée"
+
+#: app/core/views.py:722 app/core/views.py:744 app/core/views.py:765
+#, fuzzy
+#| msgid "The tax regime {} was not found in the SAT catalog."
+msgid "The file cannot be found in the path"
+msgstr "Le régime fiscal {} n'a pas été trouvé dans le catalogue du SAT."
+
+#: app/core/views.py:966 app/invoicing/views.py:909
+#, fuzzy
+#| msgid "Register user"
+msgid "Registered buyer correctly"
+msgstr "Enregistrer un utilisateur"
+
+#: app/core/views.py:976 app/invoicing/views.py:851 app/invoicing/views.py:951
+#: app/invoicing/views.py:1031
+#, fuzzy
+#| msgid "Error sending mail, please try again"
+msgid "Registration is not possible, please try again later."
+msgstr "Erreur d'envoi de courrier, veuillez réessayer"
+
+#: app/core/views.py:1004 app/invoicing/views.py:1083
+#: app/invoicing/views.py:1117
+msgid "It was not possible to obtain the information of this buyer."
+msgstr ""
+
+#: app/core/views.py:1068
+msgid "We are working on the report."
+msgstr "Nous préparons le rapport. "
+
+#: app/core/views.py:1072 app/core/views.py:1356 app/core/views.py:1375
+#: app/core/views.py:1391 app/core/views.py:1460
+msgid "An error occurred."
+msgstr "Un erreur s'est produite"
+
+#: app/core/views.py:1157
+msgid "Fields must not contain only numbers."
+msgstr "Les champs ne doivent pas contenir uniquement des chiffres."
+
+#: app/core/views.py:1212
+msgid "An error occurred, mail can not be modified."
+msgstr "Une erreur s'est produite, le courrier ne peut pas être modifié."
+
+#: app/core/views.py:1224
+msgid "The mail was previously register."
+msgstr "Le courrier était auparavant enregistré."
+
+#: app/core/views.py:1233
+msgid "An error occurred while trying register mail."
+msgstr ""
+"Une erreur s'est produite lors d'une tentative d'enregistrement du courrier."
+
+#: app/core/views.py:1239
+msgid "An error occurred while trying delete mail."
+msgstr ""
+"Une erreur s'est produite lors d'une tentative d'effacement du courrier"
+
+#: app/core/views.py:1278
+msgid "An error occurred while trying to set default certificate."
+msgstr ""
+"Une erreur s'est produite en essayant de définir le certificat par défaut."
+
+#: app/core/views.py:1296
+msgid "An error occurred while trying to change password."
+msgstr "Une erreur s'est produite en essayant de changer le mot de passe."
+
+#: app/core/views.py:1309
+msgid "Password is not valid."
+msgstr "Mot de passe invalide."
+
+#: app/core/views.py:1313
+msgid "The password must be different as the previously established."
+msgstr "Le mot de passe doit être différent de celui établi précédemment."
+
+#: app/core/views.py:1333
+msgid "An error occurred, data is empty."
+msgstr "Une erreur s'est produite, les données sont vides."
+
+#: app/core/views.py:1342
+msgid "Serie has been registered previously."
+msgstr "La série a été enregistrée précédemment."
+
+#: app/core/views.py:1345
+msgid "An error occurred while registered the serie."
+msgstr "Une erreur s'est produite lors de l'enregistrement de la série."
+
+#: app/core/views.py:1417
+msgid "Fields * are required."
+msgstr "Les champs * sont obligatoires"
+
+#: app/core/views.py:1419
+msgid ""
+"Hi support, the account has been requested to be removed {} :  Name: {},  "
+"Phone: {},  email: {},  comments: {}"
+msgstr ""
+"Bonjour support, la suppression du compte a été demandée {} : Nom : {}, "
+"Téléphone : {}, email : {}, commentaires : {}"
+
+#: app/core/views.py:1420
+msgid "Cancellation account request {}"
+msgstr "Demande d'annulation d'un compte {}"
+
+#: app/core/views.py:1440
+msgid "Your request has been created."
+msgstr "Votre demande a été créée."
+
+#: app/core/views.py:1445
+msgid "Invalid request."
+msgstr "Demande non valide."
+
+#: app/invoicing/forms/invoice.py:30 app/invoicing/forms/invoice.py:281
+#: app/invoicing/templates/invoicing/prodservs.html:94
+#: app/invoicing/templates/invoicing/receivers.html:91
+#: app/support/templates/list_tickets.html:163
+msgid "ID"
+msgstr "ID "
+
+#: app/invoicing/forms/invoice.py:40
+msgid "Invoice Type"
+msgstr "Factures"
+
+#: app/invoicing/forms/invoice.py:93
+msgid "Currency"
+msgstr "Devise"
+
+#: app/invoicing/forms/invoice.py:107
+msgid "Way to pay"
+msgstr "Mode de paiement"
+
+#: app/invoicing/forms/invoice.py:233
+#, fuzzy
+#| msgid "Description"
+msgid "Descripcion"
+msgstr "Description"
+
+#: app/invoicing/forms/invoice.py:243
+msgid "InvoicedQuantity"
+msgstr "Quantité facturée"
+
+#: app/invoicing/forms/invoice.py:255
+#: app/invoicing/templates/invoicing/modal/prodserv.html:62
+#: app/invoicing/templates/invoicing/prodservs.html:99
+msgid "Price"
+msgstr "Prix"
+
+#: app/invoicing/forms/invoice.py:267
+msgid "Price Amount"
+msgstr "Montant du prix"
+
+#: app/invoicing/forms/invoice.py:290
+#: app/invoicing/templates/invoicing/modal/prodserv.html:66
+#: app/invoicing/templates/invoicing/prodservs.html:54
+#: app/invoicing/templates/invoicing/prodservs.html:97
+msgid "Unit Code"
+msgstr "Code unité"
+
+#: app/invoicing/forms/invoice.py:299
+#, fuzzy
+#| msgid "Unit Code"
+msgid "Unit"
+msgstr "Code unité"
+
+#: app/invoicing/forms/invoice.py:302
+#: app/invoicing/templates/invoicing/modal/prodserv.html:94
+#: app/invoicing/templates/invoicing/prodservs.html:42
+#: app/invoicing/templates/invoicing/prodservs.html:43
+#: app/invoicing/templates/invoicing/prodservs.html:95
+msgid "Classification Code"
+msgstr "Code classification"
+
+#: app/invoicing/forms/invoice.py:311
+msgid "Discount"
+msgstr "Interrompu"
+
+#: app/invoicing/forms/receiver.py:24
+msgid "Previously registered RFC."
+msgstr "RFC  enregistré antérieurement."
+
+#: app/invoicing/forms/receiver.py:27
+msgid "You must register an email."
+msgstr "Vous devez enregistrer une adresse email. "
+
+#: app/invoicing/templates/invoicing/invoice/header.html:5
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:290
+#: app/invoicing/templates/invoicing/modal/show-receiver-details.html:121
+#: app/support/templates/modals/add_ticket.html:89
+#: app/support/templates/modals/followup_ticket.html:15
+#: app/support/templates/modals/solved_ticket.html:35
+#: app/support/templates/modals/update_ticket.html:52
+#: app/users/templates/users/modal/add_user.html:134
+#: app/users/templates/users/modal/edit_user.html:99
+#, fuzzy
+msgid "Close"
+msgstr "Fermer"
+
+#: app/invoicing/templates/invoicing/invoice/header.html:6
+#: app/invoicing/templates/invoicing/new-invoice.html:191
+msgid "Create Invoice"
+msgstr "Créer une facture"
+
+#: app/invoicing/templates/invoicing/invoice/invoice-cabecera.html:29
+#, fuzzy
+#| msgid "Invoices"
+msgid "Invoice"
+msgstr "Factures"
+
+#: app/invoicing/templates/invoicing/invoice/invoice-receptor.html:5
+#: app/invoicing/templates/invoicing/invoices.html:83
+msgid "Customer"
+msgstr "Client"
+
+#: app/invoicing/templates/invoicing/invoice/invoice-totales.html:4
+msgid "Payment Terms - Notes - totals"
+msgstr "Conditions de paiement - Notes - total"
+
+#: app/invoicing/templates/invoicing/invoice/invoice-totales.html:11
+#: app/invoicing/templates/invoicing/invoice/invoice-totales.html:23
+#, fuzzy
+#| msgid "Notes"
+msgid "Note"
+msgstr "Notes"
+
+#: app/invoicing/templates/invoicing/invoice/invoice-totales.html:37
+msgid "SubTotal"
+msgstr "Total"
+
+#: app/invoicing/templates/invoicing/invoice/invoice-totales.html:45
+msgid "Discounts"
+msgstr "Interrompu"
+
+#: app/invoicing/templates/invoicing/invoice/invoice-totales.html:53
+msgid "Taxes"
+msgstr "Les taxes"
+
+#: app/invoicing/templates/invoicing/invoices.html:35
+msgid "My Invoices"
+msgstr "Mes factures"
+
+#: app/invoicing/templates/invoicing/invoices.html:44
+#: app/invoicing/templates/invoicing/invoices.html:45
+#: app/invoicing/templates/invoicing/invoices.html:129
+#: app/invoicing/templates/invoicing/modal/invoice-success.html:19
+msgid "Invoice ID"
+msgstr "Identifiant de facture"
+
+#: app/invoicing/templates/invoicing/invoices.html:83
+#: app/invoicing/templates/invoicing/invoices.html:84
+msgid "Tax Identifier Number:"
+msgstr "Numéro d'identification fiscale"
+
+#: app/invoicing/templates/invoicing/invoices.html:87
+msgid "Issue Date (From)"
+msgstr "Date de création (de)"
+
+#: app/invoicing/templates/invoicing/invoices.html:89
+#: app/invoicing/templates/invoicing/invoices.html:96
+#: app/invoicing/templates/invoicing/invoices.html:136
+msgid "Issue Date"
+msgstr "Date de création"
+
+#: app/invoicing/templates/invoicing/invoices.html:94
+msgid "Issue Date (To)"
+msgstr "Date de création (vers)"
+
+#: app/invoicing/templates/invoicing/invoices.html:127
+#: app/invoicing/templates/invoicing/modal/invoice-success.html:18
+msgid "Customer Tax Identifier Number"
+msgstr "Numéro d'identification fiscale du client"
+
+#: app/invoicing/templates/invoicing/invoices.html:128
+msgid "Customer Name"
+msgstr "Nom du client"
+
+#: app/invoicing/templates/invoicing/modal/add-certificate.html:9
+msgid "You have not yet uploaded certificates"
+msgstr "Vous n'avez pas encore téléchargé de certificats"
+
+#: app/invoicing/templates/invoicing/modal/add-certificate.html:11
+msgid ""
+"Be sure that the certificate is valid and corresponds to the tax identifier "
+"of the business."
+msgstr "Assurez-vous que le certificat est valide et correspond à l'identifiant fiscal de l'entreprise."
+
+#: app/invoicing/templates/invoicing/modal/add-certificate.html:14
+msgid "Upload Certificates"
+msgstr "Télécharger des certificats"
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:16
+msgid "Add business"
+msgstr "Ajouter l'entreprise"
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:43
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:43
+#: app/invoicing/templates/invoicing/modal/show-receiver-details.html:26
+#: app/invoicing/templates/invoicing/receivers.html:52
+#: app/invoicing/templates/invoicing/receivers.html:93
+msgid "Company Name"
+msgstr "Nom du compagnie"
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:47
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:86
+#: app/invoicing/templates/invoicing/modal/show-receiver-details.html:30
+#, fuzzy
+msgid "Street Name"
+msgstr "Nom de rue"
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:51
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:90
+#: app/invoicing/templates/invoicing/modal/show-receiver-details.html:34
+#, fuzzy
+msgid "City Name"
+msgstr "Ville"
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:62
+#: app/invoicing/templates/invoicing/modal/show-receiver-details.html:45
+msgid "Postal Zone"
+msgstr "Zone postale"
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:100
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:101
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:82
+#: app/invoicing/templates/invoicing/modal/show-receiver-details.html:83
+msgid "Telephone"
+msgstr "Téléphone"
+
+#: app/invoicing/templates/invoicing/modal/close-new-invoice.html:23
+msgid "Do you want to close the invoice application?"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:33
+#: app/invoicing/templates/invoicing/strings/receiver-options.html:21
+#, fuzzy
+msgid "Edit business"
+msgstr "Éditer"
+
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:101
+msgid "Last modification"
+msgstr "Derniere modification"
+
+#: app/invoicing/templates/invoicing/modal/invoice-failed.html:9
+msgid "Your invoice has the following errors"
+msgstr "Votre facture contient les erreurs suivantes"
+
+#: app/invoicing/templates/invoicing/modal/invoice-failed.html:15
+msgid "Return to billing"
+msgstr "Retour à la facturation"
+
+#: app/invoicing/templates/invoicing/modal/invoice-success.html:9
+msgid "Stamped Invoice!"
+msgstr "Facture tamponnée!"
+
+#: app/invoicing/templates/invoicing/modal/invoice-success.html:13
+msgid "Your invoice is being processed."
+msgstr "Votre facture est en cours de traitement."
+
+#: app/invoicing/templates/invoicing/modal/invoice-success.html:22
+msgid "Now what do you want to do?"
+msgstr "Maintenant, que veux-tu faire?"
+
+#: app/invoicing/templates/invoicing/modal/invoice-success.html:24
+msgid "Download files"
+msgstr "Telecharger des fichiers"
+
+#: app/invoicing/templates/invoicing/modal/invoice-success.html:26
+msgid "Go to my invoices"
+msgstr "Accéder à mes factures"
+
+#: app/invoicing/templates/invoicing/modal/invoice-success.html:28
+msgid "Continue billing"
+msgstr "Continuer la facturation"
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:38
+msgid "Add Product/Service"
+msgstr "Ajouter un produit/service"
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:39
+msgid "Edit Product/Service"
+msgstr "Éditer Produit/Service"
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:98
+msgid "Item Classification iD"
+msgstr "ID de la classification de l'item"
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:102
+msgid "Standard Item Identifier"
+msgstr "Identifiant d'article standard"
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:106
+msgid "Standard Item Scheme"
+msgstr "Schéma d'article standard"
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:113
+#: app/invoicing/templates/invoicing/prodservs.html:50
+#: app/invoicing/templates/invoicing/prodservs.html:51
+#: app/invoicing/templates/invoicing/prodservs.html:98
+#: app/support/templates/modals/add_ticket.html:36
+#: app/support/templates/modals/add_ticket.html:38
+#: app/support/templates/modals/update_ticket.html:25
+#: app/support/templates/modals/update_ticket.html:26
+msgid "Description"
+msgstr "La description"
+
+#: app/invoicing/templates/invoicing/modal/send_email.html:42
+msgid "SEND INVOICE BY EMAIL"
+msgstr "ENVOYER LA FACTURE PAR COURRIEL"
+
+#: app/invoicing/templates/invoicing/modal/send_email.html:50
+msgid ""
+"Then add the emails (separated by commas \",\") to which you want to send "
+"this receipt. The recipient will receive it in the formats you select."
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/send_email.html:67
+msgid "Comma separated emails (,)"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/send_email.html:73
+#, fuzzy
+#| msgid "Invoices"
+msgid "Send Invoice"
+msgstr "Factures"
+
+#: app/invoicing/templates/invoicing/modal/show-receiver-details.html:9
+#, fuzzy
+#| msgid "Information"
+msgid "Information business"
+msgstr "Affaires de l'information"
+
+#: app/invoicing/templates/invoicing/prodservs.html:6
+#: app/invoicing/templates/invoicing/prodservs.html:80 templates/base.html:323
+#: templates/home.html:76 templates/home.html:193
+msgid "Products and Services"
+msgstr "Produits et services"
+
+#: app/invoicing/templates/invoicing/prodservs.html:31
+msgid "My Products and Services"
+msgstr "Mes produits et services"
+
+#: app/invoicing/templates/invoicing/prodservs.html:46
+#: app/invoicing/templates/invoicing/prodservs.html:47
+#: app/invoicing/templates/invoicing/prodservs.html:96
+msgid "Product/Service"
+msgstr "Produit/service"
+
+#: app/invoicing/templates/invoicing/prodservs.html:58
+#: app/invoicing/templates/invoicing/prodservs.html:60
+msgid "Creation Date (From)"
+msgstr "Date de création (de)"
+
+#: app/invoicing/templates/invoicing/prodservs.html:65
+#: app/invoicing/templates/invoicing/prodservs.html:67
+msgid "Creation Date (To)"
+msgstr "Date de création (vers)"
+
+#: app/invoicing/templates/invoicing/receivers.html:67
+#: app/users/templates/users/users.html:101
+msgid "Filter"
+msgstr "Filtre"
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:10
+msgid "Do you want to cancel the invoice?"
+msgstr "Voulez-vous annuler la facture?"
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:10
+msgid "Add additional notes"
+msgstr "Rue supplémentaire"
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:10
+msgid "Cancellation notes"
+msgstr "Notes d'annulation"
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:10
+msgid "Canceling..."
+msgstr "Annulation"
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:10
+msgid "Cancelar invoice"
+msgstr "Créer une facture"
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:10
+#, fuzzy
+#| msgid "Cancel"
+msgid "Yes Cancel"
+msgstr "Annuler"
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:10
+msgid "Cancel Invoice"
+msgstr "Créer une facture"
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:13
+#, fuzzy
+#| msgid "Cancellation"
+msgid "Stop Cancellation?"
+msgstr "Annulation"
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:13
+msgid "Stopping..."
+msgstr ""
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:13
+msgid "Stop process"
+msgstr "Arrêter le processus"
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:13
+msgid "Stop"
+msgstr "Arrêtez"
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:13
+msgid "Stop cancellation"
+msgstr "Annulation"
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:15
+msgid "Send Email"
+msgstr "Envoyer un e-mail"
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:23
+msgid "Do you want to re-stamp the invoice?"
+msgstr "Voulez-vous ré-estampiller la facture?"
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:23
+msgid "Re-stamping..."
+msgstr "Ré-estampillage ..."
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:23
+msgid "Send re-stamped"
+msgstr "Envoi re-tamponné"
+
+#: app/invoicing/templates/invoicing/strings/invoice-options.html:23
+msgid "Send"
+msgstr "Envoyer"
+
+#: app/invoicing/templates/invoicing/strings/invoice-tax-template.html:45
+msgid "Percent"
+msgstr "Pour cent"
+
+#: app/invoicing/templates/invoicing/strings/invoice-tax-template.html:49
+#, fuzzy
+#| msgid "Category"
+msgid "TaxCategory ID"
+msgstr "Catégorie"
+
+#: app/invoicing/templates/invoicing/strings/invoice-tax-template.html:54
+#, fuzzy
+#| msgid "TaxScheme: ID"
+msgid "TaxScheme ID"
+msgstr "ID TaxScheme"
+
+#: app/invoicing/templates/invoicing/strings/invoice-tax-template.html:68
+#: app/invoicing/templates/invoicing/strings/invoice-tax-template.html:69
+msgid "Amount"
+msgstr "Pays"
+
+#: app/invoicing/templates/invoicing/strings/invoice-tax-template.html:72
+#, fuzzy
+#| msgid "Remove"
+msgid "Remove Tax"
+msgstr "Quitter"
+
+#: app/invoicing/templates/invoicing/strings/receiver-options.html:17
+#: app/invoicing/templates/invoicing/strings/receiver-options.html:20
+msgid "Business information"
+msgstr "Information de l'entreprise"
+
+#: app/invoicing/utils/handler.py:324
+msgid "There was an error processing the request"
+msgstr "Il ya eu une erreur lors du traitement de la demande"
+
+#: app/invoicing/views.py:474
+#, fuzzy
+#| msgid "Products and services were listed"
+msgid "Invoices were listed"
+msgstr "Les factures étaient sur la liste"
+
+#: app/invoicing/views.py:556
+#, fuzzy
+#| msgid "Ticket created successfully"
+msgid "Cancellation request made successfully."
+msgstr "Ticket créé correctement"
+
+#: app/invoicing/views.py:562
+msgid "There was an error in the request, please try again later."
+msgstr ""
+"Une erreur s'est produite dans la demande, veuillez réessayer plus tard."
+
+#: app/invoicing/views.py:568
+msgid ""
+"The issuer does not have active certificates to perform the cancellation."
+msgstr ""
+
+#: app/invoicing/views.py:574
+msgid "There is not enough information to process the cancellation."
+msgstr ""
+
+#: app/invoicing/views.py:602
+#, fuzzy
+#| msgid "Ticket created successfully"
+msgid "The invoice voucher status was updated successfully."
+msgstr "Ticket créé correctement"
+
+#: app/invoicing/views.py:607
+#, fuzzy
+#| msgid "Error sending mail, please try again"
+msgid "Your invoice was not found, please try again."
+msgstr "Erreur d'envoi de courrier, veuillez réessayer"
+
+#: app/invoicing/views.py:612
+msgid ""
+"It is not possible to obtain the invoice status, please try again later."
+msgstr ""
+
+#: app/invoicing/views.py:617
+#, fuzzy
+#| msgid "Business was not found."
+msgid "Invoice not found."
+msgstr "L'entreprise n'a pas été trouvée"
+
+#: app/invoicing/views.py:622 app/invoicing/views.py:649
+msgid "There is not enough information to obtain the status of the invoice."
+msgstr ""
+"Il n'y a pas suffisamment d'informations pour obtenir le statut de la "
+"facture."
+
+#: app/invoicing/views.py:639
+msgid "You have been asked to stop the cancellation, the process may not stop."
+msgstr ""
+"Il vous a été demandé d'arrêter l'annulation, le processus peut ne pas "
+"s'arrêter."
+
+#: app/invoicing/views.py:644
+msgid "The cancellation process cannot be denied."
+msgstr "Le processus d'annulation ne peut être refusé."
+
+#: app/invoicing/views.py:686
+msgid "Invoice sent to the selected emails."
+msgstr "Facture envoyée aux e-mails sélectionnés."
+
+#: app/invoicing/views.py:689
+msgid "Error sending invoice"
+msgstr "Erreur lors de l'envoi de la facture"
+
+#: app/invoicing/views.py:691
+#, fuzzy
+#| msgid "You must select at least one business"
+msgid "You must select a format"
+msgstr "Vous devez sélectionner au moins une entreprise."
+
+#: app/invoicing/views.py:803
+#, fuzzy
+#| msgid "Products and services were listed"
+msgid "Business were listed"
+msgstr "Les entreprises étaient sur la liste"
+
+#: app/invoicing/views.py:822
+#, fuzzy
+#| msgid "Manifest signed correctly."
+msgid "Business added correctly"
+msgstr "Manifeste signé correctement."
+
+#: app/invoicing/views.py:989
+#, fuzzy
+#| msgid "Product/Service successfully edited"
+msgid "Buyer successfully edited"
+msgstr "Produit/service enregistré avec succès"
+
+#: app/invoicing/views.py:1304
+msgid "Products and services were listed"
+msgstr "Les produits et services étaient sur la liste"
+
+#: app/invoicing/views.py:1344 app/invoicing/views.py:1357
+#: app/invoicing/views.py:1366
+msgid "Product/Service successfully registered"
+msgstr "Produit/service enregistré avec succès"
+
+#: app/invoicing/views.py:1349 app/invoicing/views.py:1474
+msgid ""
+"When the category code is equal to Z, E, AE, K or G, the rate of the article "
+"must be equal to 0"
+msgstr ""
+
+#: app/invoicing/views.py:1361 app/invoicing/views.py:1486
+msgid ""
+"When the category code is equal to L or M, the VAT rate of the invoiced item "
+"will be 0 (zero) or greater than zero."
+msgstr ""
+
+#: app/invoicing/views.py:1377
+msgid "Duplicate Product/Service"
+msgstr "Dupliquer un produit/service"
+
+#: app/invoicing/views.py:1385
+msgid "An exception occurred when registering the product/service"
+msgstr ""
+"Une exception s'est produite lors de l'enregistrement du produit/service"
+
+#: app/invoicing/views.py:1470 app/invoicing/views.py:1482
+#: app/invoicing/views.py:1490
+msgid "Product/Service successfully edited"
+msgstr "Produit/service enregistré avec succès"
+
+#: app/invoicing/views.py:1497
+msgid "Could not get product or service information."
+msgstr ""
+"Impossible d'obtenir des informations sur les produits ou les services."
+
+#: app/support/templates/list_tickets.html:4
+msgid "My Tickets"
+msgstr "Mes billets"
+
+#: app/support/templates/list_tickets.html:79
+#: templates/helpdesk/navigation.html:23
+msgid "Tickets"
+msgstr "Tickets"
+
+#: app/support/templates/list_tickets.html:91
+#: app/support/templates/list_tickets.html:93
+msgid "Ticket ID"
+msgstr "ID du ticket"
+
+#: app/support/templates/list_tickets.html:97
+#: app/support/templates/list_tickets.html:99
+#: app/support/templates/list_tickets.html:165
+#: app/support/templates/modals/add_ticket.html:27
+#: app/support/templates/modals/solved_ticket.html:17
+#: app/support/templates/modals/solved_ticket.html:18
+#: app/support/templates/modals/update_ticket.html:17
+#: app/support/templates/modals/update_ticket.html:18
+#: app/support/templates/modals/update_ticket.html:39
+msgid "Subject"
+msgstr "Sujet"
+
+#: app/support/templates/list_tickets.html:107
+#: app/support/templates/strings/status.html:3
+msgid "Open"
+msgstr "Ouvrir"
+
+#: app/support/templates/list_tickets.html:108
+#: app/support/templates/strings/status.html:5
+msgid "Reopen"
+msgstr "Réouvrir"
+
+#: app/support/templates/list_tickets.html:109
+msgid "Solved"
+msgstr "Résolu"
+
+#: app/support/templates/list_tickets.html:110
+#: app/support/templates/strings/status.html:9
+msgid "Closed"
+msgstr "Fermé"
+
+#: app/support/templates/list_tickets.html:111
+msgid "Duplicates"
+msgstr "Duplicatas"
+
+#: app/support/templates/list_tickets.html:116
+#: app/support/templates/list_tickets.html:168
+msgid "Categories"
+msgstr "Catégories"
+
+#: app/support/templates/list_tickets.html:127
+#: app/support/templates/list_tickets.html:169
+#: app/support/templates/modals/add_ticket.html:52
+msgid "Priority"
+msgstr "Priorité"
+
+#: app/support/templates/list_tickets.html:131
+#: app/support/templates/strings/priority.html:5
+msgid "High"
+msgstr "Haute"
+
+#: app/support/templates/list_tickets.html:132
+#: app/support/templates/modals/add_ticket.html:56
+#: app/support/templates/strings/priority.html:7
+msgid "Medium"
+msgstr "Moyenne"
+
+#: app/support/templates/list_tickets.html:133
+#: app/support/templates/modals/add_ticket.html:57
+#: app/support/templates/strings/priority.html:9 app/support/views.py:60
+msgid "Low"
+msgstr "Basse"
+
+#: app/support/templates/list_tickets.html:149
+msgid "Ticket list"
+msgstr "Liste de tickets"
+
+#: app/support/templates/list_tickets.html:151
+msgid "Refresh"
+msgstr "Rafraîchir"
+
+#: app/support/templates/list_tickets.html:158
+#: app/support/templates/modals/add_ticket.html:19
+msgid "Add Ticket"
+msgstr "Ajouter un ticket"
+
+#: app/support/templates/list_tickets.html:166
+msgid "Creation date"
+msgstr "Date de création"
+
+#: app/support/templates/list_tickets.html:167
+msgid "Modification date"
+msgstr "Date de modification"
+
+#: app/support/templates/modals/add_ticket.html:29
+#: app/support/templates/modals/add_ticket.html:74
+msgid "subject"
+msgstr "Sujet"
+
+#: app/support/templates/modals/add_ticket.html:45
+msgid "Category"
+msgstr "Catégorie"
+
+#: app/support/templates/modals/add_ticket.html:55
+msgid "high"
+msgstr "Haute"
+
+#: app/support/templates/modals/add_ticket.html:65
+#: app/support/templates/modals/update_ticket.html:33
+msgid "Attached"
+msgstr "Attachement"
+
+#: app/support/templates/modals/add_ticket.html:71
+#: app/support/templates/modals/update_ticket.html:37
+msgid "Upload"
+msgstr "Télécharger"
+
+#: app/support/templates/modals/followup_ticket.html:9
+msgid "Track ticket"
+msgstr "Suivi du ticket"
+
+#: app/support/templates/modals/solved_ticket.html:9
+msgid "Solve ticket"
+msgstr "Résolution du ticket"
+
+#: app/support/templates/modals/solved_ticket.html:25
+#: app/support/templates/modals/solved_ticket.html:26
+msgid "Notes"
+msgstr "Notes"
+
+#: app/support/templates/modals/solved_ticket.html:36
+msgid "Solve"
+msgstr "Résoudre"
+
+#: app/support/templates/modals/update_ticket.html:9
+msgid "Ticket response"
+msgstr "Réponse du ticket"
+
+#: app/support/templates/modals/update_ticket.html:53
+#: app/support/templates/strings/options.html:5
+msgid "Reply"
+msgstr "Répondre"
+
+#: app/support/templates/strings/followup_support.html:8
+msgid "Helpdesk support"
+msgstr "Service d'assistance"
+
+#: app/support/templates/strings/options.html:2
+msgid "Show tracing"
+msgstr "Montrer le suivi"
+
+#: app/support/templates/strings/options.html:6
+msgid "Mark as solved"
+msgstr "Marquer comme résolu"
+
+#: app/support/templates/strings/priority.html:3
+msgid "Critical"
+msgstr "Essentiel"
+
+#: app/support/templates/strings/priority.html:9
+msgid "low"
+msgstr "Peu important"
+
+#: app/support/templates/strings/priority.html:11
+msgid "Very low"
+msgstr "Tres peu important"
+
+#: app/support/templates/strings/status.html:7
+msgid "Resolved"
+msgstr "Résolu"
+
+#: app/support/templates/strings/status.html:11
+msgid "Duplicate"
+msgstr "Dupliquer"
+
+#: app/support/views.py:60
+msgid "Billing"
+msgstr "Facturation"
+
+#: app/support/views.py:60
+msgid "Questions"
+msgstr "Des questions"
+
+#: app/support/views.py:60
+msgid "Doubts"
+msgstr "Les doutes"
+
+#: app/support/views.py:113
+msgid "Ticket created successfully"
+msgstr "Ticket créé correctement"
+
+#: app/support/views.py:137
+msgid "Answer Sent successfully"
+msgstr "Réponse envoyée avec succès"
+
+#: app/support/views.py:140
+msgid "Permission denied for this Ticket"
+msgstr "Autorisation refusée pour ce ticket"
+
+#: app/support/views.py:156
+msgid "Ticket Solved"
+msgstr "Ticket résolu"
+
+#: app/support/views.py:178
+msgid "Option not valid"
+msgstr "Option non valable"
+
+#: app/users/management/commands/create_sellers.py:26
+msgid ""
+"That email address doesn't have an associated user account. Are you sure "
+"you've registered?"
+msgstr ""
+"Cette adresse électronique n'est pas associée à un compte d'utilisateur. "
+"Êtes-vous sûr de vous être inscrit ?"
+
+#: app/users/management/commands/create_sellers.py:27
+msgid ""
+"The user account associated with this email address cannot reset the "
+"password."
+msgstr ""
+"Le compte d'utilisateur associé à cette adresse électronique ne peut pas "
+"réinitialiser le mot de passe."
+
+#: app/users/templates/django_registration/password_change_done.html:3
+#: app/users/templates/django_registration/password_change_form.html:4
+#: app/users/templates/registration/password_change_done.html:3
+#: app/users/templates/registration/password_change_form.html:4
+msgid "Documentation"
+msgstr "Documentation"
+
+#: app/users/templates/django_registration/password_change_done.html:3
+#: app/users/templates/django_registration/password_change_form.html:4
+#: app/users/templates/registration/password_change_done.html:3
+#: app/users/templates/registration/password_change_form.html:4
+#: templates/helpdesk/navigation.html:78
+#, fuzzy
+msgid "Change password"
+msgstr "Mot de passe de la clé privée"
+
+#: app/users/templates/django_registration/password_change_done.html:3
+#: app/users/templates/django_registration/password_change_form.html:4
+#: app/users/templates/registration/password_change_done.html:3
+#: app/users/templates/registration/password_change_form.html:4
+#, fuzzy
+msgid "Log out"
+msgstr "Se connecter"
+
+#: app/users/templates/django_registration/password_change_done.html:7
+#: app/users/templates/django_registration/password_change_form.html:8
+#: app/users/templates/registration/password_change_done.html:7
+#: app/users/templates/registration/password_change_form.html:8
+msgid "Password change"
+msgstr "Changement de mot de passe"
+
+#: app/users/templates/django_registration/password_change_done.html:14
+#: app/users/templates/registration/password_change_done.html:14
+msgid "Your password was changed."
+msgstr "Votre mot de passe est changé"
+
+#: app/users/templates/django_registration/password_change_form.html:21
+#: app/users/templates/registration/password_change_form.html:21
+msgid "Please correct the error below."
+msgstr "Veuillez corriger l'erreur ci-dessous."
+
+#: app/users/templates/django_registration/password_change_form.html:21
+#: app/users/templates/registration/password_change_form.html:21
+msgid "Please correct the errors below."
+msgstr "Veuillez corriger les erreurs ci-dessous."
+
+#: app/users/templates/django_registration/password_change_form.html:26
+#: app/users/templates/registration/password_change_form.html:26
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+"Veuillez entrer votre ancien mot de passe, pour des raisons de sécurité, "
+"puis entrez votre nouveau mot de passe deux fois afin que nous puissions "
+"vérifier que vous l'avez tapé correctement."
+
+#: app/users/templates/django_registration/password_change_form.html:32
+#: app/users/templates/registration/password_change_form.html:32
+msgid "Old password"
+msgstr "Ancien mot de passe"
+
+#: app/users/templates/django_registration/password_change_form.html:42
+#: app/users/templates/registration/password_change_form.html:42
+msgid "Password (again)"
+msgstr "Mot de passe (de nouveau)"
+
+#: app/users/templates/django_registration/password_change_form.html:48
+#: app/users/templates/registration/password_change_form.html:48
+#: app/users/templates/users/password_reset/reset.html:32
+#: app/users/templates/users/password_reset/reset_admin.html:32
+msgid "Change my password"
+msgstr "Changer mon mot de passe"
+
+#: app/users/templates/django_registration/password_reset_complete.html:7
+#: app/users/templates/django_registration/password_reset_done.html:7
+#: app/users/templates/django_registration/password_reset_form.html:7
+#: app/users/templates/registration/password_reset_complete.html:7
+#: app/users/templates/registration/password_reset_done.html:7
+#: app/users/templates/registration/password_reset_form.html:7
+msgid "Password reset"
+msgstr "Réinitialiser le mot de passe"
+
+#: app/users/templates/django_registration/password_reset_complete.html:16
+#: app/users/templates/registration/password_reset_complete.html:16
+msgid "Your password has been set.  You may go ahead and log in now."
+msgstr ""
+"Votre mot de passe a été défini.  Vous pouvez vous connecter maintenant."
+
+#: app/users/templates/django_registration/password_reset_confirm_2.html:51
+#: app/users/templates/registration/password_reset_confirm_2.html:51
+#: app/users/templates/users/password_reset/reset.html:38
+#: app/users/templates/users/password_reset/reset_admin.html:38
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
+msgstr ""
+"Le lien de réinitialisation du mot de passe n'était pas valide, peut-être "
+"parce qu'il a déjà été utilisé.  Veuillez demander une nouvelle "
+"réinitialisation du mot de passe."
+
+#: app/users/templates/django_registration/password_reset_done.html:15
+#: app/users/templates/registration/password_reset_done.html:15
+msgid ""
+"We've emailed you instructions for setting your password. You should be "
+"receiving them shortly."
+msgstr ""
+"Nous vous avons envoyé par courrier électronique les instructions pour "
+"définir votre mot de passe. Vous devriez les recevoir prochainement."
+
+#: app/users/templates/django_registration/password_reset_done.html:17
+#: app/users/templates/registration/password_reset_done.html:17
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+"Si vous ne recevez pas de courrier électronique, veuillez vous assurer que "
+"vous avez entré l'adresse avec laquelle vous vous êtes inscrit et vérifiez "
+"votre boite de spam."
+
+#: app/users/templates/django_registration/password_reset_email.html:2
+#: app/users/templates/registration/password_reset_email.html:2
+#: app/users/templates/users/password_reset/email.html:2
+#, python-format
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr ""
+"Vous recevez ce courriel parce que vous avez demandé une réinitialisation du "
+"mot de passe de votre compte d'utilisateur à %(site_name)s."
+
+#: app/users/templates/django_registration/password_reset_email.html:4
+#: app/users/templates/registration/password_reset_email.html:4
+#: app/users/templates/users/password_reset/email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr ""
+"Veuillez vous rendre à la page suivante et choisir un nouveau mot de passe :"
+
+#: app/users/templates/django_registration/password_reset_email.html:8
+#: app/users/templates/registration/password_reset_email.html:8
+#: app/users/templates/users/password_reset/email.html:8
+msgid "Your username, in case you've forgotten:"
+msgstr "Votre nom d'utilisateur, au cas où vous l'auriez oublié :"
+
+#: app/users/templates/django_registration/password_reset_email.html:10
+#: app/users/templates/registration/password_reset_email.html:10
+#: app/users/templates/users/password_reset/email.html:10
+msgid "Thanks for using our site!"
+msgstr "Merci d'utiliser notre site !"
+
+#: app/users/templates/django_registration/password_reset_email.html:12
+#: app/users/templates/registration/password_reset_email.html:12
+#: app/users/templates/users/password_reset/email.html:12
+#, python-format
+msgid "The %(site_name)s team"
+msgstr "%(site_name)s équipe"
+
+#: app/users/templates/django_registration/password_reset_form.html:15
+#: app/users/templates/registration/password_reset_form.html:15
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+msgstr ""
+"Vous avez oublié votre mot de passe ? Saisissez votre adresse électronique "
+"ci-dessous et nous vous enverrons par courriel les instructions pour en "
+"créer un nouveau."
+
+#: app/users/templates/django_registration/password_reset_form.html:19
+#: app/users/templates/registration/password_reset_form.html:19
+msgid "Email address:"
+msgstr "Adresse email:"
+
+#: app/users/templates/django_registration/password_reset_form.html:19
+#: app/users/templates/registration/password_reset_form.html:19
+msgid "Reset my password"
+msgstr "Réinitialiser mon mot de passe"
+
+#: app/users/templates/django_registration/registration_form.html:34
+#: app/users/templates/django_registration/registration_form.html:59
+#: app/users/templates/users/login.html:63
+msgid "Sign up"
+msgstr "S'inscrire"
+
+#: app/users/templates/django_registration/registration_form.html:46
+msgid "Password confirmation"
+msgstr "Confirmer le mot de passe"
+
+#: app/users/templates/django_registration/registration_form.html:50
+msgid "RFC"
+msgstr "RFC"
+
+#: app/users/templates/django_registration/registration_form.html:61
+msgid "Already have an account?"
+msgstr "Vous avez déjà un compte ?"
+
+#: app/users/templates/registration/activate.html:51
+msgid "Activate account"
+msgstr "Activer un compte"
+
+#: app/users/templates/registration/registration_form.html:66
+msgid "Register account"
+msgstr "Enregistrer un compte"
+
+#: app/users/templates/registration/registration_user.html:38
+msgid "Finish your registration"
+msgstr "Completer votre enregistrement"
+
+#: app/users/templates/registration/registration_user.html:43
+msgid "E-mail"
+msgstr "Courriel "
+
+#: app/users/templates/registration/registration_user.html:55
+msgid "Business name"
+msgstr "Nom de l'entreprise"
+
+#: app/users/templates/registration/registration_user.html:61
+#: app/users/templates/registration/registration_user.html:82
+msgid "Names"
+msgstr "Nom, prénoms"
+
+#: app/users/templates/registration/registration_user.html:68
+#: app/users/templates/registration/registration_user.html:89
+#: app/users/templates/users/modal/add_user.html:46
+#: app/users/templates/users/modal/add_user.html:47
+#: app/users/templates/users/modal/edit_user.html:38
+msgid "Last name"
+msgstr "Nom de famille"
+
+#: app/users/templates/registration/registration_user.html:73
+#: app/users/templates/registration/registration_user.html:94
+msgid "Mother last name"
+msgstr "Nom de famille de la mère"
+
+#: app/users/templates/registration/registration_user.html:107
+msgid "Confirm Password"
+msgstr "Confirmer le mot de passe"
+
+#: app/users/templates/registration/registration_user.html:112
+#: templates/registration/login.html:15
+msgid "Register"
+msgstr "S'enregistrer"
+
+#: app/users/templates/registration/success.html:318
+msgid "Thanks for your registration!"
+msgstr "Merci pour votre inscription !"
+
+#: app/users/templates/registration/success.html:319
+msgid "Your billing account has been successfully registered"
+msgstr "Votre compte de facturation a été enregistré avec succès"
+
+#: app/users/templates/registration/success.html:319
+msgid ""
+"We have sent an activation email to the registered email account, please "
+"check it and you can start billing immediately"
+msgstr ""
+"Nous avons envoyé un e-mail d'activation au compte e-mail enregistré, "
+"veuillez le vérifier et vous pouvez commencer la facturation immédiatement"
+
+#: app/users/templates/registration/success.html:331
+msgid "Privacity"
+msgstr "Privacité"
+
+#: app/users/templates/registration/success.html:331
+msgid "About us"
+msgstr "À propos de nous"
+
+#: app/users/templates/registration/success.html:331
+msgid "Contact us"
+msgstr "Contactez-nous"
+
+#: app/users/templates/registration/success.html:336
+msgid "All rights reserved"
+msgstr "Tous droits réservés"
+
+#: app/users/templates/registration/success.html:336
+msgid "2020 Finkok SAPI de CV, A.C."
+msgstr "2020 Finkok SAPI de CV, A.C."
+
+#: app/users/templates/users/login.html:9
+#: app/users/templates/users/login.html:35
+msgid "Login"
+msgstr "Connexion "
+
+#: app/users/templates/users/login.html:46 templates/registration/login.html:14
+msgid "Forgot your password?"
+msgstr "Mot de passe oublié?"
+
+#: app/users/templates/users/login.html:53
+msgid "Remember"
+msgstr "Se rappeler"
+
+#: app/users/templates/users/login.html:63
+msgid "Create your account"
+msgstr "Créer votre compte"
+
+#: app/users/templates/users/modal/add_user.html:23
+msgid "Add User"
+msgstr "Ajouter un utilisateur"
+
+#: app/users/templates/users/modal/add_user.html:55
+#, fuzzy
+msgid "Type:"
+msgstr "Type"
+
+#: app/users/templates/users/modal/add_user.html:59
+#: app/users/templates/users/template_strings/group.html:15
+#: app/users/templates/users/users.html:79 app/users/views.py:56
+msgid "Client"
+msgstr ""
+
+#: app/users/templates/users/modal/add_user.html:116
+msgid "Password:"
+msgstr "Mot de passe:"
+
+#: app/users/templates/users/modal/add_user.html:122
+#: app/users/templates/users/modal/edit_user.html:89
+msgid "Confirm Password:"
+msgstr "Confirmer le mot de passe"
+
+#: app/users/templates/users/modal/edit_user.html:8
+#: app/users/templates/users/modal/edit_user.html:16
+msgid "User:"
+msgstr "Utilisateur"
+
+#: app/users/templates/users/modal/edit_user.html:20
+msgid "User ID"
+msgstr "ID de l'utilisateur"
+
+#: app/users/templates/users/modal/edit_user.html:45
+msgid "Group:"
+msgstr "Groupe:"
+
+#: app/users/templates/users/modal/edit_user.html:59
+msgid "No group"
+msgstr "Pas de groupe"
+
+#: app/users/templates/users/modal/edit_user.html:71
+#, fuzzy
+msgid "Business:"
+msgstr "Entreprises"
+
+#: app/users/templates/users/modal/edit_user.html:84
+msgid "New Password:"
+msgstr "Nouveau mot de passe;"
+
+#: app/users/templates/users/password_reset/reset.html:18
+#: app/users/templates/users/password_reset/reset_admin.html:18
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+"Veuillez entrer votre nouveau mot de passe deux fois afin que nous puissions "
+"vérifier que vous l'avez tapé correctement."
+
+#: app/users/templates/users/password_reset/reset.html:24
+#: app/users/templates/users/password_reset/reset_admin.html:24
+msgid "New password:"
+msgstr "Nouveau mot de passe"
+
+#: app/users/templates/users/password_reset/reset.html:29
+#: app/users/templates/users/password_reset/reset_admin.html:29
+msgid "Confirm password:"
+msgstr "Confirmer le mot de passe;"
+
+#: app/users/templates/users/password_reset/reset_admin.html:8
+msgid "Password reset confirmation"
+msgstr "Confirmation de la réinitialisation du mot de passe"
+
+#: app/users/templates/users/password_reset/subject.txt:2
+#, python-format
+msgid "%(site_name)s: Reestablecer Contraseña "
+msgstr "%(site_name)s: Réinitialisation du mot de passe "
+
+#: app/users/templates/users/template_strings/group.html:3
+#: app/users/views.py:51
+msgid "Without Group"
+msgstr ""
+
+#: app/users/templates/users/template_strings/group.html:6
+#: app/users/views.py:52
+msgid "Provider"
+msgstr "Fournisseur"
+
+#: app/users/templates/users/template_strings/group.html:9
+#: app/users/views.py:54
+msgid "Staff"
+msgstr "Personnel"
+
+#: app/users/templates/users/template_strings/group.html:12
+#: app/users/views.py:55
+msgid "Employee"
+msgstr "Employé"
+
+#: app/users/templates/users/template_strings/users_options.html:3
+msgid "Personalize"
+msgstr ""
+
+#: app/users/templates/users/template_strings/users_options.html:5
+#, fuzzy
+msgid "Edit user"
+msgstr "Éditer"
+
+#: app/users/templates/users/template_strings/users_options.html:7
+#, fuzzy
+#| msgid "Discontinued"
+msgid "Discontinue user"
+msgstr "Interrompu"
+
+#: app/users/templates/users/template_strings/users_options.html:9
+#: app/users/views.py:282 app/users/views.py:289
+msgid "Active user"
+msgstr "Utilisateur actif"
+
+#: app/users/templates/users/template_strings/users_options.html:12
+#, fuzzy
+#| msgid "Cancellation"
+msgid "Cancel account cancellation"
+msgstr "Annulation"
+
+#: app/users/templates/users/template_strings/users_options.html:21
+#, fuzzy
+#| msgid "Unlocked account"
+msgid "Unlock account"
+msgstr "Compte débloqué"
+
+#: app/users/templates/users/template_strings/users_status.html:5
+msgid "Discontinued"
+msgstr "Interrompu"
+
+#: app/users/templates/users/users.html:52
+#, fuzzy
+msgid "Important!:"
+msgstr "Important!"
+
+#: app/users/templates/users/users.html:55
+msgid "List of users"
+msgstr "Liste des utilisateurs"
+
+#: app/users/templates/users/users.html:67
+#: app/users/templates/users/users.html:68
+#, fuzzy
+#| msgid "User email"
+msgid "User Email"
+msgstr "Courriel de l'utilisateur"
+
+#: app/users/templates/users/users.html:75
+#: app/users/templates/users/users.html:124
+msgid "Group"
+msgstr "Groupe"
+
+#: app/users/templates/users/users.html:97
+msgid "Discontinued/Not activated"
+msgstr "Interrompu/Non activé"
+
+#: app/users/templates/users/users.html:115
+msgid "Register user"
+msgstr "Enregistrer un utilisateur"
+
+#: app/users/templates/users/users.html:121
+msgid "User email"
+msgstr "Courriel de l'utilisateur"
+
+#: app/users/views.py:92 app/users/views.py:106
+msgid "The password must not be equal to a previously established one."
+msgstr "Le mot de passe ne peut pas être le même que le précédent."
+
+#: app/users/views.py:96 app/users/views.py:103
+msgid "The password cannot be the same as the previous one."
+msgstr "Le mot de passe ne peut pas être le même que le précédent."
+
+#: app/users/views.py:131
+msgid "The email structure is not correct."
+msgstr "La structure du courrier électronique n'est pas correcte."
+
+#: app/users/views.py:138
+msgid "UBL | Change of password"
+msgstr "UBL | Changement de mot de passe"
+
+#: app/users/views.py:152
+msgid "Error sending mail, please try again"
+msgstr "Erreur d'envoi de courrier, veuillez réessayer"
+
+#: app/users/views.py:154
+msgid "Your account is deactivated, contact support for more information."
+msgstr ""
+"Votre compte est désactivé, contactez le support pour plus d'informations."
+
+#: app/users/views.py:156
+msgid "The email does not match any account."
+msgstr "L'e-mail ne correspond à aucun compte."
+
+#: app/users/views.py:265 app/users/views.py:293 app/users/views.py:303
+msgid "Account blocked for multiple failed attempts"
+msgstr "Compte bloqué pour de multiples tentatives infructueuses"
+
+#: app/users/views.py:296
+msgid "Inactive user"
+msgstr "Utilisateur inactif"
+
+#: app/users/views.py:308
+msgid "User {} entered an incorrect password ({} attemp)"
+msgstr "L'utilisateur {} a saisi un mot de passe incorrect ({} tentative)"
+
+#: app/users/views.py:311
+msgid ""
+"An attempt was made to log in with the user {}, and this is non-existent"
+msgstr ""
+"Une tentative a été faite pour se connecter avec l'utilisateur {}, et elle "
+"est inexistante"
+
+#: app/users/views.py:334
+msgid "An exception occurred at login"
+msgstr "Une exception s'est produite lors de la connexion"
+
+#: app/users/views.py:343
+msgid " User {} logout. "
+msgstr "Déconnexion de l'utilisateur {} "
+
+#: app/users/views.py:399
+msgid "An exception occurred when listing users"
+msgstr ""
+"Une exception s'est produite lors de l'établissement de la liste des "
+"utilisateurs"
+
+#: app/users/views.py:418
+msgid "Successful customization."
+msgstr "Personnalisation réussie "
+
+#: app/users/views.py:419
+msgid "Successful customization {} => {}"
+msgstr "Personnalisation réussie {} => {}"
+
+#: app/users/views.py:421
+msgid "The user has not activated their account or is suspended."
+msgstr "L'utilisateur n'a pas activé son compte ou est suspendu."
+
+#: app/users/views.py:448
+msgid "User info got it successfully."
+msgstr "Info de l' utilisateur obtenue  avec succès."
+
+#: app/users/views.py:450
+msgid "Error updating user information"
+msgstr "Erreur de mise à jour des informations sur l'utilisateur"
+
+#: app/users/views.py:474
+msgid "You must select at least one business"
+msgstr "Vous devez sélectionner au moins une entreprise."
+
+#: app/users/views.py:477
+msgid "You must select at least one business group."
+msgstr "Vous devez sélectionner au moins un groupe d'entreprises. "
+
+#: app/users/views.py:502
+msgid "User information has been updated"
+msgstr "Les informations sur l'utilisateur ont été mises à jour "
+
+#: app/users/views.py:503
+msgid "User {} information has been updated "
+msgstr "Les informations sur l'utilisateur {} ont été mises à jour "
+
+#: app/users/views.py:506
+msgid "There was a problem when updating the information"
+msgstr "Il y a eu un problème lors de la mise à jour des informations"
+
+#: app/users/views.py:518
+msgid "The user has been activated"
+msgstr "l'utilisateur a été activé."
+
+#: app/users/views.py:530
+#, python-format
+msgid "The user has been %s."
+msgstr "L'utilisateur a été %s."
+
+#: app/users/views.py:530
+msgid "active"
+msgstr "Actif"
+
+#: app/users/views.py:530
+msgid "suspend"
+msgstr "Suspendre"
+
+#: app/users/views.py:532
+msgid "User {} {}"
+msgstr "Usager {} {}"
+
+#: app/users/views.py:532
+msgid "Suspend"
+msgstr "Suspendu"
+
+#: app/users/views.py:550
+msgid "The response obtained when validating the user was: {}"
+msgstr "La réponse obtenue lors de la validation de l'utilisateur est  {} "
+
+#: app/users/views.py:552
+msgid "Validating RFC..."
+msgstr "Validation du RFC..."
+
+#: app/users/views.py:555
+msgid "RFC validated!"
+msgstr "RFC validé"
+
+#: app/users/views.py:556
+msgid "The RFC {} was validated correctly "
+msgstr "Le RFC {} a été validé correctement "
+
+#: app/users/views.py:612
+msgid "A new user was registered with mail {}"
+msgstr "Un nouvel utilisateur a été enregistré par courriel {}"
+
+#: app/users/views.py:638
+msgid "Previously registered RFC {}."
+msgstr "RFC enregistré antérieurement {}."
+
+#: app/users/views.py:656
+msgid "The user type \"{}\" is invalid."
+msgstr "L'utilisateur type {} est invalide"
+
+#: app/users/views.py:660
+#, fuzzy
+#| msgid "User {} added successfully {} {}"
+msgid "User {} added successfully {}"
+msgstr "L'utilisateur {} a ajouté avec succes"
+
+#: app/users/views.py:663
+msgid "User {} already has a previous registration"
+msgstr "L'utilisateur {} a déjà un enregistrement antérieur"
+
+#: app/users/views.py:667
+msgid "Registering new user."
+msgstr "Enregistrement de nouvel usager"
+
+#: app/users/views.py:671
+msgid "Invalid email"
+msgstr "Courriel non valide"
+
+#: app/users/views.py:682
+msgid "Unlocked account"
+msgstr "Compte débloqué"
+
+#: app/users/views.py:688
+msgid "Account reactivated."
+msgstr "Compte réactivé"
+
+#: app/users/views.py:692
+msgid "An error occurred while performing the operation."
+msgstr "Une erreur s'est produite lors de l'exécution de l'opération."
+
+#: app/users/views.py:795
+msgid "An error occurred with the registration"
+msgstr "Une erreur s'est produite lors de l'enregistrement"
+
+#: app/users/views.py:895
+msgid "Activation code is incorrect"
+msgstr "Code d'activation incorrect"
+
+#: app/users/views.py:900
+msgid "Error.."
+msgstr "Erreur"
+
+#: app/users/views.py:906
+msgid ""
+"Dear support partner, {} account reactivation has been requested, for more "
+"information check ticket dependencies"
+msgstr ""
+"Cher partenaire de soutien, {} la réactivation du compte a été demandée, "
+"pour plus d'informations, consultez les dépendances des tickets"
+
+#: app/users/views.py:907
+msgid "{} Account reactivation request (test)"
+msgstr "{} Demande de réactivation de compte (test)"
+
+#: app/users/views.py:927 app/users/views.py:966
+msgid "Reactivation email sent"
+msgstr "Courriel de réactivation envoyé"
+
+#: app/users/views.py:955
+msgid "Reactivation Request"
+msgstr "Demande de réactivation"
+
+#: app/users/views.py:975
+msgid "Wait at least 30 minutes to resend the request"
+msgstr "Attendre au moins 30 minutes pour renvoyer la demande"
+
+#: templates/base.html:349
+msgid "Support"
+msgstr "Soutien"
+
+#: templates/base.html:391
+msgid "Help"
+msgstr "Aide"
+
+#: templates/base.html:399
+msgid "Logout "
+msgstr "Sortir"
+
+#: templates/base.html:416
+msgid "Language"
+msgstr "Langue"
+
+#: templates/base_sat.html:90 templates/base_wizard.html:129
+#: templates/blocked.html:145 templates/helpdesk/navigation.html:7
+msgid "Toggle navigation"
+msgstr "Basculer la navigation"
+
+#: templates/base_sat.html:112 templates/helpdesk/navigation.html:85
+#: templates/helpdesk/navigation.html:106
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: templates/base_wizard.html:144 templates/blocked.html:160
+msgid "Sign out"
+msgstr "Déconnexion"
+
+#: templates/blocked.html:12
+msgid "Account blocked"
+msgstr "Compte bloqué"
+
+#: templates/blocked.html:184
+msgid ""
+"Your request is going to be verified by our team, after this your account "
+"will be terminated."
+msgstr ""
+"Votre demande va être vérifiée par notre équipe, après quoi votre compte "
+"sera clôturé."
+
+#: templates/blocked.html:186
+msgid "Your account is cancelled."
+msgstr "Votre compte est annulé"
+
+#: templates/blocked.html:190
+msgid "You have requested cancelation your account"
+msgstr "Vous avez demandé l'annulation de votre compte"
+
+#: templates/blocked.html:190
+msgid "While this happens you can not to do any action."
+msgstr "Pendant ce temps, vous ne pouvez entreprendre aucune action."
+
+#: templates/blocked.html:192
+msgid ""
+"If you did not request this action, please contact us as soon as possible."
+msgstr ""
+"Si vous n'avez pas demandé cette action, veuillez nous contacter dès que "
+"possible.."
+
+#: templates/blocked.html:194
+msgid "Your account is blocked."
+msgstr "Votre compte est bloqué"
+
+#: templates/blocked.html:196
+msgid "For any questions or comments contact us, we will respond promptly."
+msgstr ""
+"Pour toute question ou commentaire, contactez-nous, nous vous répondrons "
+"rapidement."
+
+#: templates/blocked.html:202
+msgid "Active account"
+msgstr "Compte actif"
+
+#: templates/helpdesk/navigation.html:12
+msgid "UBLINVOICE"
+msgstr "UBLINVOICE"
+
+#: templates/helpdesk/navigation.html:26
+msgid "New Ticket"
+msgstr "Nouveau ticket"
+
+#: templates/helpdesk/navigation.html:29
+msgid "Stats"
+msgstr "Statistiques"
+
+#: templates/helpdesk/navigation.html:32
+msgid "Regresar al portal"
+msgstr "Retour au portail"
+
+#: templates/helpdesk/navigation.html:36 templates/helpdesk/navigation.html:104
+msgid "Knowledgebase"
+msgstr "Base de connaissances"
+
+#: templates/helpdesk/navigation.html:41
+msgid "Saved Query"
+msgstr "Requête sauvegardée"
+
+#: templates/helpdesk/navigation.html:56
+msgid "Search..."
+msgstr "Chercher..."
+
+#: templates/helpdesk/navigation.html:56
+msgid "Enter a keyword, or a ticket number to jump straight to that ticket."
+msgstr ""
+"Entrez un mot-clé ou un numéro de billet pour accéder directement à ce "
+"billet."
+
+#: templates/helpdesk/navigation.html:60
+msgid "Go"
+msgstr "Aller"
+
+#: templates/helpdesk/navigation.html:74
+msgid "User Settings"
+msgstr "Paramètres de l'utilisateur"
+
+#: templates/helpdesk/navigation.html:76
+msgid "RSS Feeds"
+msgstr "RSS Feeds"
+
+#: templates/helpdesk/navigation.html:82
+msgid "System Settings"
+msgstr "Réglage du systeme"
+
+#: templates/helpdesk/navigation.html:98 templates/helpdesk/navigation.html:101
+msgid "Submit a Ticket"
+msgstr "Soumettre un ticket"
+
+#: templates/helpdesk/navigation.html:106
+msgid "Log In"
+msgstr "Se connecter"
+
+#: templates/home.html:86
+msgid "January"
+msgstr "janvier"
+
+#: templates/home.html:86
+msgid "February"
+msgstr "février"
+
+#: templates/home.html:86
+msgid "March"
+msgstr "Mars"
+
+#: templates/home.html:86
+msgid "April"
+msgstr "avril"
+
+#: templates/home.html:86
+msgid "May"
+msgstr "Mai"
+
+#: templates/home.html:86
+msgid "June"
+msgstr "juin"
+
+#: templates/home.html:86
+msgid "July"
+msgstr "juillet"
+
+#: templates/home.html:86
+msgid "August"
+msgstr "août"
+
+#: templates/home.html:86
+msgid "September"
+msgstr "septembre"
+
+#: templates/home.html:86
+msgid "October"
+msgstr "octobre"
+
+#: templates/home.html:86
+msgid "November"
+msgstr "novembre"
+
+#: templates/home.html:86
+msgid "December"
+msgstr "décembre"
+
+#: templates/home.html:92
+#, fuzzy
+#| msgid "Submit a Ticket"
+msgid "Support Tickets"
+msgstr "Soumettre un ticket"
+
+#: templates/home.html:101
+msgid "Number of monthly records"
+msgstr "Nombre d'enregistrements mensuels"
+
+#: templates/home.html:152 templates/home.html:175 templates/home.html:199
+msgid "View Details"
+msgstr "Voir les détails"
+
+#: templates/registration/login.html:14
+msgid "Reset it"
+msgstr "Réinitialiser"
+
+#: templates/registration/login.html:15
+msgid "Not a member?"
+msgstr "Vous n'êtes pas membre ?"
+
+#: templates/registration/registration_closed.html:4
+msgid "Registration is closed"
+msgstr "Le registre est fermé"
+
+#: templates/registration/registration_closed.html:7
+msgid "Sorry, but registration is closed at this moment. Come back later."
+msgstr "Désolé, l'enregistrement est fermé en ce moment. Revenez plus tard."
+
+#: templates/registration/registration_form.html:5
+msgid "Register for an account"
+msgstr "Ouvrir un compte"
+
+#: templates/registration/resend_activation_complete.html:4
+msgid "Account Activation Resent"
+msgstr "Activation du compte réenvoyée"
+
+#: templates/registration/resend_activation_complete.html:8
+#, python-format
+msgid "We have sent an email to %(email)s with further instructions."
+msgstr ""
+"Nous avons envoyé un courriel à %(email)s avec des instructions "
+"supplémentaires."
+
+#: templates/registration/resend_activation_form.html:4
+msgid "Resend Activation Email"
+msgstr "Réenvoyer le courriel d'activation "
+
+#: templates/registration/resend_activation_form.html:10
+msgid "Submit"
+msgstr "Soumettre"
+
+#: ublinvoice/settings/base.py:480
+msgid "English"
+msgstr "Anglais"
+
+#: ublinvoice/settings/base.py:481
+msgid "Spanish"
+msgstr "Espagnol"
+
+#: ublinvoice/settings/base.py:482
+msgid "French"
+msgstr "Français"
+
+#, fuzzy
+#~ msgid "Taxpayer Id"
+#~ msgstr "Id contribuable"
+
+#, fuzzy
+#~| msgid "Payments"
+#~ msgid "Payment Terms"
+#~ msgstr "Paiements"
+
+#, fuzzy
+#~| msgid "Account information"
+#~ msgid "Accounting Cost"
+#~ msgstr "Information sur le compte"
+
+#, fuzzy
+#~| msgid "Company ID"
+#~ msgid "CompanyID"
+#~ msgstr "Id compagnie"
+
+#~ msgid "Address Name"
+#~ msgstr "Nom d'adresse"
+
+#~ msgid "Contact data"
+#~ msgstr "Contact"
+
+#, fuzzy
+#~| msgid "Accept agreement"
+#~ msgid "Department"
+#~ msgstr "Accepter l'accord"
+
+#~ msgid "Origin Country"
+#~ msgstr "Pays d'origine"
+
+#, fuzzy
+#~| msgid "Category"
+#~ msgid "Category Code"
+#~ msgstr "Catégorie"
+
+#~ msgid "Events"
+#~ msgstr "Événements"
+
+#~ msgid "from"
+#~ msgstr "de"
+
+#~ msgid "to"
+#~ msgstr "vers"
+
+#~ msgid "Locality"
+#~ msgstr "Localité"
+
+#~ msgid "Additional Street Name"
+#~ msgstr "Nom de rue supplémentaire"
+
+#~ msgid "Address Line"
+#~ msgstr "Ligne d'adresse"
+
+#, fuzzy
+#~ msgid "Additional StreetName"
+#~ msgstr "Nom de rue supplémentaire"
+
+#~ msgid "Zip code does not exist."
+#~ msgstr "Le code postal n'existe pas"
+
+#~ msgid "EndPoint: Scheme ID"
+#~ msgstr "EndPoint : ID du régime"
+
+#~ msgid "Party Identification: Scheme ID"
+#~ msgstr "Identification de la partie : Identification du régime"
+
+#~ msgid "Address"
+#~ msgstr "Adresse"
+
+#~ msgid "PartyTaxScheme"
+#~ msgstr "PartyTaxScheme"
+
+#~ msgid "Party Legal Entity"
+#~ msgstr "Personne juridique de la partie"
+
+#~ msgid "Registration Name"
+#~ msgstr "Nom enregistré"
+
+#~ msgid "Party Legal Scheme ID"
+#~ msgstr "ID du Régime légal de la partie"
+
+#~ msgid "Party Identification: Schema ID"
+#~ msgstr "Identification de la partie : ID du régime"
+
+#~ msgid "Party Legal: Schema ID"
+#~ msgstr "Partie légale: ID durégime"
+
+#~ msgid "Sellers Item ID"
+#~ msgstr "ID du vendeur"
+
+#~ msgid "Buyer Item ID"
+#~ msgstr "ID de l'acheteur"
+
+#~ msgid "Aditional Item Property"
+#~ msgstr "Produits supplémentaires"
+
+#~ msgid "Additional Item Name"
+#~ msgstr "Nom des produits supplémentaires"
+
+#~ msgid "Additional Item Value"
+#~ msgstr "Valeur des produits supplémentaires"
+
+#~ msgid "Name:"
+#~ msgstr "Nom"
+
+#~ msgid "Company ID:"
+#~ msgstr "ID Compagnie"
+
+#~ msgid "Email:"
+#~ msgstr "Courriel "
+
+#~ msgid "Status:"
+#~ msgstr "Statut "
+
+#~ msgid "Legal Scheme ID"
+#~ msgstr "ID du régime légal"
+
+#~ msgid "Party Identification"
+#~ msgstr "Identification de la partie"
+
+#~ msgid "Employees"
+#~ msgstr "Employés"
+
+#~ msgid "Customers"
+#~ msgstr "Clients"
+
+#~ msgid "Additional Street"
+#~ msgstr "Rue supplémentaire"
+
+#~ msgid "Receivers"
+#~ msgstr "Receptores"

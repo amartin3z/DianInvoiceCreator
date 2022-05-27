@@ -1,0 +1,28 @@
+            {% load crispy_forms_tags %}
+            <div id="div_concepto_0" class="form-group col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                    <h4 class="visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block"><button id="title_0" class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#concepto_0"><i class="fa fa-caret-down" aria-hidden="true"></i></button> Invoice Line</h4>
+                    <h4 class="visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block"><small id="subtitle_0" style="font-weight: bold; color: #337ab7;">{{ concept_name }}</small></h4>
+                </div>
+                <div id="concepto_0" class="form-group col-sm-12 col-md-12 col-lg-12 collapse in">
+                    <div class="form-group row">
+                        {% crispy invoice_form invoice_form.helper_concepts 'bootstrap3' %}
+                            {% if add_concept != 'pagos' %}                  
+                                <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 fix-button">
+                                    <button type="button" class="btn btn-success btn-xs btn-inverse add-concept btn-fix" title="Agregar concepto" id="add-concept" name="add-concept"><i class="fa fa-plus fa-fw"></i></button>
+                                    <button type="button" class="btn btn-info btn-xs btn-inverse add-tax btn-fix" title="Impuestos" id="add-tax" name="add-tax" onclick="addTaxElement(this)" ><i class="fa fa-percentage fa-fw"></i></button>
+                                    <button type="button" class="btn btn-danger btn-xs btn-inverse remove-concept btn-fix" title="Borrar concepto"><i class="fa fa-trash fa-fw"></i></button>
+                                </div>
+                            {% endif %}
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12 col-md-12 col-lg-12" id="impuestos_0"></div>
+                    </div>
+                    {% include 'invoicing/invoice/invoice-divisor.html' %}
+                </div>
+            </div>
+            <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                {% include 'invoicing/invoice/invoice-divisor.html' %}
+            </div>
+
+        

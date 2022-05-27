@@ -1,0 +1,254 @@
+[
+    {
+        "fields": {
+            "clave": "601",
+            "descripcion": "General de Ley Personas Morales",
+            "fin": null,
+            "fisica": "No",
+            "inicio": "2016-11-12",
+            "moral": "Sí"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 22
+    },
+    {
+        "fields": {
+            "clave": "603",
+            "descripcion": "Personas Morales con Fines no Lucrativos",
+            "fin": null,
+            "fisica": "No",
+            "inicio": "2016-11-12",
+            "moral": "Sí"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 23
+    },
+    {
+        "fields": {
+            "clave": "605",
+            "descripcion": "Sueldos y Salarios e Ingresos Asimilados a Salarios",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2016-11-12",
+            "moral": "No"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 24
+    },
+    {
+        "fields": {
+            "clave": "606",
+            "descripcion": "Arrendamiento",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2016-11-12",
+            "moral": "No"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 25
+    },
+    {
+        "fields": {
+            "clave": "608",
+            "descripcion": "Demás ingresos",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2016-11-12",
+            "moral": "No"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 26
+    },
+    {
+        "fields": {
+            "clave": "609",
+            "descripcion": "Consolidación",
+            "fin": "2019-12-31",
+            "fisica": "No",
+            "inicio": "2016-11-12",
+            "moral": "Sí"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 27
+    },
+    {
+        "fields": {
+            "clave": "610",
+            "descripcion": "Residentes en el Extranjero sin Establecimiento Permanente en México",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2016-11-12",
+            "moral": "Sí"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 28
+    },
+    {
+        "fields": {
+            "clave": "611",
+            "descripcion": "Ingresos por Dividendos (socios y accionistas)",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2016-11-12",
+            "moral": "No"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 29
+    },
+    {
+        "fields": {
+            "clave": "612",
+            "descripcion": "Personas Físicas con Actividades Empresariales y Profesionales",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2016-11-12",
+            "moral": "No"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 30
+    },
+    {
+        "fields": {
+            "clave": "614",
+            "descripcion": "Ingresos por intereses",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2016-11-12",
+            "moral": "No"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 31
+    },
+    {
+        "fields": {
+            "clave": "616",
+            "descripcion": "Sin obligaciones fiscales",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2016-11-12",
+            "moral": "No"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 32
+    },
+    {
+        "fields": {
+            "clave": "620",
+            "descripcion": "Sociedades Cooperativas de Producción que optan por diferir sus ingresos",
+            "fin": null,
+            "fisica": "No",
+            "inicio": "2016-11-12",
+            "moral": "Sí"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 33
+    },
+    {
+        "fields": {
+            "clave": "621",
+            "descripcion": "Incorporación Fiscal",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2016-11-12",
+            "moral": "No"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 34
+    },
+    {
+        "fields": {
+            "clave": "622",
+            "descripcion": "Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2016-11-12",
+            "moral": "Sí"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 35
+    },
+    {
+        "fields": {
+            "clave": "623",
+            "descripcion": "Opcional para Grupos de Sociedades",
+            "fin": null,
+            "fisica": "No",
+            "inicio": "2016-11-12",
+            "moral": "Sí"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 36
+    },
+    {
+        "fields": {
+            "clave": "624",
+            "descripcion": "Coordinados",
+            "fin": null,
+            "fisica": "No",
+            "inicio": "2016-11-12",
+            "moral": "Sí"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 37
+    },
+    {
+        "fields": {
+            "clave": "628",
+            "descripcion": "Hidrocarburos",
+            "fin": null,
+            "fisica": "No",
+            "inicio": "2024-01-01",
+            "moral": "Sí"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 38
+    },
+    {
+        "fields": {
+            "clave": "607",
+            "descripcion": "Régimen de Enajenación o Adquisición de Bienes",
+            "fin": null,
+            "fisica": "No",
+            "inicio": "2016-11-12",
+            "moral": "Sí"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 39
+    },
+    {
+        "fields": {
+            "clave": "629",
+            "descripcion": "De los Regímenes Fiscales Preferentes y de las Empresas Multinacionales",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2024-01-01",
+            "moral": "No"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 40
+    },
+    {
+        "fields": {
+            "clave": "630",
+            "descripcion": "Enajenación de acciones en bolsa de valores",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2024-01-01",
+            "moral": "No"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 41
+    },
+    {
+        "fields": {
+            "clave": "615",
+            "descripcion": "Régimen de los ingresos por obtención de premios",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2016-11-12",
+            "moral": "No"
+        },
+        "model": "sat.regimenfiscal",
+        "pk": 42
+    }
+]

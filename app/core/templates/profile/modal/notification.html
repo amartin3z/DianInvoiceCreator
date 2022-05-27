@@ -1,0 +1,22 @@
+{% load i18n %}
+<div class="modal fade bs-example-modal-sm notify_edit" style="padding-top: 8rem;"  data-keyboard="false" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-md" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group text-center">
+              <h2 class="text-bold title"></h2>
+              <h4 class="text"></h4>
+              <input type="text" class="form-control input_content">
+            </div>
+          </div>
+          <div class="col-sm-12" style="justify-content: space-between; display: flex!important;">
+            <button type="button" class="btn btn-success cancels">{% trans 'Cancel' %}</button>
+            <button type="button" class="btn btn-secondary successs">{% trans 'Save' %}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="modal fade" id="confirm-retry" tabindex="-1" role="dialog" aria-labelledby="confirm-retryLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="confirm-retryLabel" style="float: left;" id="retry-invoice"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float: right;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="receiver-name" class="col-form-label">&iexcl;Desea retimbrar el comprobante?</label><br>
+            <fieldset>
+              <form id="cancel-conf">
+                <label class="radio-inline contain">
+                  <input id="cancel-yes" type="radio" name="optradio">S&iacute;
+                  <span class="checkmark"></span>
+                </label>
+                <label class="radio-inline contain">
+                  <input id="cancel-no" type="radio" name="optradio" checked="checked">No
+                  <span class="checkmark"></span>
+                </label>
+              </form>
+            </fieldset>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary send-rt" title="Retimbrar Comprobante" style="display: none">Retimbrar CFDI</button>
+      </div>
+    </div>
+  </div>
+</div>

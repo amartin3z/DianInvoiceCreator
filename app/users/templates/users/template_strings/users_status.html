@@ -1,0 +1,6 @@
+{% load i18n %}
+{% if status %}
+  <button title="{% trans 'Active' %}" class="btn btn-success btn-sm into" style="pointer-events: none; width: 100%;">{% trans 'Active' %}</button>
+{% else %}
+  <button title="{% trans 'Discontinued' %}" class="btn btn-danger btn-sm into" style="pointer-events: none; width: 100%;">{% trans 'Discontinued' %}</button>
+{% endif %}

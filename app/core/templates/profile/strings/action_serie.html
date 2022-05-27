@@ -1,0 +1,11 @@
+{% load i18n %}
+{% if active %}
+  <button type="button" class="btn btn-warning" title="Editar" id="edit_serie" folio="{{folio_decode}}" serie="{{serie_decode}}" data1="{{serie}}}"><i class="fa fa-edit"></i><small style="padding-left: 1rem;">{% trans 'Edit' %}</small></button>
+  {% if not status%}
+    <button type="button" class="btn btn-info" title="Por defecto" id="defecto_serie" data0="{{id}}" serie="{{serie_decode}}" data1="{{serie}}}"><i class="fa fa-check-circle"></i><small style="padding-left: 1rem;">{% trans 'Default' %}</small></button>
+    <button type="button" class="btn btn-danger" title="Desactivar" id="deactive_serie" data0="{{id}}" serie="{{serie_decode}}" data1="{{serie}}}"><i class="fa fa-times-circle"></i><small style="padding-left: 1rem;">{% trans 'Deactivate' %}</small></button>
+  {% endif %}
+{% else %}
+  <button type="button" class="btn btn-success" id="activar_serie" title="Activar" data0="{{id}}" data1="{{serie}}}" serie="{{serie_decode}}"><i class="fa fa-check-circle"></i><small style="padding-left: 1rem;">{% trans 'Activate' %}</small></button>
+{% endif %}
+  

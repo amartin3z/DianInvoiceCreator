@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load staticfiles %}
+    {% load i18n %}
+    <meta charset="utf-8">
+    <meta name="author" content="AMEXIPROC">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{ PROJECT_NAME }} | {% trans 'Log in' %}</title>
+    <link rel="shortcut icon" href="{% static 'img/iconsite/faviconm.ico' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap_v4/bootstrap.min.css' %}">
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login/login.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.toast.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/apps/users/login/login.css' %}">
+
+    <!--<script type="text/javascript" src="{% static 'js/notifications.js' %}"></script>-->
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap_v4/bootstrap.min.js' %}"></script>
+    <!--script src="{% static 'js/login/login.js' %}"></script-->
+    <script src="{% static 'js/jquery.toast.js' %}"></script>
+</head>
+
+<body class="my-login-page">
+  <section class="h-100">
+    <div class="container h-100">
+      <div class="row justify-content-md-center h-100">
+        <div class="card-wrapper pt-5">
+          <div class="brand">
+            <img src="{% static 'img/logos/gta_km_wb_r.png' %}" alt="THE GENERAL TAX ADMINSITRATION">
+          </div>
+          <div class="card fat">
+            <div class="card-body">
+              <h4 class="card-title">{% trans 'Sign up' %}</h4>
+              <form id="login_form" class="login-form" autocomplete="off">
+                {% csrf_token %}
+                    <div class="form-group">
+                      <label for="email">{% trans 'Email' %}</label>
+                      <input id="email" type="text" class="form-control" name="email" placeholder="example@tax.com" autocomplete="off" pattern="^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$" gautofocus required>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">{% trans 'Password' %}</label>
+                      <input id="password" type="password" name="password" class="form-control" placeholder="secure123" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!#$%'()*+-.,:;<=>?@[\]^_`{|}~]).{8,16}$" minlength="8" maxlength="16" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="password_confirmation">{% trans 'Password confirmation' %}</label>
+                      <input id="password_confirmation" type="password" name="password_confirmation" class="form-control" placeholder="Password Confirmation" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="taxpayer_id">{% trans 'RFC' %}</label>
+                      <input id="taxpayer_id" value="XXX010101XXX" type="text" name="taxpayer_id" autocomplete="off" class="form-control" placeholder="RFC">
+                    </div>
+                  <div id="cont-cap-btn">
+                    <div id="captcha">
+                      <div class="g-recaptcha" id="recaptcha" data-sitekey="6Ldfp9gUAAAAACh1zRFrzzI03EsoL2iuwWBK6pxF"></div>
+                    </div>
+                  </div>
+                  <br>
+                  <button class="btn btn-primary btn-block" type="submit">{% trans 'Sign up' %}</button>
+                  <div class="margin-top20 text-center">
+                    {% trans 'Already have an account?' %} <a href="{% url 'login' %}">{% trans 'Log in' %}</a>
+                  </div>
+              </form>
+            </div>
+          </div>
+          <div class="footer text-center">
+            <hr>
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            Copyright &copy; {% now "Y" %} | {{ PROJECT_NAME_COMPLETE }}<br> 
+            {% for language in languages %}
+              <button class="btn btn-link {% if language.code == LANGUAGE_CODE %}text-primary{% else%}text-light{% endif %} set-language" data-code="{{language.code}}">{{ language.name_translated }}</button>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script type="text/javascript">
+  const email = document.getElementById("email");
+  const password = document.getElementById("password");
+  const password_confirmation = document.getElementById("password_confirmation");
+
+  email.addEventListener("input", function (event) {
+    if (email.validity.patternMismatch) {
+      email.setCustomValidity("Introduce una dirección de correo válida.");
+    } else {
+      email.setCustomValidity("");
+    }
+  });
+  password.addEventListener("input", function (event) {
+    if (password.validity.patternMismatch) {
+      password.setCustomValidity("Introduce una contraseña válida: mínimo 8 caracteres, por lo menos una letra mayúscula, una letra minúscula, un dígito y un carácter especial.");
+    } else {
+      password.setCustomValidity("");
+    }
+  });
+  password_confirmation.addEventListener("input", function (event) {
+    if (password.value != password_confirmation.value){
+      password_confirmation.setCustomValidity("Las contraseñas introducidas no son iguales");
+    }else{
+      password_confirmation.setCustomValidity("");
+    }
+  });
+  
+  var win = location.search.substr(1);
+  if (win.indexOf('P') != -1){
+    $("#proveedor_a").css("font-weight", "bolder");
+  }
+  if (win.indexOf('S') != -1){
+    $("#emisor_a").css("font-weight", "bolder");
+  }
+  if (win.indexOf('business') != -1) {
+    $("#div_role").css("display", "none");
+  }
+  $(document).ready(function() {
+    $("#login_form").submit(function(event) {
+            event.preventDefault(); 
+            data = new FormData($('#login_form')[0]);
+            grecaptcha.reset();
+            $.ajax({
+                  type: 'POST',
+                  data: data,
+                  dataType: 'json',
+                  cache: false,
+                  contentType: false,
+                  processData: false
+              }).done(function(json) {
+                  if (json.success) {
+                    window.location.replace(json.url);
+                  }
+                  else{
+                    /*alert(json.message);*/
+                    $("#login_form")[0].reset();
+                    json.message.forEach(function(message){
+                      if(message){
+                        $.toast({
+                          heading: '',
+                          text: message,
+                          showHideTransition: 'fade',
+                          icon: 'error',
+                          position: 'top-right',
+                          showDuration: '1000',
+                          newestOnTop: true,
+                          hideAfter: false,
+                        });
+                      }
+                    });
+                  }
+              }).fail(function(jqXHR,status, errorThrown) {
+                  console.log(errorThrown);
+                  console.log(errorThrown);
+                  //console.log(jqXHR.responseText);
+                  //console.log(jqXHR.status);
+                  //showSuccessMessage('');
+              });
+    });
+    bootstrap_alert = function () {}
+    bootstrap_alert.warning = function (message, alert, timeout) {
+        $('<div id="floating_alert" class="alert alert-' + alert + ' fade in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>' + message + '&nbsp;&nbsp;</div>').appendTo('body');
+
+        setTimeout(function () {
+            $(".alert").alert('close');
+        }, timeout);
+    }
+  });
+</script>
+<script type="text/javascript">
+  var SET_LANGUAGE = '{% url 'set_language' %}';
+  $('.set-language').on('click', function(event){
+      event.preventDefault();
+      var languageCode = $(this).data('code');
+      var setLanguageForm = new FormData();
+      setLanguageForm.append('language', languageCode);
+      setLanguageForm.append("csrfmiddlewaretoken", $("[name=csrfmiddlewaretoken]").val());
+      $.ajax({
+          type: 'POST',
+          url: SET_LANGUAGE,
+          data: setLanguageForm,
+          dataType: 'json',
+          cache: false,
+          contentType: false,
+          processData: false
+      }).done(function(response) {
+        window.location.reload();
+      }).fail(function(jqXHR,status, errorThrown) {
+          console.log(status);
+      });
+      
+  });
+</script>
+</html>

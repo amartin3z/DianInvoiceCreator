@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load staticfiles %}
+    {% load i18n %}
+    <meta charset="utf-8">
+    <meta name="author" content="UBL">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{ PROJECT_NAME }} | {% trans 'Login' %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap_v4/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/apps/users/login/login.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/toast/jquery.toast.css' %}">
+    <script src="{% static 'js/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap_v4/bootstrap.min.js' %}"></script>
+    <script type="text/javascript">
+     var LOGIN_URL = '{% url "login" %}';
+     var SET_LANGUAGE = '{% url 'set_language' %}';
+    </script>
+    <script src="{% static 'js/apps/users/login/login.js' %}"></script>
+    <script src="{% static 'js/toast/jquery.toast.js' %}"></script>
+</head>
+<body class="my-login-page">
+    <section class="h-100">
+        <div class="container h-100">
+            <div class="row justify-content-md-center h-100">
+                <div class="card-wrapper">
+                    <div class="brand">
+                        <img src="{% static 'img/logos/gta_km_wb_r.png' %}" alt="THE GENERAL TAX ADMINISTRATION">
+                    </div>
+                    <div class="alert alert-success d-none" id="div_strong">
+                        <strong id="div_activate"></strong>
+                    </div>
+                    <div class="card fat">
+                        <div class="card-body">
+                            <h4 class="card-title">{% trans 'Login' %}</h4>
+                            <form id="login_form">
+                                {% csrf_token %}    
+                                <div class="form-group">
+                                    <label for="email">{% trans 'User' %}</label>
+                                    <input id="email" type="email" class="form-control" name="email" value="" required autofocus autocomplete="off">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">{% trans 'Password' %}</label>
+                                    <input id="password" type="password" class="form-control" name="password" required data-eye autocomplete="off">
+                                    <a href="{% url 'auth_password_reset' %}" class="float-right">
+                                        {% trans 'Forgot your password?' %}
+                                    </a>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox mr-sm-2">
+                                        <input type="checkbox" class="custom-control-input" id="remember_me">
+                                        <label class="custom-control-label" for="remember_me">{% trans 'Remember' %}</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group no-margin">
+                                    <button type="submit" class="btn btn-primary btn-block">
+                                        {% trans 'Log in' %}
+                                    </button>
+                                </div>
+                                <div class="margin-top20 text-center">
+                                {% trans 'Create your account' %} <a href="{% url 'registration' %}">{% trans 'Sign up' %}</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages %}
+                        Copyright &copy; {% now "Y" %} | {{ PROJECT_NAME_COMPLETE }}<br> 
+                        {% for language in languages %}<button class="btn btn-link {% if language.code == LANGUAGE_CODE %}text-primary{% else%}text-light{% endif %} set-language" data-code="{{language.code}}">{{ language.name_translated }}</button>{% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+

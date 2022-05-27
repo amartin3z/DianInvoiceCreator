@@ -1,0 +1,77 @@
+{% load static %}
+{% load i18n %}
+<style type="text/css">
+	.text {
+		font-size: 15px;
+	}
+	.uuid {
+		font-size: 18px;
+	}
+	.btn-send-invoices {
+		background-color: #45b547;
+		border-color: #45b547;
+	}
+
+	.btn-send-invoices:hover {
+		background-color: #3b9e3d !important;
+		border-color: #3b9e3d !important;
+	}
+
+	.modal-header {
+		background-color: #737373;
+		color: white;
+	}
+	.bootstrap-tagsinput {
+	    width: -webkit-fill-available;
+	}
+
+	.bootstrap-tagsinput > input {
+	    height: 25px !important;
+	    width: inherit;
+	}
+
+	.select2 {
+	    width: auto !important;
+	}
+</style>
+<div class="modal fade" id="modal-send-email" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header" align="center">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h3>{% trans 'SEND INVOICE BY EMAIL' %}</h3>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="uuid"></p>
+					</div>
+					<div class="col-lg-12">
+						<p class="text">{% trans 'Then add the emails (separated by commas ",") to which you want to send this receipt. The recipient will receive it in the formats you select.' %}</p>
+					</div>
+					<div class="col-lg-12" align="center">
+						<div class="col-lg-6">
+							<label for="xml_check"><img src="{% static 'img/xml.png' %}" width="55px;" height="50px;"></label>
+							<br>
+							<input type="checkbox" class="from-check-input" id="xml_check">
+						</div>
+						<div class="col-lg-6">
+							<label for="pdf_check"><img src="{% static 'img/pdf.png' %}" width="50px;" ></label>
+							<br>
+							<input type="checkbox" class="from-check-input" id="pdf_check">
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<br>
+						<label><strong>* Emails</strong></label>
+						<input type="text" class="form-control" id="emails_destiny" placeholder="{% trans 'Comma separated emails (,)' %}" data-role="tagsinput">
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default btn-close-email">{% trans 'Cancel' %}</button>
+				<button type="button" class="btn btn-success btn-send-invoice-email">{% trans 'Send Invoice' %}</button>
+			</div>
+		</div>
+	</div>
+</div>

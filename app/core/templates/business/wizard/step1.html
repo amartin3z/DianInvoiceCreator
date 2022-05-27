@@ -1,0 +1,30 @@
+<div class="row" id="form-step-0" rol="form" data-toggle="validator">
+    <div class="form-group col-sm-6 col-md-6">
+        <label for="taxpayer_id">R.F.C.*:</label>
+        <input type="text" class="form-control" id="taxpayer_id" name="taxpayer_id"  autocomplete="off" required pattern="[A-Z&Ñ]{3,4}[0-9]{2}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])[A-Z0-9]{2}[0-9A]" placeholder="Registro Fiscal de Contribuyentes" data-taxpayer data-taxpayer-errors value="PECJ920624606">
+        <span class="help-block with-errors"></span>
+    </div>
+    <div class="form-group col-sm-6 col-md-6">
+        <label for="fiscal_regime">R&eacute;gimen Fiscal:</label>
+        <select class="form-control" id="fiscal_regime" name="fiscal_regime">
+            {% for value, description in fiscal_regime %}
+              <option value="{{ value }}">{{ description }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="form-group col-sm-12 col-md-12">
+        <label for="name">Raz&oacute;n Social * :</label>
+        <input type="text" class="form-control form-control-sm" id="name" name="name" autocomplete="off" placeholder="Empresa S.A. de C.V."  value="Empresa S.A. de C.V." autocomplete="off" required>
+        <span class="help-block with-errors"></span>
+    </div>
+     <div class="form-group col-sm-12 col-md-12">
+         <label for="email">Email*:</label>
+         <input type="email" class="form-control form-control-sm" id="email" name="email" placeholder="ejemplo@dominio.com"  value="ejemplo@dominio.com" autocomplete="off" required>
+         <span class="help-block with-errors"></span>
+     </div>
+     <div class="form-group col-sm-10 col-md-10">
+         <label for="input-b2">Logo:</label>
+         <input id="input-b2" name="input-b2" type="file" class="file" data-show-upload="false" data-show-preview="false">
+         <span class="help-block with-errors"></span>
+     </div>
+</div>

@@ -1,0 +1,1451 @@
+[
+    {
+        "pk": 1,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AA",
+            "name": "Advertising",
+            "description": "The service of providing advertising."
+        }
+    },
+    {
+        "pk": 2,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AAA",
+            "name": "Telecommunication",
+            "description": "The service of providing telecommunication activities and/or faclities."
+        }
+    },
+    {
+        "pk": 3,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AAC",
+            "name": "Technical modification",
+            "description": "The service of making technical modifications to a product."
+        }
+    },
+    {
+        "pk": 4,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AAD",
+            "name": "Job-order production",
+            "description": "The service of producing to order."
+        }
+    },
+    {
+        "pk": 5,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AAE",
+            "name": "Outlays",
+            "description": "The service of providing money for outlays on behalf of a trading partner."
+        }
+    },
+    {
+        "pk": 6,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AAF",
+            "name": "Off-premises",
+            "description": "The service of providing services outside the premises of the provider."
+        }
+    },
+    {
+        "pk": 7,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AAH",
+            "name": "Additional processing",
+            "description": "The service of providing additional processing."
+        }
+    },
+    {
+        "pk": 8,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AAI",
+            "name": "Attesting",
+            "description": "The service of certifying validity."
+        }
+    },
+    {
+        "pk": 9,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AAS",
+            "name": "Acceptance",
+            "description": "The service of accepting goods or services."
+        }
+    },
+    {
+        "pk": 10,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AAT",
+            "name": "Rush delivery",
+            "description": "The service to provide a rush delivery."
+        }
+    },
+    {
+        "pk": 11,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AAV",
+            "name": "Special construction",
+            "description": "The service of providing special construction."
+        }
+    },
+    {
+        "pk": 12,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AAY",
+            "name": "Airport facilities",
+            "description": "The service of providing airport facilities."
+        }
+    },
+    {
+        "pk": 13,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AAZ",
+            "name": "Concession",
+            "description": "The service allowing a party to use another party's facilities."
+        }
+    },
+    {
+        "pk": 14,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ABA",
+            "name": "Compulsory storage",
+            "description": "The service provided to hold a compulsory inventory."
+        }
+    },
+    {
+        "pk": 15,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ABB",
+            "name": "Fuel removal",
+            "description": "Remove or off-load fuel from vehicle, vessel or craft."
+        }
+    },
+    {
+        "pk": 16,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ABC",
+            "name": "Into plane",
+            "description": "Service of delivering goods to an aircraft from local storage."
+        }
+    },
+    {
+        "pk": 17,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ABD",
+            "name": "Overtime",
+            "description": "The service of providing labour beyond the established limit of working hours."
+        }
+    },
+    {
+        "pk": 18,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ABF",
+            "name": "Tooling",
+            "description": "The service of providing specific tooling."
+        }
+    },
+    {
+        "pk": 19,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ABK",
+            "name": "Miscellaneous",
+            "description": "Miscellaneous services."
+        }
+    },
+    {
+        "pk": 20,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ABL",
+            "name": "Additional packaging",
+            "description": "The service of providing additional packaging."
+        }
+    },
+    {
+        "pk": 21,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ABN",
+            "name": "Dunnage",
+            "description": "The service of providing additional padding materials required to secure and protect a cargo within a shipping container."
+        }
+    },
+    {
+        "pk": 22,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ABR",
+            "name": "Containerisation",
+            "description": "The service of packing items into a container."
+        }
+    },
+    {
+        "pk": 23,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ABS",
+            "name": "Carton packing",
+            "description": "The service of packing items into a carton."
+        }
+    },
+    {
+        "pk": 24,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ABT",
+            "name": "Hessian wrapped",
+            "description": "The service of hessian wrapping."
+        }
+    },
+    {
+        "pk": 25,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ABU",
+            "name": "Polyethylene wrap packing",
+            "description": "The service of packing in polyethylene wrapping."
+        }
+    },
+    {
+        "pk": 26,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ACF",
+            "name": "Miscellaneous treatment",
+            "description": "Miscellaneous treatment service."
+        }
+    },
+    {
+        "pk": 27,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ACG",
+            "name": "Enamelling treatment",
+            "description": "The service of providing enamelling treatment."
+        }
+    },
+    {
+        "pk": 28,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ACH",
+            "name": "Heat treatment",
+            "description": "The service of treating with heat."
+        }
+    },
+    {
+        "pk": 29,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ACI",
+            "name": "Plating treatment",
+            "description": "The service of providing plating treatment."
+        }
+    },
+    {
+        "pk": 30,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ACJ",
+            "name": "Painting",
+            "description": "The service of painting."
+        }
+    },
+    {
+        "pk": 31,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ACK",
+            "name": "Polishing",
+            "description": "The service of polishing."
+        }
+    },
+    {
+        "pk": 32,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ACL",
+            "name": "Priming",
+            "description": "The service of priming."
+        }
+    },
+    {
+        "pk": 33,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ACM",
+            "name": "Preservation treatment",
+            "description": "The service of preservation treatment."
+        }
+    },
+    {
+        "pk": 34,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ACS",
+            "name": "Fitting",
+            "description": "Fitting service."
+        }
+    },
+    {
+        "pk": 35,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ADC",
+            "name": "Consolidation",
+            "description": "The service of consolidating multiple consignments into one shipment."
+        }
+    },
+    {
+        "pk": 36,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ADE",
+            "name": "Bill of lading",
+            "description": "The service of providing a bill of lading document."
+        }
+    },
+    {
+        "pk": 37,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ADJ",
+            "name": "Airbag",
+            "description": "The service of surrounding a product with an air bag."
+        }
+    },
+    {
+        "pk": 38,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ADK",
+            "name": "Transfer",
+            "description": "The service of transferring."
+        }
+    },
+    {
+        "pk": 39,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ADL",
+            "name": "Slipsheet",
+            "description": "The service of securing a stack of products on a slipsheet."
+        }
+    },
+    {
+        "pk": 40,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ADM",
+            "name": "Binding",
+            "description": "Binding service."
+        }
+    },
+    {
+        "pk": 41,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ADN",
+            "name": "Repair or replacement of broken returnable package",
+            "description": "The service of repairing or replacing a broken returnable package."
+        }
+    },
+    {
+        "pk": 42,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ADO",
+            "name": "Efficient logistics",
+            "description": "A code indicating efficient logistics services."
+        }
+    },
+    {
+        "pk": 43,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ADP",
+            "name": "Merchandising",
+            "description": "A code indicating that merchandising services are in operation."
+        }
+    },
+    {
+        "pk": 44,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ADQ",
+            "name": "Product mix",
+            "description": "A code indicating that product mixing services are in operation."
+        }
+    },
+    {
+        "pk": 45,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ADR",
+            "name": "Other services",
+            "description": "A code indicating that other non-specific services are in operation."
+        }
+    },
+    {
+        "pk": 46,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ADT",
+            "name": "Pick-up",
+            "description": "The service of picking up or collection of goods."
+        }
+    },
+    {
+        "pk": 47,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ADW",
+            "name": "Chronic illness",
+            "description": "The special services provided due to chronic illness."
+        }
+    },
+    {
+        "pk": 48,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ADY",
+            "name": "New product introduction",
+            "description": "A service provided by a buyer when introducing a new product from a suppliers range to the range traded by the buyer."
+        }
+    },
+    {
+        "pk": 49,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ADZ",
+            "name": "Direct delivery",
+            "description": "Direct delivery service."
+        }
+    },
+    {
+        "pk": 50,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEA",
+            "name": "Diversion",
+            "description": "The service of diverting deliverables."
+        }
+    },
+    {
+        "pk": 51,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEB",
+            "name": "Disconnect",
+            "description": "The service is a disconnection."
+        }
+    },
+    {
+        "pk": 52,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEC",
+            "name": "Distribution",
+            "description": "Distribution service."
+        }
+    },
+    {
+        "pk": 53,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AED",
+            "name": "Handling of hazardous cargo",
+            "description": "A service for handling hazardous cargo."
+        }
+    },
+    {
+        "pk": 54,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEF",
+            "name": "Rents and leases",
+            "description": "The service of renting and/or leasing."
+        }
+    },
+    {
+        "pk": 55,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEH",
+            "name": "Location differential",
+            "description": "Delivery to a different location than previously contracted."
+        }
+    },
+    {
+        "pk": 56,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEI",
+            "name": "Aircraft refueling",
+            "description": "Fuel being put into the aircraft."
+        }
+    },
+    {
+        "pk": 57,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEJ",
+            "name": "Fuel shipped into storage",
+            "description": "Fuel being shipped into a storage system."
+        }
+    },
+    {
+        "pk": 58,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEK",
+            "name": "Cash on delivery",
+            "description": "The provision of a cash on delivery (COD) service."
+        }
+    },
+    {
+        "pk": 59,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEL",
+            "name": "Small order processing service",
+            "description": "A service related to the processing of small orders."
+        }
+    },
+    {
+        "pk": 60,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEM",
+            "name": "Clerical or administrative services",
+            "description": "The provision of clerical or administrative services."
+        }
+    },
+    {
+        "pk": 61,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEN",
+            "name": "Guarantee",
+            "description": "The service of providing a guarantee."
+        }
+    },
+    {
+        "pk": 62,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEO",
+            "name": "Collection and recycling",
+            "description": "The service of collection and recycling products."
+        }
+    },
+    {
+        "pk": 63,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEP",
+            "name": "Copyright fee collection",
+            "description": "The service of collecting copyright fees."
+        }
+    },
+    {
+        "pk": 64,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AES",
+            "name": "Veterinary inspection service",
+            "description": "The service of providing veterinary inspection."
+        }
+    },
+    {
+        "pk": 65,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AET",
+            "name": "Pensioner service",
+            "description": "Special service when the subject is a pensioner."
+        }
+    },
+    {
+        "pk": 66,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEU",
+            "name": "Medicine free pass holder",
+            "description": "Special service when the subject holds a medicine free pass."
+        }
+    },
+    {
+        "pk": 67,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEV",
+            "name": "Environmental protection service",
+            "description": "The provision of an environmental protection service."
+        }
+    },
+    {
+        "pk": 68,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEW",
+            "name": "Environmental clean-up service",
+            "description": "The provision of an environmental clean-up service."
+        }
+    },
+    {
+        "pk": 69,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEX",
+            "name": "National cheque processing service outside account area",
+            "description": "Service of processing a national cheque outside the ordering customer's bank trading area."
+        }
+    },
+    {
+        "pk": 70,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEY",
+            "name": "National payment service outside account area",
+            "description": "Service of processing a national payment to a beneficiary holding an account outside the trading area of the ordering customer's bank."
+        }
+    },
+    {
+        "pk": 71,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AEZ",
+            "name": "National payment service within account area",
+            "description": "Service of processing a national payment to a beneficiary holding an account within the trading area of the ordering customer's bank."
+        }
+    },
+    {
+        "pk": 72,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AJ",
+            "name": "Adjustments",
+            "description": "The service of making adjustments."
+        }
+    },
+    {
+        "pk": 73,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "AU",
+            "name": "Authentication",
+            "description": "The service of authenticating."
+        }
+    },
+    {
+        "pk": 74,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CA",
+            "name": "Cataloguing",
+            "description": "The provision of cataloguing services."
+        }
+    },
+    {
+        "pk": 75,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAB",
+            "name": "Cartage",
+            "description": "Movement of goods by heavy duty cart or vehicle."
+        }
+    },
+    {
+        "pk": 76,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAD",
+            "name": "Certification",
+            "description": "The service of certifying."
+        }
+    },
+    {
+        "pk": 77,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAE",
+            "name": "Certificate of conformance",
+            "description": "The service of providing a certificate of conformance."
+        }
+    },
+    {
+        "pk": 78,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAF",
+            "name": "Certificate of origin",
+            "description": "The service of providing a certificate of origin."
+        }
+    },
+    {
+        "pk": 79,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAI",
+            "name": "Cutting",
+            "description": "The service of cutting."
+        }
+    },
+    {
+        "pk": 80,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAJ",
+            "name": "Consular service",
+            "description": "The service provided by consulates."
+        }
+    },
+    {
+        "pk": 81,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAK",
+            "name": "Customer collection",
+            "description": "The service of collecting goods by the customer."
+        }
+    },
+    {
+        "pk": 82,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAL",
+            "name": "Payroll payment service",
+            "description": "Provision of a payroll payment service."
+        }
+    },
+    {
+        "pk": 83,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAM",
+            "name": "Cash transportation",
+            "description": "Provision of a cash transportation service."
+        }
+    },
+    {
+        "pk": 84,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAN",
+            "name": "Home banking service",
+            "description": "Provision of a home banking service."
+        }
+    },
+    {
+        "pk": 85,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAO",
+            "name": "Bilateral agreement service",
+            "description": "Provision of a service as specified in a bilateral special agreement."
+        }
+    },
+    {
+        "pk": 86,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAP",
+            "name": "Insurance brokerage service",
+            "description": "Provision of an insurance brokerage service."
+        }
+    },
+    {
+        "pk": 87,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAQ",
+            "name": "Cheque generation",
+            "description": "Provision of a cheque generation service."
+        }
+    },
+    {
+        "pk": 88,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAR",
+            "name": "Preferential merchandising location",
+            "description": "Service of assigning a preferential location for merchandising."
+        }
+    },
+    {
+        "pk": 89,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAS",
+            "name": "Crane",
+            "description": "The service of providing a crane."
+        }
+    },
+    {
+        "pk": 90,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAT",
+            "name": "Special colour service",
+            "description": "Providing a colour which is different from the default colour."
+        }
+    },
+    {
+        "pk": 91,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAU",
+            "name": "Sorting",
+            "description": "The provision of sorting services."
+        }
+    },
+    {
+        "pk": 92,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAV",
+            "name": "Battery collection and recycling",
+            "description": "The service of collecting and recycling batteries."
+        }
+    },
+    {
+        "pk": 93,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CAW",
+            "name": "Product take back fee",
+            "description": "The fee the consumer must pay the manufacturer to take back the product."
+        }
+    },
+    {
+        "pk": 94,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CD",
+            "name": "Car loading",
+            "description": "Car loading service."
+        }
+    },
+    {
+        "pk": 95,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CG",
+            "name": "Cleaning",
+            "description": "Cleaning service."
+        }
+    },
+    {
+        "pk": 96,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CS",
+            "name": "Cigarette stamping",
+            "description": "The service of providing cigarette stamping."
+        }
+    },
+    {
+        "pk": 97,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "CT",
+            "name": "Count and recount",
+            "description": "The service of doing a count and recount."
+        }
+    },
+    {
+        "pk": 98,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "DAB",
+            "name": "Layout/design",
+            "description": "The service of providing layout/design."
+        }
+    },
+    {
+        "pk": 99,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "DAD",
+            "name": "Driver assigned unloading",
+            "description": "The service of unloading by the driver."
+        }
+    },
+    {
+        "pk": 100,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "DL",
+            "name": "Delivery",
+            "description": "The service of providing delivery."
+        }
+    },
+    {
+        "pk": 101,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "EG",
+            "name": "Engraving",
+            "description": "The service of providing engraving."
+        }
+    },
+    {
+        "pk": 102,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "EP",
+            "name": "Expediting",
+            "description": "The service of expediting."
+        }
+    },
+    {
+        "pk": 103,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ER",
+            "name": "Exchange rate guarantee",
+            "description": "The service of guaranteeing exchange rate."
+        }
+    },
+    {
+        "pk": 104,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "FAA",
+            "name": "Fabrication",
+            "description": "The service of providing fabrication."
+        }
+    },
+    {
+        "pk": 105,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "FAB",
+            "name": "Freight equalization",
+            "description": "The service of load balancing."
+        }
+    },
+    {
+        "pk": 106,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "FAC",
+            "name": "Freight extraordinary handling",
+            "description": "The service of providing freight's extraordinary handling."
+        }
+    },
+    {
+        "pk": 107,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "FC",
+            "name": "Freight service",
+            "description": "The service of moving goods, by whatever means, from one place to another."
+        }
+    },
+    {
+        "pk": 108,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "FH",
+            "name": "Filling/handling",
+            "description": "The service of providing filling/handling."
+        }
+    },
+    {
+        "pk": 109,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "FI",
+            "name": "Financing",
+            "description": "The service of providing financing."
+        }
+    },
+    {
+        "pk": 110,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "GAA",
+            "name": "Grinding",
+            "description": "The service of grinding."
+        }
+    },
+    {
+        "pk": 111,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "HAA",
+            "name": "Hose",
+            "description": "The service of providing a hose."
+        }
+    },
+    {
+        "pk": 112,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "HD",
+            "name": "Handling",
+            "description": "Handling service."
+        }
+    },
+    {
+        "pk": 113,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "HH",
+            "name": "Hoisting and hauling",
+            "description": "The service of hoisting and hauling."
+        }
+    },
+    {
+        "pk": 114,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "IAA",
+            "name": "Installation",
+            "description": "The service of installing."
+        }
+    },
+    {
+        "pk": 115,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "IAB",
+            "name": "Installation and warranty",
+            "description": "The service of installing and providing warranty."
+        }
+    },
+    {
+        "pk": 116,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ID",
+            "name": "Inside delivery",
+            "description": "The service of providing delivery inside."
+        }
+    },
+    {
+        "pk": 117,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "IF",
+            "name": "Inspection",
+            "description": "The service of inspection."
+        }
+    },
+    {
+        "pk": 118,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "IR",
+            "name": "Installation and training",
+            "description": "The service of providing installation and training."
+        }
+    },
+    {
+        "pk": 119,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "IS",
+            "name": "Invoicing",
+            "description": "The service of providing an invoice."
+        }
+    },
+    {
+        "pk": 120,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "KO",
+            "name": "Koshering",
+            "description": "The service of preparing food in accordance with Jewish law."
+        }
+    },
+    {
+        "pk": 121,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "L1",
+            "name": "Carrier count",
+            "description": "The service of counting by the carrier."
+        }
+    },
+    {
+        "pk": 122,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "LA",
+            "name": "Labelling",
+            "description": "Labelling service."
+        }
+    },
+    {
+        "pk": 123,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "LAA",
+            "name": "Labour",
+            "description": "The service to provide required labour."
+        }
+    },
+    {
+        "pk": 124,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "LAB",
+            "name": "Repair and return",
+            "description": "The service of repairing and returning."
+        }
+    },
+    {
+        "pk": 125,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "LF",
+            "name": "Legalisation",
+            "description": "The service of legalising."
+        }
+    },
+    {
+        "pk": 126,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "MAE",
+            "name": "Mounting",
+            "description": "The service of mounting."
+        }
+    },
+    {
+        "pk": 127,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "MI",
+            "name": "Mail invoice",
+            "description": "The service of mailing an invoice."
+        }
+    },
+    {
+        "pk": 128,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ML",
+            "name": "Mail invoice to each location",
+            "description": "The service of mailing an invoice to each location."
+        }
+    },
+    {
+        "pk": 129,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "NAA",
+            "name": "Non-returnable containers",
+            "description": "The service of providing non-returnable containers."
+        }
+    },
+    {
+        "pk": 130,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "OA",
+            "name": "Outside cable connectors",
+            "description": "The service of providing outside cable connectors."
+        }
+    },
+    {
+        "pk": 131,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "PA",
+            "name": "Invoice with shipment",
+            "description": "The service of including the invoice with the shipment."
+        }
+    },
+    {
+        "pk": 132,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "PAA",
+            "name": "Phosphatizing (steel treatment)",
+            "description": "The service of phosphatizing the steel."
+        }
+    },
+    {
+        "pk": 133,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "PC",
+            "name": "Packing",
+            "description": "The service of packing."
+        }
+    },
+    {
+        "pk": 134,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "PL",
+            "name": "Palletizing",
+            "description": "The service of palletizing."
+        }
+    },
+    {
+        "pk": 135,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "RAB",
+            "name": "Repacking",
+            "description": "The service of repacking."
+        }
+    },
+    {
+        "pk": 136,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "RAC",
+            "name": "Repair",
+            "description": "The service of repairing."
+        }
+    },
+    {
+        "pk": 137,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "RAD",
+            "name": "Returnable container",
+            "description": "The service of providing returnable containers."
+        }
+    },
+    {
+        "pk": 138,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "RAF",
+            "name": "Restocking",
+            "description": "The service of restocking."
+        }
+    },
+    {
+        "pk": 139,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "RE",
+            "name": "Re-delivery",
+            "description": "The service of re-delivering."
+        }
+    },
+    {
+        "pk": 140,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "RF",
+            "name": "Refurbishing",
+            "description": "The service of refurbishing."
+        }
+    },
+    {
+        "pk": 141,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "RH",
+            "name": "Rail wagon hire",
+            "description": "The service of providing rail wagons for hire."
+        }
+    },
+    {
+        "pk": 142,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "RV",
+            "name": "Loading",
+            "description": "The service of loading goods."
+        }
+    },
+    {
+        "pk": 143,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "SA",
+            "name": "Salvaging",
+            "description": "The service of salvaging."
+        }
+    },
+    {
+        "pk": 144,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "SAA",
+            "name": "Shipping and handling",
+            "description": "The service of shipping and handling."
+        }
+    },
+    {
+        "pk": 145,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "SAD",
+            "name": "Special packaging",
+            "description": "The service of special packaging."
+        }
+    },
+    {
+        "pk": 146,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "SAE",
+            "name": "Stamping",
+            "description": "The service of stamping."
+        }
+    },
+    {
+        "pk": 147,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "SAI",
+            "name": "Consignee unload",
+            "description": "The service of unloading by the consignee."
+        }
+    },
+    {
+        "pk": 148,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "SG",
+            "name": "Shrink-wrap",
+            "description": "The service of shrink-wrapping."
+        }
+    },
+    {
+        "pk": 149,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "SH",
+            "name": "Special handling",
+            "description": "The service of special handling."
+        }
+    },
+    {
+        "pk": 150,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "SM",
+            "name": "Special finish",
+            "description": "The service of providing a special finish."
+        }
+    },
+    {
+        "pk": 151,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "SU",
+            "name": "Set-up",
+            "description": "The service of setting-up."
+        }
+    },
+    {
+        "pk": 152,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "TAB",
+            "name": "Tank renting",
+            "description": "The service of providing tanks for hire."
+        }
+    },
+    {
+        "pk": 153,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "TAC",
+            "name": "Testing",
+            "description": "The service of testing."
+        }
+    },
+    {
+        "pk": 154,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "TT",
+            "name": "Transportation - third party billing",
+            "description": "The service of providing third party billing for transportation."
+        }
+    },
+    {
+        "pk": 155,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "TV",
+            "name": "Transportation by vendor",
+            "description": "The service of providing transportation by the vendor."
+        }
+    },
+    {
+        "pk": 156,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "V1",
+            "name": "Drop yard",
+            "description": "The service of delivering goods at the yard."
+        }
+    },
+    {
+        "pk": 157,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "V2",
+            "name": "Drop dock",
+            "description": "The service of delivering goods at the dock."
+        }
+    },
+    {
+        "pk": 158,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "WH",
+            "name": "Warehousing",
+            "description": "The service of storing and handling of goods in a warehouse."
+        }
+    },
+    {
+        "pk": 159,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "XAA",
+            "name": "Combine all same day shipment",
+            "description": "The service of combining all shipments for the same day."
+        }
+    },
+    {
+        "pk": 160,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "YY",
+            "name": "Split pick-up",
+            "description": "The service of providing split pick-up."
+        }
+    },
+    {
+        "pk": 161,
+        "model": "peppol.UNCL7161",
+        "fields": {
+            "code": "ZZZ",
+            "name": "Mutually defined",
+            "description": "A code assigned within a code list to be used on an interim basis and as defined among trading partners until a precise code can be assigned to the code list."
+        }
+    }
+]

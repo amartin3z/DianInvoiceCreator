@@ -1,0 +1,18 @@
+{% extends "registration/registration_base.html" %}
+{% load i18n %}
+
+{% block title %}Activación Fallida | La Comer{% endblock %}
+
+{% block content %}
+<p class='text-center'><strong>&iexcl;Error!</strong> Se presentó una excepci&oacute;n en el proceso de activaci&oacute;n.</p>
+{% endblock %}
+
+
+{% comment %}
+**registration/admin_approve.html**
+
+Used if account activation fails. With the default setup, has the following context:
+
+``activation_key``
+    The activation key used during the activation attempt.
+{% endcomment %}

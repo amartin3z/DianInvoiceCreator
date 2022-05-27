@@ -1,0 +1,3106 @@
+[
+    {
+        "pk": 1,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "1A",
+            "name": "Drum, steel"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "1B",
+            "name": "Drum, aluminium"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "1D",
+            "name": "Drum, plywood"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "1F",
+            "name": "Container, flexible",
+            "description": "A packaging container of flexible construction."
+        }
+    },
+    {
+        "pk": 5,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "1G",
+            "name": "Drum, fibre"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "1W",
+            "name": "Drum, wooden"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "2C",
+            "name": "Barrel, wooden"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "3A",
+            "name": "Jerrican, steel"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "3H",
+            "name": "Jerrican, plastic"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "43",
+            "name": "Bag, super bulk",
+            "description": "A cloth plastic or paper based bag having the dimensions of the pallet on which it is constructed."
+        }
+    },
+    {
+        "pk": 11,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "44",
+            "name": "Bag, polybag",
+            "description": "A type of plastic bag, typically used to wrap promotional pieces, publications, product samples, and/or catalogues."
+        }
+    },
+    {
+        "pk": 12,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "4A",
+            "name": "Box, steel"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "4B",
+            "name": "Box, aluminium"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "4C",
+            "name": "Box, natural wood"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "4D",
+            "name": "Box, plywood"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "4F",
+            "name": "Box, reconstituted wood"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "4G",
+            "name": "Box, fibreboard"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "4H",
+            "name": "Box, plastic"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "5H",
+            "name": "Bag, woven plastic"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "5L",
+            "name": "Bag, textile"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "5M",
+            "name": "Bag, paper"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "6H",
+            "name": "Composite packaging, plastic receptacle"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "6P",
+            "name": "Composite packaging, glass receptacle"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "7A",
+            "name": "Case, car",
+            "description": "A type of portable container designed to store equipment for carriage in an automobile."
+        }
+    },
+    {
+        "pk": 25,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "7B",
+            "name": "Case, wooden",
+            "description": "A case made of wood for retaining substances or articles."
+        }
+    },
+    {
+        "pk": 26,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "8A",
+            "name": "Pallet, wooden",
+            "description": "A platform or open-ended box, made of wood, on which goods are retained for ease of mechanical handling during transport and storage."
+        }
+    },
+    {
+        "pk": 27,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "8B",
+            "name": "Crate, wooden",
+            "description": "A receptacle, made of wood, on which goods are retained for ease of mechanical handling during transport and storage."
+        }
+    },
+    {
+        "pk": 28,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "8C",
+            "name": "Bundle, wooden",
+            "description": "Loose or unpacked pieces of wood tied or wrapped together."
+        }
+    },
+    {
+        "pk": 29,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "AA",
+            "name": "Intermediate bulk container, rigid plastic"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "AB",
+            "name": "Receptacle, fibre",
+            "description": "Containment vessel made of fibre used for retaining substances or articles."
+        }
+    },
+    {
+        "pk": 31,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "AC",
+            "name": "Receptacle, paper",
+            "description": "Containment vessel made of paper for retaining substances or articles."
+        }
+    },
+    {
+        "pk": 32,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "AD",
+            "name": "Receptacle, wooden",
+            "description": "Containment vessel made of wood for retaining substances or articles."
+        }
+    },
+    {
+        "pk": 33,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "AE",
+            "name": "Aerosol"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "AF",
+            "name": "Pallet, modular, collars 80cms * 60cms",
+            "description": "Standard sized pallet of dimensions 80 centimeters by 60 centimeters (cms)."
+        }
+    },
+    {
+        "pk": 35,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "AG",
+            "name": "Pallet, shrinkwrapped",
+            "description": "Pallet load secured with transparent plastic film that has been wrapped around and then shrunk tightly."
+        }
+    },
+    {
+        "pk": 36,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "AH",
+            "name": "Pallet, 100cms * 110cms",
+            "description": "Standard sized pallet of dimensions 100centimeters by 110 centimeters (cms)."
+        }
+    },
+    {
+        "pk": 37,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "AI",
+            "name": "Clamshell"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "AJ",
+            "name": "Cone",
+            "description": "Container used in the transport of linear material such as yarn."
+        }
+    },
+    {
+        "pk": 39,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "AL",
+            "name": "Ball",
+            "description": "A spherical containment vessel for retaining substances or articles."
+        }
+    },
+    {
+        "pk": 40,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "AM",
+            "name": "Ampoule, non-protected"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "AP",
+            "name": "Ampoule, protected"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "AT",
+            "name": "Atomizer"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "AV",
+            "name": "Capsule"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "B4",
+            "name": "Belt",
+            "description": "A band use to retain multiple articles together."
+        }
+    },
+    {
+        "pk": 45,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BA",
+            "name": "Barrel"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BB",
+            "name": "Bobbin"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BC",
+            "name": "Bottlecrate / bottlerack"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BD",
+            "name": "Board"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BE",
+            "name": "Bundle"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BF",
+            "name": "Balloon, non-protected"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BG",
+            "name": "Bag",
+            "description": "A receptacle made of flexible material with an open or closed top."
+        }
+    },
+    {
+        "pk": 52,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BH",
+            "name": "Bunch"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BI",
+            "name": "Bin"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BJ",
+            "name": "Bucket"
+        }
+    },
+    {
+        "pk": 55,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BK",
+            "name": "Basket"
+        }
+    },
+    {
+        "pk": 56,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BL",
+            "name": "Bale, compressed"
+        }
+    },
+    {
+        "pk": 57,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BM",
+            "name": "Basin"
+        }
+    },
+    {
+        "pk": 58,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BN",
+            "name": "Bale, non-compressed"
+        }
+    },
+    {
+        "pk": 59,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BO",
+            "name": "Bottle, non-protected, cylindrical",
+            "description": "A narrow-necked cylindrical shaped vessel without external protective packing material."
+        }
+    },
+    {
+        "pk": 60,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BP",
+            "name": "Balloon, protected"
+        }
+    },
+    {
+        "pk": 61,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BQ",
+            "name": "Bottle, protected cylindrical",
+            "description": "A narrow-necked cylindrical shaped vessel with external protective packing material."
+        }
+    },
+    {
+        "pk": 62,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BR",
+            "name": "Bar"
+        }
+    },
+    {
+        "pk": 63,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BS",
+            "name": "Bottle, non-protected, bulbous",
+            "description": "A narrow-necked bulb shaped vessel without external protective packing material."
+        }
+    },
+    {
+        "pk": 64,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BT",
+            "name": "Bolt"
+        }
+    },
+    {
+        "pk": 65,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BU",
+            "name": "Butt"
+        }
+    },
+    {
+        "pk": 66,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BV",
+            "name": "Bottle, protected bulbous",
+            "description": "A narrow-necked bulb shaped vessel with external protective packing material."
+        }
+    },
+    {
+        "pk": 67,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BW",
+            "name": "Box, for liquids"
+        }
+    },
+    {
+        "pk": 68,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BX",
+            "name": "Box"
+        }
+    },
+    {
+        "pk": 69,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BY",
+            "name": "Board, in bundle/bunch/truss"
+        }
+    },
+    {
+        "pk": 70,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "BZ",
+            "name": "Bars, in bundle/bunch/truss"
+        }
+    },
+    {
+        "pk": 71,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CA",
+            "name": "Can, rectangular"
+        }
+    },
+    {
+        "pk": 72,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CB",
+            "name": "Crate, beer"
+        }
+    },
+    {
+        "pk": 73,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CC",
+            "name": "Churn"
+        }
+    },
+    {
+        "pk": 74,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CD",
+            "name": "Can, with handle and spout"
+        }
+    },
+    {
+        "pk": 75,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CE",
+            "name": "Creel"
+        }
+    },
+    {
+        "pk": 76,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CF",
+            "name": "Coffer"
+        }
+    },
+    {
+        "pk": 77,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CG",
+            "name": "Cage"
+        }
+    },
+    {
+        "pk": 78,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CH",
+            "name": "Chest"
+        }
+    },
+    {
+        "pk": 79,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CI",
+            "name": "Canister"
+        }
+    },
+    {
+        "pk": 80,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CJ",
+            "name": "Coffin"
+        }
+    },
+    {
+        "pk": 81,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CK",
+            "name": "Cask"
+        }
+    },
+    {
+        "pk": 82,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CL",
+            "name": "Coil"
+        }
+    },
+    {
+        "pk": 83,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CM",
+            "name": "Card",
+            "description": "A flat package usually made of fibreboard from/to which product is often hung or attached."
+        }
+    },
+    {
+        "pk": 84,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CN",
+            "name": "Container, not otherwise specified as transport equipment"
+        }
+    },
+    {
+        "pk": 85,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CO",
+            "name": "Carboy, non-protected"
+        }
+    },
+    {
+        "pk": 86,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CP",
+            "name": "Carboy, protected"
+        }
+    },
+    {
+        "pk": 87,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CQ",
+            "name": "Cartridge",
+            "description": "Package containing a charge such as propelling explosive for firearms or ink toner for a printer."
+        }
+    },
+    {
+        "pk": 88,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CR",
+            "name": "Crate"
+        }
+    },
+    {
+        "pk": 89,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CS",
+            "name": "Case"
+        }
+    },
+    {
+        "pk": 90,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CT",
+            "name": "Carton"
+        }
+    },
+    {
+        "pk": 91,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CU",
+            "name": "Cup"
+        }
+    },
+    {
+        "pk": 92,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CV",
+            "name": "Cover"
+        }
+    },
+    {
+        "pk": 93,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CW",
+            "name": "Cage, roll"
+        }
+    },
+    {
+        "pk": 94,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CX",
+            "name": "Can, cylindrical"
+        }
+    },
+    {
+        "pk": 95,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CY",
+            "name": "Cylinder"
+        }
+    },
+    {
+        "pk": 96,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "CZ",
+            "name": "Canvas"
+        }
+    },
+    {
+        "pk": 97,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DA",
+            "name": "Crate, multiple layer, plastic"
+        }
+    },
+    {
+        "pk": 98,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DB",
+            "name": "Crate, multiple layer, wooden"
+        }
+    },
+    {
+        "pk": 99,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DC",
+            "name": "Crate, multiple layer, cardboard"
+        }
+    },
+    {
+        "pk": 100,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DG",
+            "name": "Cage, Commonwealth Handling Equipment Pool (CHEP)"
+        }
+    },
+    {
+        "pk": 101,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DH",
+            "name": "Box, Commonwealth Handling Equipment Pool (CHEP), Eurobox",
+            "description": "A box mounted on a pallet base under the control of CHEP."
+        }
+    },
+    {
+        "pk": 102,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DI",
+            "name": "Drum, iron"
+        }
+    },
+    {
+        "pk": 103,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DJ",
+            "name": "Demijohn, non-protected"
+        }
+    },
+    {
+        "pk": 104,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DK",
+            "name": "Crate, bulk, cardboard"
+        }
+    },
+    {
+        "pk": 105,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DL",
+            "name": "Crate, bulk, plastic"
+        }
+    },
+    {
+        "pk": 106,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DM",
+            "name": "Crate, bulk, wooden"
+        }
+    },
+    {
+        "pk": 107,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DN",
+            "name": "Dispenser"
+        }
+    },
+    {
+        "pk": 108,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DP",
+            "name": "Demijohn, protected"
+        }
+    },
+    {
+        "pk": 109,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DR",
+            "name": "Drum"
+        }
+    },
+    {
+        "pk": 110,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DS",
+            "name": "Tray, one layer no cover, plastic"
+        }
+    },
+    {
+        "pk": 111,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DT",
+            "name": "Tray, one layer no cover, wooden"
+        }
+    },
+    {
+        "pk": 112,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DU",
+            "name": "Tray, one layer no cover, polystyrene"
+        }
+    },
+    {
+        "pk": 113,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DV",
+            "name": "Tray, one layer no cover, cardboard"
+        }
+    },
+    {
+        "pk": 114,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DW",
+            "name": "Tray, two layers no cover, plastic tray"
+        }
+    },
+    {
+        "pk": 115,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DX",
+            "name": "Tray, two layers no cover, wooden"
+        }
+    },
+    {
+        "pk": 116,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "DY",
+            "name": "Tray, two layers no cover, cardboard"
+        }
+    },
+    {
+        "pk": 117,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "EC",
+            "name": "Bag, plastic"
+        }
+    },
+    {
+        "pk": 118,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ED",
+            "name": "Case, with pallet base"
+        }
+    },
+    {
+        "pk": 119,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "EE",
+            "name": "Case, with pallet base, wooden"
+        }
+    },
+    {
+        "pk": 120,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "EF",
+            "name": "Case, with pallet base, cardboard"
+        }
+    },
+    {
+        "pk": 121,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "EG",
+            "name": "Case, with pallet base, plastic"
+        }
+    },
+    {
+        "pk": 122,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "EH",
+            "name": "Case, with pallet base, metal"
+        }
+    },
+    {
+        "pk": 123,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "EI",
+            "name": "Case, isothermic"
+        }
+    },
+    {
+        "pk": 124,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "EN",
+            "name": "Envelope"
+        }
+    },
+    {
+        "pk": 125,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "FB",
+            "name": "Flexibag",
+            "description": "A flexible containment bag made of plastic, typically for the transportation bulk non-hazardous cargoes using standard size shipping containers."
+        }
+    },
+    {
+        "pk": 126,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "FC",
+            "name": "Crate, fruit"
+        }
+    },
+    {
+        "pk": 127,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "FD",
+            "name": "Crate, framed"
+        }
+    },
+    {
+        "pk": 128,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "FE",
+            "name": "Flexitank",
+            "description": "A flexible containment tank made of plastic, typically for the transportation bulk non-hazardous cargoes using standard size shipping containers."
+        }
+    },
+    {
+        "pk": 129,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "FI",
+            "name": "Firkin"
+        }
+    },
+    {
+        "pk": 130,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "FL",
+            "name": "Flask"
+        }
+    },
+    {
+        "pk": 131,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "FO",
+            "name": "Footlocker"
+        }
+    },
+    {
+        "pk": 132,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "FP",
+            "name": "Filmpack"
+        }
+    },
+    {
+        "pk": 133,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "FR",
+            "name": "Frame"
+        }
+    },
+    {
+        "pk": 134,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "FT",
+            "name": "Foodtainer"
+        }
+    },
+    {
+        "pk": 135,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "FW",
+            "name": "Cart, flatbed",
+            "description": "Wheeled flat bedded device on which trays or other regular shaped items are packed for transportation purposes."
+        }
+    },
+    {
+        "pk": 136,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "FX",
+            "name": "Bag, flexible container"
+        }
+    },
+    {
+        "pk": 137,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "GB",
+            "name": "Bottle, gas",
+            "description": "A narrow-necked metal cylinder for retention of liquefied or compressed gas."
+        }
+    },
+    {
+        "pk": 138,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "GI",
+            "name": "Girder"
+        }
+    },
+    {
+        "pk": 139,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "GL",
+            "name": "Container, gallon",
+            "description": "A container with a capacity of one gallon."
+        }
+    },
+    {
+        "pk": 140,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "GR",
+            "name": "Receptacle, glass",
+            "description": "Containment vessel made of glass for retaining substances or articles."
+        }
+    },
+    {
+        "pk": 141,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "GU",
+            "name": "Tray, containing horizontally stacked flat items",
+            "description": "Tray containing flat items stacked on top of one another."
+        }
+    },
+    {
+        "pk": 142,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "GY",
+            "name": "Bag, gunny",
+            "description": "A sack made of gunny or burlap, used for transporting coarse commodities, such as grains, potatoes, and other agricultural products."
+        }
+    },
+    {
+        "pk": 143,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "GZ",
+            "name": "Girders, in bundle/bunch/truss"
+        }
+    },
+    {
+        "pk": 144,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "HA",
+            "name": "Basket, with handle, plastic"
+        }
+    },
+    {
+        "pk": 145,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "HB",
+            "name": "Basket, with handle, wooden"
+        }
+    },
+    {
+        "pk": 146,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "HC",
+            "name": "Basket, with handle, cardboard"
+        }
+    },
+    {
+        "pk": 147,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "HG",
+            "name": "Hogshead"
+        }
+    },
+    {
+        "pk": 148,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "HN",
+            "name": "Hanger",
+            "description": "A purpose shaped device with a hook at the top for hanging items from a rail."
+        }
+    },
+    {
+        "pk": 149,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "HR",
+            "name": "Hamper"
+        }
+    },
+    {
+        "pk": 150,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "IA",
+            "name": "Package, display, wooden"
+        }
+    },
+    {
+        "pk": 151,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "IB",
+            "name": "Package, display, cardboard"
+        }
+    },
+    {
+        "pk": 152,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "IC",
+            "name": "Package, display, plastic"
+        }
+    },
+    {
+        "pk": 153,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ID",
+            "name": "Package, display, metal"
+        }
+    },
+    {
+        "pk": 154,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "IE",
+            "name": "Package, show"
+        }
+    },
+    {
+        "pk": 155,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "IF",
+            "name": "Package, flow",
+            "description": "A flexible tubular package or skin, possibly transparent, often used for containment of foodstuffs (e.g. salami sausage)."
+        }
+    },
+    {
+        "pk": 156,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "IG",
+            "name": "Package, paper wrapped"
+        }
+    },
+    {
+        "pk": 157,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "IH",
+            "name": "Drum, plastic"
+        }
+    },
+    {
+        "pk": 158,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "IK",
+            "name": "Package, cardboard, with bottle grip-holes",
+            "description": "Packaging material made out of cardboard that facilitates the separation of individual glass or plastic bottles."
+        }
+    },
+    {
+        "pk": 159,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "IL",
+            "name": "Tray, rigid, lidded stackable (CEN TS 14482:2002)",
+            "description": "Lidded stackable rigid tray compliant with CEN TS 14482:2002."
+        }
+    },
+    {
+        "pk": 160,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "IN",
+            "name": "Ingot"
+        }
+    },
+    {
+        "pk": 161,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "IZ",
+            "name": "Ingots, in bundle/bunch/truss"
+        }
+    },
+    {
+        "pk": 162,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "JB",
+            "name": "Bag, jumbo",
+            "description": "A flexible containment bag, widely used for storage, transportation and handling of powder, flake or granular materials. Typically constructed from woven polypropylene (PP) fabric in the form of cubic bags."
+        }
+    },
+    {
+        "pk": 163,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "JC",
+            "name": "Jerrican, rectangular"
+        }
+    },
+    {
+        "pk": 164,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "JG",
+            "name": "Jug"
+        }
+    },
+    {
+        "pk": 165,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "JR",
+            "name": "Jar"
+        }
+    },
+    {
+        "pk": 166,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "JT",
+            "name": "Jutebag"
+        }
+    },
+    {
+        "pk": 167,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "JY",
+            "name": "Jerrican, cylindrical"
+        }
+    },
+    {
+        "pk": 168,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "KG",
+            "name": "Keg"
+        }
+    },
+    {
+        "pk": 169,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "KI",
+            "name": "Kit",
+            "description": "A set of articles or implements used for a specific purpose."
+        }
+    },
+    {
+        "pk": 170,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "LE",
+            "name": "Luggage",
+            "description": "A collection of bags, cases and/or containers which hold personal belongings for a journey."
+        }
+    },
+    {
+        "pk": 171,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "LG",
+            "name": "Log"
+        }
+    },
+    {
+        "pk": 172,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "LT",
+            "name": "Lot"
+        }
+    },
+    {
+        "pk": 173,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "LU",
+            "name": "Lug",
+            "description": "A wooden box for the transportation and storage of fruit or vegetables."
+        }
+    },
+    {
+        "pk": 174,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "LV",
+            "name": "Liftvan",
+            "description": "A wooden or metal container used for packing household goods and personal effects."
+        }
+    },
+    {
+        "pk": 175,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "LZ",
+            "name": "Logs, in bundle/bunch/truss"
+        }
+    },
+    {
+        "pk": 176,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "MA",
+            "name": "Crate, metal",
+            "description": "Containment box made of metal for retaining substances or articles."
+        }
+    },
+    {
+        "pk": 177,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "MB",
+            "name": "Bag, multiply"
+        }
+    },
+    {
+        "pk": 178,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "MC",
+            "name": "Crate, milk"
+        }
+    },
+    {
+        "pk": 179,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ME",
+            "name": "Container, metal",
+            "description": "A type of containment box made of metal for retaining substances or articles, not otherwise specified as transport equipment."
+        }
+    },
+    {
+        "pk": 180,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "MR",
+            "name": "Receptacle, metal",
+            "description": "Containment vessel made of metal for retaining substances or articles."
+        }
+    },
+    {
+        "pk": 181,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "MS",
+            "name": "Sack, multi-wall"
+        }
+    },
+    {
+        "pk": 182,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "MT",
+            "name": "Mat"
+        }
+    },
+    {
+        "pk": 183,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "MW",
+            "name": "Receptacle, plastic wrapped",
+            "description": "Containment vessel wrapped with plastic for retaining substances or articles."
+        }
+    },
+    {
+        "pk": 184,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "MX",
+            "name": "Matchbox"
+        }
+    },
+    {
+        "pk": 185,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "NA",
+            "name": "Not available"
+        }
+    },
+    {
+        "pk": 186,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "NE",
+            "name": "Unpacked or unpackaged"
+        }
+    },
+    {
+        "pk": 187,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "NF",
+            "name": "Unpacked or unpackaged, single unit"
+        }
+    },
+    {
+        "pk": 188,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "NG",
+            "name": "Unpacked or unpackaged, multiple units"
+        }
+    },
+    {
+        "pk": 189,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "NS",
+            "name": "Nest"
+        }
+    },
+    {
+        "pk": 190,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "NT",
+            "name": "Net"
+        }
+    },
+    {
+        "pk": 191,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "NU",
+            "name": "Net, tube, plastic"
+        }
+    },
+    {
+        "pk": 192,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "NV",
+            "name": "Net, tube, textile"
+        }
+    },
+    {
+        "pk": 193,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "OA",
+            "name": "Pallet, CHEP 40 cm x 60 cm",
+            "description": "Commonwealth Handling Equipment Pool (CHEP) standard pallet of dimensions 40 centimeters x 60 centimeters."
+        }
+    },
+    {
+        "pk": 194,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "OB",
+            "name": "Pallet, CHEP 80 cm x 120 cm",
+            "description": "Commonwealth Handling Equipment Pool (CHEP) standard pallet of dimensions 80 centimeters x 120 centimeters."
+        }
+    },
+    {
+        "pk": 195,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "OC",
+            "name": "Pallet, CHEP 100 cm x 120 cm",
+            "description": "Commonwealth Handling Equipment Pool (CHEP) standard pallet of dimensions 100 centimeters x 120 centimeters."
+        }
+    },
+    {
+        "pk": 196,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "OD",
+            "name": "Pallet, AS 4068-1993",
+            "description": "Australian standard pallet of dimensions 115.5 centimeters x 116.5 centimeters."
+        }
+    },
+    {
+        "pk": 197,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "OE",
+            "name": "Pallet, ISO T11",
+            "description": "ISO standard pallet of dimensions 110 centimeters x 110 centimeters, prevalent in Asia - Pacific region."
+        }
+    },
+    {
+        "pk": 198,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "OF",
+            "name": "Platform, unspecified weight or dimension",
+            "description": "A pallet equivalent shipping platform of unknown dimensions or unknown weight."
+        }
+    },
+    {
+        "pk": 199,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "OK",
+            "name": "Block",
+            "description": "A solid piece of a hard substance, such as granite, having one or more flat sides."
+        }
+    },
+    {
+        "pk": 200,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "OT",
+            "name": "Octabin",
+            "description": "A standard cardboard container of large dimensions for storing for example vegetables, granules of plastics or other dry products."
+        }
+    },
+    {
+        "pk": 201,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "OU",
+            "name": "Container, outer",
+            "description": "A type of containment box that serves as the outer shipping container, not otherwise specified as transport equipment."
+        }
+    },
+    {
+        "pk": 202,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "P2",
+            "name": "Pan",
+            "description": "A shallow, wide, open container, usually of metal."
+        }
+    },
+    {
+        "pk": 203,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PA",
+            "name": "Packet",
+            "description": "Small package."
+        }
+    },
+    {
+        "pk": 204,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PB",
+            "name": "Pallet, box Combined open-ended box and pallet"
+        }
+    },
+    {
+        "pk": 205,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PC",
+            "name": "Parcel"
+        }
+    },
+    {
+        "pk": 206,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PD",
+            "name": "Pallet, modular, collars 80cms * 100cms",
+            "description": "Standard sized pallet of dimensions 80 centimeters by 100 centimeters (cms)."
+        }
+    },
+    {
+        "pk": 207,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PE",
+            "name": "Pallet, modular, collars 80cms * 120cms",
+            "description": "Standard sized pallet of dimensions 80 centimeters by 120 centimeters (cms)."
+        }
+    },
+    {
+        "pk": 208,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PF",
+            "name": "Pen",
+            "description": "A small open top enclosure for retaining animals."
+        }
+    },
+    {
+        "pk": 209,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PG",
+            "name": "Plate"
+        }
+    },
+    {
+        "pk": 210,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PH",
+            "name": "Pitcher"
+        }
+    },
+    {
+        "pk": 211,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PI",
+            "name": "Pipe"
+        }
+    },
+    {
+        "pk": 212,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PJ",
+            "name": "Punnet"
+        }
+    },
+    {
+        "pk": 213,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PK",
+            "name": "Package",
+            "description": "Standard packaging unit."
+        }
+    },
+    {
+        "pk": 214,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PL",
+            "name": "Pail"
+        }
+    },
+    {
+        "pk": 215,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PN",
+            "name": "Plank"
+        }
+    },
+    {
+        "pk": 216,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PO",
+            "name": "Pouch"
+        }
+    },
+    {
+        "pk": 217,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PP",
+            "name": "Piece",
+            "description": "A loose or unpacked article."
+        }
+    },
+    {
+        "pk": 218,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PR",
+            "name": "Receptacle, plastic",
+            "description": "Containment vessel made of plastic for retaining substances or articles."
+        }
+    },
+    {
+        "pk": 219,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PT",
+            "name": "Pot"
+        }
+    },
+    {
+        "pk": 220,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PU",
+            "name": "Tray"
+        }
+    },
+    {
+        "pk": 221,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PV",
+            "name": "Pipes, in bundle/bunch/truss"
+        }
+    },
+    {
+        "pk": 222,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PX",
+            "name": "Pallet",
+            "description": "Platform or open-ended box, usually made of wood, on which goods are retained for ease of mechanical handling during transport and storage."
+        }
+    },
+    {
+        "pk": 223,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PY",
+            "name": "Plates, in bundle/bunch/truss"
+        }
+    },
+    {
+        "pk": 224,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "PZ",
+            "name": "Planks, in bundle/bunch/truss"
+        }
+    },
+    {
+        "pk": 225,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "QA",
+            "name": "Drum, steel, non-removable head"
+        }
+    },
+    {
+        "pk": 226,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "QB",
+            "name": "Drum, steel, removable head"
+        }
+    },
+    {
+        "pk": 227,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "QC",
+            "name": "Drum, aluminium, non-removable head"
+        }
+    },
+    {
+        "pk": 228,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "QD",
+            "name": "Drum, aluminium, removable head"
+        }
+    },
+    {
+        "pk": 229,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "QF",
+            "name": "Drum, plastic, non-removable head"
+        }
+    },
+    {
+        "pk": 230,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "QG",
+            "name": "Drum, plastic, removable head"
+        }
+    },
+    {
+        "pk": 231,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "QH",
+            "name": "Barrel, wooden, bung type"
+        }
+    },
+    {
+        "pk": 232,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "QJ",
+            "name": "Barrel, wooden, removable head"
+        }
+    },
+    {
+        "pk": 233,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "QK",
+            "name": "Jerrican, steel, non-removable head"
+        }
+    },
+    {
+        "pk": 234,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "QL",
+            "name": "Jerrican, steel, removable head"
+        }
+    },
+    {
+        "pk": 235,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "QM",
+            "name": "Jerrican, plastic, non-removable head"
+        }
+    },
+    {
+        "pk": 236,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "QN",
+            "name": "Jerrican, plastic, removable head"
+        }
+    },
+    {
+        "pk": 237,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "QP",
+            "name": "Box, wooden, natural wood, ordinary"
+        }
+    },
+    {
+        "pk": 238,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "QQ",
+            "name": "Box, wooden, natural wood, with sift proof walls"
+        }
+    },
+    {
+        "pk": 239,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "QR",
+            "name": "Box, plastic, expanded"
+        }
+    },
+    {
+        "pk": 240,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "QS",
+            "name": "Box, plastic, solid"
+        }
+    },
+    {
+        "pk": 241,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "RD",
+            "name": "Rod"
+        }
+    },
+    {
+        "pk": 242,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "RG",
+            "name": "Ring"
+        }
+    },
+    {
+        "pk": 243,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "RJ",
+            "name": "Rack, clothing hanger"
+        }
+    },
+    {
+        "pk": 244,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "RK",
+            "name": "Rack"
+        }
+    },
+    {
+        "pk": 245,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "RL",
+            "name": "Reel",
+            "description": "Cylindrical rotatory device with a rim at each end on which materials are wound."
+        }
+    },
+    {
+        "pk": 246,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "RO",
+            "name": "Roll"
+        }
+    },
+    {
+        "pk": 247,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "RT",
+            "name": "Rednet",
+            "description": "Containment material made of red mesh netting for retaining articles (e.g. trees)."
+        }
+    },
+    {
+        "pk": 248,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "RZ",
+            "name": "Rods, in bundle/bunch/truss"
+        }
+    },
+    {
+        "pk": 249,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SA",
+            "name": "Sack"
+        }
+    },
+    {
+        "pk": 250,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SB",
+            "name": "Slab"
+        }
+    },
+    {
+        "pk": 251,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SC",
+            "name": "Crate, shallow"
+        }
+    },
+    {
+        "pk": 252,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SD",
+            "name": "Spindle"
+        }
+    },
+    {
+        "pk": 253,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SE",
+            "name": "Sea-chest"
+        }
+    },
+    {
+        "pk": 254,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SH",
+            "name": "Sachet"
+        }
+    },
+    {
+        "pk": 255,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SI",
+            "name": "Skid",
+            "description": "A low movable platform or pallet to facilitate the handling and transport of goods."
+        }
+    },
+    {
+        "pk": 256,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SK",
+            "name": "Case, skeleton"
+        }
+    },
+    {
+        "pk": 257,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SL",
+            "name": "Slipsheet",
+            "description": "Hard plastic sheeting primarily used as the base on which to stack goods to optimise the space within a container. May be used as an alternative to a palletized packaging."
+        }
+    },
+    {
+        "pk": 258,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SM",
+            "name": "Sheetmetal"
+        }
+    },
+    {
+        "pk": 259,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SO",
+            "name": "Spool",
+            "description": "A packaging container used in the transport of such items as wire, cable, tape and yarn."
+        }
+    },
+    {
+        "pk": 260,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SP",
+            "name": "Sheet, plastic wrapping"
+        }
+    },
+    {
+        "pk": 261,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SS",
+            "name": "Case, steel"
+        }
+    },
+    {
+        "pk": 262,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ST",
+            "name": "Sheet"
+        }
+    },
+    {
+        "pk": 263,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SU",
+            "name": "Suitcase"
+        }
+    },
+    {
+        "pk": 264,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SV",
+            "name": "Envelope, steel"
+        }
+    },
+    {
+        "pk": 265,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SW",
+            "name": "Shrinkwrapped",
+            "description": "Goods retained in a transparent plastic film that has been wrapped around and then shrunk tightly on to the goods."
+        }
+    },
+    {
+        "pk": 266,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SY",
+            "name": "Sleeve"
+        }
+    },
+    {
+        "pk": 267,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "SZ",
+            "name": "Sheets, in bundle/bunch/truss"
+        }
+    },
+    {
+        "pk": 268,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "T1",
+            "name": "Tablet",
+            "description": "A loose or unpacked article in the form of a bar, block or piece."
+        }
+    },
+    {
+        "pk": 269,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TB",
+            "name": "Tub"
+        }
+    },
+    {
+        "pk": 270,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TC",
+            "name": "Tea-chest"
+        }
+    },
+    {
+        "pk": 271,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TD",
+            "name": "Tube, collapsible"
+        }
+    },
+    {
+        "pk": 272,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TE",
+            "name": "Tyre",
+            "description": "A ring made of rubber and/or metal surrounding a wheel."
+        }
+    },
+    {
+        "pk": 273,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TG",
+            "name": "Tank container, generic",
+            "description": "A specially constructed container for transporting liquids and gases in bulk."
+        }
+    },
+    {
+        "pk": 274,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TI",
+            "name": "Tierce"
+        }
+    },
+    {
+        "pk": 275,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TK",
+            "name": "Tank, rectangular"
+        }
+    },
+    {
+        "pk": 276,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TL",
+            "name": "Tub, with lid"
+        }
+    },
+    {
+        "pk": 277,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TN",
+            "name": "Tin"
+        }
+    },
+    {
+        "pk": 278,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TO",
+            "name": "Tun"
+        }
+    },
+    {
+        "pk": 279,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TR",
+            "name": "Trunk"
+        }
+    },
+    {
+        "pk": 280,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TS",
+            "name": "Truss"
+        }
+    },
+    {
+        "pk": 281,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TT",
+            "name": "Bag, tote",
+            "description": "A capacious bag or basket."
+        }
+    },
+    {
+        "pk": 282,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TU",
+            "name": "Tube"
+        }
+    },
+    {
+        "pk": 283,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TV",
+            "name": "Tube, with nozzle",
+            "description": "A tube made of plastic, metal or cardboard fitted with a nozzle, containing a liquid or semi-liquid product, e.g. silicon."
+        }
+    },
+    {
+        "pk": 284,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TW",
+            "name": "Pallet, triwall",
+            "description": "A lightweight pallet made from heavy duty corrugated board."
+        }
+    },
+    {
+        "pk": 285,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TY",
+            "name": "Tank, cylindrical"
+        }
+    },
+    {
+        "pk": 286,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "TZ",
+            "name": "Tubes, in bundle/bunch/truss"
+        }
+    },
+    {
+        "pk": 287,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "UC",
+            "name": "Uncaged"
+        }
+    },
+    {
+        "pk": 288,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "UN",
+            "name": "Unit",
+            "description": "A type of package composed of a single item or object, not otherwise specified as a unit of transport equipment."
+        }
+    },
+    {
+        "pk": 289,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "VA",
+            "name": "Vat"
+        }
+    },
+    {
+        "pk": 290,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "VG",
+            "name": "Bulk, gas (at 1031 mbar and 15\u00b0C)"
+        }
+    },
+    {
+        "pk": 291,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "VI",
+            "name": "Vial"
+        }
+    },
+    {
+        "pk": 292,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "VK",
+            "name": "Vanpack",
+            "description": "A type of wooden crate."
+        }
+    },
+    {
+        "pk": 293,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "VL",
+            "name": "Bulk, liquid"
+        }
+    },
+    {
+        "pk": 294,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "VO",
+            "name": "Bulk, solid, large particles (\u201cnodules\u201d)"
+        }
+    },
+    {
+        "pk": 295,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "VP",
+            "name": "Vacuum-packed"
+        }
+    },
+    {
+        "pk": 296,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "VQ",
+            "name": "Bulk, liquefied gas (at abnormal temperature/pressure)"
+        }
+    },
+    {
+        "pk": 297,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "VN",
+            "name": "Vehicle",
+            "description": "A self-propelled means of conveyance."
+        }
+    },
+    {
+        "pk": 298,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "VR",
+            "name": "Bulk, solid, granular particles (\u201cgrains\u201d)"
+        }
+    },
+    {
+        "pk": 299,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "VS",
+            "name": "Bulk, scrap metal",
+            "description": "Loose or unpacked scrap metal transported in bulk form."
+        }
+    },
+    {
+        "pk": 300,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "VY",
+            "name": "Bulk, solid, fine particles (\u201cpowders\u201d)"
+        }
+    },
+    {
+        "pk": 301,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WA",
+            "name": "Intermediate bulk container",
+            "description": "A reusable container made of metal, plastic, textile, wood or composite materials used to facilitate transportation of bulk solids and liquids in manageable volumes."
+        }
+    },
+    {
+        "pk": 302,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WB",
+            "name": "Wickerbottle"
+        }
+    },
+    {
+        "pk": 303,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WC",
+            "name": "Intermediate bulk container, steel"
+        }
+    },
+    {
+        "pk": 304,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WD",
+            "name": "Intermediate bulk container, aluminium"
+        }
+    },
+    {
+        "pk": 305,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WF",
+            "name": "Intermediate bulk container, metal"
+        }
+    },
+    {
+        "pk": 306,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WG",
+            "name": "Intermediate bulk container, steel, pressurised > 10 kpa"
+        }
+    },
+    {
+        "pk": 307,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WH",
+            "name": "Intermediate bulk container, aluminium, pressurised > 10 kpa"
+        }
+    },
+    {
+        "pk": 308,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WJ",
+            "name": "Intermediate bulk container, metal, pressure 10 kpa"
+        }
+    },
+    {
+        "pk": 309,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WK",
+            "name": "Intermediate bulk container, steel, liquid"
+        }
+    },
+    {
+        "pk": 310,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WL",
+            "name": "Intermediate bulk container, aluminium, liquid"
+        }
+    },
+    {
+        "pk": 311,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WM",
+            "name": "Intermediate bulk container, metal, liquid"
+        }
+    },
+    {
+        "pk": 312,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WN",
+            "name": "Intermediate bulk container, woven plastic, without coat/liner"
+        }
+    },
+    {
+        "pk": 313,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WP",
+            "name": "Intermediate bulk container, woven plastic, coated"
+        }
+    },
+    {
+        "pk": 314,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WQ",
+            "name": "Intermediate bulk container, woven plastic, with liner"
+        }
+    },
+    {
+        "pk": 315,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WR",
+            "name": "Intermediate bulk container, woven plastic, coated and liner"
+        }
+    },
+    {
+        "pk": 316,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WS",
+            "name": "Intermediate bulk container, plastic film"
+        }
+    },
+    {
+        "pk": 317,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WT",
+            "name": "Intermediate bulk container, textile with out coat/liner"
+        }
+    },
+    {
+        "pk": 318,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WU",
+            "name": "Intermediate bulk container, natural wood, with inner liner"
+        }
+    },
+    {
+        "pk": 319,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WV",
+            "name": "Intermediate bulk container, textile, coated"
+        }
+    },
+    {
+        "pk": 320,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WW",
+            "name": "Intermediate bulk container, textile, with liner"
+        }
+    },
+    {
+        "pk": 321,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WX",
+            "name": "Intermediate bulk container, textile, coated and liner"
+        }
+    },
+    {
+        "pk": 322,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WY",
+            "name": "Intermediate bulk container, plywood, with inner liner"
+        }
+    },
+    {
+        "pk": 323,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "WZ",
+            "name": "Intermediate bulk container, reconstituted wood, with inner liner"
+        }
+    },
+    {
+        "pk": 324,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "XA",
+            "name": "Bag, woven plastic, without inner coat/liner"
+        }
+    },
+    {
+        "pk": 325,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "XB",
+            "name": "Bag, woven plastic, sift proof"
+        }
+    },
+    {
+        "pk": 326,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "XC",
+            "name": "Bag, woven plastic, water resistant"
+        }
+    },
+    {
+        "pk": 327,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "XD",
+            "name": "Bag, plastics film"
+        }
+    },
+    {
+        "pk": 328,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "XF",
+            "name": "Bag, textile, without inner coat/liner"
+        }
+    },
+    {
+        "pk": 329,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "XG",
+            "name": "Bag, textile, sift proof"
+        }
+    },
+    {
+        "pk": 330,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "XH",
+            "name": "Bag, textile, water resistant"
+        }
+    },
+    {
+        "pk": 331,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "XJ",
+            "name": "Bag, paper, multi-wall"
+        }
+    },
+    {
+        "pk": 332,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "XK",
+            "name": "Bag, paper, multi-wall, water resistant"
+        }
+    },
+    {
+        "pk": 333,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YA",
+            "name": "Composite packaging, plastic receptacle in steel drum"
+        }
+    },
+    {
+        "pk": 334,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YB",
+            "name": "Composite packaging, plastic receptacle in steel crate box"
+        }
+    },
+    {
+        "pk": 335,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YC",
+            "name": "Composite packaging, plastic receptacle in aluminium drum"
+        }
+    },
+    {
+        "pk": 336,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YD",
+            "name": "Composite packaging, plastic receptacle in aluminium crate"
+        }
+    },
+    {
+        "pk": 337,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YF",
+            "name": "Composite packaging, plastic receptacle in wooden box"
+        }
+    },
+    {
+        "pk": 338,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YG",
+            "name": "Composite packaging, plastic receptacle in plywood drum"
+        }
+    },
+    {
+        "pk": 339,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YH",
+            "name": "Composite packaging, plastic receptacle in plywood box"
+        }
+    },
+    {
+        "pk": 340,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YJ",
+            "name": "Composite packaging, plastic receptacle in fibre drum"
+        }
+    },
+    {
+        "pk": 341,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YK",
+            "name": "Composite packaging, plastic receptacle in fibreboard box"
+        }
+    },
+    {
+        "pk": 342,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YL",
+            "name": "Composite packaging, plastic receptacle in plastic drum"
+        }
+    },
+    {
+        "pk": 343,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YM",
+            "name": "Composite packaging, plastic receptacle in solid plastic box"
+        }
+    },
+    {
+        "pk": 344,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YN",
+            "name": "Composite packaging, glass receptacle in steel drum"
+        }
+    },
+    {
+        "pk": 345,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YP",
+            "name": "Composite packaging, glass receptacle in steel crate box"
+        }
+    },
+    {
+        "pk": 346,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YQ",
+            "name": "Composite packaging, glass receptacle in aluminium drum"
+        }
+    },
+    {
+        "pk": 347,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YR",
+            "name": "Composite packaging, glass receptacle in aluminium crate"
+        }
+    },
+    {
+        "pk": 348,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YS",
+            "name": "Composite packaging, glass receptacle in wooden box"
+        }
+    },
+    {
+        "pk": 349,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YT",
+            "name": "Composite packaging, glass receptacle in plywood drum"
+        }
+    },
+    {
+        "pk": 350,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YV",
+            "name": "Composite packaging, glass receptacle in wickerwork hamper"
+        }
+    },
+    {
+        "pk": 351,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YW",
+            "name": "Composite packaging, glass receptacle in fibre drum"
+        }
+    },
+    {
+        "pk": 352,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YX",
+            "name": "Composite packaging, glass receptacle in fibreboard box"
+        }
+    },
+    {
+        "pk": 353,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YY",
+            "name": "Composite packaging, glass receptacle in expandable plastic pack"
+        }
+    },
+    {
+        "pk": 354,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "YZ",
+            "name": "Composite packaging, glass receptacle in solid plastic pack"
+        }
+    },
+    {
+        "pk": 355,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZA",
+            "name": "Intermediate bulk container, paper, multi-wall"
+        }
+    },
+    {
+        "pk": 356,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZB",
+            "name": "Bag, large"
+        }
+    },
+    {
+        "pk": 357,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZC",
+            "name": "Intermediate bulk container, paper, multi-wall, water resistant"
+        }
+    },
+    {
+        "pk": 358,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZD",
+            "name": "Intermediate bulk container, rigid plastic, with structural equipment, solids"
+        }
+    },
+    {
+        "pk": 359,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZF",
+            "name": "Intermediate bulk container, rigid plastic, freestanding, solids"
+        }
+    },
+    {
+        "pk": 360,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZG",
+            "name": "Intermediate bulk container, rigid plastic, with structural equipment, pressurised"
+        }
+    },
+    {
+        "pk": 361,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZH",
+            "name": "Intermediate bulk container, rigid plastic, freestanding, pressurised"
+        }
+    },
+    {
+        "pk": 362,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZJ",
+            "name": "Intermediate bulk container, rigid plastic, with structural equipment, liquids"
+        }
+    },
+    {
+        "pk": 363,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZK",
+            "name": "Intermediate bulk container, rigid plastic, freestanding, liquids"
+        }
+    },
+    {
+        "pk": 364,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZL",
+            "name": "Intermediate bulk container, composite, rigid plastic, solids"
+        }
+    },
+    {
+        "pk": 365,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZM",
+            "name": "Intermediate bulk container, composite, flexible plastic, solids"
+        }
+    },
+    {
+        "pk": 366,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZN",
+            "name": "Intermediate bulk container, composite, rigid plastic, pressurised"
+        }
+    },
+    {
+        "pk": 367,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZP",
+            "name": "Intermediate bulk container, composite, flexible plastic, pressurised"
+        }
+    },
+    {
+        "pk": 368,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZQ",
+            "name": "Intermediate bulk container, composite, rigid plastic, liquids"
+        }
+    },
+    {
+        "pk": 369,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZR",
+            "name": "Intermediate bulk container, composite, flexible plastic, liquids"
+        }
+    },
+    {
+        "pk": 370,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZS",
+            "name": "Intermediate bulk container, composite"
+        }
+    },
+    {
+        "pk": 371,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZT",
+            "name": "Intermediate bulk container, fibreboard"
+        }
+    },
+    {
+        "pk": 372,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZU",
+            "name": "Intermediate bulk container, flexible"
+        }
+    },
+    {
+        "pk": 373,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZV",
+            "name": "Intermediate bulk container, metal, other than steel"
+        }
+    },
+    {
+        "pk": 374,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZW",
+            "name": "Intermediate bulk container, natural wood"
+        }
+    },
+    {
+        "pk": 375,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZX",
+            "name": "Intermediate bulk container, plywood"
+        }
+    },
+    {
+        "pk": 376,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZY",
+            "name": "Intermediate bulk container, reconstituted wood"
+        }
+    },
+    {
+        "pk": 377,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": "ZZ",
+            "name": "Mutually defined"
+        }
+    },
+    {
+        "pk": 378,
+        "model": "peppol.UNECEREC21",
+        "fields": {
+            "code": ""
+        }
+    }
+]

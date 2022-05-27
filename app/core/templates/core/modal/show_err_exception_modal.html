@@ -1,0 +1,37 @@
+{% load i18n %}
+<style type="text/css">
+    
+.modal-footer > button{
+    float: left;
+}
+
+.header-modal{
+    border-bottom: 2px solid #337AB7;
+}
+
+#show_exception{
+    font-weight: bold;
+}
+</style>
+
+<div class="modal fade" id="show_exception_modal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button><br>
+                    <h4 class="modal-title header-modal" >{% trans 'Show exceptions' %}</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col col-md-12 col-sm-12">
+                            <div class="well" id="show_exception">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">{% trans 'close' %}</button>
+                </div>
+            </div>
+        </div>
+    </div>

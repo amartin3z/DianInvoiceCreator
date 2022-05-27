@@ -1,0 +1,294 @@
+    
+    {% load i18n %}
+    <!-- Modal -->
+    <style>
+        .popover-title {
+            background-color: #337AB7;
+            color: #FFFFFF;
+            text-align:center;
+        }
+    </style>
+    <div class="modal fade" id="modal-add-receiver" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button><br>
+                    <h4 class="modal-title header-modal" >{% trans 'Add business' %}</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        {% comment %} 
+                        {% crispy addreceiverform addreceiverform.helper_receiver 'bootstrap3' %}
+                        {% endcomment %}
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="identifier_number" class="control-label">{% trans 'Tax Identifier Number' %}*</label><br>
+                            <input id="identifier_number_add" type="text" name="identifier_number" class="form-control" required></input>
+                        </div>
+                        {% comment %}
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="organizacion_id" class="control-label">{% trans 'Organization ID' %}</label><br>
+                            <select id="organizacion_id_add" type="text" name="endpoint_schemeID" class="selectpicker" required>
+                                <option value="select_type">{% trans 'Select type' %}</option>
+                                <option>DUNS</option>
+                                <option>GLN</option>
+                                <option>REID</option>
+                                <option>IBAN</option>
+                            </select>
+                        </div>   
+                        {% endcomment %}                  
+                        <br><br><br><br><br><br>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="custom_name" class="control-label">{% trans 'Company Name' %}*</label><br>
+                            <input id="custom_name" type="text" name="custom_name" class="form-control" required></input>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="address_name" class="control-label">{% trans 'Street Name' %}</label><br>
+                            <input id="address_name" type="text" name="address_name" class="form-control" required></input>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="city_name" class="control-label">{% trans 'City Name' %}</label><br>
+                            <input id="city_name" type="text" name="city_name" class="form-control" required></input>
+                        </div>
+                        {% comment %}
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_province" class="control-label">{% trans 'Region/Province' %}</label><br>
+                            <input id="id_province" type="text" name="id_province" class="form-control" placeholder="{% trans 'Province' %}"  required ></input>
+                        </div>
+                        {% endcomment %}
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="postal_zone" class="control-label">{% trans 'Postal Zone' %}</label><br>
+                            <input id="postal_zone" type="text" name="postal_zone" class="form-control" required></input>
+                        </div>
+                        {% comment %}
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_country" class="control-label">{% trans 'Country' %}</label><br>
+                            <input id="id_country" type="text" name="id_country" class="form-control" placeholder="{% trans 'Country' %}"  required></input>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_language" class="control-label">{% trans 'Language' %}</label><br>
+                            <input id="id_language" type="text" name="id_language" class="form-control" placeholder="Country"  required ></input>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_currency" class="control-label">{% trans 'Currency' %}</label><br>
+                            <input id="id_currency" type="text" name="id_currency" class="form-control" placeholder="Country"  required></input>
+                        </div>
+                        <br><br>
+                        {% endcomment %}
+                        {% comment %}
+                        <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                            <label for="contact_data" class="control-label" style="border-bottom: 1px solid #337AB7; width:100%">{% trans 'Contact data' %}</label>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_full_name" class="control-label">{% trans 'Full name' %}</label><br>
+                            <input id="id_full_name" type="text" name="id_full_name" class="form-control" required></input>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_department" class="control-label">{% trans 'Department' %}</label><br>
+                            <input id="id_department" type="text" name="id_department" class="form-control" required></input>
+                        </div>
+                        {% endcomment %}
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_email" class="control-label">{% trans 'Email' %}*</label><br>
+                            <input id="id_email" data-role="tagsinput" name="id_email" required></input><br><br>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_telephone" class="control-label">{% trans 'Telephone' %}</label>
+                            <input id="id_telephone" type="text" name="telephone" class="form-control" required {% if total_business >= 1 %}  data-toggle="popover" data-trigger="focus" title="{% trans 'Telephone' %}" animation="true" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."{% endif %}></input>
+                        </div>
+                        {% comment %}
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_web" class="control-label">{% trans 'Web' %}</label>
+                            <input id="id_web" type="text" name="id_web" class="form-control" required></input>
+                        </div>
+                        {% endcomment %}
+                        {% comment %}
+                        <br><br>
+
+                        <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                            <label for="delivery_method" class="control-label" style="border-bottom: 1px solid #337AB7; width:100%">{% trans 'Delivery method' %}</label>
+                        </div>
+                        <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                            <label for="id_category" class="control-label">{% trans 'Category' %}*</label>
+                            <select id="id_category" type="text" name="id_category" class="selectpicker" required>
+                                <option>{% trans 'Email link' %}</option>
+                                <option label ="Email attachment" >{% trans 'Email attachment' %}</option>
+                                <option value=""> {% trans 'Open network' %}</option>
+                                <option value="">{% trans 'Private network' %}</option>
+                                <option value="">{% trans 'Do not send' %}</option>
+                            </select>
+                        </div>
+                        {% endcomment %}
+                        {% comment %}
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_method" class="control-label requiredField">{% trans 'Method' %}<strong>*</strong></label>
+                            <select id="id_method" class="form-control" name="id_method" required>
+                                <option value="">{% trans 'Email with a link to the Invoice' %}</option>
+                                <optgroup label ="Email attachment" >{% trans 'Email attachment' %}
+                                    <option value=""> {% trans 'With XML attachment(signed Facturae)(Premium option)' %} </option>
+                                    <option value=""> {% trans 'With XML (UBL) (Premium option)' %} </option>
+                                    <option value=""> {% trans 'With PDF attachment (Premium option)' %} </option>
+                                    <option value=""> {% trans 'With PDF attachment signed (Premium option)' %} </option>  
+                                </optgroup>
+                                <optgroup label ="Open network">{% trans 'Open network' %}
+                                    <optgroup label="Europe">
+                                        <option value="">{% trans 'ePRIOR (Premium option)' %} </option>
+                                        <option value="">PEPPOL</option>
+                                    </optgroup>
+                                    <optgroup label ="Spain">
+                                        <option value="">{% trans 'FACe' %} </option>
+                                        <option value="">{% trans 'FACe detached' %}</option>
+                                        <option value=""> FACe B2B </option>
+                                        <option value=""> FACe B2B detached </option>
+                                        <option value=""> eFACT Catalonia</option>
+                                        <option value=""> {% trans 'Junta de Andalucia' %} </option>
+                                        <option value=""> {% trans 'Junta Castilla-La MAncha' %} </option>
+                                        <option value=""> {% trans 'Junta Castilla y León' %} </option>
+                                        <option value="">{% trans 'Xunta de Galicia' %}</option>
+                                        <option value="">{% trans 'Canarias' %}</option>
+                                        <option value=""> {% trans 'Eusko Jaurlaritza (Bosque goverment)' %}</option>
+                                        <option value="">{% trans 'Osakidetza (Dept. Salud Vasco)' %}</option>
+                                        <option value=""> {% trans 'Biscaytik (Vizcaya)' %}</option>
+                                        <option value="">{% trans 'Deputacion of Alava' %} </option>
+                                        <option value="">{% trans 'Deputacion of Bizkaia' %}</option>
+                                        <option value="">{% trans 'Consorcio de aguas Bilbao Bizkaia' %}</option>
+                                        <option value="">{% trans 'Deputacion of Gipuzkoa' %}</option>
+                                        <option value="">{% trans 'City Council of Victoria-Gasteiz' %}</option>
+                                        <option value="">{% trans 'La Rioja' %}</option>
+                                        <option value="">{% trans 'EsPublico' %}</option>
+                                    </optgroup>
+                                    <optgroup label="France"> 
+                                        <option value="">{% trans 'Chorus' %}</option>
+                                    </optgroup>
+                                    <optgroup label="Italy">
+                                        <option value=""> SDI </option>
+                                    </optgroup>
+                                    <optgroup label="Cyprus">
+                                        <option value="">{% trans 'Ariadne (Premium option)' %}</option>
+                                    </optgroup>
+                                    <optgroup label="Andorra">
+                                        <option value=""> {% trans 'Andorra Goverment (Authorization needed)' %} </option>
+                                    </optgroup>
+                                    <optgroup label="United Kingdom">
+                                        <option value="">PEPPOL NHS</option>
+                                    </optgroup>
+                                    <optgroup label="Germany">
+                                        <option value="">XRechnung</option>
+                                    </optgroup>
+                                    <optgroup label="Netherlands">
+                                        <option value=""> PEPPOL NL CIUS</option>
+                                    </optgroup>
+                                    <optgroup label="Australia / New Zealand">
+                                        <option value="">ANZ PEPPOL</option>
+                                    </optgroup>
+                                </optgroup>
+                                <optgroup label="Private network">{% trans 'Private network' %}
+                                    <option value="">{% trans 'Pagero (Premium option)' %}</option>
+                                    <option value="">{% trans 'SERES (Facture) (Premium option)' %}</option>
+                                    <option value="">{% trans 'Edicom (EDI) (Premium option)' %}</option>
+                                    <option value="">{% trans 'Ediversa D93A (EDI) (Premium option)' %}</option>
+                                    <option value="">{% trans 'Ediversa D96A (EDI) (Premium option)' %}</option>
+                                    <option value="">{% trans 'Bon Preu (EDI) (Premium option)' %}</option>
+                                    <option value="">{% trans 'Carrefour (EDI) (Premium option)' %}</option>
+                                    <option value="">{% trans 'El Corte Inglés (EDI) (Premium option)' %}</option>
+                                    <option value="">{% trans 'Red Eléctrica (B2B Conecta) (Premium option)' %}</option>
+                                    <option value="">{% trans 'Wesupply INVOIC-TRADACOMS (EDI) (Premium option)' %}</option>
+                                    <option value=""> {% trans 'Bsabadell (Premium option)' %}</option>
+                                </optgroup >
+                                    <optgroup label ="Do not send">{% trans 'Do not send' %}
+                                        <option value=""> {% trans 'None' %}</option>
+                                    </optgroup>
+                            </select>
+                        </div>
+
+                        <br><br>  
+                        {% endcomment %}  
+                        {% comment %}                 
+                        <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                            <label for="party_legal_entity" class="control-label" style="border-bottom: 1px solid #337AB7; width:100%">{% trans 'Invoice payment method' %}</label>
+                        </div>
+                        <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                            <label for="payment_method" class="control-label">{% trans 'Payment method' %}*</label>
+                            <select id="payment_method" type="text" name="payment_method" class="selectpicker" required onChange="mostrar(this.value);">
+                                <option>{% trans 'Select' %}</option>
+                                <option value="cash" >{% trans 'Cash' %}</option>
+                                <option value="debit_payment" >{% trans 'Debit payment' %}</option>
+                                <option>{% trans 'Bank Transfer' %}</option>
+                                <option>{% trans 'Bank card' %}</option>
+                                <option>{% trans 'Awarded contract' %}</option>
+                                <option>{% trans 'Promissory note' %}</option>
+                                <option>{% trans 'Cheque' %}</option>
+                                <option>{% trans 'Bank cheque' %}</option>
+                                <option>{% trans 'Reposition' %}</option>
+                                <option>{% trans 'Payment by postgiro' %}</option>
+                                <option>{% trans 'Other' %}</option>
+                            </select>
+                            
+                        </div>
+                        
+                        <div id="debit_payment" style="display: none;" class="form-control">
+                            <label>{% trans 'Charge the receipt into this customers account:' %}*</label>
+                            <div>
+                                <p class="control-label">{% trans 'Acoount type' %}</p>
+                                <select name='account_type' id='account_type' onchange="changeAccountTypeModal(this);" class="form-control">
+                                    <option value="iban">IBAN</option>
+                                    <option value="bank_account">{% trans 'Bank account' %}</option>
+                                </select>
+                            </div>
+                            <div id='iban-or-account'> 
+                                <p class="control-label"><br></p>
+                                <div>
+                                    <input type="text" maxlength="28" class="form-control" style="display: block;" id="client_iban">
+                                    <input type="text" maxlength="28" class="form-control" style="display: block;" id="client_bank_account">
+                                </div>
+                            </div>
+                            <div> 
+                                <p class="control-label" >BIC</p> 
+                                <input type="text" class="form-control" id="client_bic">
+                            </div>
+                            <div id="bank_transfer" class="form-control" style="display: block;">
+                                <label for="bank_info_transfer"> {% trans 'Receive payment in this account:' %} *</label>
+                                <span class="required" > *</span>
+                            </div>
+                            <div>
+                                <a href="" data-toggle="modal" data-target="#"> {% trans 'New bank to receive payments' %} </a>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                            <label for="term" class="control-label">{% trans 'Term' %}*</label>
+                            <select id="term" type="text" name="term" class="selectpicker" required>
+                                <option>{% trans 'Select' %}</option>
+                                <option>{% trans 'Upon Receipt' %}</option>
+                                <option>{% trans '15 days' %}</option>
+                                <option>{% trans '30 days' %}</option>
+                                <option>{% trans '60 days' %}</option>
+                                <option>{% trans '90 days' %}</option>
+                                <option>{% trans '120 days' %}</option>
+                                <option>{% trans 'Last day this month' %}</option>
+                                <option>{% trans 'Last day next month' %}</option>
+                                <option>{% trans '1st day next month' %}</option>
+                                <option>{% trans '1st day in two months' %}</option>
+                                <option>{% trans '15th day next month' %}</option>
+                                <option>{% trans '20th day next month' %}</option>
+                                <option>{% trans '10th day next month ' %}</option>
+                                <option>{% trans 'Custom' %}</option>
+                            </select>
+                        </div>
+                        {% endcomment %}
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary addreceiver">{% trans 'Add' %}</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="margin-right: 5px;">{% trans 'Close' %}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript" >
+    function mostrar(id){
+        if (id="#debit_payment"){
+            $("#debit_payment").show();
+        }
+    }
+</script>

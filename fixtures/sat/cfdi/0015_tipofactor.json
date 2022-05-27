@@ -1,0 +1,1 @@
+[{"model": "sat.tipofactor", "pk": 1, "fields": {"clave": "Tasa"}}, {"model": "sat.tipofactor", "pk": 2, "fields": {"clave": "Cuota"}}, {"model": "sat.tipofactor", "pk": 3, "fields": {"clave": "Exento"}}]

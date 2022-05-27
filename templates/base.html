@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% comment %}Finkok{% endcomment %} DGSSI | {% block title %}{% endblock %}</title>
+  {% load static %}
+  {% load i18n %}
+  {% load auth_extras %}
+
+  <link href="{% static 'css/bootstrap/bootstrap.min.css' %}" rel="stylesheet">
+  {% comment %}
+  <link href="{% static 'css/font-awesome/font-awesome.min.css' %}" rel="stylesheet"> {% endcomment %}
+  <link href="{% static 'css/font-awesome/all.css' %}" rel="stylesheet">
+  <link href="{% static 'css/checkbox/pretty-checkbox.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/base/style.css' %}" rel="stylesheet">
+  <link href="{% static 'img/iconsite/faviconm.ico' %}" rel="shortcut icon" type="image/x-icon" />
+  <link href="{% static 'css/toast/jquery.toast.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/toogle/bootstrap-toggle.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/Chart/Chart.css' %}" rel="stylesheet" type="text/css">
+  <style type="text/css" media="screen">
+    .toggle.ios,
+    .toggle-on.ios,
+    .toggle-off.ios {
+      border-radius: 20px;
+    }
+
+    .toggle.ios .toggle-handle {
+      border-radius: 20px;
+    }
+
+    html {
+      /*overflow:scroll*/
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background-color: #337AB7 !important;
+      border-color: #195F9C !important;
+    }
+
+    .fa-refresh {
+      color: #337AB7;
+    }
+
+    .fa-sync-alt {
+      color: #337AB7;
+    }
+
+    .bootstrap-datetimepicker-widget table td.active,
+    .bootstrap-datetimepicker-widget table td.active:hover {
+      background-color: #337AB7 !important;
+    }
+
+    .sub-item {
+      text-decoration: none;
+      color: #000;
+      padding: 3px 20px 3px 20px;
+      white-space: nowrap;
+      display: block;
+    }
+
+    .sub-item:hover {
+      text-decoration: none;
+      color: #000;
+      background-color: #f5f5f5;
+      white-space: nowrap;
+      display: block;
+    }
+
+    .menu-item {
+      font-size: 14px;
+      text-align: left;
+      list-style: none;
+      padding: 0;
+      /*margin: 10px 0 !important;*/
+      margin-top: 10px !important;
+    }
+
+    .header-menu,
+    .header-menu:hover {
+      margin: -10px 0px !important;
+      background-color: #f5f5f5;
+    }
+
+    .dropdown-menu .divider {
+      margin: 4px 0 4px 0;
+      /*margin: 4px !important;
+        margin-bottom: 9px;*/
+    }
+
+    .align-middle {
+      vertical-align: middle !important;
+    }
+
+    .fix-width-options {
+      width: 2.5rem;
+    }
+
+    input.error {
+      border: 1px solid red;
+    }
+
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu>.dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: 0px;
+      margin-left: -1px;
+      -webkit-border-radius: 0 6px 6px 6px;
+      -moz-border-radius: 0 6px 6px;
+      border-radius: 0 6px 6px 6px;
+    }
+
+    .dropdown-submenu:hover>.dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-submenu>a:after {
+      display: block;
+      content: " ";
+      float: right;
+      width: 0;
+      height: 0;
+      border-color: transparent;
+      border-style: solid;
+      border-width: 5px 0 5px 5px;
+      border-left-color: #ccc;
+      margin-top: 5px;
+      margin-right: -10px;
+    }
+
+    .dropdown-submenu:hover>a:after {
+      border-left-color: #fff;
+    }
+
+    .dropdown-submenu.pull-left {
+      float: none;
+    }
+
+    .dropdown-submenu.pull-left>.dropdown-menu {
+      left: -100%;
+      margin-left: 10px;
+      -webkit-border-radius: 6px 0 6px 6px;
+      -moz-border-radius: 6px 0 6px 6px;
+      border-radius: 6px 0 6px 6px;
+    }
+
+    .fit-dropdown {
+      padding: 0px 20px !important;
+    }
+
+    .short-drowpdown-menu {
+      min-width: 80px;
+    }
+
+    .footer {
+      background-color: #FFF;
+      color: #000;
+    }
+
+    .contenedor {
+      width: 90px;
+      height: 240px;
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+    }
+
+    .botonF0 {
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      background: #195F9C;
+      right: 0;
+      bottom: 0;
+      position: fixed;
+      margin-right: 16px;
+      margin-bottom: 16px;
+      border: none;
+      outline: none;
+      color: #FFF;
+      font-size: 36px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      transition: .3s;
+    }
+
+    span {
+      transition: .5s;
+    }
+
+    .botonF0:hover span {
+      transform: rotate(360deg);
+    }
+
+    .botonF0:active {
+      transform: scale(1.1);
+    }
+
+    .btnn {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      border: none;
+      color: #FFF;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      font-size: 28px;
+      outline: none;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin-right: 26px;
+      transform: scale(0);
+    }
+
+    .botonF1 {
+      background: #e3e3e3;
+      margin-bottom: 85px;
+      transition: 0.5s;
+    }
+
+    .botonF2 {
+      background: #e3e3e3;
+      margin-bottom: 130px;
+      transition: 0.7s;
+    }
+
+    .botonF3 {
+      background: #e3e3e3;
+      margin-bottom: 175px;
+      transition: 0.9s;
+    }
+
+    .animacionVer {
+      transform: scale(1);
+    }
+  </style>
+  {% block css %}
+  {% endblock %}
+
+  <style>
+    .btn-primary:hover,
+    .btn-success:hover {
+      color: #fff !important;
+      background-color: #195f9c !important;
+      border-color: #12538c !important;
+    }
+  </style>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="assets/html5shiv/html5shiv.js"></script>
+    <script src="assets/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="top" class="show-menu">
+  <nav class="navbar bg-hf  navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{% url 'index' %}"><img class="logo"
+            src="{% static 'img/logos/gta_km_wb_r.png' %}"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav pull-right">
+          {% if not request.user.is_superuser and request.user|has_groups:"emision,clients,False" %}
+          {% comment %} <li id="invoicing">
+            <a class="dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+              <span class="title">{% trans 'Create invoice' %}</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'add-invoice' %}"><i class="fa fa-plus"></i>&nbsp;CFDI 3.3</a>
+              </li>
+              {% comment %} <li><a class="dropdown-item" href="{% url 'add-payment' %}" act='pagos'><i
+                    class="fa fa-plus"></i>&nbsp;REP (Pagos)</a></li>
+            </ul>
+          </li> {% endcomment %}
+          <li id="invoicer">
+            <a class="nav-link" href="{% url 'add-invoice' %}">
+              <i class="fa fa-plus"></i>
+              <span class="title">{% trans 'Create invoice' %}</span>
+            </a>
+          </li>
+          {% endif %}
+          {% if request.user.is_superuser or request.user|has_groups:"admins,emision,clients,False"%}
+          <li id="emision">
+            <a class="nav-link" href="{% url 'invoicing:list-invoices' %}">
+              <i class="fa fa-file-invoice"></i>
+              <span class="title">{% trans 'Invoices' %}</span>
+            </a>
+          </li>
+          <li id="receptores">
+            <a class="nav-link" href="{% url 'list-receivers' %}">
+              <i class="fa fa-users"></i>
+              <span class="title">{% trans 'Business' %}</span>
+            </a>
+          </li>
+          {% endif %}
+          {% if not request.user.is_superuser and request.user|has_groups:"emision,clients,False" %}
+          <li id="prodcerv">
+            <a class="nav-link" href="{% url 'list-prodservs' %}">
+              <i class="fa fa-archive"></i>
+              <span class="title">{% trans 'Products and Services' %}</span>
+            </a>
+          </li>
+          {% endif %}
+          {% comment %}
+          {% if request.user.is_superuser or request.user|has_groups:"admins,cancelacion,clients,False" %}
+          <li id="cancelacion">
+            <a class="dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-calendar-times" aria-hidden="true"></i>
+              <span class="title">{% trans 'Cancellation' %}</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="{% url 'cancel:cancelrequests' 'P' %}"><i
+                    class="fa fa-tasks"></i>&nbsp;{% trans 'Cancellation list' %}</a></li>
+            </ul>
+          </li>
+          {% endif %}
+          {% endcomment %}
+          {% if request.user.is_superuser or request.user|has_groups:"admins,cancelacion,clients,False" %}
+          <li id="support">
+            <a class="nav-link"
+              href="{% if request.user.profile.role == 'C' %} {% url 'tickets' %} {% else %} {% url 'helpdesk:dashboard' %} {% endif %}">
+              <i class="fa fa-headphones"></i>
+              <span class="title">{% trans 'Support' %}</span>
+            </a>
+          </li>
+          {% endif %}
+          {% if request.user.is_superuser or request.user|has_groups:"admins,usuarios,False" %}
+          <li id="usuarios">
+            <a class="nav-link" href="{% url 'list_users' %}"><i class="fa fa-users"></i><span
+                class="title">&nbsp;{% trans 'Users' %}</span></a>
+          </li>
+          {% endif %}
+          {% if request.user.is_superuser or request.user|has_groups:"admins, logs, False" %}
+          <li id="logs">
+            <a class="nav-link" href="{% url 'core:logs' %}"><i class="fa fa-bars"></i><span
+                class="title">&nbsp;{% trans 'Logs' %}</span></a>
+          </li>
+          {% endif %}
+          {% comment %}
+          <li id="notificaciones">
+            <a class="nav-link" href="#" title="Notificaciones"><i class="fa fa-inbox"></i></a>
+          </li>
+          {% endcomment %}
+          {% if not request.user.is_superuser and request.user|has_groups:"sat"%}
+          <li id="tab-invoices">
+            <a class="nav-link" href="{% url 'invoices_sat' %}">
+              <i class="fa fa-file-invoice"></i>
+              <span class="title">&nbsp;{% trans 'Invoices' %}</span>
+            </a>
+          </li>
+          {% endif %}
+          <li id="perfil" class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <span class="title">&nbsp;{{ request.user.username }}</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="{% url 'profile' %}"><i class="fa fa-user"></i><span
+                    class="title">&nbsp;{% trans 'Profile' %}</span></a></li>
+              {% if not request.user|has_groups:"sat" %}
+              <li><a role="button" data-toggle="modal" data-target="#modal-help" class="dropdown-item"
+                  href="javascript:;"><i class="fa fa-life-ring"></i><span
+                    class="title">&nbsp;{% trans 'Help' %}</span></a></li>
+              <li id="informes">
+                <a class="dropdown-item" href="#"><i class="fa fa-info-circle"></i><span
+                    class="title">&nbsp;{% trans 'Reports' %}</span></a>
+              </li>
+              <li role="separator" class="divider"></li>
+              {% endif %}
+              <li><a class="dropdown-item" href="{% url 'logout' %}"><i class="fa fa-power-off"
+                    aria-hidden="true"></i>&nbsp;{% trans 'Logout ' %}</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <section id="main-content">
+    {% block content %}
+    {% endblock %}
+    {% get_current_language as LANGUAGE_CODE %}
+    {% get_available_languages as LANGUAGES %}
+    {% get_language_info_list for LANGUAGES as languages %}
+    <div class="contenedor">
+      <button class="botonF0" title="{% trans 'Language' %}">
+        <i class="fa fa-language"></i>
+      </button>
+      {% for language in languages %}
+      <button class="btnn botonF{{ forloop.counter }} set-language" data-code="{{language.code}}"
+        title="{{ language.name_translated }}">
+        {% if forloop.counter == 1 %}
+        <img src="{% static 'img/usa.png' %}">
+        {% elif forloop.counter == 2 %}
+        <img src="{% static 'img/espana.png' %}">
+        {% elif forloop.counter == 3 %}
+        <img src="{% static 'img/francia.png' %}">
+        {% endif %}
+      </button>
+      {% endfor %}
+    </div>
+  </section>
+  {% include  "general-help-modal.html" %}
+  {% include 'core/modal/modal_close_session.html' %}
+</body>
+
+<script src="{% static 'js/jquery/jquery-1.12.4.js' %}"></script>
+<!--script src="{% static 'js/jquery/jquery.min.js' %}"></script-->
+<script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/moments/moment.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/moments/moment-with-locales.min.js' %}" type="text/javascript"></script>
+<!--script src="{% static 'js/bootstrap/bootstrap-datetimepicker.min.js' %}" type="text/javascript"></script-->
+<script src="{% static 'js/toast/jquery.toast.js' %}"></script>
+<script src="{% static 'js/toogle/bootstrap-toggle.min.js' %}"></script>
+<script src="{% static 'js/font-awesome/all.js' %}"></script>
+<script src="{% static 'js/base/main.js' %}"></script>
+<script src="{% static 'js/base/message.js' %}"></script>
+<script type="text/javascript" src="{% url 'javascript-catalog' %}"></script>
+<script src="{% static 'js/Chart/Chart.js' %}"></script>
+{% csrf_token %}
+<script>
+
+  var csrftoken = $("[name=csrfmiddlewaretoken]").val();
+  var success_email_input = true;
+
+  function getCookie(name) {
+    if (name == 'csrftoken') {
+      return csrftoken;
+    }
+    var cookieValue = null;
+    if (document.cookie && document.cookie != '') {
+      var cookies = document.cookie.split(';');
+      for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i].trim();
+        // Does this cookie string begin with the name we want?
+        if (cookie.substring(0, name.length + 1) == (name + '=')) {
+          cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+          break;
+        }
+      }
+    }
+    return cookieValue;
+  }
+  $(document).keyup('.bootstrap-tagsinput input', function (event) {
+    if (event.keyCode == 188) {
+      if (!success_email_input) {
+        new_val = $('.bootstrap-tagsinput input').val().slice(0, -1);
+        $('.bootstrap-tagsinput input').val(new_val);
+      } else {
+        $('.bootstrap-tagsinput input').val('');
+      }
+    }
+  });
+  $('.botonF0').hover(function () {
+    $('.btnn').addClass('animacionVer');
+  })
+  $('.contenedor').mouseleave(function () {
+    $('.btnn').removeClass('animacionVer');
+  });
+</script>
+<script type="text/javascript">
+  var SET_LANGUAGE = '{% url 'set_language' %}';
+  $('.set-language').on('click', function (event) {
+    event.preventDefault();
+    var languageCode = $(this).data('code');
+    var setLanguageForm = new FormData();
+    setLanguageForm.append('language', languageCode);
+    setLanguageForm.append("csrfmiddlewaretoken", $("[name=csrfmiddlewaretoken]").val());
+    $.ajax({
+      type: 'POST',
+      url: SET_LANGUAGE,
+      data: setLanguageForm,
+      dataType: 'json',
+      cache: false,
+      contentType: false,
+      processData: false
+    }).done(function (response) {
+      window.location.reload();
+    }).fail(function (jqXHR, status, errorThrown) {
+      console.log(status);
+    });
+
+  });
+  var language = "{{ LANGUAGE_CODE }}";
+
+  // //cdn.datatables.net/plug-ins/1.10.21/i18n/English.json
+  ENGLISH_LANGUAGE = {
+    "sEmptyTable": "No data available in table",
+    "sInfo": "Showing _START_ to _END_ of _TOTAL_ entries",
+    "sInfoEmpty": "Showing 0 to 0 of 0 entries",
+    "sInfoFiltered": "(filtered from _MAX_ total entries)",
+    "sInfoPostFix": "",
+    "sInfoThousands": ",",
+    "sLengthMenu": "Show _MENU_ entries",
+    "sLoadingRecords": "Loading...",
+    "sProcessing": "Processing...",
+    "sSearch": "Search:",
+    "sZeroRecords": "No matching records found",
+    "oPaginate": {
+      "sFirst": "First",
+      "sLast": "Last",
+      "sNext": "Next",
+      "sPrevious": "Previous"
+    },
+    "oAria": {
+      "sSortAscending": ": activate to sort column ascending",
+      "sSortDescending": ": activate to sort column descending"
+    }
+  }
+
+  // //cdn.datatables.net/plug-ins/1.10.21/i18n/French.json
+  FRENCH_LANGUAGE = {
+    "sEmptyTable": "Aucune donnée disponible dans le tableau",
+    "sInfo": "Affichage de l'élément _START_ à _END_ sur _TOTAL_ éléments",
+    "sInfoEmpty": "Affichage de l'élément 0 à 0 sur 0 élément",
+    "sInfoFiltered": "(filtré à partir de _MAX_ éléments au total)",
+    "sInfoPostFix": "",
+    "sInfoThousands": ",",
+    "sLengthMenu": "Afficher _MENU_ éléments",
+    "sLoadingRecords": "Chargement...",
+    "sProcessing": "Traitement...",
+    "sSearch": "Rechercher :",
+    "sZeroRecords": "Aucun élément correspondant trouvé",
+    "oPaginate": {
+      "sFirst": "Premier",
+      "sLast": "Dernier",
+      "sNext": "Suivant",
+      "sPrevious": "Précédent"
+    },
+    "oAria": {
+      "sSortAscending": ": activer pour trier la colonne par ordre croissant",
+      "sSortDescending": ": activer pour trier la colonne par ordre décroissant"
+    },
+    "select": {
+      "rows": {
+        "_": "%d lignes sélectionnées",
+        "0": "Aucune ligne sélectionnée",
+        "1": "1 ligne sélectionnée"
+      }
+    }
+  }
+
+  switch (language) {
+    case 'es':
+      language_datatable = datatable_language;
+      break;
+    case 'en':
+      language_datatable = ENGLISH_LANGUAGE;
+      break;
+    case 'fr':
+      language_datatable = FRENCH_LANGUAGE;
+      break;
+  }
+</script>
+
+{% block js %}
+{% endblock %}
+
+</html>

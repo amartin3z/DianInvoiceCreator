@@ -1,0 +1,154 @@
+[
+    {
+        "pk": 1,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "41",
+            "name": "Bonus for works ahead of schedule"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "42",
+            "name": "Other bonus"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "60",
+            "name": "Manufacturer\u2019s consumer discount"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "62",
+            "name": "Due to military status"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "63",
+            "name": "Due to work accident"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "64",
+            "name": "Special agreement"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "65",
+            "name": "Production error discount"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "66",
+            "name": "New outlet discount"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "67",
+            "name": "Sample discount"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "68",
+            "name": "End-of-range discount"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "70",
+            "name": "Incoterm discount"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "71",
+            "name": "Point of sales threshold allowance"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "88",
+            "name": "Material surcharge/deduction"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "95",
+            "name": "Discount"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "100",
+            "name": "Special rebate"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "102",
+            "name": "Fixed long term"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "103",
+            "name": "Temporary"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "104",
+            "name": "Standard"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "peppol.UNCL5189",
+        "fields": {
+            "code": "105",
+            "name": "Yearly turnover"
+        }
+    }
+]

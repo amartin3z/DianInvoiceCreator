@@ -1,0 +1,4 @@
+¡Aprobación Requerida!
+El usuario {{user}} ha solicitado la activación de su cuenta.
+Para aprobarla haz clic 
+http://{{site.domain}}{% url 'registration_admin_approve' profile_id %}

@@ -1,0 +1,376 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-01 23:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: app/invoicing/forms/receiver.py:24
+msgid "Previously registered RFC."
+msgstr ""
+
+#: app/invoicing/forms/receiver.py:27
+msgid "You must register an email."
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:9
+msgid "Add business"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:19
+msgid "EndPoint: Scheme ID"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:23
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:87
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:43
+#: app/invoicing/templates/invoicing/modal/prodserv.html:39
+#: app/invoicing/templates/invoicing/receivers.html:52
+#: app/invoicing/templates/invoicing/receivers.html:131
+msgid "Name"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:28
+msgid "Party Identification: Scheme ID"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:34
+msgid "Address"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:37
+msgid "Address Name"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:41
+msgid "City Name"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:45
+msgid "Postal Zone"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:49
+msgid "Country"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:55
+msgid "PartyTaxScheme"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:58
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:74
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:48
+#: app/invoicing/templates/invoicing/receivers.html:48
+#: app/invoicing/templates/invoicing/receivers.html:130
+msgid "Company ID"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:62
+msgid "TaxScheme: ID"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:67
+msgid "Party Legal Entity"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:70
+msgid "Registration Name"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:78
+msgid "Party Legal Scheme ID"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:84
+msgid "Contact"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:91
+msgid "Telephone"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:95
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:86
+#: app/invoicing/templates/invoicing/receivers.html:65
+#: app/invoicing/templates/invoicing/receivers.html:136
+msgid "Email"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:101
+#: app/invoicing/templates/invoicing/modal/prodserv.html:130
+#: app/invoicing/templates/invoicing/prodservs.html:89
+#: app/invoicing/templates/invoicing/receivers.html:123
+msgid "Add"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/add-receiver.html:102
+#: app/invoicing/templates/invoicing/modal/show-receiver-details.html:55
+msgid "Close"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:33
+msgid "Edit business"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:58
+msgid "Party Identification: Schema ID"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:65
+msgid "Party Legal: Schema ID"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:75
+msgid "Active"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:76
+msgid "Suspend"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:91
+msgid "Last modification"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:103
+#: app/invoicing/templates/invoicing/modal/prodserv.html:131
+msgid "Edit"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/edit-receiver.html:104
+#: app/invoicing/templates/invoicing/modal/prodserv.html:132
+msgid "Cancel"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:26
+msgid "Add Product/Service"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:27
+msgid "Edit Product/Service"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:43
+msgid "Sellers Item ID"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:47
+msgid "Buyer Item ID"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:54
+msgid "Origin Country"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:58
+#: app/invoicing/templates/invoicing/prodservs.html:100
+msgid "Currency"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:62
+#: app/invoicing/templates/invoicing/prodservs.html:99
+msgid "Price"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:66
+#: app/invoicing/templates/invoicing/prodservs.html:54
+#: app/invoicing/templates/invoicing/prodservs.html:97
+msgid "Unit Code"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:73
+#: app/invoicing/templates/invoicing/prodservs.html:42
+#: app/invoicing/templates/invoicing/prodservs.html:43
+#: app/invoicing/templates/invoicing/prodservs.html:95
+msgid "Classification Code"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:77
+msgid "Item Classification iD"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:81
+msgid "Standard Item Identifier"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:85
+msgid "Standard Item Scheme"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:92
+#: app/invoicing/templates/invoicing/prodservs.html:50
+#: app/invoicing/templates/invoicing/prodservs.html:51
+#: app/invoicing/templates/invoicing/prodservs.html:96
+msgid "Description"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:99
+msgid "Classified Tax Category"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:102
+msgid "Category Code"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:106
+msgid "Percent"
+msgstr "Pour cent"
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:110
+msgid "Scheme"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:117
+msgid "Aditional Item Property"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:120
+msgid "Additional Item Name"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/prodserv.html:124
+msgid "Additional Item Value"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/show-receiver-details.html:12
+msgid "Business information"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/show-receiver-details.html:20
+msgid "Name:"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/show-receiver-details.html:25
+msgid "Company ID:"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/show-receiver-details.html:32
+msgid "Schema ID:"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/show-receiver-details.html:39
+msgid "Email:"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/modal/show-receiver-details.html:46
+msgid "Status:"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/prodservs.html:31
+msgid "My Products and Services"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/prodservs.html:38
+#: app/invoicing/templates/invoicing/prodservs.html:72
+#: app/invoicing/templates/invoicing/receivers.html:44
+msgid "Filters"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/prodservs.html:46
+#: app/invoicing/templates/invoicing/prodservs.html:47
+#: app/invoicing/templates/invoicing/prodservs.html:98
+msgid "Product/Service"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/prodservs.html:58
+#: app/invoicing/templates/invoicing/prodservs.html:60
+msgid "Creation Date (From)"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/prodservs.html:65
+#: app/invoicing/templates/invoicing/prodservs.html:67
+msgid "Creation Date (To)"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/prodservs.html:73
+#: app/invoicing/templates/invoicing/receivers.html:106
+msgid "Clean"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/prodservs.html:80
+msgid "Products and Services"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/prodservs.html:94
+#: app/invoicing/templates/invoicing/receivers.html:129
+msgid "ID"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/prodservs.html:101
+#: app/invoicing/templates/invoicing/receivers.html:138
+msgid "Options"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/receivers.html:4
+#: app/invoicing/templates/invoicing/receivers.html:37
+#: app/invoicing/templates/invoicing/receivers.html:113
+msgid "Business"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/receivers.html:69
+msgid "Legal Scheme ID"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/receivers.html:74
+msgid "Identification schemeID"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/receivers.html:105
+msgid "Filter"
+msgstr ""
+
+#: app/invoicing/templates/invoicing/receivers.html:137
+msgid "Party Identification"
+msgstr ""
+
+#: app/invoicing/views.py:1027
+msgid "Products and services were listed"
+msgstr ""
+
+#: app/invoicing/views.py:1081 app/invoicing/views.py:1095
+#: app/invoicing/views.py:1109 app/invoicing/views.py:1119
+msgid "Product/Service successfully registered"
+msgstr ""
+
+#: app/invoicing/views.py:1085
+msgid ""
+"When the category code is equal to S, the rate of the article must be "
+"greater than 0"
+msgstr ""
+
+#: app/invoicing/views.py:1099
+msgid ""
+"When the category code is equal to Z, E, AE, K or G, the rate of the article "
+"must be equal to 0"
+msgstr ""
+
+#: app/invoicing/views.py:1123
+msgid ""
+"For Swedish suppliers, only the standard VAT rate of 6, 12 or 25 is used"
+msgstr ""
+
+#: app/invoicing/views.py:1132
+msgid "Duplicate Product/Service"
+msgstr ""
+
+#: app/invoicing/views.py:1140
+msgid "An exception occurred when registering the product/service"
+msgstr ""
+
+#: app/invoicing/views.py:1408
+msgid "Could not get product or service information."
+msgstr ""

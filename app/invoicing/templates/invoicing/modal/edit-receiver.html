@@ -1,0 +1,116 @@
+<style type="text/css">
+    
+input[type=text], .use_cfdi{
+    width: 100%;
+}
+
+.modal-footer > button{
+    float: right !important;
+}
+
+.edit_receiver {
+    margin-left: 10px !important;
+}
+
+.header-modal{
+    border-bottom: 2px solid #337AB7;
+}
+
+.bootstrap-tagsinput {
+    width: -webkit-fill-available;
+}
+
+.select2 {
+    width: auto !important;
+}
+</style>
+{% load i18n %}
+<div class="modal fade" id="modal-edit-receiver" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button><br>
+                    <h4 class="modal-title header-modal" >{% trans 'Edit business' %}</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col col-md-12 col-sm-12">
+                            <div class="well" id="">
+                                <form id="edit_receivers">
+                                    <div class="row">
+                                        <div class="col col-sm-12">
+                                            <div class="col col-sm-6">
+                                                <label><strong>{% trans 'Company Name' %}</strong></label>
+                                                <br>
+                                                <input type="text" id="buyer_name_edit" class="form-control" name="name">
+                                            </div>
+                                            <div class="col col-sm-6">
+                                                <label for="identifier_number"><strong>{% trans 'Tax Identifier Number' %}</strong></label>
+                                                <br>
+                                                <input type="text" id="identifier_number_edit" class="form-control" name="Identifier number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    {% comment %}
+                                    <div class="row">
+                                        <div class="col col-sm-12">
+                                            <div class="col col-sm-4">
+                                                <label for="organizacion_id" class="control-label">{% trans 'Organization ID' %}</label><br>
+                                                <select id="organizacion_id_edit" type="text" name="endpoint_schemeID" class="selectpicker" required>
+                                                    <option value="select_type">{% trans 'Select type' %}</option>
+                                                    <option>DUNS</option>
+                                                    <option>GLN</option>
+                                                    <option>REID</option>
+                                                    <option>IBAN</option>
+                                                </select>
+                                            </div>
+                                                                                        
+                                        </div>
+                                    </div>
+                                    {% endcomment %}
+                                    <br>
+                                    
+                                    <div class="row">
+                                        <div class="col col-sm-12">
+                                            <div class="col col-sm-8">
+                                                <label><strong>* {% trans 'Email' %}</strong></label>
+                                                <input type="text" name="Emails" class="form-control" id="buyer_emails_edit" >
+                                            </div>
+                                            <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                                                <label for="id_telephone" class="control-label">{% trans 'Telephone' %}</label>
+                                                <input id="id_telephone_edit" type="text" name="telephone" class="form-control" required></input>
+                                            </div>
+                                            <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                                                <label for="address_name" class="control-label">{% trans 'Street Name' %}</label><br>
+                                                <input id="address_name_edit" type="text" name="address_name" class="form-control" required></input>
+                                            </div>
+                                            <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                                                <label for="city_name" class="control-label">{% trans 'City Name' %}</label><br>
+                                                <input id="city_name_edit" type="text" name="city_name" class="form-control" required></input>
+                                            </div>
+                                            {% comment %}
+                                            <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                                                <label for="id_country" class="control-label">{% trans 'Country' %}</label><br>
+                                                <input id="id_country_edit" type="text" name="id_country" class="form-control" required></input>
+                                            </div>
+                                            {% endcomment %}
+                                            <div class="col col-sm-4">
+                                                <label><strong>{% trans 'Last modification' %}</strong></label>
+                                                <input type="text" class="form-control" name="last_modified_edit" id="receiver_last_modified_edit" readonly="true">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="receiver_id_edit" id="receiver_id_edit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary editbuyer">{% trans 'Edit' %}</button> 
+                    <button type="button" class="btn btn-default" data-dismiss="modal" style="margin-right: 5px;">{% trans 'Cancel' %}</button>
+                </div>
+            </div>
+        </div>
+    </div>

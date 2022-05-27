@@ -1,0 +1,17 @@
+      {% load i18n %}
+      <div class="panel panel-default" style="position: -webkit-sticky; position: sticky; top: 0; z-index:1000; background-color: white;">
+        <div class="panel-body">
+          <div class="col-xs-12" style="padding-bottom: .2rem;">
+            <button type="button" data-toggle="modal" data-target="#back-modal" class="btn btn-danger">{% trans 'Close' %}</button>
+            <button class="btn btn-success pull-right" type="submit" data-loading-text="Timbrando..." id="generate-invoice">{% trans 'Create Invoice' %}</button>
+          </div>
+          <div class="text-center">
+            <h4 style="padding-left: 3rem;" class="visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block">
+              <strong>{% trans 'Name' %}:</strong>
+              <small class="text-muted" style="font-size:1.5rem;">{{business_name}}</small>
+            </h4>
+            <h4 style="padding-left: 3rem;" class="visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block"><strong>{% trans 'Tax Identifier Number' %}:</strong> <small id="business_taxpayer_id" class="text-muted" style="font-size:1.5rem;">{{business_taxpayer_id}}</small></h4>
+            <h4 style="padding-left: 3rem;" class="visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block"><strong>{%trans 'Total' %}:</strong> <small class="text-muted" id="header-total" style="font-size:1.5rem;">$ 0.00</small></h4>
+          </div>
+        </div>
+      </div>

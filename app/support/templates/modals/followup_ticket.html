@@ -1,0 +1,19 @@
+{% load i18n %}
+<div class="modal fade" id="modal-followup-ticket" tabindex="-1" role="dialog" aria-labelledby="edit-eruleLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document" style="width: 90%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float: right;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3 id="edit-title-payroll" class="modal-title text-center txt-col-bk" id="edit-eruleLabel">{% trans 'Track ticket' %}<strong id="ticket-id"></strong></h3>
+      </div>
+      <div class="modal-body">
+          {% include 'modals/followup.html' %}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary text-bold" data-dismiss="modal" style="float: right;">{% trans 'Close' %}</button>
+      </div>
+    </div>
+  </div>
+</div>

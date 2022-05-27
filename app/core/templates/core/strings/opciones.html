@@ -1,0 +1,4 @@
+{% load i18n %}
+{% if uuid %}
+<a href="{% url 'core:download_xml' uuid|default:'4A1B43E2-1183-4AD4-A3DE-C2DA787AE56A' %}" class="btn btn-info btn-xs" title="{% trans 'Download' %}"><i class="fa fa-file-excel" aria-hidden="true"></i></a>
+{% endif %}

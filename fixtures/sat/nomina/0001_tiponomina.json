@@ -1,0 +1,1 @@
+[{"model": "sat.tiponomina", "pk": 1, "fields": {"clave": "O", "descripcion": "N\u00f3mina ordinaria"}}, {"model": "sat.tiponomina", "pk": 2, "fields": {"clave": "E", "descripcion": "N\u00f3mina extraordinaria"}}]

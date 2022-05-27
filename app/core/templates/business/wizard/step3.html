@@ -1,0 +1,58 @@
+<div class="row" id="form-step-2" rol="form" data-toggle="validator">
+    <div class="col-sm-12 col-md-12">
+      <div class="row">
+        <div class="form-group col-sm-4 col-md-4">
+          <label for="street">Calle:</label>
+          <input type="text" class="form-control form-control-sm" id="street" name="street" autocomplete="off">
+          </div>
+          <div class="form-group col-sm-4 col-md-4">
+            <label for="internal_number">N&uacute;mero Interno:</label>
+            <input type="text" class="form-control form-control-sm" id="internal_number" name="internal_number" autocomplete="off">
+          </div>
+          <div class="form-group col-md-4">
+              <label for="external_number">N&uacute;mero Externo:</label>
+              <input type="text" class="form-control form-control-sm" id="external_number" name="external_number" autocomplete="off">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-12">
+      <div class="row">
+        <div class="form-group col-md-4 col-sm-4">
+          <label for="country">Pa&iacute;s:</label>
+          <select class="form-control form-control-sm" id="country" name="country">
+            {% for value, description in country %}
+              <option value="{{ value }}">{{ description }}</option>
+            {% endfor %}
+            </select>
+          </div>
+          <div class="form-group col-md-4 col-sm-4">
+            <label for="state">Estado:</label>
+            <input type="text" class="form-control form-control-sm" id="state" name="state" autocomplete="off">
+          </div>
+          <div class="form-group col-md-4 col-sm-4">
+              <label for="municipality">Municipio:</label>
+              <input type="text" class="form-control form-control-sm" id="municipality" name="municipality" autocomplete="off">
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-12 col-md-12">
+      <div class="row">
+        <div class="form-group col-md-4 col-sm-4">
+          <label for="locality">Localidad:</label>
+          <input type="text" class="form-control form-control-sm" id="locality"  name="locality" autocomplete="off">
+          </div>
+          <div class="form-group col-md-3 col-sm-3">
+            <label for="neighborhood">Colonia:</label>
+            <input type="text" class="form-control form-control-sm" id="neighborhood" name="neighborhood" autocomplete="off">
+          </div>
+          <div class="form-group col-md-3 col-sm-3">
+              <label for="phone">T&eacute;lefono:</label>
+              <input type="text" class="form-control form-control-sm" id="phone" name="phone" autocomplete="off">
+            </div>
+          <div class="form-group col-md-2 col-sm-2">
+              <label for="zipcode">C&oacute;digo Postal:</label>
+              <input type="text" class="form-control form-control-sm" id="zipcode" name="zipcode" autocomplete="off">
+            </div>
+        </div>
+    </div>
+</div>

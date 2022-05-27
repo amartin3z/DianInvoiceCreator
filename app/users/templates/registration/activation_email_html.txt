@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv"Content/Type" content="text/html; charset=utf-8">
+</head>
+<title>Validaci&oacute;n  de comprobantes.</title>
+<style>
+	body { text-align: center; padding: 150px; }
+	h1 { font-size: 40px; }
+	body { font: 20px Helvetica, sans-serif; color: #333; }
+	article { display: block; text-align: left; width: 650px; margin: 0 auto; }
+	a { color: #dc8100; text-decoration: none; }
+	a:hover { color: #333; text-decoration: none; }
+</style>
+<article>
+  <h1>&iexcl;Activa tu cuenta!</h1>
+  <div>
+    <p>Tienes una invitaci&oacute;n para comenzar a validar comprobantes, por favor activa tu cuenta dando click a este <a href="{{ activation_url }}">enlace</a>.<br>
+    o bien, copia y pega la siguiente liga en tu en tu navegador:<p><code style="text-decoration: none;">{{ activation_url}}</code></p>
+    </p>
+    <code>No te preocupes m&aacute;s si tus comprobantes son falsos o estan cancelados, nosotros lo validamos por ti.</code>
+  </div>
+</article>
+

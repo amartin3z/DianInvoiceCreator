@@ -1,0 +1,120 @@
+   
+    {% load i18n %}
+    <!-- Modal -->
+    <div class="modal fade" id="modal-show-receiver-details" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button><br>
+                    <h4 class="modal-title header-modal" >{% trans 'Information business' %}</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="identifier_number" class="control-label">{% trans 'Tax Identifier Number' %}*</label><br>
+                            <input id="identifier_number_details" type="text" name="identifier_number" class="form-control" readonly="true"></input>
+                        </div>
+                        {% comment %}
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="organizacion_id" class="control-label">{% trans 'Organization ID' %}</label><br>
+                            <input id="organizacion_id_details" type="text" name="endpoint_schemeID" class="form-control selectpicker" required></input>
+                        </div>          
+                        {% endcomment %}           
+                        <br><br><br><br><br><br>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="custom_name" class="control-label">{% trans 'Company Name' %}*</label><br>
+                            <input id="custom_name_details" type="text" name="custom_name" class="form-control" readonly="true"></input>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="address_name" class="control-label">{% trans 'Street Name' %}</label><br>
+                            <input id="address_name_details" type="text" name="address_name" class="form-control" readonly="true"></input>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="city_name" class="control-label">{% trans 'City Name' %}</label><br>
+                            <input id="city_name_details" type="text" name="city_name" class="form-control" readonly="true"></input>
+                        </div>
+                        {% comment %}
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_province" class="control-label">{% trans 'Region/Province' %}</label><br>
+                            <input id="id_province_details" type="text" name="id_province" class="form-control" placeholder="Country"  required></input>
+                        </div>
+                        {% endcomment %}
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="postal_zone" class="control-label">{% trans 'Postal Zone' %}</label><br>
+                            <input id="postal_zone_details" type="text" name="postal_zone" class="form-control" readonly="true"></input>
+                        </div>
+                        {% comment %}
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_country" class="control-label">{% trans 'Country' %}</label><br>
+                            <input id="id_country_details" type="text" name="id_country" class="form-control" placeholder="Country"  required></input>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_language" class="control-label">{% trans 'Language' %}</label><br>
+                            <input id="id_language_details" type="text" name="id_language" class="form-control" placeholder="Country"  required></input>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_currency" class="control-label">{% trans 'Currency' %}</label><br>
+                            <input id="id_currency_details" type="text" name="id_currency" class="form-control" placeholder="Country"  required></input>
+                        </div>
+                        {% endcomment %}
+                        {% comment %}
+                        <br><br>
+                        <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                            <label for="contact_data" class="control-label" style="border-bottom: 1px solid #337AB7; width:100%">{% trans 'Contact data' %}</label>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_full_name" class="control-label">{% trans 'Full name' %}</label><br>
+                            <input id="id_full_name_details" type="text" name="id_full_name" class="form-control" required></input>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_department" class="control-label">{% trans 'Department' %}</label><br>
+                            <input id="id_department_details" type="text" name="id_department" class="form-control" required></input>
+                        </div>
+                        {% endcomment %}
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_email" class="control-label">{% trans 'Email' %}*</label><br>
+                            <input id="id_email_details"  type="text" class="form-control"  name="id_email" readonly="true"></input>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_telephone" class="control-label">{% trans 'Telephone' %}</label>
+                            <input id="id_telephone_details" type="text" name="telephone" class="form-control" readonly="true"></input>
+                        </div>
+                        {% comment %}
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_web" class="control-label">{% trans 'Web' %}</label>
+                            <input id="id_web_details" type="text" name="id_web" class="form-control" required></input>
+                        </div>
+                        <br><br>
+                        <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                            <label for="delivery_method" class="control-label" style="border-bottom: 1px solid #337AB7; width:100%">{% trans 'Delivery method' %}</label>
+                        </div>
+                        <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                            <label for="id_category" class="control-label">{% trans 'Category' %}*</label>
+                            <input id="id_category_details" type="text" name="id_category" class="form-control selectpicker" required></input>
+                        </div>
+                        <div class="form-group col-sm-4 col-md-4 col-lg-4">
+                            <label for="id_method" class="control-label requiredField">{% trans 'Method' %}<strong>*</strong></label>
+                            <input id="id_method_details" class="form-control" name="id_method" required></input>
+                        </div>
+
+                        <br><br>                     
+                        <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                            <label for="party_legal_entity" class="control-label" style="border-bottom: 1px solid #337AB7; width:100%">{% trans 'Invoice payment method' %}</label>
+                        </div>
+                        <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                            <label for="payment_method" class="control-label">{% trans 'Payment method' %}*</label>
+                            <input id="payment_method_details" type="text" name="payment_method" class="form-control selectpicker" required></input>
+                        </div>
+                        <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                            <label for="term" class="control-label">{% trans 'Term' %}*</label>
+                            <input id="term_details" type="text" name="term" class="form-control selectpicker" required></input>
+                        </div>
+                        {% endcomment %}
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">{% trans 'Close' %}</button>
+                </div>
+            </div>
+        </div>
+    </div>

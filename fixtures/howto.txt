@@ -1,0 +1,17 @@
+
+
+
+#######
+## gceh
+#######
+python manage.py dumpdata sat.actividad -o fixtures/sat/gceh/0001_actividad.json
+python manage.py dumpdata sat.subactividad -o fixtures/sat/gceh/0002_subactividad.json
+python manage.py dumpdata sat.tarea -o fixtures/sat/gceh/0003_tarea.json
+python manage.py dumpdata sat.pagopedimento -o fixtures/sat/gceh/0004_pagopedimento.json
+
+
+
+#######
+## ecc
+#######
+python manage.py dumpdata sat.tipocombustible -o fixtures/sat/ecc/0001_tipocombustible.json

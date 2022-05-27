@@ -1,0 +1,398 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-05 16:41-0500\n"
+"PO-Revision-Date: 2020-06-07 17:30-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.3.1\n"
+
+#: static/admin/js/SelectFilter2.js:47
+#, javascript-format
+msgid "Available %s"
+msgstr "Disponible% s"
+
+#: static/admin/js/SelectFilter2.js:53
+#, javascript-format
+msgid ""
+"This is the list of available %s. You may choose some by selecting them in "
+"the box below and then clicking the \"Choose\" arrow between the two boxes."
+msgstr ""
+"Esta es la lista de%s disponibles. Puede elegir algunos seleccionándolos en "
+"el cuadro a continuación y luego haciendo clic en la flecha \"Elegir\" entre "
+"los dos cuadros."
+
+#: static/admin/js/SelectFilter2.js:69
+#, javascript-format
+msgid "Type into this box to filter down the list of available %s."
+msgstr "Escriba en este cuadro para filtrar la lista de %s disponibles."
+
+#: static/admin/js/SelectFilter2.js:74
+msgid "Filter"
+msgstr "Filtrar"
+
+#: static/admin/js/SelectFilter2.js:78
+msgid "Choose all"
+msgstr "Seleccionar todos"
+
+#: static/admin/js/SelectFilter2.js:78
+#, javascript-format
+msgid "Click to choose all %s at once."
+msgstr "Haga clic para elegir todos los %s a la vez."
+
+#: static/admin/js/SelectFilter2.js:84
+msgid "Choose"
+msgstr "Elegir"
+
+#: static/admin/js/SelectFilter2.js:86
+msgid "Remove"
+msgstr "Remover"
+
+#: static/admin/js/SelectFilter2.js:92
+#, javascript-format
+msgid "Chosen %s"
+msgstr "Elegir %s"
+
+#: static/admin/js/SelectFilter2.js:98
+#, javascript-format
+msgid ""
+"This is the list of chosen %s. You may remove some by selecting them in the "
+"box below and then clicking the \"Remove\" arrow between the two boxes."
+msgstr ""
+"Esta es la lista de %s elegido. Puede eliminar algunos seleccionándolos en "
+"el cuadro a continuación y luego haciendo clic en la flecha \"Eliminar\" "
+"entre los dos cuadros."
+
+#: static/admin/js/SelectFilter2.js:108
+msgid "Remove all"
+msgstr "Quitar todos"
+
+#: static/admin/js/SelectFilter2.js:108
+#, javascript-format
+msgid "Click to remove all chosen %s at once."
+msgstr "Haga clic para eliminar todos los  %s elegidos a la vez."
+
+#: static/admin/js/actions.js:48 static/admin/js/actions.min.js:2
+msgid "%(sel)s of %(cnt)s selected"
+msgid_plural "%(sel)s of %(cnt)s selected"
+msgstr[0] "%(sel)s de %(cnt)s seleccionado"
+msgstr[1] "%(sel)s de %(cnt)s seleccionados"
+
+#: static/admin/js/actions.js:117 static/admin/js/actions.min.js:4
+msgid ""
+"You have unsaved changes on individual editable fields. If you run an "
+"action, your unsaved changes will be lost."
+msgstr ""
+"Tiene cambios sin guardar en campos editables individuales. Si ejecuta una "
+"acción, sus cambios no guardados se perderán."
+
+#: static/admin/js/actions.js:129 static/admin/js/actions.min.js:5
+msgid ""
+"You have selected an action, but you haven't saved your changes to "
+"individual fields yet. Please click OK to save. You'll need to re-run the "
+"action."
+msgstr ""
+"Ha seleccionado una acción, pero aún no ha guardado sus cambios en campos "
+"individuales. Haga clic en Aceptar para guardar. Tendrá que volver a "
+"ejecutar la acción."
+
+#: static/admin/js/actions.js:131 static/admin/js/actions.min.js:5
+msgid ""
+"You have selected an action, and you haven't made any changes on individual "
+"fields. You're probably looking for the Go button rather than the Save "
+"button."
+msgstr ""
+"Ha seleccionado una acción y no ha realizado ningún cambio en los campos "
+"individuales. Probablemente esté buscando el botón Ir en lugar del botón "
+"Guardar."
+
+#: static/admin/js/admin/DateTimeShortcuts.js:74
+#, javascript-format
+msgid "Note: You are %s hour ahead of server time."
+msgid_plural "Note: You are %s hours ahead of server time."
+msgstr[0] "Nota: Está %s horas por delante de la hora del servidor."
+msgstr[1] "Nota: Está %s horas por delante de la hora del servidor."
+
+#: static/admin/js/admin/DateTimeShortcuts.js:82
+#, javascript-format
+msgid "Note: You are %s hour behind server time."
+msgid_plural "Note: You are %s hours behind server time."
+msgstr[0] "Estás %s horas menos que el tiempo del servidor."
+msgstr[1] "Estás %s horas menos que el tiempo del servidor."
+
+#: static/admin/js/admin/DateTimeShortcuts.js:109
+#: static/admin/js/admin/DateTimeShortcuts.js:160
+msgid "Now"
+msgstr "Ahora"
+
+#: static/admin/js/admin/DateTimeShortcuts.js:127
+msgid "Choose a Time"
+msgstr "Elige un horario"
+
+#: static/admin/js/admin/DateTimeShortcuts.js:157
+msgid "Choose a time"
+msgstr "Elige un horario"
+
+#: static/admin/js/admin/DateTimeShortcuts.js:165
+msgid "Midnight"
+msgstr "Media noche"
+
+#: static/admin/js/admin/DateTimeShortcuts.js:170
+msgid "6 a.m."
+msgstr "6 a.m."
+
+#: static/admin/js/admin/DateTimeShortcuts.js:175
+msgid "Noon"
+msgstr "Mediodía"
+
+#: static/admin/js/admin/DateTimeShortcuts.js:180
+msgid "6 p.m."
+msgstr "6 p.m."
+
+#: static/admin/js/admin/DateTimeShortcuts.js:188
+#: static/admin/js/admin/DateTimeShortcuts.js:348
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: static/admin/js/admin/DateTimeShortcuts.js:253
+#: static/admin/js/admin/DateTimeShortcuts.js:333
+msgid "Today"
+msgstr "Ahora"
+
+#: static/admin/js/admin/DateTimeShortcuts.js:270
+msgid "Choose a Date"
+msgstr "Elije una Fecha"
+
+#: static/admin/js/admin/DateTimeShortcuts.js:327
+msgid "Yesterday"
+msgstr "Ayer"
+
+#: static/admin/js/admin/DateTimeShortcuts.js:339
+msgid "Tomorrow"
+msgstr "Mañana"
+
+#: static/admin/js/calendar.js:12
+msgid "January"
+msgstr "Enero"
+
+#: static/admin/js/calendar.js:13
+msgid "February"
+msgstr "Febero"
+
+#: static/admin/js/calendar.js:14
+msgid "March"
+msgstr "Marzo"
+
+#: static/admin/js/calendar.js:15
+msgid "April"
+msgstr "Abril"
+
+#: static/admin/js/calendar.js:16
+msgid "May"
+msgstr "Mayo"
+
+#: static/admin/js/calendar.js:17
+msgid "June"
+msgstr "Junio"
+
+#: static/admin/js/calendar.js:18
+msgid "July"
+msgstr "Julio"
+
+#: static/admin/js/calendar.js:19
+msgid "August"
+msgstr "Agosto"
+
+#: static/admin/js/calendar.js:20
+msgid "September"
+msgstr "Septiembre"
+
+#: static/admin/js/calendar.js:21
+msgid "October"
+msgstr "Octumbre"
+
+#: static/admin/js/calendar.js:22
+msgid "November"
+msgstr "Noviembre"
+
+#: static/admin/js/calendar.js:23
+msgid "December"
+msgstr "Diciembre"
+
+#: static/admin/js/calendar.js:26
+msgctxt "one letter Sunday"
+msgid "S"
+msgstr "D"
+
+#: static/admin/js/calendar.js:27
+msgctxt "one letter Monday"
+msgid "M"
+msgstr "L"
+
+#: static/admin/js/calendar.js:28
+msgctxt "one letter Tuesday"
+msgid "T"
+msgstr "M"
+
+#: static/admin/js/calendar.js:29
+msgctxt "one letter Wednesday"
+msgid "W"
+msgstr "M"
+
+#: static/admin/js/calendar.js:30
+msgctxt "one letter Thursday"
+msgid "T"
+msgstr "J"
+
+#: static/admin/js/calendar.js:31
+msgctxt "one letter Friday"
+msgid "F"
+msgstr "V"
+
+#: static/admin/js/calendar.js:32
+msgctxt "one letter Saturday"
+msgid "S"
+msgstr "S"
+
+#: static/admin/js/collapse.js:10 static/admin/js/collapse.js:21
+#: static/admin/js/collapse.min.js:1
+msgid "Show"
+msgstr "Mostrar"
+
+#: static/admin/js/collapse.js:18 static/admin/js/collapse.min.js:1
+msgid "Hide"
+msgstr "Ocultar"
+
+#: static/js/apps/invoicing/invoice.js:271
+#: static/js/apps/invoicing/invoice.js:301
+#: static/js/apps/invoicing/invoice.js:329
+#: static/js/apps/invoicing/invoice.js:357
+msgid "There was an error, try again later."
+msgstr "Se produjo un error. Vuelve a intentarlo más tarde."
+
+#: static/js/apps/invoicing/invoice.js:397
+#, fuzzy
+#| msgid "Debes ingresar un producto o servicio."
+msgid "You must select a format"
+msgstr "Debes ingresar un producto o servicio."
+
+#: static/js/apps/invoicing/invoice.js:402
+msgid "Please enter a recipient"
+msgstr "Por favor, ingrese un destinatario"
+
+#: static/js/apps/invoicing/invoice.js:404
+msgid "Comma separated emails (,)"
+msgstr "Correos separados por comas"
+
+#: static/js/apps/invoicing/new-invoice.js:106
+msgid "Discount cannot be greater than the amount."
+msgstr "Descuento no puede ser mayor que el importe."
+
+#: static/js/apps/invoicing/new-invoice.js:802
+msgid "Enter X more characters."
+msgstr ""
+
+#: static/js/apps/invoicing/new-invoice.js:804
+msgid "Payment Name"
+msgstr ""
+
+#: static/js/apps/invoicing/new-invoice.js:919
+msgid "Related UUID cannot be empty."
+msgstr "UUID relacionado no puede estar vacio."
+
+#: static/js/apps/invoicing/new-invoice.js:922
+#, fuzzy
+#| msgid "El UUID esta mal formado."
+msgid "The UUID is poorly formed."
+msgstr "The UUID is poorly formed."
+
+#: static/js/apps/invoicing/new-invoice.js:925
+#, fuzzy
+#| msgid "Debes ingresar un producto o servicio."
+msgid "You must enter a country."
+msgstr "Debes ingresar un pais."
+
+#: static/js/apps/invoicing/new-invoice.js:928
+msgid "Highlighted fields cannot be empty"
+msgstr "Los campos resaltados no pueden ir vacíos"
+
+#: static/js/apps/invoicing/receiver.js:382
+#: static/js/apps/invoicing/receiver.js:455
+#: static/js/apps/invoicing/receiver.js:515 static/js/base/main.js:149
+msgid "Success"
+msgstr "¡Correcto!"
+
+#: static/js/bootsraptagsinput/bootstrap-tagsinput.js:76
+msgid "Invalid email structure"
+msgstr "Estructura de correo inválida"
+
+#~ msgid "You must enter the RFC of the receiver"
+#~ msgstr "Debes ingresar el RFC del receptor"
+
+#, fuzzy
+#~| msgid "Debes ingresar un producto o servicio."
+#~ msgid "You must enter a product or service."
+#~ msgstr "Debes ingresar un producto o servicio."
+
+#~ msgid "Successful registration"
+#~ msgstr "¡Registro exitoso!"
+
+#~ msgid "Descuento no puede ser mayor que el importe."
+#~ msgstr "Discount cannot be greater than the amount."
+
+#~ msgid "Debes ingresar el RFC del receptor"
+#~ msgstr "You must enter the RFC of the receiver"
+
+#~ msgid "UUID relacionado no puede estar vacio."
+#~ msgstr "Related UUID cannot be empty."
+
+#~ msgid "Processing..."
+#~ msgstr "Procesando"
+
+#~ msgid "Show _MENU_ records"
+#~ msgstr "Mostrar _MENU_ registros"
+
+#~ msgid "No results found"
+#~ msgstr "No se encontraron resultados"
+
+#~ msgid "No data available in this table"
+#~ msgstr "Ningún dato disponible en esta tabla"
+
+#~ msgid "Showing records of _START_ to _END_ of a total of _TOTAL_ records"
+#~ msgstr ""
+#~ "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros"
+
+#~ msgid "Showing records from 0 to 0 of a total of 0 records"
+#~ msgstr "Mostrando registros del 0 al 0 de un total de 0 registros"
+
+#~ msgid "(filtering of a total of _MAX_ records)"
+#~ msgstr "(filtrando de un total de _MAX_ registros)"
+
+#~ msgid "Search:"
+#~ msgstr "Buscar:"
+
+#~ msgid "Loading..."
+#~ msgstr "Cargando"
+
+#~ msgid "First"
+#~ msgstr "Primero"
+
+#~ msgid "Last"
+#~ msgstr "Último"
+
+#~ msgid "Next"
+#~ msgstr "Siguiente"
+
+#~ msgid "Previous"
+#~ msgstr "Anterior"

@@ -1,0 +1,76 @@
+{% load i18n %}
+{% comment %}
+   <div id="impuesto_0_0" class="form-inline col-sm-12 tax-nl" style="padding:1rem;">
+      <div class="form-group">
+         <label class="sr-only" for="tasaocuota_0_0">Tasa o Cuota: </label>
+         <input type="number" step="0.000001" class="form-control add-tax" id="tasaocuota_0_0" required min="0.000000" max="43.770000" placeholder="Tasa O Couta" onchange="calculateIVAConcept(this)">
+      </div>
+      <div class="form-group">
+         <label class="sr-only" for="iimpuesto_0_0">Impuesto: </label>
+         <select class="form-control" id="iimpuesto_0_0">
+            <option value="001">ISR</option>
+            <option value="002" selected="selected">IVA</option>
+            <option value="003">IEPS</option>
+         </select>
+      </div>
+      <div class="form-group">
+         <label class="sr-only" for="factor_0_0">Factor: </label>
+         <select class="form-control" id="factor_0_0">
+            <option value="Tasa" selected="selected">Tasa</option>
+            <option value="Cuota">Cuota</option>
+            <option value="Exento">Exento</option>
+         </select>
+      </div>
+      <div class="form-group">
+         <label class="sr-only" for="tipo_0_0">Tipo: </label>
+         <select class="form-control" id="tipo_0_0" onchange="calculateTotals()">
+            <option value="Traslado" selected="selected">Traslado</option>
+            <option value="Retencion">Retenci&oacute;n</option>
+         </select>
+      </div>
+      <div class="form-group">
+         <label class="sr-only" for="iimporte_0_0">Importe: </label>
+         <input type="number" step="0.000001" class="form-control" id="iimporte_0_0" required min="0.000000" readonly placeholder="Importe" onchange="calculateTotalTax(this)">
+      </div>
+      <div class="form-group">
+         <button type="button" class="btn btn-danger btn-inverse" title="Borrar impuesto" onclick="deleteTax(this);" id="rimpuesto_0_0">
+         <i class="fa fa-eraser fa-fw"></i>
+         </button>
+      </div>
+      <br>
+   </div>
+{% endcomment %}
+<div id="impuesto_0_0" class="form-inline col-sm-12 tax-nl" style="padding:1rem;">
+   <div class="form-group">
+      <label class="sr-only" for="tasaocuota_0_0">{%trans 'Percent' %}: </label>
+      <input type="number" step="0.000001" class="form-control add-tax" id="tasaocuota_0_0" min="0.000000" max="43.770000" placeholder="Percent" onchange="calculateIVAConcept(this)">
+   </div>
+   <div class="form-group">
+      <label class="sr-only" for="iimpuesto_0_0">{%trans 'TaxCategory ID' %}:</label>
+      <select name="type_invoice" class="form-control select2-single taxinvoice" id="iimpuesto_0_0" style="width: 100%;">
+      </select>
+   </div>
+   <div class="form-group">
+      <label class="sr-only" for="factor_0_0">{%trans 'TaxScheme ID' %}: </label>
+      <input class="form-control text-center" type="text" id="factor_0_0" value="VAT" readonly>
+   </div>
+   {% comment %}
+   <div class="form-group">
+      <label class="sr-only" for="tipo_0_0">Tipo: </label>
+      <select class="form-control" id="tipo_0_0" onchange="calculateTotals()">
+         <option value="Traslado" selected="selected">Traslado</option>
+         <option value="Retencion">Retenci&oacute;n</option>
+      </select>
+   </div>
+   {% endcomment %}
+   <div class="form-group">
+      <label class="sr-only" for="iimporte_0_0">{%trans 'Amount' %}: </label>
+      <input type="number" step="0.000001" class="form-control" id="iimporte_0_0" required min="0.000000" readonly placeholder="{%trans 'Amount' %}" onchange="calculateTotalTax(this)">
+   </div>
+   <div class="form-group">
+      <button type="button" class="btn btn-danger btn-inverse" title="{%trans 'Remove Tax' %}" onclick="deleteTax(this);" id="rimpuesto_0_0">
+      <i class="fa fa-eraser fa-fw"></i>
+      </button>
+   </div>
+   <br>
+</div>

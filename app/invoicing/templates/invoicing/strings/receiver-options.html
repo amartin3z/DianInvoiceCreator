@@ -1,0 +1,22 @@
+{% load i18n %}
+{% if role not in 'A' %}
+	{% comment %}
+	{% if receiver.status %}
+	    <!--button class="btn btn-success btn-sm sr" title="Activo" receiver="{{ receiver.encrypt }}"><i class="fa fa-check" aria-hidden="true"></i></button-->
+	    <button class="btn btn-danger btn-xs sr" title="{% trans 'Suspend' %}" data-receiver="{{ receiver.encrypt }}"><i class="fa fa-ban" aria-hidden="true"></i></button>
+	{% else %}
+	    <button class="btn btn-success btn-xs sr" title="{% trans 'Active' %}" data-receiver="{{ receiver.encrypt }}"><i class="fa fa-check" aria-hidden="true"></i></button>
+	{% endif %}
+	{% endcomment %}
+{% endif %}
+{% comment 'should user be able to delete his/her receivers?' %}
+<button class="btn btn-warning btn-xs dr" title="Eliminar Receptor" data-receiver="{{ receiver.encrypt }}"><i class="fa fa-eraser" aria-hidden="true"></i></button>
+{% endcomment %}
+{% if role in 'ASB' %}
+	<button class="btn btn-info btn-xs sdr" title="{% trans 'Business information' %}" data-receiver="{{ receiver.encrypt }}"><i class="fa fa-eye" aria-hidden="true"></i>&nbsp; {% trans 'Business information' %}</button>
+
+{% else %}
+	<button class="btn btn-info btn-xs sdr" title="{% trans 'Business information' %}" data-receiver="{{ receiver.encrypt }}"><i class="fa fa-eye" aria-hidden="true"></i></button>
+	<button class="btn btn-default btn-xs er" title="{% trans 'Edit business' %}" data-receiver="{{ receiver.encrypt }}"><i class="fa fa-edit" aria-hidden="true"></i></button>
+{% endif %}
+

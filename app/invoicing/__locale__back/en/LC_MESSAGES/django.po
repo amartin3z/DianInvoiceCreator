@@ -1,0 +1,482 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#: templates/invoicing/modal/add-receiver.html:110
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-03 19:30-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: forms/receiver.py:24
+msgid "Previously registered RFC."
+msgstr ""
+
+#: forms/receiver.py:27
+msgid "You must register an email."
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:9
+msgid "Add business"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:19
+#: templates/invoicing/modal/show-receiver-details.html:20
+#: templates/invoicing/receivers.html:48 templates/invoicing/receivers.html:89
+msgid "Tax Identifier Number"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:23
+#: templates/invoicing/modal/show-receiver-details.html:29
+#: templates/invoicing/receivers.html:60 templates/invoicing/receivers.html:92
+msgid "Organization ID"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:25
+msgid "Select type"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:34
+#: templates/invoicing/modal/show-receiver-details.html:24
+#: templates/invoicing/receivers.html:52 templates/invoicing/receivers.html:90
+msgid "Company Name"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:38
+msgid "Address Name"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:42
+msgid "City Name"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:46
+msgid "Region/Province"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:50
+msgid "Postal Zone"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:54
+msgid "Country"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:58
+msgid "Language"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:62
+msgid "Currency"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:68
+msgid "Contact data"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:71
+msgid "Full name"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:75
+msgid "Department"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:79
+#: templates/invoicing/modal/edit-receiver.html:90
+#: templates/invoicing/modal/show-receiver-details.html:53
+#: templates/invoicing/receivers.html:56 templates/invoicing/receivers.html:91
+msgid "Email"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:83
+#: templates/invoicing/modal/show-receiver-details.html:57
+msgid "Telephone"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:87
+msgid "Web"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:93
+msgid "Delivery method"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:96
+#: templates/invoicing/modal/show-receiver-details.html:36
+msgid "Category"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:98
+msgid "Email link"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:99
+#: templates/invoicing/modal/add-receiver.html:102
+#: templates/invoicing/modal/add-receiver.html:109
+#: templates/invoicing/modal/add-receiver.html:162
+#: templates/invoicing/modal/add-receiver.html:179
+#: templates/invoicing/modal/add-receiver.html:198
+#: templates/invoicing/modal/add-receiver.html:215
+msgid "Select"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:101
+msgid "Email attachment"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:103
+msgid "With XML attachment(signed Facturae)(Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:104
+msgid "With XML (UBL) (Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:105
+msgid "With PDF attachment (Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:106
+msgid "With PDF attachment signed (Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:108
+msgid "Open network"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:111
+msgid "ePRIOR (Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:115
+msgid "FACe"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:116
+msgid "FACe detached"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:120
+msgid "Junta de Andalucia"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:121
+msgid "Junta Castilla-La MAncha"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:122
+msgid "Junta Castilla y León"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:123
+msgid "Xunta de Galicia"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:124
+msgid "Canarias"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:125
+msgid "Eusko Jaurlaritza (Bosque goverment)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:126
+msgid "Osakidetza (Dept. Salud Vasco)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:127
+msgid "Biscaytik (Vizcaya)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:128
+msgid "Deputacion of Alava"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:129
+msgid "Deputacion of Bizkaia"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:130
+msgid "Consorcio de aguas Bilbao Bizkaia"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:131
+msgid "Deputacion of Gipuzkoa"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:132
+msgid "City Council of Victoria-Gasteiz"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:133
+msgid "La Rioja"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:134
+msgid "EsPublico"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:137
+msgid "Chorus"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:143
+msgid "Ariadne (Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:163
+msgid "Private network"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:164
+msgid "Pagero (Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:165
+msgid "SERES (Facture) (Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:166
+msgid "Edicom (EDI) (Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:167
+msgid "Ediversa D93A (EDI) (Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:168
+msgid "Ediversa D96A (EDI) (Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:169
+msgid "Bon Preu (EDI) (Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:170
+msgid "Carrefour (EDI) (Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:171
+msgid "El Corte Inglés (EDI) (Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:172
+msgid "Red Eléctrica (B2B Conecta) (Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:173
+msgid "Wesupply INVOIC-TRADACOMS (EDI) (Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:174
+msgid "Bsabadell (Premium option)"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:180
+msgid "Do not send"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:181
+msgid "None"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:187
+msgid "Method"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:193
+#: templates/invoicing/modal/show-receiver-details.html:40
+msgid "Invoice payment method"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:196
+msgid "Payment method"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:199
+msgid "Cash"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:200
+msgid "Debit payment"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:201
+msgid "Bank Transfer"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:202
+msgid "Bank card"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:203
+msgid "Awarded contract"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:204
+msgid "Promissory note"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:205
+msgid "Cheque"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:206
+msgid "Bank cheque"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:207
+msgid "Reposition"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:208
+msgid "Payment by postgiro"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:209
+msgid "Other"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:213
+#: templates/invoicing/modal/show-receiver-details.html:44
+msgid "Term"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:216
+msgid "Upon Receipt"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:217
+msgid "15 days"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:218
+msgid "30 days"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:219
+msgid "60 days"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:220
+msgid "90 days"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:221
+msgid "120 days"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:222
+msgid "Last day this month"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:223
+msgid "Last day next month"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:224
+msgid "1st day next month"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:225
+msgid "1st day in two months"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:226
+msgid "15th day next month"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:227
+msgid "20th day next month"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:228
+msgid "10th day next month "
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:229
+msgid "Custom"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:236
+#: templates/invoicing/receivers.html:82
+msgid "Add"
+msgstr ""
+
+#: templates/invoicing/modal/add-receiver.html:237
+#: templates/invoicing/modal/show-receiver-details.html:68
+msgid "Close"
+msgstr ""
+
+#: templates/invoicing/modal/edit-receiver.html:33
+msgid "Edit business"
+msgstr ""
+
+#: templates/invoicing/modal/edit-receiver.html:43
+msgid "Name"
+msgstr ""
+
+#: templates/invoicing/modal/edit-receiver.html:48
+msgid "Company ID"
+msgstr ""
+
+#: templates/invoicing/modal/edit-receiver.html:58
+msgid "Party Identification: Schema ID"
+msgstr ""
+
+#: templates/invoicing/modal/edit-receiver.html:65
+msgid "Party Legal: Schema ID"
+msgstr ""
+
+#: templates/invoicing/modal/edit-receiver.html:97
+msgid "Last modification"
+msgstr ""
+
+#: templates/invoicing/modal/edit-receiver.html:109
+msgid "Edit"
+msgstr ""
+
+#: templates/invoicing/modal/edit-receiver.html:110
+msgid "Cancel"
+msgstr ""
+
+#: templates/invoicing/modal/show-receiver-details.html:12
+msgid "Business information"
+msgstr ""
+
+#: templates/invoicing/receivers.html:4 templates/invoicing/receivers.html:37
+#: templates/invoicing/receivers.html:72
+msgid "Business"
+msgstr ""
+
+#: templates/invoicing/receivers.html:44
+msgid "Filters"
+msgstr ""
+
+#: templates/invoicing/receivers.html:64
+msgid "Filter"
+msgstr ""
+
+#: templates/invoicing/receivers.html:65
+msgid "Clean"
+msgstr ""
+
+#: templates/invoicing/receivers.html:88
+msgid "ID"
+msgstr ""
+
+#: templates/invoicing/receivers.html:93
+msgid "Options"
+msgstr ""

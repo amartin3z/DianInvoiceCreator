@@ -1,0 +1,216 @@
+{% load i18n %}
+<form id="form_account">
+  <div class="row">
+    <div class="form-group col-md-3">
+      <span class="text-bold">* {% trans 'Identification Scheme'%}</span>
+      {% comment %}
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input id="taxpayer_id" type="text" class="form-control" name="taxpayer_id" placeholder="{% trans 'Identification Scheme'%}" value='{{ account.taxpayer_id }}' required {% if account.taxpayer_id %} disabled="disabled"{% endif %}>
+      </div>
+      {% endcomment %}
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+        <input type="hidden" code="{{ list_icd.code }}" name="{{ list_icd.name }}" id="scheme_val_hidden">
+        <select style="width: 100%;" placeholder="{% trans 'Tax Identifier Number' %}:" id="list_id_wizard" name="list_id_wizard" class="form-control" required></select>
+      </div>
+      <small id="taxpayer_id-help" class=""></small>
+    </div>
+
+
+    {% comment %}
+    <div class="form-group col-md-8">
+      <span class="text-bold">* {% trans 'Tax regime' %}:</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-tag"></i></span>
+        <select id="tax_regime" name="tax_regime" class="form-control" required>
+          {% for fr in fiscal_regimes %}
+          <option value="{{ fr.clave }}" {% if fr.clave == fiscal_regime %}selected{% endif %} data-subtext="{{fr.clave}}">{{ fr.clave }} - {{ fr.descripcion }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <small id="tax_regime-help" class=""></small>
+    </div>
+    {% endcomment %}
+    
+    <div class="form-group col-md-6">
+      <span class="text-bold">{% trans 'Name' %}</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-home"></i></span>
+        <input id="name" type="text" class="form-control" name="name" placeholder="{% trans 'Name' %}" value="{{ account.name }}" required 
+        {% if razon_social %} disabled="true" {% endif %}>
+      </div>
+      <small id="name-help" class=""></small> 
+    </div>
+
+    <div class="form-group col-md-3">
+      <span class="text-bold">* {% trans 'Tax Identifier Number' %}</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fas fa-id-card-alt"></i></span>
+        <input id="organization_id" type="text" class="form-control" name="name" placeholder="{% trans 'Tax Identifier Number' %}" value='{{ account.taxpayer_id }}' required {% if account.taxpayer_id %} disabled="disabled"{% endif %}>
+      </div>
+      <small id="organization_id-help" class=""></small> 
+    </div>
+
+  </div>
+  
+  <div class="row">
+    {% comment %}
+    <div class="form-group col-md-4">
+      <span class="text-bold">* {% trans 'SchemeID' %}</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fas fa-id-card-alt"></i></span>
+        <select placeholder="{% trans 'Choose your schemeID' %}:" id="schemeID" name="schemeID" class="form-control" required>
+          {% for item in list_icd %}
+          <option value="{{ item.code }}" selected>{{ item.code }} - {{item.name}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <small id="schemeID-help" class=""></small> 
+    </div>
+    
+
+    <div class="form-group col-md-4">
+      <span class="text-bold">* {% trans 'Seller electronic address' %}</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fas fa-id-card-alt"></i></span>
+        <input id="s_e_a" type="text" class="form-control" name="name" placeholder="{% trans 'Seller electronic address' %}" value="{{account.seller_elect_address}}" required >
+      </div>
+      <small id="s_e_a-help" class=""></small> 
+    </div>
+    {% endcomment %}
+
+  </div>
+
+  <div class="row">
+    <div class="form-group col-md-4">
+      <span class="text-bold">* {% trans 'zip code' %}</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-home"></i></span>
+        <input id="zip_code" type="text" class="form-control" name="name" placeholder="{% trans 'zip code' %}" value="{{data_adrees.zipcode}}" required >
+      </div>
+      <small id="cp-help" class=""></small> 
+    </div>
+
+    {% comment %}
+    <div class="form-group col-md-4">
+      <span class="text-bold">* {% trans 'zip code' %}</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-home"></i></span>
+        <select style="width: 100%;" placeholder="{% trans 'Choose your zip code' %}:" id="cp" name="cp" class="form-control" required></select>
+      </div>
+      <small id="cp-help" class=""></small> 
+    </div>
+    {% endcomment %}
+
+    <div class="form-group col-md-4">
+      <span class="text-bold">* {% trans 'Country' %}</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fas fa-map-marker-alt"></i></span>
+        <select placeholder="{% trans 'Choose your Country' %}:" id="country"  class="form-control" required>
+          <option value="MEX">MEX - MEXICO</option>
+        </select>
+      </div>
+      <small id="country-help" class=""></small> 
+    </div>
+
+    {% comment %}
+    <div class="form-group col-md-4">
+      <span class="text-bold">* {% trans 'Country Sub entity' %}</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fas fa-map-marker-alt"></i></span>
+        <input id="CountrySubentity" type="text" class="form-control" name="name" placeholder="{% trans 'Country Sub entity' %}" required value="{{data_adrees.state}}">
+      </div>
+      <small id="CountrySubentity-help" class=""></small> 
+    </div>
+    {% endcomment %}
+    <div class="form-group col-md-4">
+      <span class="text-bold">* {% trans 'City' %}</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fas fa-map-marker-alt"></i></span>
+          <input id="City_Name" type="text" class="form-control" name="name" placeholder="{% trans 'City' %}" required value="{{data_adrees.city}}">
+      </div>
+      <small id="City_Name-help" class=""></small> 
+    </div>
+    
+
+  </div>
+
+  <div class="row">    
+    <div class="form-group col-md-8">
+      <span class="text-bold">* {% trans 'Street' %}</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fas fa-map-marker-alt"></i></span>
+          <input id="Street_Name" type="text" class="form-control" name="name" placeholder="{% trans 'Street' %}"  required value="{{data_adrees.street}}">
+      </div>
+      <small id="Street_Name-help" class=""></small> 
+    </div>
+
+    <div class="form-group col-md-4">
+      <span class="text-bold">* {% trans 'Organization ID' %}</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fas fa-id-card-alt"></i></span>
+        <input id="org_id_party" type="text" class="form-control" name="name" placeholder="{% trans 'Organization ID' %}" value="{{account.organization_id}}" required >
+      </div>
+      <small id="org_id_party-help" class=""></small> 
+    </div>
+
+    {% comment %}
+    <div class="form-group col-md-4">
+      <span class="text-bold">* {% trans 'Legal company ID' %}</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fas fa-id-card-alt"></i></span>
+          <input id="Legal_Company_Id" type="text" class="form-control" name="name" placeholder="{% trans 'Legal company ID' %}"  required value="{{account.organization_id}}">
+      </div>
+      <small id="tax_identifier_message" style="color: #007bff;">{% trans 'This value belongs to the tax identification number' %}</small>
+      <small id="Legal_Company_Id-help" class=""></small> 
+    </div>
+    {% endcomment %}
+
+    {% comment %}      
+
+    <div class="form-group col-md-4">
+      <span class="text-bold">* {% trans 'Additional Street' %}</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fas fa-map-marker-alt"></i></span>
+          <input id="Additional_StreetName" type="text" class="form-control" name="name" placeholder="{% trans 'Additional Street' %}" required >
+      </div>
+      <small id="Additional_StreetName-help" class=""></small> 
+    </div>
+   
+    <div class="form-group col-md-12">
+      <span class="text-bold">* {% trans 'Address Line' %}</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fas fa-map-marker-alt"></i></span>
+        <input id="address_line" type="text" class="form-control" name="name" placeholder="{% trans 'Address Line' %}" required >
+      </div>
+      <small id="address_line-help" class=""></small> 
+    </div>
+    {% endcomment %}
+
+
+  </div>
+  {% comment %}
+  <div class="row">
+    <div class="form-group col-md-4">
+      <span class="text-bold">* {% trans 'External number' %}</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-hashtag"></i></span>
+        <input type="text" class="form-control number" id="external_number" maxlength="10" name="external_number" placeholder="{% trans 'External number' %}" value="{{data_adrees.external_number}}">
+      </div>
+      <small id="external_number-help" class=""></small>
+    </div>
+    <div class="form-group col-md-4">
+      <span class="text-bold">* {% trans 'Internal Number' %}</span>
+      <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-hashtag"></i></span>
+        <input type="text" class="form-control number" maxlength="10" id="internal_number" name="internal_number" placeholder="{% trans 'Internal Number' %}" value="{{data_adrees.internal_number}}">
+      </div>
+      <small id="internal_number-help" class=""></small>
+    </div>
+  </div>
+  {% endcomment %}
+
+  
+
+</form>

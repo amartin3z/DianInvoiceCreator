@@ -1,0 +1,16 @@
+{% load i18n %}
+{% if oper == 'default' %}
+    {% if default %}
+        <a class="btn btn-success btn-sm"><i class="fa fa-check-circle" aria-hidden="true"></i> {% trans 'Yes' %}</a>
+    {% else %}
+        <a class="btn btn-danger btn-sm ce-default"><i class="fa fa-ban" aria-hidden="true"></i> {% trans 'No' %}</a>
+    {% endif %}
+{% elif oper == 'status' %}
+    {% if status == 'A' %}
+        <a class="btn btn-success btn-sm ce-active"><i class="fa fa-check-circle" aria-hidden="true"></i> {% trans 'Active' %}</a>
+    {% elif status == 'S' %}
+        <a class="btn btn-warning btn-sm ce-active"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> {% trans 'Suspended' %}</a>
+    {% else %}
+        <a class="btn btn-danger btn-sm"><i class="fa fa-ban" aria-hidden="true"></i> {% trans 'Revoked' %}</a>
+    {%endif%}
+{% endif %}

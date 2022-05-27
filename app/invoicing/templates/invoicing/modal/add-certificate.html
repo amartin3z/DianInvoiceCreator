@@ -1,0 +1,18 @@
+{% load i18n %}
+<div id="modal-add-certificate" class="modal fade" data-backdrop="static" data-keyboard="false" role="dialog" data-invoice="">
+	<div class="modal-dialog modal-confirm" style="width: 550px; color:#121113;">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="icon-box" style="background: #ffc107">
+					<i class="material-icons"><i class="fa fa-exclamation-triangle"></i></i>
+				</div>
+				<h4 class="modal-title" id="invoice-error-title"><strong>{% trans 'You have not yet uploaded certificates' %}</strong> </h4>
+                <br>
+                <h5 style="text-align: center;margin-top: 20px;font-weight: bold;font-size: 15px;color: #757575;">{% trans 'Be sure that the certificate is valid and corresponds to the tax identifier of the business.' %}</h5>
+            </div>
+			<div class="modal-body text-justify">
+                <a type="button" class="btn btn-warning btn-block" style="color: white;" href="{% url 'profile' %}"><strong>&nbsp;{% trans 'Upload Certificates' %}</strong></a>
+			</div>
+		</div>
+	</div>
+</div>

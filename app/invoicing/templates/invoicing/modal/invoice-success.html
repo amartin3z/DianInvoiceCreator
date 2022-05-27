@@ -1,0 +1,32 @@
+{% load i18n %}
+<div id="modal-invoice-success" class="modal fade" data-backdrop="static" data-keyboard="false" role="dialog" data-invoice="">
+	<div class="modal-dialog modal-confirm" style="color:#121113;">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="icon-box">
+					<i class="material-icons"><i class="fas fa-check-circle"></i></i>
+				</div>
+				<h4 class="modal-title"><strong>{% trans 'Stamped Invoice!' %}</strong> </h4>
+			</div>
+			<div class="modal-body">
+				<!-- Tu factura sé está enviando al SAT. -->
+				<p class="text-center">{% trans 'Your invoice is being processed.' %}</p>
+				<div class="text-left">
+					<ul>
+						<li><small>Total:</small> <strong class="text-uppercase" id="success-total"></strong></li>
+						<li><small>{% trans 'Tax Identifier Number' %}:</small> <strong class="text-uppercase" id="success-rfc"></strong></li>
+						<li><small>{% trans 'Customer Tax Identifier Number' %}:</small> <strong class="text-uppercase" id="success-rrfc"></strong></li>
+						<li><small>{% trans 'Invoice ID' %}:</small> <strong class="text-uppercase" id="success-uuid"></strong></li>
+					</ul>
+				</div>
+				<p class="text-center">{% trans 'Now what do you want to do?' %}</p>
+				<button class="btn btn-default btn-block download-file"><strong><i
+							class="fas fa-file-archive"></i>&nbsp;{% trans 'Download files' %}</strong></button>
+				<a role="button" class="btn btn-info btn-block" href="javascript:;" id="invoice-dashboard"><strong><i
+							class="fas fa-file-archive"></i>&nbsp;{% trans 'Go to my invoices' %}</strong></a>
+				<button class="btn btn-danger btn-block" onclick="location.reload();" data-dismiss="modal"><strong><i
+							class="fas fa-long-arrow-alt-left"></i>&nbsp;{% trans 'Continue billing' %}</strong></button>
+			</div>
+		</div>
+	</div>
+</div>

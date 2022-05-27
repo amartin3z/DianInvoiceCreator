@@ -1,0 +1,23 @@
+{% load auth_extras %}
+{% load i18n %}
+{% if status in 'FCRAP'%}
+  {% if uuid %}
+    <a href="{% url 'invoicing:download_xml' uuid|default:'4A1B43E2-1183-4AD4-A3DE-C2DA787AE56A' %}" class="btn btn-info btn-xs" title="{% trans 'Download XML file' %}"><i class="fa fa-file-excel" aria-hidden="true"></i></a>
+    <a href="{% url 'invoicing:download_pdf' uuid|default:'4A1B43E2-1183-4AD4-A3DE-C2DA787AE56A' %}" class="btn btn-warning btn-xs" title="{% trans 'Download PDF file' %}"><i class="fa fa-file-pdf" aria-hidden="true"></i></a>
+  {% endif %}
+  {# {% if True or request.user|has_group:"emission-cancel" and status not in 'CRA' %} #}
+  {% if status not in 'CRAP' and role not in 'A' %}
+    <button id="btn-cancel-{{id}}" type="button" class="btn btn-danger btn-xs btn-cancel" data-trigger="manual" data-html="true" data-toggle="popover" data-content="&lt;button type=&quot;button&quot; class=&quot;close&quot; &gt; &times; &lt;/button&gt; &lt;table class=&quot;table table-striped&quot;&gt; &lt;thead&gt; &lt;tr&gt; &lt;th class=&quot;text-nowrap&quot;&gt;{% trans 'Do you want to cancel the invoice?' %}&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td class=&quot;text-center&quot;&gt; &lt;textarea class=&quot;form-control&quot; id=&quot;notes-{{id}}&quot; aria-describedby=&quot;notesCancel&quot; placeholder=&quot;{% trans 'Add additional notes' %}&quot;&gt; &lt;/textarea&gt; &lt;br&gt; &lt;small id=&quot;notesCancel&quot; class=&quot;form-text text-muted&quot;&gt;{% trans 'Cancellation notes' %}.&lt;/small&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td class=&quot;text-center&quot;&gt; &lt;button id=&quot;bc-{{id}}&quot; type=&quot;button&quot; data-loading-text=&quot;{% trans 'Canceling...' %}&quot; data-invoice=&quot;{{ id }}&quot; class=&quot;btn btn-danger btn-sm rci&quot; title=&quot;{% trans 'Cancelar invoice' %}&quot;&gt;{% trans 'Yes Cancel' %}&lt;/button&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;"><i class="fa fa-times" title="{% trans 'Cancel Invoice' %}" aria-hidden="true"></i></button>
+  {# {% elif True or request.user|has_group:"emission-cancel" and status == 'R' %} #}
+  {% elif status == 'A' and role not in 'A' %}
+    <button type="button" id="btn-stop-cancel-{{id}}" class="btn btn-danger btn-xs" data-html="true" data-toggle="popover" data-content="&lt;table class=&quot;table table-striped&quot;&gt; &lt;thead&gt; &lt;tr&gt; &lt;th class=&quot;text-nowrap&quot;&gt;&amp;iquest;{% trans 'Stop Cancellation?' %}&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td class=&quot;text-center&quot;&gt; &lt;button type=&quot;button&quot; data-loading-text=&quot;{% trans 'Stopping...' %}&quot; data-invoice=&quot;{{ id }}&quot; class=&quot;btn btn-success btn-sm sci&quot; title=&quot;{% trans 'Stop process' %}&quot;&gt;S&iacute;, {% trans 'Stop' %}&lt;/button&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;"><i class="fa fa-ban" title="{% trans 'Stop cancellation' %}" aria-hidden="true"></i></button>
+  {% endif %}
+  <button type="button" class="btn btn-default btn-xs btn-email-confirm" data-toggle="modal" data-target="#confirm_email" data-invoice="{{ id }}" uuid="{{ uuid }}" title="{% trans 'Send Email' %}"><i class="fa fa-envelope" aria-hidden="true"></i></button>
+  {% comment %}
+  {% if status not in 'CA' and role not in 'A' %}
+    <button data-invoice="{{ id }}" type="button" class="btn btn-default btn-xs usi" data-html="true" data-loading-text="..." data-toggle="popover"><i class="fa fa-retweet" aria-hidden="true" title="{% trans 'Update Status' %}"></i></button>
+  {% endif %}
+  {% endcomment %}
+{% elif status not in 'EFCAP' and role not in 'A' %}
+  <button type="button" data-loading-text="..." id="btn-retry-{{id}}" class="btn btn-info btn-xs" data-html="true" data-toggle="popover" data-content="&lt;table class=&quot;table table-striped&quot;&gt; &lt;thead&gt; &lt;tr&gt; &lt;th class=&quot;text-nowrap&quot;&gt;&amp;iquest;{% trans 'Do you want to re-stamp the invoice?' %}&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; data-loading-text=&quot;{% trans 'Re-stamping...' %}&quot; data-invoice=&quot;{{ id }}&quot; class=&quot;btn btn-success btn-sm rts&quot; title=&quot;{% trans 'Send re-stamped' %}&quot;&gt;S&iacute;, {% trans 'Send' %}&lt;/button&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt;"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+{% endif %}

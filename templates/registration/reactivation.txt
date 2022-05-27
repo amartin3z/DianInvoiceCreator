@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reactivaci&oacute;n</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+    body {
+      font-family: "font-family: Arial, sans-serif, 'Open Sans'" !important;
+    }
+    .header {
+      background-color: #383838;
+      height: 50px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    .footer {
+      background-color: #383838;
+      height: 50px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .row {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    .col-lg-12 {
+      width: 100%;
+      position: relative;
+      min-height: 1px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .center {
+      padding: 1px;
+      color: #FFF;
+      font-size: 15px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 6px 12px;
+      margin-bottom: 0;
+      font-size: 14px;
+      line-height: 1.428571429;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      white-space: nowrap;
+      user-select: none;
+      font-weight: 300;
+      transition: all 0.15s;
+    }
+    .btn-primary {
+      color: #ffffff;
+      background-color: #007aff;
+      border-color: #007aff;
+    }
+    .btn-lg {
+      padding: 10px 16px;
+      font-size: 18px;
+      line-height: 1.33;
+      border-radius: 6px;
+    }
+    .btn-loggin, .title {
+      color: #FFFFFF !important;
+    }
+    a {
+      text-decoration: none !important;
+    }
+    .text {
+      color: #000000;
+      font-size: 20px;
+    }
+    .title {
+      padding: 5px !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="header" align="center">
+    <h1 class="title">Solicitud de Reactivaci&oacute;n</h1>
+  </div>
+  <div class="row" align="center">
+    <div class="col-lg-12">
+      <br>
+      <p class="text">El usuario <b>{{ name }}</b> con correo <b>{{ email_from }}</b> ha solicitado la reactivaci&oacute;n de su cuenta</p>
+      
+      <a href="{{ url }}" type="button" class="btn btn-primary btn-lg btn-loggin">Ingresar</a>
+    </div>
+  </div>
+  <br>
+  <div class="footer">
+    <div class="col-lg-12 center" align="center">
+      <p>Copyright &copy; {% now 'Y' %} | Finkok SAPI de CV</p>
+    </div>
+  </div>
+</body>
+</html>

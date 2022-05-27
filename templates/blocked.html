@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load staticfiles %}
+    {% load i18n %}
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Validador">
+      <meta name="author" content="{{ PROJECT_AUTHOR }}">
+      <meta name="keyword" content="{{ PROJECT_NAME }}">
+      <link rel="shortcut icon" href="{% static 'img/amexiproc.ico' %}">
+      <title>{% trans 'Account blocked' %}</title>
+      <link href="{% static 'img/iconsite/error.ico' %}" rel="shortcut icon" type="image/x-icon"/>
+      <link href="{% static 'css/bootstrap/bootstrap.min.css' %}" rel="stylesheet">
+      <link href="{% static 'css/font-awesome/all.css' %}" rel="stylesheet">
+      <link href="{% static 'css/font-awesome4/font-awesome.css' %}" rel="stylesheet">
+      <link href="{% static 'css/checkbox/pretty-checkbox.min.css' %}" rel="stylesheet" type="text/css" >
+      <link href="{% static 'css/base/style.css' %}" rel="stylesheet">
+      <link href="{% static 'css/toast/jquery.toast.css' %}" rel="stylesheet" type="text/css" >
+      <link href="{% static 'css/toogle/bootstrap-toggle.min.css' %}" rel="stylesheet" type="text/css">
+      <link href="{% static 'css/toast/jquery.toast.css' %}" rel="stylesheet" type="text/css" >
+      <style type="text/css">
+        body {
+          margin-right: 15px;
+        }
+        .content_error {
+          font-family: "Comic Sans MS" !important;
+        }
+        .support {
+          color: #DE8286;
+        }
+        .btn-success {
+          background-color: #69b163;
+        }
+        .btn {
+          -webkit-appearance: none !important;
+          user-select: none;
+          vertical-align: middle;
+          white-space: nowrap;
+          box-sizing: border-box;
+          cursor: pointer;
+          display: inline-block;
+          font-weight: 500;
+          outline-style: none;
+          text-align: center;
+          text-decoration: none;
+        } 
+        .content_error > h1 {
+          font-size: 26px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        .content_error > h3 {
+          font-size: 16px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        .content_error > h4 {
+          font-size: 10px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        .btn-lg {
+          font-size: 15px;
+        }
+        .btn-lg {
+          height: 40px;
+          line-height: 40px;
+          min-width: 40px;
+          padding: 0 20px;
+          border-radius: 4px;
+        }
+
+        .bad-luck {
+          vertical-align: middle;
+          width: 300px;
+        }
+
+        .warning {
+          vertical-align: middle;
+          width: 100px;
+        }
+
+        @media screen and (min-width: 768px){
+          .bad-luck {
+            width: 400px;
+          }
+          .warning {
+            width: 150px;
+          }
+          .content_error > h1 {
+            font-size: 40px;
+          }
+          .content_error > h3 {
+            font-size: 26px;
+          }
+          .content_error > h4 {
+            font-size: 20px;
+          }
+          .btn-lg {
+            font-size: 20px;
+          }
+          .btn-lg {
+            height: 60px;
+            line-height: 60px;
+            min-width: 60px;
+            padding: 0 30px;
+            border-radius: 4px;
+          }
+        }
+
+        @media screen and (min-width: 1025px){
+          .warning {
+            width: 200px;
+          }
+          .content_error > h1 {
+            font-size: 36px;
+          }
+          .content_error > h3 {
+            font-size: 24px;
+          }
+          .content_error > h4 {
+            font-size: 18px;
+          } 
+          .btn-lg {
+            font-size: 17px;
+          }
+          
+          .btn-lg {
+            height: 60px;
+            line-height: 60px;
+            min-width: 60px;
+            padding: 0 30px;
+            border-radius: 4px;
+          }
+        }
+      </style>
+</head>
+  <body id="top" class="show-menu">
+    <div id="wrap">
+      <nav class="navbar bg-hf  navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">{% trans 'Toggle navigation' %}</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'index' %}"><img  class="logo" src="{% static 'img/logos/logo.png' %}"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav pull-right">
+              <li id="perfil" class="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="title">&nbsp;{{ request.user.username }}</span>
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="{% url 'logout' %}"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp;{% trans 'Sign out' %}</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="container" class="">
+        <section id="main-content" style="margin-top: 60px;">
+          <section class="wrapper">
+            <div class="row"></div>
+            <div id="content">
+              {% load auth_extras %}
+              {% blocked_account request.user as block %}
+              <div class="row">
+                <div class="col-sm-12" align="center">
+                  {% if block.status == 'D' %}
+                    <img class="warning" src="{% static 'img/warning.png' %}">
+                  {% else %}
+                    <img class="bad-luck" src="{% static 'img/bad-luck.gif' %}">
+                  {% endif %}
+                </div>
+                <div class="col-sm-12 content_error" align="center">
+                    {% if block.status == 'D' %}
+                      <h1><b>{% trans 'Your request is going to be verified by our team, after this your account will be terminated.' %}</b></h1>
+                    {% else %}
+                      <h1><b>{% trans 'Your account is cancelled.' %}</b></h1>
+                    {% endif %}
+                    <br>
+                    {% if block.status == 'D' %}
+                      <h3>{% trans 'You have requested cancelation your account' %}<br>{% trans 'While this happens you can not to do any action.' %}</h3>
+                      <br>
+                      <h4>{% trans 'If you did not request this action, please contact us as soon as possible.' %}</h4>
+                    {% else %}
+                      <h3>{% trans 'Your account is blocked.' %} {{ block.reason }}</h3>
+                      <br>
+                      <h4>{% trans 'For any questions or comments contact us, we will respond promptly.' %}</h4>
+                    {% endif %}
+                </div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4" align="center">
+                  <br><br>
+                  <button type="button" class="btn btn-success btn-lg btn-send-message"><i class="fa fa-paper-plane"></i>&nbsp;&nbsp;&nbsp;{% trans 'Active account' %}</button>
+                </div>
+                <div class="col-sm-4"></div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+    </div>
+  </body>
+  <script src="{% static 'js/jquery/jquery-1.12.4.js' %}"></script>
+  <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/font-awesome/all.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/toast/jquery.toast.js' %}"></script>
+  <script type="text/javascript">
+    function getCookie(name) {
+      var cookieValue = null;
+      if (document.cookie && document.cookie !== '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+          var cookie = cookies[i].trim();
+          if (cookie.substring(0, name.length + 1) == (name + '=')) {
+            cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+          }
+        }
+      }
+      return cookieValue;
+    }
+
+    function error_message(message){
+      $.toast({
+        heading: "Error",
+        text: message,
+        showHideTransition: "fade",
+        icon: "error",
+        position: "top-right",
+      });
+    }
+
+    function success_message(message){
+      $.toast({
+        heading: "Correcto",
+        text: message,
+        showHideTransition: "fade",
+        icon: "success",
+        position: "top-right",
+      });
+    }
+
+    $(document).ready(function() {
+      $(document).on('click', '.btn-send-message', function() {
+        var data = {
+          'csrfmiddlewaretoken': getCookie('csrftoken'),
+          'action': 'send',
+        }
+        console.log(data);
+        $.ajax({
+          'dataType': 'json',
+          'type': 'POST',
+          'data': data,
+          'url': '/reactivation/',
+          'success': function(json) {
+            if (json.success) {
+              success_message(json.message);
+            } else {
+              error_message(json.message);
+            }
+          }
+        });
+      });
+    });
+  </script>
+</html>

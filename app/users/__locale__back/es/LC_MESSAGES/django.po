@@ -1,0 +1,782 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-03 19:30-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: app/users/management/commands/create_sellers.py:26
+msgid ""
+"That email address doesn't have an associated user account. Are you sure "
+"you've registered?"
+msgstr ""
+"Esa dirección de correo electrónico no tiene una cuenta de usuario asociada. "
+"¿Estás seguro de que te has registrado?"
+
+#: app/users/management/commands/create_sellers.py:27
+msgid ""
+"The user account associated with this email address cannot reset the "
+"password."
+msgstr ""
+"La cuenta de usuario asociada con esta dirección de correo electrónico no "
+"puede restablecer la contraseña."
+
+#: app/users/management/commands/create_sellers.py:29
+#: app/users/templates/django_registration/registration_form.html:40
+msgid "Email"
+msgstr "Email"
+
+#: app/users/templates/django_registration/password_change_done.html:3
+#: app/users/templates/django_registration/password_change_form.html:4
+#: app/users/templates/registration/password_change_done.html:3
+#: app/users/templates/registration/password_change_form.html:4
+msgid "Documentation"
+msgstr "Documentación"
+
+#: app/users/templates/django_registration/password_change_done.html:3
+#: app/users/templates/django_registration/password_change_form.html:4
+#: app/users/templates/registration/password_change_done.html:3
+#: app/users/templates/registration/password_change_form.html:4
+msgid "Change password"
+msgstr "Cambiar Contraseña"
+
+#: app/users/templates/django_registration/password_change_done.html:3
+#: app/users/templates/django_registration/password_change_form.html:4
+#: app/users/templates/registration/password_change_done.html:3
+#: app/users/templates/registration/password_change_form.html:4
+msgid "Log out"
+msgstr "Cerarr sesión"
+
+#: app/users/templates/django_registration/password_change_done.html:6
+#: app/users/templates/django_registration/password_change_form.html:7
+#: app/users/templates/django_registration/password_reset_complete.html:6
+#: app/users/templates/django_registration/password_reset_done.html:6
+#: app/users/templates/django_registration/password_reset_form.html:6
+#: app/users/templates/registration/password_change_done.html:6
+#: app/users/templates/registration/password_change_form.html:7
+#: app/users/templates/registration/password_reset_complete.html:6
+#: app/users/templates/registration/password_reset_done.html:6
+#: app/users/templates/registration/password_reset_form.html:6
+#: app/users/templates/users/password_reset/reset_admin.html:7
+msgid "Home"
+msgstr "Inicio"
+
+#: app/users/templates/django_registration/password_change_done.html:7
+#: app/users/templates/django_registration/password_change_form.html:8
+#: app/users/templates/registration/password_change_done.html:7
+#: app/users/templates/registration/password_change_form.html:8
+msgid "Password change"
+msgstr "Cambiar contraseña"
+
+#: app/users/templates/django_registration/password_change_done.html:14
+#: app/users/templates/registration/password_change_done.html:14
+msgid "Your password was changed."
+msgstr "Tu contraseña fue cambiada"
+
+#: app/users/templates/django_registration/password_change_form.html:21
+#: app/users/templates/registration/password_change_form.html:21
+msgid "Please correct the error below."
+msgstr "Por favor corrija el error a continuación."
+
+#: app/users/templates/django_registration/password_change_form.html:21
+#: app/users/templates/registration/password_change_form.html:21
+msgid "Please correct the errors below."
+msgstr "Por favor corrija el error a continuación."
+
+#: app/users/templates/django_registration/password_change_form.html:26
+#: app/users/templates/registration/password_change_form.html:26
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+"Ingrese su contraseña anterior, por razones de seguridad, y luego ingrese su "
+"nueva contraseña dos veces para que podamos verificar que la haya ingresado "
+"correctamente."
+
+#: app/users/templates/django_registration/password_change_form.html:32
+#: app/users/templates/registration/password_change_form.html:32
+msgid "Old password"
+msgstr "Contraseña anterior"
+
+#: app/users/templates/django_registration/password_change_form.html:37
+#: app/users/templates/registration/password_change_form.html:37
+msgid "New password"
+msgstr "Nueva contraseña"
+
+#: app/users/templates/django_registration/password_change_form.html:42
+#: app/users/templates/registration/password_change_form.html:42
+msgid "Password (again)"
+msgstr "Contraseña (de nuevo)"
+
+#: app/users/templates/django_registration/password_change_form.html:48
+#: app/users/templates/registration/password_change_form.html:48
+#: app/users/templates/users/password_reset/reset.html:32
+#: app/users/templates/users/password_reset/reset_admin.html:32
+msgid "Change my password"
+msgstr "Cambiar mi contraseña"
+
+#: app/users/templates/django_registration/password_reset_complete.html:7
+#: app/users/templates/django_registration/password_reset_done.html:7
+#: app/users/templates/django_registration/password_reset_form.html:7
+#: app/users/templates/registration/password_reset_complete.html:7
+#: app/users/templates/registration/password_reset_done.html:7
+#: app/users/templates/registration/password_reset_form.html:7
+msgid "Password reset"
+msgstr "Restablecimiento de contraseña"
+
+#: app/users/templates/django_registration/password_reset_complete.html:16
+#: app/users/templates/registration/password_reset_complete.html:16
+msgid "Your password has been set.  You may go ahead and log in now."
+msgstr ""
+"Su contraseña ha sido establecida. Puede continuar e iniciar sesión ahora."
+
+#: app/users/templates/django_registration/password_reset_complete.html:18
+#: app/users/templates/django_registration/registration_form.html:9
+#: app/users/templates/django_registration/registration_form.html:71
+#: app/users/templates/registration/password_reset_complete.html:18
+#: app/users/templates/users/login.html:59
+msgid "Log in"
+msgstr "Inicio de sesión"
+
+#: app/users/templates/django_registration/password_reset_confirm_2.html:51
+#: app/users/templates/registration/password_reset_confirm_2.html:51
+#: app/users/templates/users/password_reset/reset.html:38
+#: app/users/templates/users/password_reset/reset_admin.html:38
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a new password reset."
+msgstr ""
+"El enlace de restablecimiento de contraseña no era válido, posiblemente "
+"porque ya se ha utilizado. Solicite un nuevo restablecimiento de contraseña."
+
+#: app/users/templates/django_registration/password_reset_done.html:15
+#: app/users/templates/registration/password_reset_done.html:15
+msgid ""
+"We've emailed you instructions for setting your password. You should be "
+"receiving them shortly."
+msgstr ""
+"Le hemos enviado por correo electrónico instrucciones para configurar su "
+"contraseña. Deberías recibirlos en breve."
+
+#: app/users/templates/django_registration/password_reset_done.html:17
+#: app/users/templates/registration/password_reset_done.html:17
+msgid ""
+"If you don't receive an email, please make sure you've entered the address "
+"you registered with, and check your spam folder."
+msgstr ""
+"Si no recibe un correo electrónico, asegúrese de haber ingresado la "
+"dirección con la que se registró y revise su carpeta de correo no deseado."
+
+#: app/users/templates/django_registration/password_reset_email.html:2
+#: app/users/templates/registration/password_reset_email.html:2
+#: app/users/templates/users/password_reset/email.html:2
+#, python-format
+msgid ""
+"You're receiving this email because you requested a password reset for your "
+"user account at %(site_name)s."
+msgstr ""
+"Recibió este correo electrónico porque solicitó un restablecimiento de "
+"contraseña para su cuenta de usuario en %(site_name)s."
+
+#: app/users/templates/django_registration/password_reset_email.html:4
+#: app/users/templates/registration/password_reset_email.html:4
+#: app/users/templates/users/password_reset/email.html:4
+msgid "Please go to the following page and choose a new password:"
+msgstr "Vaya a la siguiente página y elija una nueva contraseña"
+
+#: app/users/templates/django_registration/password_reset_email.html:8
+#: app/users/templates/registration/password_reset_email.html:8
+#: app/users/templates/users/password_reset/email.html:8
+msgid "Your username, in case you've forgotten:"
+msgstr "Su nombre de usuario, en caso de que haya olvidado:"
+
+#: app/users/templates/django_registration/password_reset_email.html:10
+#: app/users/templates/registration/password_reset_email.html:10
+#: app/users/templates/users/password_reset/email.html:10
+msgid "Thanks for using our site!"
+msgstr "¡Gracias por usar nuestro sitio!"
+
+#: app/users/templates/django_registration/password_reset_email.html:12
+#: app/users/templates/registration/password_reset_email.html:12
+#: app/users/templates/users/password_reset/email.html:12
+#, python-format
+msgid "The %(site_name)s team"
+msgstr "El equipo %(site_name)s"
+
+#: app/users/templates/django_registration/password_reset_form.html:15
+#: app/users/templates/registration/password_reset_form.html:15
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll email "
+"instructions for setting a new one."
+msgstr ""
+"¿Olvidaste tu contraseña? Ingrese su dirección de correo electrónico a "
+"continuación, y le enviaremos un correo electrónico con instrucciones para "
+"configurar una nueva"
+
+#: app/users/templates/django_registration/password_reset_form.html:19
+#: app/users/templates/registration/password_reset_form.html:19
+msgid "Email address:"
+msgstr "Correo electrónico"
+
+#: app/users/templates/django_registration/password_reset_form.html:19
+#: app/users/templates/registration/password_reset_form.html:19
+msgid "Reset my password"
+msgstr "Restablecer mi contraseña"
+
+#: app/users/templates/django_registration/registration_form.html:34
+#: app/users/templates/django_registration/registration_form.html:69
+#: app/users/templates/users/login.html:63
+msgid "Sign up"
+msgstr "Registrarse"
+
+#: app/users/templates/django_registration/registration_form.html:46
+#: app/users/templates/registration/registration_user.html:102
+#: app/users/templates/users/login.html:43
+msgid "Password"
+msgstr "Contraseña"
+
+#: app/users/templates/django_registration/registration_form.html:52
+#, fuzzy
+#| msgid "Password reset confirmation"
+msgid "Password confirmation"
+msgstr "Confirmar contraseña"
+
+#: app/users/templates/django_registration/registration_form.html:58
+#: app/users/templates/registration/registration_user.html:49
+msgid "RFC"
+msgstr "RFC"
+
+#: app/users/templates/django_registration/registration_form.html:71
+#, fuzzy
+#| msgid "Create your account"
+msgid "Already have an account?"
+msgstr "¿Ya tienes una cuenta?"
+
+#: app/users/templates/registration/activate.html:51
+msgid "Activate account"
+msgstr "Activar la cuenta"
+
+#: app/users/templates/registration/registration_form.html:66
+msgid "Register account"
+msgstr "Registrar cuenta"
+
+#: app/users/templates/registration/registration_user.html:38
+msgid "Finish your registration"
+msgstr "Termina tu registro"
+
+#: app/users/templates/registration/registration_user.html:43
+msgid "E-mail"
+msgstr "E-mail"
+
+#: app/users/templates/registration/registration_user.html:55
+msgid "Business name"
+msgstr "Nombre del negocio"
+
+#: app/users/templates/registration/registration_user.html:61
+#: app/users/templates/registration/registration_user.html:82
+msgid "Names"
+msgstr "Nombres"
+
+#: app/users/templates/registration/registration_user.html:68
+#: app/users/templates/registration/registration_user.html:89
+#: app/users/templates/users/modal/add_user.html:37
+#: app/users/templates/users/modal/edit_user.html:38
+msgid "Last name"
+msgstr "Apellido paterno"
+
+#: app/users/templates/registration/registration_user.html:73
+#: app/users/templates/registration/registration_user.html:94
+msgid "Mother last name"
+msgstr "Apellido materno"
+
+#: app/users/templates/registration/registration_user.html:107
+#, fuzzy
+#| msgid "Confirm Password:"
+msgid "Confirm Password"
+msgstr "Confirmar contraseña:"
+
+#: app/users/templates/registration/registration_user.html:112
+msgid "Register"
+msgstr "Registrase"
+
+#: app/users/templates/registration/success.html:318
+msgid "Thanks for your registration!"
+msgstr "¡Gracias por registrarte!"
+
+#: app/users/templates/registration/success.html:319
+msgid "Your billing account has been successfully registered"
+msgstr "Su cuenta de facturación se ha registrado correctamente."
+
+#: app/users/templates/registration/success.html:319
+msgid ""
+"We have sent an activation email to the registered email account, please "
+"check it and you can start billing immediately"
+msgstr ""
+"Hemos enviado un correo electrónico de activación a la cuenta de correo "
+"electrónico registrada, verifíquelo y puede comenzar a facturar de inmediato"
+
+#: app/users/templates/registration/success.html:331
+#, fuzzy
+#| msgid "Privacy"
+msgid "Privacity"
+msgstr "Privacidad"
+
+#: app/users/templates/registration/success.html:331
+msgid "About us"
+msgstr "Acerca de nosotros"
+
+#: app/users/templates/registration/success.html:331
+msgid "Contact us"
+msgstr "Contáctanos"
+
+#: app/users/templates/registration/success.html:336
+msgid "All rights reserved"
+msgstr "Todos los derechos resevados"
+
+#: app/users/templates/registration/success.html:336
+msgid "2020 Finkok SAPI de CV, A.C."
+msgstr "2020 Finkok SAPI de CV, A.C."
+
+#: app/users/templates/users/login.html:9
+#: app/users/templates/users/login.html:35
+msgid "Login"
+msgstr "Inicio de sesión"
+
+#: app/users/templates/users/login.html:39
+#: app/users/templates/users/modal/add_user.html:24
+msgid "User"
+msgstr "Usuario"
+
+#: app/users/templates/users/login.html:46
+msgid "Forgot your password?"
+msgstr "¿Olvido su contraseña?"
+
+#: app/users/templates/users/login.html:53
+msgid "Remember"
+msgstr "Recordarme"
+
+#: app/users/templates/users/login.html:63
+msgid "Create your account"
+msgstr "Crear una cuenta "
+
+#: app/users/templates/users/modal/add_user.html:16
+msgid "Add User"
+msgstr "Agregar usuario"
+
+#: app/users/templates/users/modal/add_user.html:32
+#: app/users/templates/users/modal/edit_user.html:34
+#: app/users/templates/users/users.html:71
+#: app/users/templates/users/users.html:114
+msgid "Name"
+msgstr "Nombre"
+
+#: app/users/templates/users/modal/add_user.html:45
+msgid "Type:"
+msgstr "Tipo"
+
+#: app/users/templates/users/modal/add_user.html:48
+msgid "Staff"
+msgstr "Staff"
+
+#: app/users/templates/users/modal/add_user.html:49
+msgid "Provider"
+msgstr "Proveedor"
+
+#: app/users/templates/users/modal/add_user.html:50
+msgid "Employee"
+msgstr "Empleado"
+
+#: app/users/templates/users/modal/add_user.html:51
+msgid "Customer"
+msgstr "Cliente"
+
+#: app/users/templates/users/modal/add_user.html:61
+#: app/users/templates/users/modal/edit_user.html:45
+msgid "Group:"
+msgstr "Group:"
+
+#: app/users/templates/users/modal/add_user.html:74
+#: app/users/templates/users/modal/edit_user.html:71
+msgid "Business:"
+msgstr "Negocio:"
+
+#: app/users/templates/users/modal/add_user.html:88
+msgid "Password:"
+msgstr "Contraseña:"
+
+#: app/users/templates/users/modal/add_user.html:93
+#: app/users/templates/users/modal/edit_user.html:89
+msgid "Confirm Password:"
+msgstr "Confirmar contraseña:"
+
+#: app/users/templates/users/modal/add_user.html:103
+msgid "Add"
+msgstr "Agregar"
+
+#: app/users/templates/users/modal/add_user.html:104
+#: app/users/templates/users/modal/edit_user.html:99
+msgid "Close"
+msgstr "Cerrar"
+
+#: app/users/templates/users/modal/edit_user.html:8
+#: app/users/templates/users/modal/edit_user.html:16
+msgid "User:"
+msgstr "Usuario: "
+
+#: app/users/templates/users/modal/edit_user.html:20
+msgid "User ID"
+msgstr " ID usuario"
+
+#: app/users/templates/users/modal/edit_user.html:59
+msgid "No group"
+msgstr "Sin Grupo"
+
+#: app/users/templates/users/modal/edit_user.html:84
+msgid "New Password:"
+msgstr "Nueva contraseña"
+
+#: app/users/templates/users/modal/edit_user.html:100
+msgid "Update"
+msgstr "Actualizar"
+
+#: app/users/templates/users/password_reset/reset.html:18
+#: app/users/templates/users/password_reset/reset_admin.html:18
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+"Ingrese su nueva contraseña dos veces para que podamos verificar que la "
+"ingresó correctamente."
+
+#: app/users/templates/users/password_reset/reset.html:24
+#: app/users/templates/users/password_reset/reset_admin.html:24
+msgid "New password:"
+msgstr "Nueva contraseña"
+
+#: app/users/templates/users/password_reset/reset.html:29
+#: app/users/templates/users/password_reset/reset_admin.html:29
+msgid "Confirm password:"
+msgstr "Confirmar contraseña"
+
+#: app/users/templates/users/password_reset/reset_admin.html:8
+msgid "Password reset confirmation"
+msgstr "Confirmación de restablecimiento de contraseña"
+
+#: app/users/templates/users/password_reset/subject.txt:2
+#, python-format
+msgid "%(site_name)s: Reestablecer Contraseña "
+msgstr "%(site_name)s: Reestablecer Contraseña"
+
+#: app/users/templates/users/template_strings/users_status.html:3
+#: app/users/templates/users/users.html:88 app/users/views.py:484
+msgid "Active"
+msgstr "Activo"
+
+#: app/users/templates/users/template_strings/users_status.html:5
+msgid "Discontinued"
+msgstr "Suspendido"
+
+#: app/users/templates/users/users.html:52
+msgid "Important!:"
+msgstr "¡Importante!"
+
+#: app/users/templates/users/users.html:55
+msgid "List of users"
+msgstr "Lista de usuarios"
+
+#: app/users/templates/users/users.html:59
+#: app/users/templates/users/users.html:93
+msgid "Filter"
+msgstr "Filtros"
+
+#: app/users/templates/users/users.html:67
+#: app/users/templates/users/users.html:113
+msgid "User email"
+msgstr "Usuario (email)"
+
+#: app/users/templates/users/users.html:77
+#: app/users/templates/users/users.html:87
+msgid "All"
+msgstr "Todos"
+
+#: app/users/templates/users/users.html:79
+msgid "Providers"
+msgstr "Proveedores"
+
+#: app/users/templates/users/users.html:80
+msgid "Employees"
+msgstr "Empleados"
+
+#: app/users/templates/users/users.html:81
+msgid "Customers"
+msgstr "Clientes"
+
+#: app/users/templates/users/users.html:85
+#: app/users/templates/users/users.html:112
+msgid "Status"
+msgstr "Estado"
+
+#: app/users/templates/users/users.html:89
+msgid "Discontinued/Not activated"
+msgstr "Suspendido/desactivado"
+
+#: app/users/templates/users/users.html:94
+msgid "Clean"
+msgstr "Limpiar"
+
+#: app/users/templates/users/users.html:101
+msgid "Users"
+msgstr "Usuarios"
+
+#: app/users/templates/users/users.html:107
+msgid "Register user"
+msgstr "Registrar usuario"
+
+#: app/users/templates/users/users.html:116
+msgid "Group"
+msgstr "Grupo"
+
+#: app/users/templates/users/users.html:117
+msgid "Options"
+msgstr "Opciones"
+
+#: app/users/views.py:87 app/users/views.py:101
+msgid "The password must not be equal to a previously established one."
+msgstr "La contraseña no deber ser igual a una anteriormente establecida."
+
+#: app/users/views.py:91 app/users/views.py:98
+msgid "The password cannot be the same as the previous one."
+msgstr "La contraseña no pueder la misma que la anterior"
+
+#: app/users/views.py:126
+msgid "The email structure is not correct."
+msgstr "La estructura del correo electrónico no es correcta"
+
+#: app/users/views.py:133
+msgid "UBL | Change of password"
+msgstr "UBL | Cambio de contraseña"
+
+#: app/users/views.py:147
+msgid "Error sending mail, please try again"
+msgstr "Error al enviar email, favor de intentar mas tarde"
+
+#: app/users/views.py:149
+msgid "Your account is deactivated, contact support for more information."
+msgstr ""
+"Tu cuenta se encuentra desactivada, contacta a soporte para más información"
+
+#: app/users/views.py:151
+msgid "The email does not match any account."
+msgstr "El correo electrónico no coincide con ninguna cuenta"
+
+#: app/users/views.py:218 app/users/views.py:246 app/users/views.py:256
+msgid "Account blocked for multiple failed attempts"
+msgstr "Cuenta bloqueada por múltiples intentos fallidos"
+
+#: app/users/views.py:235 app/users/views.py:242
+msgid "Active user"
+msgstr "Usuario activo"
+
+#: app/users/views.py:249
+msgid "Inactive user"
+msgstr "Usuario inactivo"
+
+#: app/users/views.py:261
+msgid "User {} entered an incorrect password ({} attemp)"
+msgstr "El usuario {} ingreso una contraseña incorrecta ({} intento)"
+
+#: app/users/views.py:264
+msgid ""
+"An attempt was made to log in with the user {}, and this is non-existent"
+msgstr "Se intento iniciar sesión con el usuario {}, y este es inexistente"
+
+#: app/users/views.py:287
+msgid "An exception occurred at login"
+msgstr "Ocurrio una excepcion al iniciar sesión"
+
+#: app/users/views.py:296
+msgid " User {} logout. "
+msgstr "El usuario {} cerro sesión"
+
+#: app/users/views.py:351
+msgid "An exception occurred when listing users"
+msgstr "Ocurrió una excepcion al listar los usuarios"
+
+#: app/users/views.py:370
+msgid "Successful customization."
+msgstr "Personalizacion exitosa"
+
+#: app/users/views.py:371
+msgid "Successful customization {} => {}"
+msgstr "Personalizacion exitosa {} => {}"
+
+#: app/users/views.py:373
+msgid "The user has not activated their account or is suspended."
+msgstr "El usuario no ha activado su cuenta o se encuentra suspendido"
+
+#: app/users/views.py:400
+msgid "User info got it successfully."
+msgstr "La información del usuario lo obtuvo con éxito"
+
+#: app/users/views.py:402
+msgid "Error updating user information"
+msgstr "Error al actualizar la información del usuario"
+
+#: app/users/views.py:426
+msgid "You must select at least one business"
+msgstr "Debe seleccionar al menos un negocio"
+
+#: app/users/views.py:429
+msgid "You must select at least one business group."
+msgstr "Debes seleccionar al menos un grupo"
+
+#: app/users/views.py:454
+msgid "User information has been updated"
+msgstr "La información de usuario ha sido actualizada"
+
+#: app/users/views.py:455
+msgid "User {} information has been updated "
+msgstr "La información del usuario {} ha sido actualizada"
+
+#: app/users/views.py:458
+msgid "There was a problem when updating the information"
+msgstr "Hubo inconveniente al momento de actualizar la información"
+
+#: app/users/views.py:470
+msgid "The user has been activated"
+msgstr "El usuario ha sido activado"
+
+#: app/users/views.py:482
+#, python-format
+msgid "The user has been %s."
+msgstr "El usuario ha sido %s."
+
+#: app/users/views.py:482
+msgid "active"
+msgstr "activado"
+
+#: app/users/views.py:482
+msgid "suspend"
+msgstr "suspendido"
+
+#: app/users/views.py:484
+msgid "User {} {}"
+msgstr "Usuario {} {} "
+
+#: app/users/views.py:484
+msgid "Suspend"
+msgstr "Suspendido"
+
+#: app/users/views.py:497
+msgid "The response obtained when validating the user was: {}"
+msgstr "La respuesta obtenida al validar el usuario fue: {}"
+
+#: app/users/views.py:499
+msgid "Validating RFC..."
+msgstr "Valdando RFC..."
+
+#: app/users/views.py:502
+msgid "RFC validated!"
+msgstr "RFC válido"
+
+#: app/users/views.py:503
+msgid "The RFC {} was validated correctly "
+msgstr "El RFC {} fue validado correctamente"
+
+#: app/users/views.py:543
+msgid "A new user was registered with mail {}"
+msgstr "Se registro un nuevo usuario con correo {}"
+
+#: app/users/views.py:563
+msgid "Previously registered RFC {}."
+msgstr "RFC {} previamente registrado"
+
+#: app/users/views.py:576
+msgid "The user type \"{}\" is invalid."
+msgstr "El tipo de usuario \"{}\" es inválido"
+
+#: app/users/views.py:579
+msgid "User {} added successfully {} {}"
+msgstr "Usuario {} agregado exitosamente {} {}"
+
+#: app/users/views.py:582
+msgid "User {} already has a previous registration"
+msgstr "El usuario {} ya cuenta con un registro previo"
+
+#: app/users/views.py:586
+msgid "Registering new user."
+msgstr "Registrando nuevo usuario."
+
+#: app/users/views.py:590
+msgid "Invalid email"
+msgstr "Email inválido"
+
+#: app/users/views.py:601
+msgid "Unlocked account"
+msgstr "Cuenta desbloqueada"
+
+#: app/users/views.py:607
+msgid "Account reactivated."
+msgstr "Cuenta reactivada"
+
+#: app/users/views.py:611
+msgid "An error occurred while performing the operation."
+msgstr "Ocurrió un error al realizar la operación"
+
+#: app/users/views.py:714
+msgid "An error occurred with the registration"
+msgstr "Ocurrio un error con el registro"
+
+#: app/users/views.py:814
+msgid "Activation code is incorrect"
+msgstr "El codigo de activacion es incorrecto"
+
+#: app/users/views.py:819
+msgid "Error.."
+msgstr "Error.."
+
+#: app/users/views.py:825
+msgid ""
+"Dear support partner, {} account reactivation has been requested, for more "
+"information check ticket dependencies"
+msgstr ""
+"Estimado compañero de soporte, se ha solicitado la reactivación de la "
+"cuenta, para más información revisar las dependencias del ticket"
+
+#: app/users/views.py:826
+msgid "{} Account reactivation request (test)"
+msgstr "Solicitud de reactivación de la cuenta {} (prueba)"
+
+#: app/users/views.py:846 app/users/views.py:885
+msgid "Reactivation email sent"
+msgstr "Correo de reactivacion enviado"
+
+#: app/users/views.py:874
+#, fuzzy
+#| msgid "Reactivation email sent"
+msgid "Reactivation Request"
+msgstr "Correo de reactivacion enviado"
+
+#: app/users/views.py:894
+msgid "Wait at least 30 minutes to resend the request"
+msgstr "Espera al menos 30 minutos para reenviar la solicitud"
+
+#~ msgid "Sign in"
+#~ msgstr "Registrar"
+
+#, fuzzy
+#~| msgid "Finish your registration"
+#~ msgid "correct registration"
+#~ msgstr "Termina tu registro"

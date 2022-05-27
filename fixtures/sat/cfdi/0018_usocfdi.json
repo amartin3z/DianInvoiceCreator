@@ -1,0 +1,266 @@
+[
+    {
+        "fields": {
+            "clave": "G01",
+            "descripcion": "Adquisición de mercancias",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "Sí"
+        },
+        "model": "sat.usocfdi",
+        "pk": 1
+    },
+    {
+        "fields": {
+            "clave": "G02",
+            "descripcion": "Devoluciones, descuentos o bonificaciones",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "Sí"
+        },
+        "model": "sat.usocfdi",
+        "pk": 2
+    },
+    {
+        "fields": {
+            "clave": "G03",
+            "descripcion": "Gastos en general",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "Sí"
+        },
+        "model": "sat.usocfdi",
+        "pk": 3
+    },
+    {
+        "fields": {
+            "clave": "I01",
+            "descripcion": "Construcciones",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "Sí"
+        },
+        "model": "sat.usocfdi",
+        "pk": 4
+    },
+    {
+        "fields": {
+            "clave": "I02",
+            "descripcion": "Mobilario y equipo de oficina por inversiones",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "Sí"
+        },
+        "model": "sat.usocfdi",
+        "pk": 5
+    },
+    {
+        "fields": {
+            "clave": "I03",
+            "descripcion": "Equipo de transporte",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "Sí"
+        },
+        "model": "sat.usocfdi",
+        "pk": 6
+    },
+    {
+        "fields": {
+            "clave": "I04",
+            "descripcion": "Equipo de computo y accesorios",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "Sí"
+        },
+        "model": "sat.usocfdi",
+        "pk": 7
+    },
+    {
+        "fields": {
+            "clave": "I05",
+            "descripcion": "Dados, troqueles, moldes, matrices y herramental",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "Sí"
+        },
+        "model": "sat.usocfdi",
+        "pk": 8
+    },
+    {
+        "fields": {
+            "clave": "I06",
+            "descripcion": "Comunicaciones telefónicas",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "Sí"
+        },
+        "model": "sat.usocfdi",
+        "pk": 9
+    },
+    {
+        "fields": {
+            "clave": "I07",
+            "descripcion": "Comunicaciones satelitales",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "Sí"
+        },
+        "model": "sat.usocfdi",
+        "pk": 10
+    },
+    {
+        "fields": {
+            "clave": "I08",
+            "descripcion": "Otra maquinaria y equipo",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "Sí"
+        },
+        "model": "sat.usocfdi",
+        "pk": 11
+    },
+    {
+        "fields": {
+            "clave": "D01",
+            "descripcion": "Honorarios médicos, dentales y gastos hospitalarios.",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "No"
+        },
+        "model": "sat.usocfdi",
+        "pk": 12
+    },
+    {
+        "fields": {
+            "clave": "D02",
+            "descripcion": "Gastos médicos por incapacidad o discapacidad",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "No"
+        },
+        "model": "sat.usocfdi",
+        "pk": 13
+    },
+    {
+        "fields": {
+            "clave": "D03",
+            "descripcion": "Gastos funerales.",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "No"
+        },
+        "model": "sat.usocfdi",
+        "pk": 14
+    },
+    {
+        "fields": {
+            "clave": "D04",
+            "descripcion": "Donativos.",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "No"
+        },
+        "model": "sat.usocfdi",
+        "pk": 15
+    },
+    {
+        "fields": {
+            "clave": "D05",
+            "descripcion": "Intereses reales efectivamente pagados por créditos hipotecarios (casa habitación).",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "No"
+        },
+        "model": "sat.usocfdi",
+        "pk": 16
+    },
+    {
+        "fields": {
+            "clave": "D06",
+            "descripcion": "Aportaciones voluntarias al SAR.",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "No"
+        },
+        "model": "sat.usocfdi",
+        "pk": 17
+    },
+    {
+        "fields": {
+            "clave": "D07",
+            "descripcion": "Primas por seguros de gastos médicos.",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "No"
+        },
+        "model": "sat.usocfdi",
+        "pk": 18
+    },
+    {
+        "fields": {
+            "clave": "D08",
+            "descripcion": "Gastos de transportación escolar obligatoria.",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "No"
+        },
+        "model": "sat.usocfdi",
+        "pk": 19
+    },
+    {
+        "fields": {
+            "clave": "D09",
+            "descripcion": "Depósitos en cuentas para el ahorro, primas que tengan como base planes de pensiones.",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "No"
+        },
+        "model": "sat.usocfdi",
+        "pk": 20
+    },
+    {
+        "fields": {
+            "clave": "D10",
+            "descripcion": "Pagos por servicios educativos (colegiaturas)",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-01-01",
+            "moral": "No"
+        },
+        "model": "sat.usocfdi",
+        "pk": 21
+    },
+    {
+        "fields": {
+            "clave": "P01",
+            "descripcion": "Por definir",
+            "fin": null,
+            "fisica": "Sí",
+            "inicio": "2017-03-31",
+            "moral": "Sí"
+        },
+        "model": "sat.usocfdi",
+        "pk": 22
+    }
+]

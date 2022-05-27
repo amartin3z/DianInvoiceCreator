@@ -1,0 +1,24 @@
+### Download
+	INSERT INTO download_search ("taxpayer_id", "date_from", "date_to", "records", "type", "type_data", "status", "search_id", "cod_estatus", "message")
+	VALUES
+	('TSO991022PB6', '2019-04-01 00:00:00-06', '2019-04-02 00:00:00-06', '40529', 'S', 'M', '3', '67a59489-9c0d-42b9-8d9f-268719872fef', '5000', 'Solicitud Aceptada'),
+	('TSO991022PB6', '2019-04-01 00:00:00-06', '2019-04-02 00:00:00-06', '40529', 'S', 'X', '3', 'b2393a12-e03e-43ae-8d50-94d6ae6eb3b6', '5000', 'Solicitud Aceptada');
+
+	INSERT INTO download_package ("package_id", "date", "downloaded", "status", "records", "codstatus", "message", "downloads", "search_id", "file")
+	VALUES
+	('67a59489-9c0d-42b9-8d9f-268719872fef_01', '2019-04-06 04:00:04.930474-06', '2019-04-06 06:04:40.620967-06', 'F', '40529', '5000', 'Solicitud Aceptada', 1, 1, 'download/package/TSO991022PB6/2019/04/01/67a59489-9c0d-42b9-8d9f-268719872fef_01.zip'),
+	('b2393a12-e03e-43ae-8d50-94d6ae6eb3b6_01', '2019-04-06 05:00:05.226468-06', '2019-04-06 06:22:40.841243-06', 'D', '5784', '5000', 'Solicitud Aceptada', '1', 2, 'download/package/TSO991022PB6/2019/04/01/b2393a12-e03e-43ae-8d50-94d6ae6eb3b6_01.zip'),
+	('b2393a12-e03e-43ae-8d50-94d6ae6eb3b6_02', '2019-04-06 05:00:05.231903-06', '2019-04-06 06:20:20.254157-06', 'D', '5664', '5000', 'Solicitud Aceptada', '1', 2, 'download/package/TSO991022PB6/2019/04/01/b2393a12-e03e-43ae-8d50-94d6ae6eb3b6_02.zip'),
+	('b2393a12-e03e-43ae-8d50-94d6ae6eb3b6_03', '2019-04-06 05:00:05.236544-06', '2019-04-06 06:18:13.86254-06', 'D', '5600', '5000', 'Solicitud Aceptada', '1', 2, 'download/package/TSO991022PB6/2019/04/01/b2393a12-e03e-43ae-8d50-94d6ae6eb3b6_03.zip'),
+	('b2393a12-e03e-43ae-8d50-94d6ae6eb3b6_04', '2019-04-06 05:00:05.240571-06', '2019-04-06 06:16:00.97993-06', 'D', '5584', '5000', 'Solicitud Aceptada', '1', 2, 'download/package/TSO991022PB6/2019/04/01/b2393a12-e03e-43ae-8d50-94d6ae6eb3b6_04.zip'),
+	('b2393a12-e03e-43ae-8d50-94d6ae6eb3b6_05', '2019-04-06 05:00:05.244621-06', '2019-04-06 06:13:33.994003-06', 'D', '5624', '5000', 'Solicitud Aceptada', '1', 2, 'download/package/TSO991022PB6/2019/04/01/b2393a12-e03e-43ae-8d50-94d6ae6eb3b6_05.zip'),
+	('b2393a12-e03e-43ae-8d50-94d6ae6eb3b6_06', '2019-04-06 05:00:05.248714-06', '2019-04-06 06:11:13.045343-06', 'D', '5680', '5000', 'Solicitud Aceptada', '1', 2, 'download/package/TSO991022PB6/2019/04/01/b2393a12-e03e-43ae-8d50-94d6ae6eb3b6_06.zip'),
+	('b2393a12-e03e-43ae-8d50-94d6ae6eb3b6_07', '2019-04-06 05:00:05.252789-06', '2019-04-06 06:08:58.060677-06', 'D', '5760', '5000', 'Solicitud Aceptada', '1', 2, 'download/package/TSO991022PB6/2019/04/01/b2393a12-e03e-43ae-8d50-94d6ae6eb3b6_07.zip'),
+	('b2393a12-e03e-43ae-8d50-94d6ae6eb3b6_08', '2019-04-06 05:00:05.256592-06', '2019-04-06 06:06:40.357858-06', 'D', '833', '5000', 'Solicitud Aceptada', '1', 2, 'download/package/TSO991022PB6/2019/04/01/b2393a12-e03e-43ae-8d50-94d6ae6eb3b6_08.zip');
+
+
+### Fixtures
+	- Create a business
+	- Create default Client/Agent ("XAXX010101000", "XEXX010101000")
+	- User/Profile (superuser role="A")
+	- User/Profile

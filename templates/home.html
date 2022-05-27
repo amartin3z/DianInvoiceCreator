@@ -1,0 +1,245 @@
+{% extends 'base.html' %}
+{% block title %}Inicio{% endblock %}
+{% load staticfiles %}
+{% load i18n %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/datatables/jquery.dataTables.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/datatables/dataTables.bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/bootstrap/buttons.bootstrap.min.css' %}">
+<link href="{% static 'css/bootstrap/bootstrap-select.min.css' %}" rel="stylesheet">
+<!--link href="{% static 'css/base/message.css' %}" rel="stylesheet"-->
+<style type="text/css">
+  .titlee {
+    font-weight: bold;
+    margin-top: 0;
+    padding-bottom: 3px;
+    color: #000;
+  }
+
+  .logos {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .welcome_msg {
+    width: 600px;
+    margin: auto;
+    border-top: 5px solid red;
+    border-bottom: 5px solid red;
+  }
+
+  .panel-footer:hover {
+    color: #007bff;
+  }
+
+  .huge {
+    font-size: 27px;
+  }
+</style>
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'js/datatables/jquery.dataTables.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/datatables/dataTables.bootstrap.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/datatables/dataTables.buttons.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/bootstrap/buttons.bootstrap.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/bootstrap/bootstrap-select.min.js' %}" type="text/javascript"></script>
+<script>
+  var CSRF_TOKEN = '{{ csrf_token }}';
+  var tipo = '{{ type }}';
+  var data_invoice = '{{ data_invoice }}';
+  var data_prodserv = '{{ data_prodserv }}';
+  var data_business = '{{ data_business }}';
+  var role = '{{ role }}';
+
+  var json_data = [];
+  json_data.push(
+    { 
+      data: JSON.parse(data_invoice),
+      label: "{% trans 'Invoices' %}",
+      borderColor: "#17a2b8",
+      fill: false
+    }, { 
+      data: JSON.parse(data_business),
+      label: "{% trans 'Business' %}",
+      borderColor: "#ffc107",
+      fill: false
+    }, 
+  );
+
+  if( role != 'A'){
+    json_data.push(
+      { 
+        data: JSON.parse(data_prodserv),
+        label: "{% trans 'Products and Services' %}",
+        borderColor: "#dc3545",
+        fill: false
+      }, 
+    );
+  }
+
+  new Chart(document.getElementById("line-chart"), {
+        type: 'line',
+        data: {
+          labels: ["{% trans 'January' %}", "{% trans 'February' %}", "{% trans 'March' %}", "{% trans 'April' %}", "{% trans 'May' %}", "{% trans 'June' %}", "{% trans 'July' %}", "{% trans 'August' %}", "{% trans 'September' %}", "{% trans 'October' %}", "{% trans 'November' %}", "{% trans 'December' %}"],
+          datasets: json_data,
+          // [
+            
+            // { 
+            //   data: [40,20,10,16,24,38,74,167,508,784],
+            //   label: "{% trans 'Support Tickets' %}",
+            //   borderColor: "#e8c3b9",
+            //   fill: false
+            // }
+          // ]
+        },
+        options: {
+          title: {
+            display: true,
+            text: "{% trans 'Number of monthly records' %}"
+          }
+        }
+      });
+</script>
+{% endblock %}
+
+{% block content %}
+{% comment %}
+<div class="d-flex" style="padding-top:52px;">
+  <div class="p-10 flex-fill justify-content-center">
+    {% block message %}
+    <div id="wis-message" class="alert alert-warning" role="alert" style="display: none;"></div>
+    {% endblock %}
+    <div class="container" style="background: linear-gradient(90deg,#0c2646 0,#204065 60%,#2a5788);">
+      <div class="row">
+        <div class="col-xs-12">
+
+        </div>
+        <div class="container-fluid">
+        </div>
+      </div>
+      <div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcomment %}
+
+<div class="d-flex" style="padding-top: 52px;">
+  <div class="p-10 flex-fill justofy-content-center">
+    <div id="page-wrapper">
+      <div class="container-fluid">
+
+        <div class="row" style="margin-top: 30px;">
+
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div style="background-color: #17a2b8;color: white;">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-3">
+                    <i class="fa fa-file-invoice fa-5x"></i>
+                  </div>
+                  <div class="col-xs-9 text-right">
+                    <div class="huge">{{ total_invoices }}</div>
+                    <div>{% trans 'Invoices' %}</div>
+                  </div>
+                </div>
+              </div>
+              <a href="{% url 'invoicing:list-invoices' %}">
+                <div class="panel-footer">
+                  <span class="pull-left">{% trans 'View Details' %}</span>
+                  <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                  <div class="clearfix"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div style="background-color: #ffc107;color: white;">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-3">
+                    <i class="fa fa-users fa-5x"></i>
+                  </div>
+                  <div class="col-xs-9 text-right">
+                    <div class="huge">{{ total_business }}</div>
+                    <div>{% trans 'Business' %}</div>
+                  </div>
+                </div>
+              </div>
+              <a href="{% url 'list-receivers' %}">
+                <div class="panel-footer">
+                  <span class="pull-left">{% trans 'View Details' %}</span>
+                  <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                  <div class="clearfix"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          {% if role != 'A' %}
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div style="background-color: #dc3545;color: white;">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-3">
+                    <i class="fa fa-archive fa-5x"></i>
+                  </div>
+                  <div class="col-xs-9 text-right">
+                    <div class="huge">{{ total_prodserv }}</div>
+                    <div>{% trans 'Products and Services' %}</div>
+                  </div>
+                </div>
+              </div>
+              <a href="{% url 'list-prodservs' %}">
+                <div class="panel-footer">
+                  <span class="pull-left">{% trans 'View Details' %}</span>
+                  <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                  <div class="clearfix"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          {% endif %}
+          
+          {% comment %}
+          <div class="col-lg-3 col-md-6">
+            <div style="background-color: #6c757d;color: white;">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-3">
+                    <i class="fa fa-support fa-5x"></i>
+                  </div>
+                  <div class="col-xs-9 text-right">
+                    <div class="huge">{{ total_tickets }}</div>
+                    <div>{% trans 'Support Tickets' %}</div>
+                  </div>
+                </div>
+              </div>
+              <a href="{% url 'tickets' %}">
+                <div class="panel-footer">
+                  <span class="pull-left">{% trans 'View Details' %}</span>
+                  <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                  <div class="clearfix"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          {% endcomment %}
+        </div>
+
+        <br><br>
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-sm-12 col-xs-12">
+            <canvas id="line-chart" style="height: 62vh;width: 100%;"></canvas>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% comment %} <div class="modal fade" tabindex="-1" id="back-modal" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+        <div class="modal-header text-center">
+            <h4 class="modal-title" id="gridSystemModalLabel">¿Desea cerrar el facturador?</h4>
+        </div>
+        <div class="modal-body text-center">
+            <p>No se guardarán sus cambios.</p>
+            <button class="btn btn-danger btn-inverse btn-fix" data-dismiss="modal">No</button>
+            <a role="button" class="btn btn-success btn-inverse btn-fix" href="{% url "index" %}">Sí</a>
+        </div>
+    </div>
+</div> {% endcomment %}
+    {% load i18n %}
+    <div id="back-modal" class="modal fade" role="dialog">
+	    <div class="modal-dialog modal-confirm" style="width: 325px; color:#121113;">
+    		<div class="modal-content">
+			    <div class="modal-header">
+    				<div class="icon-box" style="background: #d43f3a;">
+					    <i class="material-icons" style="font-size: 53px;"><i class="fas fa-door-closed"></i></i>
+				    </div>				
+				    <h4 class="modal-title" id="invoice-error-title"><strong>{% trans "Do you want to close the invoice application?" %}</strong> </h4>	
+			    </div>
+			    <div class="modal-body text-justify">
+                    <a role="button" class="btn btn-success btn-block" href="{% url "index" %}">{% trans "Yes" %}</a>
+                    <button class="btn btn-danger btn-block" data-dismiss="modal">{% trans "No" %}</button>
+    				<div id="invoice-error-message"></div>
+					<br>
+			    </div>
+		    </div>
+	    </div>
+    </div>    

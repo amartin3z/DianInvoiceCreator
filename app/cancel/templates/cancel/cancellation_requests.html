@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block title %}Cancelaciones{% endblock %}
+{% load staticfiles %}
+
+{% block css %}
+  {{ block.super }}
+  <link href="{% static 'css/datatables/dataTables.bootstrap.min.css' %}" rel="stylesheet" >
+  <link href="{% static 'css/datatables/responsive.bootstrap.min.css' %}" rel="stylesheet" >
+  <link href="{% static 'css/bootstrap/bootstrap-datetimepicker.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/bootstrap/bootstrap-datetimepicker.css' %}" rel="stylesheet" >
+  <link href="{% static 'css/select-input/bootstrap-select.css' %}" media="all" rel="stylesheet" type="text/css" />
+  <link href="{% static 'css/apps/users/users.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'css/funkyradio/funkyradio.css' %}" rel="stylesheet" type="text/css"/>
+  <link href="{% static 'css/base/message.css' %}" rel="stylesheet">
+{% endblock %}
+{% block js %}
+  <script src="{% static 'js/datatables/jquery.dataTables.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/bootstrap/bootstrap-datetimepicker.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/datatables/dataTables.bootstrap.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/datatables/dataTables.responsive.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/datatables/dataTables.select.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/select-input/bootstrap-select.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/uidropdown/dropdown.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/apps/cancel/cancel.js' %}" type="text/javascript"></script>
+  <style type="text/css">
+    #th-status, td.sorting_1{text-align: center;}
+  </style>
+  <script >
+    var CSRF_TOKEN = '{{ csrf_token }}';
+    var tipo = '{{ type }}';
+  </script>
+{% endblock %}
+
+{% block content %}
+    <div class="row" style="margin-top: 80px;">
+    <!--section class="panel panel-default"-->
+      <div class="container-fluid" style="margin: 20px;">
+        <section class="panel">
+          {% block message %}
+          <div id="wis-message" class="alert alert-warning" role="alert" style="display: none;"></div>
+            {% endblock %}
+          <div id="panel-content" class="panel-body" style="margin: 0">
+            <div class="tab-content">
+              <div class="tab-pane fade {% if tab == 'P' %} in active {% endif %}" id="tab-emisor">
+                {% include "cancel/tab_emisor.html" %}
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    <!--/section-->
+  </div>
+{% endblock %}
+

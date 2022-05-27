@@ -1,0 +1,67 @@
+<div class="modal fade" id="modal-add-branch" tabindex="-1" role="dialog" aria-labelledby="add-erule-label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="can-conf-title" class="modal-title" id="add-branch-label" style="float: left;"><strong>Registrar nueva sucursal</strong></h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float: right;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <div class="well" id='info_branch'> 
+            <div class="row">
+              <div class="col-sm-6 info">
+                <strong>Sucursal:</strong>
+                <input type="text" class='form-control' id="add-bname" value="">
+                <small id="bname_help" class="form-text text-danger"></small>
+              </div>   
+              <div class="col-sm-6 info">
+                <strong>Estado:</strong>               
+                <input type="text" class='form-control' id="add-bstate" value=""> 
+              </div>
+            </div>
+            <br>
+            <div class="row">                  
+              <div class="col-sm-6 info">
+                <strong>Municipio:</strong>                
+                <input type="text" class='form-control' id="add-bmunicipality" value="">
+              </div>                
+              <div class="col-sm-6 info">
+                <strong>Colonia:</strong>                             
+                <input type="text" class='form-control' id="add-bneighborhood" value="">
+              </div>   
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-sm-6 info">
+                <strong>C.Postal:</strong>                
+                <input type="text" class='form-control' id="add-bzipcode" value="">
+                <small id="bzipcode_help" class="form-text text-danger"></small>  
+              </div>  
+              <div class="col-sm-6 info">
+                <strong>Localidad:</strong>                
+                <input type="text" class='form-control' id="add-blocality" value="">
+              </div> 
+            </div> 
+            <br> 
+            <div class="row">   
+              <div class="col-sm-6 info">
+                <strong>Calle:</strong>                
+                <input type="text" class='form-control' id="add-bstreet" value="">
+              </div>  
+              <div class="col-sm-6 info">
+                <strong>No. Ext:</strong>               
+                <input type="text" class='form-control' id="add-bnumber" value="">
+              </div>   
+            </div>    
+          </div>  
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" id="modal-add-branch-btn" class="btn btn-primary pull-left" title="Registrar Sucursal">Registrar</button>
+      </div>
+    </div>
+  </div>
+</div>

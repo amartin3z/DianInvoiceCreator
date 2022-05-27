@@ -1,0 +1,12 @@
+{% load i18n %}
+{% if ticket.status == 1 %}
+	<button title="{% trans 'Open' %}" class="btn btn-primary btn-sm" style="font-weight: bold; pointer-events: none; width: 90%;">{% trans 'Open' %}</button>
+{% elif ticket.status == 2 %}
+	<button title="{% trans 'Reopen' %}" class="btn btn-info btn-sm" style="font-weight: bold; pointer-events: none; width: 90%;">{% trans 'Reopen' %}</button>'
+{% elif ticket.status == 3 %}
+	<button title="{% trans 'Resolved' %}" class="btn btn-success btn-sm" style="font-weight: bold;pointer-events: none; width: 90%;">{% trans 'Resolved' %}</button>'
+{% elif ticket.status == 4 %}
+	<button title="{% trans 'Closed' %}" class="btn btn-danger btn-sm" style="font-weight: bold; pointer-events: none; width: 90%;">{% trans 'Closed' %}</button>'
+{% elif ticket.status == 5 %}
+	<button title="{% trans 'Duplicate' %}" class="btn btn-warning btn-sm" style="font-weight: bold; pointer-events: none; width: 90%;">{% trans 'Duplicate' %}</button>'
+{% endif %}

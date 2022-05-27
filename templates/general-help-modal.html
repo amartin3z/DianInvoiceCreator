@@ -1,0 +1,35 @@
+<div class="modal fade" id="modal-help" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <br>
+                <h4 class="modal-title">Preguntas Frecuentes y Manual de Ayuda</h4>
+            </div>
+            <div class="modal-body">
+                <div class="panel-group" id="accordion">
+                    {% comment %} {% for faq in faqs %}
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#question{{faq.id}}">{{faq.question}}</a>
+                                </h4>
+                            </div>
+                            <div id="question{{faq.id}}" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    {% filter force_escape %}
+                                        {{faq.anwser}}
+                                    {% endfilter %} 
+                                </div>
+                                
+                            </div>
+                        </div>
+                    {% endfor %} {% endcomment %}
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>

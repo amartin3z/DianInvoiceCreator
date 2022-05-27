@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+  <meta charset="utf-8">
+  <meta name="author" content="FINKOK">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{% block title%}{% endblock %}</title>
+  <link rel="shortcut icon" href="/static/img/iconsite/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap_v4/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/toast/jquery.toast.css">
+  <style>
+    html,body {
+      height: 100%;
+    }
+
+    body.my-login-page {
+      background-color: #f7f9fb;
+      font-size: 14px;
+    }
+
+    .my-login-page .brand {
+      width: 300px;
+      height: 90px;
+      overflow: hidden;
+      /*border-radius: 50%;*/
+      margin: 0 auto;
+      margin: 10px auto;
+      /*box-shadow: 0 0 40px rgba(0,0,0,.05);*/
+    }
+
+    .my-login-page .brand img {
+      width: 100%;
+    }
+
+    .my-login-page .card-wrapper {
+      /*width: 400px;*/
+      /*margin: 0 auto;*/
+    }
+
+    .my-login-page .card {
+      border-color: transparent;
+      box-shadow: 0 0 40px rgba(0,0,0,.05);
+    }
+
+    .my-login-page .card.fat {
+      padding: 10px;
+    }
+
+    .my-login-page .card .card-title {
+      margin-bottom: 30px;
+    }
+
+    .my-login-page .form-control {
+      border-width: 2.3px;
+    }
+
+    .my-login-page .form-group label {
+      width: 100%;
+    }
+
+    .my-login-page .btn.btn-block {
+      padding: 12px 10px;
+    }
+
+    .my-login-page .margin-top20 {
+      margin-top: 20px;
+    }
+
+    .my-login-page .no-margin {
+      margin: 0;
+    }
+
+    .my-login-page .footer {
+      margin: 40px 0;
+      color: #888;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 425px) {
+      .my-login-page .card-wrapper {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    @media screen and (max-width: 320px) {
+      .my-login-page .card.fat {
+        padding: 0;
+      }
+
+      .my-login-page .card.fat .card-body {
+        padding: 15px;
+      }
+    }
+
+    .btn-primary{
+      background: #337AB7;
+      border-color: #195F9C;
+    }
+
+    .btn-primary:hover{
+      background: #9fa800;
+      border-color: #9fa800;
+    }
+
+    .btn-primary:active{
+      background: #9fa800;
+      border-color: #9fa800;
+    }
+
+    .btn-primary.disabled, .btn-primary:disabled {
+        color: #fff;
+        background: #cf2727;
+        border-color: #a00000;
+      }
+      
+    .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+        color: #fff;
+        background: #cf2727;
+        border-color: #a00000;
+      }
+  </style>
+
+  <script src="/static/js/jquery/jquery.min.js"></script>
+  <script src="/static/js/bootstrap_v4/bootstrap.min.js"></script>
+  <script src="/static/js/toast/jquery.toast.js"></script>
+</head>
+<body class="my-login-page">
+  <section class="h-100">
+    <div class="container h-100">
+      <div class="row justify-content-md-center h-100">
+        <div class="card-wrapper w-100">
+          <div class="brand">
+            <img src="/static/img/logos/soriana-login.png">
+          </div>
+          {% block content %}
+          {% endblock %}
+          <div class="footer">
+            Copyright &copy; {% now "Y" %} | Finkok SAPI de CV 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

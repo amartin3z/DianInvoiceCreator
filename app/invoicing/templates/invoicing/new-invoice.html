@@ -1,0 +1,250 @@
+{% extends 'base_new_invoice.html' %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+{% block title %}{% trans 'Manual billing' %}{% endblock %}
+
+{% block css %}
+<link href="{% static 'css/easyautocomplete/easy-autocomplete.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/bootstraptagsinput/bootstrap-tagsinput.css' %}" rel="stylesheet">
+<link href="{% static 'css/btn/btn-styles.css' %}" rel="stylesheet">
+{% comment %}
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> {% endcomment %}
+{% comment %}
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"> {% endcomment %}
+<link href="{% static 'css/apps/invoicing/invoice.css' %}" rel="stylesheet">
+<link href="{% static 'css/base/jquery.ui.datepicker.css' %}" rel="stylesheet">
+<link href="{% static 'css/bootstrap/bootstrap-datetimepicker.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/select2/select2.min.css' %}" rel="stylesheet" />
+<link href="{% static 'css/select2/select2-bootstrap.css' %}" rel="stylesheet" />
+<link rel="stylesheet"
+  src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css">
+</link>
+<!--link href="{% static 'css/base/message.css' %}" rel="stylesheet"-->
+<style>
+  @font-face {
+    font-family: "Roboto";
+    src: url("{% static 'fonts/Roboto/Roboto-Regular.eot' %}");
+    src: url("{% static 'fonts/Roboto/Roboto-Regular.eot' %}?#iefix") format('embedded-opentype'),
+    url("{% static 'fonts/Roboto/Roboto-Regular.ttf' %}") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* Roboto italic */
+
+  @font-face {
+    font-family: "Roboto";
+    src: url('{% static 'fonts/Roboto/Roboto-Italic.eot' %}');
+    src: url('{% static 'fonts/Roboto/Roboto-Italic.eot' %}?#iefix') format('embedded-opentype'),
+    url('{% static 'fonts/Roboto/Roboto-Italic.ttf' %}') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  /* Roboto bold */
+
+  @font-face {
+    font-family: "Roboto";
+    src: url('{% static 'fonts/Roboto/Roboto-Bold.eot' %}');
+    src: url('{% static 'fonts/Roboto/Roboto-Bold.eot' %}?#iefix') format('embedded-opentype'),
+    url('{% static 'fonts/Roboto/Roboto-Bold.ttf' %}') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+  .modal {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    .modal:before {
+      display: inline-block;
+      vertical-align: middle;
+      content: " ";
+      height: 100%;
+    }
+  }
+
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .modal-confirm {
+    color: #636363;
+    width: 445px;
+  }
+
+  .modal-confirm .modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .modal-confirm .modal-header {
+    border-bottom: none;
+    position: relative;
+  }
+
+  .modal-confirm h4 {
+    text-align: center;
+    font-size: 26px;
+    margin: 30px 0 -15px;
+  }
+
+  .modal-confirm .form-control,
+  .modal-confirm .btn {
+    min-height: 40px;
+    border-radius: 3px;
+  }
+
+  .modal-confirm .close {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+  }
+
+  .modal-confirm .modal-footer {
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+
+  .modal-confirm .icon-box {
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -70px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    z-index: 9;
+    background: #82ce34;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .modal-confirm .icon-box i {
+    font-size: 58px;
+    position: relative;
+    top: -8px;
+  }
+
+  .modal-confirm.modal-dialog {
+    margin-top: 80px;
+  }
+
+  .modal-confirm .modal-confirm {
+    background: #6fb32b;
+    outline: none;
+  }
+
+  .trigger-btn {
+    display: inline-block;
+    margin: 100px auto;
+  }
+
+  .popover-title {
+    background-color: #337AB7;
+    color: #FFFFFF;
+    text-align: center;
+  }
+</style>
+{% endblock %}
+{% load i18n %}
+{% block content %}
+{% comment %} <div class="row" style="margin: 2rem;"> {% endcomment %}
+  {% include 'invoicing/invoice/header.html' %}
+  <div class="panel panel-default">
+    <div class="panel-body">
+      {% block message %}
+        <div id="wis-message" class="alert alert-warning" role="alert" class="auto" style="display: none;"></div>
+      {% endblock %}
+      <form class="form" id="cfdi-invoice">
+        <div class="form-group" id="seccion_comprobante">
+          {% include 'invoicing/invoice/invoice-cabecera.html' %}
+        </div>
+        <div class="form-group" id="seccion_receptor">
+          {% include 'invoicing/invoice/invoice-receptor.html' %}
+        </div>
+        <div class="form-group"  id="seccion_conceptos">
+          {% include 'invoicing/invoice/invoice-conceptos.html' %}
+        </div>
+        {% if add_concept == 'pagos' %}
+          <div class="form-group"  id="seccion_pagos">
+            {% include 'invoicing/payment/payment_pago.html' %}
+          </div>
+        {% endif %}
+        <div class="form-group row" id="seccion_totales">
+          {% include 'invoicing/invoice/invoice-totales.html' %}
+        </div>
+        <button class="btn btn-success btn-inverse pull-right" {% if not has_certificate %}disabled{% endif %} style="display:none;" type="submit" data-loading-text="Timbrando..." id="generate-invoice-real">{% trans "Create Invoice" %}</button>
+      </form>
+    </div>
+  </div>
+  {% comment %} </div> {% endcomment %}
+{% include 'invoicing/modal/invoice-success.html' %}
+{% include 'invoicing/modal/invoice-failed.html' %}
+{% include 'invoicing/modal/close-new-invoice.html' %}
+
+{% include 'invoicing/modal/change-payment.html' %}
+
+{% if not has_certificate %}
+{% include 'invoicing/modal/add-certificate.html' %}
+{% endif %}
+</div>
+
+{% endblock %}
+
+{% block js%}
+<script type="text/javascript" src="{% url 'javascript-catalog' %}"></script>
+<script>
+  var INVOICING_STUFFS_URL = "{% url 'invoicing:get-stuffs' %}";
+  var INVOICING_CALCULATING_AMOUNTS_URL = "{% url 'invoicing:get-amounts' %}";
+  var INVOICING_LIST_URL = "{% url 'invoicing:list-invoices' %}";
+  var IS_PAYMENT = '{{ add_concept }}';
+  var DOWNLOAD_ZIP_URL = "{% url 'invoicing:download_file' %}";
+  {% if add_concept == 'pagos' %}
+  var TAX_TEMPLATE = null;
+  {% else %}
+  var TAX_TEMPLATE = `{{ tax_template }}`;
+  {% endif %}
+  Number.prototype.countDecimals = function () {
+    if (Math.floor(this.valueOf()) === this.valueOf()) return 0;
+    return this.toString().split(".")[1].length || 0;
+  }
+  function error_message(message) {
+    $.toast({
+      heading: gettext("Atention!"),
+      showHideTransition: 'plain',
+      allowToastClose: true,
+      text: message,
+      timeOut: "8000",
+      showHideTransition: "fade",
+      icon: "info",
+      position: "bottom-center",
+    });
+  }
+</script>
+<script src="{% static 'js/validate/jquery.validate.min.js' %}"></script>
+<script src="{% static 'js/validate/additional-methods.min.js' %}"></script>
+<script src="{% static 'js/bootsraptagsinput/bootstrap-tagsinput.js' %}"></script>
+<script src="{% static 'js/easyautocomplete/jquery.easy-autocomplete.min.js' %}"></script>
+{% if add_concept == 'pagos' %}
+<script src="{% static 'js/apps/invoicing/new-payment.js' %}"></script>
+{% else %}
+<script src="{% static 'js/apps/invoicing/new-invoice.js' %}"></script>
+<script type="text/javascript" src="{% url 'javascript-catalog' %}"></script>
+{% endif %}
+<script src="{% static 'js/apps/invoicing/general.js' %}"></script>
+<script src="{% static 'js/select2/select2.min.js' %}"></script>
+<script src="{% static 'js/select2/es.js' %}"></script>
+<script src="{% static 'js/bootstrap/bootstrap-datetimepicker.min.js' %}" type="text/javascript"></script>
+{% endblock %}

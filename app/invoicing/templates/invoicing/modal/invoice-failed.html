@@ -1,0 +1,19 @@
+{% load i18n %}
+<div id="modal-invoice-error" class="modal fade" role="dialog" data-invoice="">
+	<div class="modal-dialog modal-confirm" style="width: 550px; color:#121113;">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="icon-box" style="background: red;">
+					<i class="material-icons"><i class="fas fa-times"></i></i>
+				</div>
+				<h4 class="modal-title" id="invoice-error-title"><strong>{% trans 'Your invoice has the following errors' %}</strong> </h4>
+			</div>
+			<div class="modal-body text-justify">
+				<div id="invoice-error-message"></div>
+				<br>
+				<button class="btn btn-danger btn-inverse btn-block" data-dismiss="modal"><strong><i
+							class="fas fa-long-arrow-alt-left"></i>&nbsp;{% trans 'Return to billing' %}</strong></button>
+			</div>
+		</div>
+	</div>
+</div>

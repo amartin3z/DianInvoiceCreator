@@ -1,0 +1,22 @@
+{% load i18n %}
+{% if request.user.is_superuser %}
+  <button title="{% trans 'Personalize' %}" class="btn btn-info btn-sm get-in" email="{{ email }}"><i class="fa fa-user-secret" aria-hidden="true"></i></button>
+{% endif %}
+  <button title="{% trans 'Edit user' %}" class="btn btn-primary btn-sm edit" email="{{ email }}" role="{{ role }}"><i class="fa fa-user-edit" aria-hidden="true"></i></button>
+{% if status %}
+  <button title="{% trans 'Discontinue user' %}" class="btn btn-danger btn-sm sus-act" email="{{ email }}"><i class="fa fa-times" aria-hidden="true"></i></button>
+{% else %}
+  <button title="{% trans 'Active user' %}" class="btn btn-success btn-sm sus-act" email="{{ email }}"><i class="fa fa-check" aria-hidden="true"></i></button>
+  {% endif %}
+{% if p_status == 'D' %}  
+  <button title="{% trans 'Cancel account cancellation' %}" class="btn btn-warning btn-sm canc-del" user="{{ user.id }}" email="{{ email }}"><i class="fa fa-check" aria-hidden="true"></i></button>
+{% endif %}
+  
+{% comment %}
+{% if not user.is_active and not user.last_login %}
+  <button title="{% trans 'Forward activation email' %}" class="btn btn-default btn-sm re_user" email="{{ email }}"><i class="fa fa-sync-alt" aria-hidden="true"></i></button>
+{% endif %}
+{% endcomment %}
+{% if blocked %}
+	<button title="{% trans 'Unlock account' %}" class="btn btn-warning btn-sm unlock-user" user="{{ user.id }}"><i class="fa fa-unlock" aria-hidden="true"></i></button>
+{% endif %}

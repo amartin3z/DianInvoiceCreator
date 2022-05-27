@@ -1,0 +1,8 @@
+{% if answer == 'A' and status == '1000' %}
+<button class="btn btn-danger btn-xs" data-toggle="popover" data-content="Cancelado con aceptaci&oacute;n"><strong>Cancelado</strong></button>
+{% elif answer == 'U' and status == '997' %}
+<button class="btn btn-danger btn-xs" data-toggle="popover" data-content="Cancelado por plazo vencido"><strong>Cancelado</strong></button>
+{% else %}
+<button title="Vigente" class="btn btn-success btn-xs" ><strong>Vigente</strong></button>
+{% endif %}
+

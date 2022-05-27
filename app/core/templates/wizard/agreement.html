@@ -1,0 +1,53 @@
+{% load i18n %}
+<form id="form_agreement">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <span class="text-bold">{% trans 'Service contract' %}</span>
+          <br><br>
+          <textarea class="form-control brillo" rows="10" readonly>
+            Es el contrato mediante el cual una persona, normalmente un profesional en algún área, se obliga con respecto a otra a realizar una serie de servicios a cambio de un precio. Es importante señalar que el pago del contrato es dirigido al cumplimiento de metas, horas, objetivos, proyectos; etc. Se trata de un contrato oneroso, y su diferencia con el contrato de compraventa consiste en que la contraprestación al pago del precio no es un bien tangible, sino la realización de una actividad. El incumplimiento de dichas metas no obliga al pago Proporcional.
+            Es el contrato mediante el cual una persona, normalmente un profesional en algún área, se obliga con respecto a otra a realizar una serie de servicios a cambio de un precio. Es importante señalar que el pago del contrato es dirigido al cumplimiento de metas, horas, objetivos, proyectos; etc. Se trata de un contrato oneroso, y su diferencia con el contrato de compraventa consiste en que la contraprestación al pago del precio no es un bien tangible, sino la realización de una actividad. El incumplimiento de dichas metas no obliga al pago Proporcional.
+          </textarea>
+          <div class="[ form-group ]" style="margin-top:15px">
+            <input type="checkbox" name="checkbox-contract" id="checkbox-contract" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="checkbox-contract" class="[ btn btn-default ]">
+                    <span class="[ glyphicon glyphicon-ok ]"></span>
+                    <span> </span>
+                </label>
+                <label for="checkbox-contract" class="[ btn btn-default active ]" style="background-color: #2b2b2b;">
+                    {% trans 'Accept' %}
+                </label>
+            </div>
+          </div>
+          <small id="checkbox-contract-help" class=""></small>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <span class="text-bold">{% trans 'Privacy policy' %}</span>
+          <br><br>
+          <textarea class="form-control brillo" rows="10" readonly>
+            Es el contrato mediante el cual una persona, normalmente un profesional en algún área, se obliga con respecto a otra a realizar una serie de servicios a cambio de un precio. Es importante señalar que el pago del contrato es dirigido al cumplimiento de metas, horas, objetivos, proyectos; etc. Se trata de un contrato oneroso, y su diferencia con el contrato de compraventa consiste en que la contraprestación al pago del precio no es un bien tangible, sino la realización de una actividad. El incumplimiento de dichas metas no obliga al pago Proporcional.
+            Es el contrato mediante el cual una persona, normalmente un profesional en algún área, se obliga con respecto a otra a realizar una serie de servicios a cambio de un precio. Es importante señalar que el pago del contrato es dirigido al cumplimiento de metas, horas, objetivos, proyectos; etc. Se trata de un contrato oneroso, y su diferencia con el contrato de compraventa consiste en que la contraprestación al pago del precio no es un bien tangible, sino la realización de una actividad. El incumplimiento de dichas metas no obliga al pago Proporcional.
+          </textarea>
+          <div class="[ form-group ]" style="margin-top:15px">
+            <input type="checkbox" name="checkbox-privacy" id="checkbox-privacy" autocomplete="off" />
+            <div class="[ btn-group ]">
+                <label for="checkbox-privacy" class="[ btn btn-default ]">
+                    <span class="[ glyphicon glyphicon-ok ]"></span>
+                    <span> </span>
+                </label>
+                <label for="checkbox-privacy" class="[ btn btn-default active ]" style="background-color: #2b2b2b;">
+                    {% trans 'Accept' %}
+                </label>
+            </div>
+          </div>
+          <small id="checkbox-privacy-help" class=""></small>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

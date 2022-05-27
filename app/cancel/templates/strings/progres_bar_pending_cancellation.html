@@ -1,0 +1,18 @@
+	<div class="progress">
+	{% if value < 33 %}
+	  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar"
+	  aria-valuenow="{{ value }}" aria-valuemin="0" aria-valuemax="100" style="color: black; width:{{ value }}%">
+	     1 día de 3 
+	  </div>
+	 {% elif value > 33 and  value < 66 %}
+	 <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
+	  aria-valuenow="{{ value }}" aria-valuemin="0" aria-valuemax="100" style="color: black; width:{{ value }}%">
+	     2 días de 3 
+	  </div>
+	 {% elif value > 66 %}
+	 <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+	  aria-valuenow="{{ value }}" aria-valuemin="0" aria-valuemax="100" style="color: black; width:{{ value }}%">
+	     3 días de 3 
+	  </div>
+	{% endif %}
+	</div>

@@ -1,0 +1,135 @@
+<!-- Modal -->
+<style type="text/css">
+    .modal-footer button {
+        float: right !important;
+    }
+
+    .modal-footer .add {
+        margin-left: 10px !important;
+    }
+
+    .popover-title {
+        background-color: #337AB7;
+        color: #FFFFFF;
+        text-align: center;
+    }
+</style>
+{% load i18n %}
+<div class="modal fade" id="modal-add-user" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header" style="border-bottom: 1px solid #337AB7;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title header-modal">{% trans 'Add User' %} </h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <div class="well" id='general-info'>
+                            <div class="row">
+                                <div class="col-sm-6 info" id="user-username">
+                                    <strong>{% trans 'User' %}</strong>
+                                    <input type="text" id="add_username" class="form-control" placeholder="e-mail"
+                                        value="">
+                                    <small id="username_help" class="form-text text-danger"></small>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-6 info" id="user-first-name">
+                                    <strong>{% trans 'Name' %}</strong>
+                                    <input type="text" id="add_firstname" class="form-control" placeholder="{% trans 'Name' %}"
+                                        value="">
+                                    <small id="firstname_help" class="form-text text-danger"></small>
+                                </div>
+                                <div class="col-sm-6 info" id="user-last-name">
+                                    <strong>{% trans 'Last name' %}</strong>
+                                    <input type="text" id="add_lastname" class="form-control" placeholder="{% trans 'Last name' %}"
+                                        value="">
+                                    <small id="lastname_help" class="form-text"></small>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-4 info" id="user-type">
+                                    <strong>{% trans 'Type:' %}</strong><br>
+                                    <select style="width: 100%;" id="add_type" class="selectpicker" multipleeee data-hide-disabled="true" data-live-search="true">
+                                        <optgroup label="{% trans Type %}">
+                                            <option value="A">{% trans 'Admin' %}</option>
+                                            <option value="C">{% trans 'Client' %}</option>
+                                            
+                                            {% comment %}
+                                            <option value="S">{% trans 'Support' %}</option>
+                                            <option value="G">{% trans 'Government' %}</option>
+                                            <option value="B">{% trans 'Billing' %}</option>
+                                            <option value="E">{% trans 'Staff' %}</option>
+                                            <option value="P">{% trans 'Provider' %}</option>
+                                            <option value="S">{% trans 'Employee' %}</option>
+                                            <option value="C">{% trans 'Customer' %}</option>
+                                            {% endcomment %}
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                {% comment %}
+                                <div class="col-sm-4 info" id="user-rol">
+                                    <strong>{% trans 'Group:' %}</strong><br>
+                                    <select style="width: 100%;" id="add_group" class="selectpicker" multiple
+                                        data-hide-disabled="true" data-live-search="true">
+                                        <optgroup label="Rol">
+                                            {% for cl, rol in roles %}
+                                            <option value="{{cl}}">{{rol}}</option>
+                                            {% endfor %}
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                {% endcomment %}
+                                <div class="col-sm-6 info form-group form-inline" id="user-taxpayer-id" hidden="true">
+                                    <strong>{% trans 'Tax Identifier Number' %}</strong><br>
+                                    <input type="text" id="add_taxpayer_id" class="form-control" placeholder="{% trans 'Tax Identifier Number' %}"
+                                        value="">
+                                    <small id="taxpayer_id_help" class="form-text text-danger"></small>
+                                </div>
+                            </div>
+                            <br>
+                            {% comment %}
+                            <div class="row">
+                                <div class="col-sm-12 info" id="user-businesses">
+                                    <strong>{% trans 'Business:' %}</strong>
+                                    <select id="add_businesses" class="selectpicker form-control" multiple
+                                        data-actions-box="true" data-hide-disabled="true" data-live-search="true">
+                                        <optgroup label="Business">
+                                            {% for id, taxpayer_id in businesses %}
+                                            <option value="{{ id }}">{{ taxpayer_id }}</option>
+                                            {% endfor %}
+                                        </optgroup>
+                                    </select>
+                                    <small id="businesses_help" class="form-text text-danger"></small>
+                                </div>
+                            </div>
+                            {% endcomment %}
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-6 info" id="user-pass-new">
+                                    <strong>{% trans 'Password:' %}</strong>
+                                    <input type="password" id="add_password" class="form-control"
+                                        placeholder="Password">
+                                    <small id="pass_help" class="form-text text-danger"></small>
+                                </div>
+                                <div class="col-sm-6 info" id="user-pass-new-conf">
+                                    <strong>{% trans 'Confirm Password:' %}</strong>
+                                    <input type="password" id="add_password2" class="form-control"
+                                        placeholder="Confirm Password">
+                                    <small id="pass2_help" class="form-text text-danger"></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary add">{% trans 'Add' %}</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">{% trans 'Close' %}</button>
+            </div>
+        </div>
+    </div>
+</div>

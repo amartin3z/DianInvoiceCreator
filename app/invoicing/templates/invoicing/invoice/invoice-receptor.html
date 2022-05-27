@@ -1,0 +1,10 @@
+            {% load crispy_forms_tags %}
+            {% load i18n %}
+            <div class="form-group col-sm-12 col-md-12 col-lg-12">
+              <div class="form-group">
+                <h4 class="visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block"><button id="title__receptor_0" class="btn btn-default btn-xs" type="button" data-toggle="collapse" data-target="#div_receptor"><i class="fa fa-caret-down" aria-hidden="true"></i></button> {%trans 'Customer' %}</h4>
+                <h4 class="visible-xs-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block"><small id="receptor_name" style="font-weight: bold; color: #337ab7;"></small></h4>
+              </div>
+              {% crispy invoice_form invoice_form.helper_receiver 'bootstrap3' %}
+              {% include 'invoicing/invoice/invoice-divisor.html' %}
+            </div>

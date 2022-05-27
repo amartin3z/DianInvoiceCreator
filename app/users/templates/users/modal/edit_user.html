@@ -1,0 +1,103 @@
+<!-- Modal -->
+{% load i18n %}
+<div class="modal fade" id="modal-edit-user" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title header-modal">{% trans 'User:' %} <strong id="user-name"></strong></h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <div class="well" id='general-info'>
+                            <div class="row">
+                                <div class="col-sm-6 info" id="user-username">
+                                    <strong>{% trans 'User:' %}</strong>
+                                    <input type="text" id="edit_username" class="form-control" placeholder="e-mail" value="">
+                                </div>
+                                <div class="col-sm-6 info" id="user-user-id" hidden>
+                                    <strong>{% trans 'User ID' %}</strong>
+                                    <input type="text" id="edit_user_id" class="form-control" value="" hidden>
+                                </div>
+                                {% comment %}
+                                <div class="col-sm-6 info" id="user-email">
+                                    <strong>e-mail:</strong>
+                                    <input type="text" id="edit_email" class="form-control" placeholder="e-mail" value="">
+                                </div>
+                                {% endcomment %}
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-6 info" id="user-first-name">
+                                    <strong>{% trans 'Name' %}</strong>
+                                    <input type="text" id="edit_firstname" class="form-control" placeholder="Name" value="">
+                                </div>
+                                <div class="col-sm-6 info" id="user-last-name">
+                                    <strong>{% trans 'Last name' %}</strong>
+                                    <input type="text" id="edit_lastname" class="form-control" placeholder="Last name" value="">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-6 info" id="user-group">
+                                    <strong>{% trans 'Group:' %}</strong>
+                                    <select id="edit_group" class="selectpicker" multiple data-hide-disabled="true" data-live-search="true">
+                                        <optgroup label="Group">
+                                            {% comment %}
+                                            <option value="1">Finanzas</option>
+                                            <option value="2">Admin</option>
+                                            <option value="3">Sistemas</option>
+                                            <option value="4">Call Center</option>
+                                            <option value="5">Centro de Ventas</option>
+                                            <option value="6">CEDIS</option>
+                                            <option value="7">Regal&iacute;as</option>
+                                            <option value="8">Records</option>
+                                            {% endcomment %}
+                                            <option value="">{% trans 'No group' %}</option>
+                                            {% for cl, rol in roles %}
+                                                <option value="{{ cl }}">{{ rol }}
+                                            </option>
+                                            {% endfor %}
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-12 info" id="user-businesses">
+                                    <strong>{% trans 'Business:' %}</strong>
+                                    <select id="edit_businesses" class="selectpicker form-control" multiple data-actions-box="true" data-hide-disabled="true" data-live-search="true">
+                                        <optgroup label="Business">
+                                            {% for id, taxpayer_id in businesses %}
+                                                <option value="{{ id }}">{{ taxpayer_id }}</option>
+                                            {% endfor %}
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-6 info" id="user-pass-new">
+                                    <strong>{% trans 'New Password:' %}</strong>
+                                    <input type="password" id="edit_newpass" class="form-control" placeholder="New Password">
+                                    <small id="new_pass_help" class="form-text"></small>
+                                </div>
+                                <div class="col-sm-6 info" id="user-pass-new-conf">
+                                    <strong>{% trans 'Confirm Password:' %}</strong>
+                                    <input type="password" id="edit_newpass2" class="form-control" placeholder="Confirm new Password">
+                                    <small id="new_pass_conf_help" class="form-text"></small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">{% trans 'Close' %}</button>
+                <button type="button" class="btn btn-primary update" data-dismiss="modal" style="float: left;">{% trans 'Update' %}</button>
+            </div>
+        </div>
+    </div>
+</div>
+    

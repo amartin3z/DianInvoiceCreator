@@ -1,0 +1,47 @@
+[
+    {
+        "pk": 1,
+        "model": "peppol.UNCL1001CN",
+        "fields": {
+            "code": "81",
+            "name": "Credit note related to goods or services",
+            "description": "Document message used to provide credit information related to a transaction for goods or services to the relevant party."
+        }
+    },
+    {
+        "pk": 2,
+        "model": "peppol.UNCL1001CN",
+        "fields": {
+            "code": "83",
+            "name": "Credit note related to financial adjustments",
+            "description": "Document message for providing credit information related to financial adjustments to the relevant party, e.g., bonuses."
+        }
+    },
+    {
+        "pk": 3,
+        "model": "peppol.UNCL1001CN",
+        "fields": {
+            "code": "381",
+            "name": "Credit note",
+            "description": "(1113) Document/message for providing credit information to the relevant party."
+        }
+    },
+    {
+        "pk": 4,
+        "model": "peppol.UNCL1001CN",
+        "fields": {
+            "code": "396",
+            "name": "Factored credit note",
+            "description": "Credit note related to assigned invoice(s)."
+        }
+    },
+    {
+        "pk": 5,
+        "model": "peppol.UNCL1001CN",
+        "fields": {
+            "code": "532",
+            "name": "Forwarder's credit note",
+            "description": "Document/message for providing credit information to the relevant party."
+        }
+    }
+]

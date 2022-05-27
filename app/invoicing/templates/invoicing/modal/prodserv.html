@@ -1,0 +1,158 @@
+    {% load crispy_forms_tags %}
+    {% load i18n %}
+    <style type="text/css">
+        .header-modal{
+            border-bottom: 2px solid #337AB7;
+        }
+        #submit-id-addprodserv, #button-id-cancel {
+            float: right !important;
+        }
+        #button-id-cancel {
+            margin-right: 10px !important;
+        }
+        .hide{
+            display: none;
+        }
+        .popover-title {
+            background-color: #337AB7;
+            color: #FFFFFF;
+            text-align:center;
+        }
+
+    </style>    
+    <!-- Modal -->
+    <!-- 
+        #currency_id = models.CharField('Currency ID', max_length=3, null=False, blank=False)
+        #origin_country = models.CharField('Origin Country', max_length=5, blank=False, null=False)
+        #seller_item_identification = models.CharField('Seller Item', max_length=10, null=True, blank=True, default='')
+        #buyers_item_identification = models.CharField('Buyer Item', max_length=10, null=True, blank=True, default='')
+        #additional_item_name = models.CharField('Additional Item Name', max_length=100, default='', blank=True, null=True)
+        #additional_item_value = models.CharField('Additional Item Value', max_length=100, default='', blank=True, null=True)
+        #tax_scheme = models.CharField('Tax Scheme', max_length=5, default='VAT', blank=False, null=False)
+     -->
+    <div class="modal fade" id="modal-prodserv" role="dialog" edit="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button><br>
+                    <h4 class="modal-title header-modal" id="prod-title-add">{% trans 'Add Product/Service' %}</h4>
+                    <h4 class="modal-title header-modal hide" id="prod-title-edit">{% trans 'Edit Product/Service' %}</h4>
+                </div>
+                <div class="modal-body">
+                    {% comment %}
+                    <div class="row">
+                        {% crispy addprodservform addprodservform.helper_prodserv 'bootstrap3' %}
+                    </div>
+                    {% endcomment %}
+                    <form method="POST" id="formProdserv">
+                        <div class="row">
+                            <div class="col col-lg-5">
+                                <label for="item_name" class="control-label">{% trans 'Name' %}<strong>*</strong></label><br>
+                                <input type="text" required class="form-control" name="item_name" id="item_name">
+                            </div>
+                            {% comment %}
+                            <div class="col col-lg-3">
+                                <label for="origin_country" class="control-label">{% trans 'Origin Country' %}<strong>*</strong></label><br>
+                                <select style="width: 100%;" id="origin_country" class="select2-single" name="origin_country" required></select>
+                            </div>
+                            {% endcomment %}
+                            <div class="col col-lg-3">
+                                <label for="price_item" class="control-label">{% trans 'Price' %}<strong>*</strong></label><br>
+                                <input type="number" required step="0.01" name="price_item" class="form-control" id="pryce_item">
+                            </div>
+                            <div class="col col-lg-4">
+                                <label for="unit_code" class="control-label">{% trans 'Unit Code' %}<strong>*</strong></label><br>
+                                <select style="width: 100%;" id="unit_code" class="select2-single" name="unit_code" required ></select>
+                            </div>
+                            {% comment %}
+                            <div class="col col-lg-4">
+                                <label for="sellers_identification" class="control-label">{% trans 'Sellers Item ID' %}</label><br>
+                                <input type="text" class="form-control" name="sellers_identification" id="sellers_item_identification">
+                            </div>
+                            <div class="col col-lg-4">
+                                <label for="buyer_item_identification" class="control-label">{% trans 'Buyer Item ID' %}</label><br>
+                                <input type="text" class="form-control" name="buyer_item_identification" id="buyer_item_identification">
+                            </div>
+                            {% endcomment %}
+                        </div>
+                        {% comment %}
+                        <br>
+                        <div class="row">
+                            <div class="col col-lg-3">
+                                <label for="currencyID" class="control-label">{% trans 'Currency' %}<strong>*</strong></label><br>
+                                <select style="width: 100%;" id="currency_id" class="select2-single" name="currencyID" required></select>
+                            </div>
+                        </div>
+                        {% endcomment %}
+                        <br>
+                        <div class="row">
+                            <div class="col col-lg-3">
+                                <label for="item_classification_code" class="control-label">{% trans 'Classification Code' %}<strong>*</strong></label><br>
+                                <input type="text" id="item_classification_code" class="form-control" name="item_classification_code" required>
+                            </div>
+                            <div class="col col-lg-3">
+                                <label for="listID" style="font-size: 13px;" class="control-label">{% trans 'Item Classification iD' %}<strong>*</strong></label><br>
+                                <select style="width: 100%;" id="list_id" class="select2-single" name="unit_code" required></select>
+                            </div>
+                            <div class="col col-lg-3">
+                                <label for="listID" class="control-label">{% trans 'Standard Item Identifier' %}</label><br>
+                                <input type="text" id="standard_item_identifier" class="form-control" name="standard_item_identifier">
+                            </div>
+                            <div class="col col-lg-3">
+                                <label for="listID" class="control-label" style="font-size: 13px;">{% trans 'Standard Item Scheme' %}</label><br>
+                                <select style="width: 100%;" id="standard_item_scheme" class="select2-single" name="standard_item_scheme"></select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col col-lg-12">
+                                <label for="prodserv_description" class="control-label">{% trans 'Description' %}</label><br>
+                                <textarea class="form-control" name="prodserv_description" id="prodserv_description" rows="5" style="width: 100%;max-width: 100%;"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        {% comment %}
+                        <div class="row">
+                            <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                                <label for="PartyTaxScheme" class="control-label" style="border-bottom: 1px solid #337AB7; width:100%">{% trans 'Classified Tax Category' %}</label>
+                            </div>
+                            <div class="col col-lg-4">
+                                <label for="tax_category_code" class="control-label">{% trans 'Category Code' %}</label><br>
+                                <select style="width: 100%;" id="tax_category_code" class="select2-single" name="category_code"></select>
+                            </div>
+                            <div class="col col-lg-3">
+                                <label for="tax_percent" class="control-label">{% trans 'Percent' %}</label><br>
+                                <input type="number" step="0.01" name="tax_percent" class="form-control" id="tax_percent">
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="col col-lg-3">
+                            <label for="tax_scheme" class="control-label">{% trans 'Scheme' %}</label><br>
+                            <input type="text" name="tax_scheme" class="form-control" id="tax_scheme">
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                                <label for="PartyTaxScheme" class="control-label" style="border-bottom: 1px solid #337AB7; width:100%">{% trans 'Aditional Item Property' %}</label>
+                            </div>
+                            <div class="col col-lg-6">
+                                <label for="aditional_item_name" class="control-label">{% trans 'Additional Item Name' %}</label><br>
+                                <input type="text" class="form-control" name="aditional_item_name" id="aditional_item_name">
+                            </div>
+                            <div class="col col-lg-6">
+                                <label for="aditional_item_value" class="control-label">{% trans 'Additional Item Value' %}</label><br>
+                                <input type="text" class="form-control" name="aditional_item_value" id="aditional_item_value">
+                            </div>
+                        </div>
+                        <br><br> 
+                        {% endcomment %}
+                        <div class="row">
+                            <button style="float: right;margin-right: 15px;" type="submit" id="submit_prod_serv" class="btn btn-primary add_prodserv">{% trans 'Add' %}</button>
+                            <button style="float: right;margin-right: 15px;" type="submit" id="submit_prod_serv" class="btn btn-primary edit_prodserv hide">{% trans 'Edit' %}</button>
+                            <button style="float: right;margin-right: 5px;" type="button" class="btn btn-default canp">{% trans 'Cancel' %}</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    

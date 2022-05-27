@@ -1,0 +1,1042 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD:ublinvoice/app/core/locale/fr/LC_MESSAGES/django.po
+"POT-Creation-Date: 2020-06-03 19:30-0500\n"
+=======
+"POT-Creation-Date: 2020-06-01 23:37+0000\n"
+>>>>>>> 32212685a8758a6fad03cd263f032fdc40889824:ublinvoice/app/core/__locale__back/fr/LC_MESSAGES/django.po
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: app/core/templates/core/home.html:3
+msgid "Home"
+msgstr ""
+
+#: app/core/templates/core/home.html:59
+#: app/core/templates/core/invoices_sat.html:79
+msgid "Reports"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:4
+#: app/core/templates/core/invoices_sat.html:29
+#: app/core/templates/core/invoices_sat.html:96
+msgid "Invoices"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:32
+#: app/core/templates/core/invoices_sat.html:88
+#: app/core/templates/core/logs.html:61 app/core/templates/core/logs.html:132
+msgid "Filters"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:36
+#: app/core/templates/core/invoices_sat.html:37
+#: app/core/templates/core/invoices_sat.html:110
+msgid "UUID"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:40
+#: app/core/templates/core/invoices_sat.html:41
+#: app/core/templates/profile/form_fiscaldata.html:75
+#: app/core/templates/profile/form_fiscaldata.html:78
+msgid "Taxpayer id"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:44
+#: app/core/templates/core/invoices_sat.html:111
+msgid "Type"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:46
+#: app/core/templates/core/logs.html:92 app/core/templates/core/logs.html:102
+msgid "All"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:47 app/core/views.py:97
+msgid "Income"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:48 app/core/views.py:98
+msgid "Expenses"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:49 app/core/views.py:99
+msgid "Payments"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:65
+#: app/core/templates/core/invoices_sat.html:67
+#: app/core/templates/core/logs.html:114
+msgid "From"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:72
+#: app/core/templates/core/invoices_sat.html:74
+#: app/core/templates/core/logs.html:123
+msgid "To"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:82
+#: app/core/templates/profile/form_fiscaldata.html:110
+msgid "Choose"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:83
+msgid "CSV file"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:89
+#: app/core/templates/core/logs.html:133
+msgid "Reset"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:107
+msgid "Issuer taxpayer id"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:108
+msgid "Recipient taxpayer id"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:109
+msgid "Name taxpayer id"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:112
+msgid "Total"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:113
+#: app/core/templates/profile/form_csd.html:51
+msgid "Emission date"
+msgstr ""
+
+#: app/core/templates/core/invoices_sat.html:114
+#: app/core/templates/core/logs.html:156
+msgid "Options"
+msgstr ""
+
+#: app/core/templates/core/logs.html:3 app/core/templates/core/logs.html:109
+msgid "Logs"
+msgstr ""
+
+#: app/core/templates/core/logs.html:56
+msgid "Events"
+msgstr ""
+
+#: app/core/templates/core/logs.html:67
+msgid "Admin"
+msgstr ""
+
+#: app/core/templates/core/logs.html:77
+msgid "Exceptions"
+msgstr ""
+
+#: app/core/templates/core/logs.html:86 app/core/templates/core/logs.html:87
+#: app/core/templates/core/logs.html:151
+msgid "User"
+msgstr ""
+
+#: app/core/templates/core/logs.html:90 app/core/templates/core/logs.html:152
+#: app/core/templates/profile/form_email.html:35
+#: app/core/templates/profile/form_serie.html:39
+msgid "Action"
+msgstr ""
+
+#: app/core/templates/core/logs.html:93
+msgid "Create"
+msgstr ""
+
+#: app/core/templates/core/logs.html:94
+msgid "Read"
+msgstr ""
+
+#: app/core/templates/core/logs.html:95
+#: app/core/templates/profile/form_password.html:29
+msgid "Update"
+msgstr ""
+
+#: app/core/templates/core/logs.html:96
+#: app/core/templates/profile/strings/action.html:3
+msgid "Delete"
+msgstr ""
+
+#: app/core/templates/core/logs.html:100 app/core/templates/core/logs.html:153
+msgid "Module"
+msgstr ""
+
+#: app/core/templates/core/logs.html:103
+msgid "Emission"
+msgstr ""
+
+#: app/core/templates/core/logs.html:104
+msgid "Invoicing"
+msgstr ""
+
+#: app/core/templates/core/logs.html:105
+#: app/core/templates/core/strings/opciones.html:3
+#: app/core/templates/wizard/form_csd.html:63
+msgid "Download"
+msgstr ""
+
+#: app/core/templates/core/logs.html:106
+msgid "Providers"
+msgstr ""
+
+#: app/core/templates/core/logs.html:107
+msgid "Cancellation"
+msgstr ""
+
+#: app/core/templates/core/logs.html:108
+msgid "Users"
+msgstr ""
+
+#: app/core/templates/core/logs.html:110
+msgid "Business"
+msgstr ""
+
+#: app/core/templates/core/logs.html:116
+msgid "from"
+msgstr ""
+
+#: app/core/templates/core/logs.html:125
+msgid "to"
+msgstr ""
+
+#: app/core/templates/core/logs.html:133
+msgid "reset fields"
+msgstr ""
+
+#: app/core/templates/core/logs.html:145
+msgid "Actions"
+msgstr ""
+
+#: app/core/templates/core/logs.html:154
+msgid "Information"
+msgstr ""
+
+#: app/core/templates/core/logs.html:155
+msgid "Date"
+msgstr ""
+
+#: app/core/templates/core/modal/modal_close_session.html:8
+#: app/core/templates/wizard/form_csd.html:27
+#: app/core/templates/wizard/form_csd.html:58
+msgid "Important!"
+msgstr ""
+
+#: app/core/templates/core/modal/modal_close_session.html:11
+msgid "For security reasons after a period of inactivity of "
+msgstr ""
+
+#: app/core/templates/core/modal/modal_close_session.html:11
+msgid "5 minutes"
+msgstr ""
+
+#: app/core/templates/core/modal/modal_close_session.html:11
+msgid "the current session has been closed."
+msgstr ""
+
+#: app/core/templates/core/modal/modal_close_session.html:14
+msgid "Log in"
+msgstr ""
+
+#: app/core/templates/core/modal/show_err_exception_modal.html:22
+msgid "Show exceptions"
+msgstr ""
+
+#: app/core/templates/core/modal/show_err_exception_modal.html:33
+msgid "close"
+msgstr ""
+
+#: app/core/templates/core/strings/log_options.html:3
+msgid "Show Exceptions"
+msgstr ""
+
+#: app/core/templates/profile/form_csd.html:3
+msgid "Certificate management"
+msgstr ""
+
+#: app/core/templates/profile/form_csd.html:4
+msgid "At this section you are able to management your certificates."
+msgstr ""
+
+#: app/core/templates/profile/form_csd.html:9
+#: app/core/templates/profile/form_csd.html:13
+msgid "Upload private certificate"
+msgstr ""
+
+#: app/core/templates/profile/form_csd.html:12
+#: app/core/templates/profile/form_csd.html:22
+#: app/core/templates/profile/form_email.html:25
+#: app/core/templates/profile/form_serie.html:28
+msgid "Add"
+msgstr ""
+
+#: app/core/templates/profile/form_csd.html:14
+msgid "remove"
+msgstr ""
+
+#: app/core/templates/profile/form_csd.html:19
+#: app/core/templates/profile/form_csd.html:23
+msgid "Upload public certificate"
+msgstr ""
+
+#: app/core/templates/profile/form_csd.html:24
+#: app/core/templates/profile/form_csd.html:34
+#: app/core/templates/profile/form_email.html:14
+msgid "Remove"
+msgstr ""
+
+#: app/core/templates/profile/form_csd.html:29
+#: app/core/templates/profile/form_csd.html:33
+#: app/core/templates/wizard/form_csd.html:43
+#: app/core/templates/wizard/form_csd.html:44
+msgid "Private key password"
+msgstr ""
+
+#: app/core/templates/profile/form_csd.html:40
+msgid "Add New"
+msgstr ""
+
+#: app/core/templates/profile/form_csd.html:41
+<<<<<<< HEAD:ublinvoice/app/core/locale/fr/LC_MESSAGES/django.po
+#: app/core/templates/profile/form_fiscaldata.html:266
+=======
+#: app/core/templates/profile/form_fiscaldata.html:265
+>>>>>>> 32212685a8758a6fad03cd263f032fdc40889824:ublinvoice/app/core/__locale__back/fr/LC_MESSAGES/django.po
+#: app/core/templates/profile/form_password.html:30
+#: app/core/templates/profile/form_serie.html:29
+#: app/core/templates/profile/modal/notification.html:16
+msgid "Save"
+msgstr ""
+
+#: app/core/templates/profile/form_csd.html:42
+<<<<<<< HEAD:ublinvoice/app/core/locale/fr/LC_MESSAGES/django.po
+#: app/core/templates/profile/form_fiscaldata.html:267
+=======
+#: app/core/templates/profile/form_fiscaldata.html:266
+>>>>>>> 32212685a8758a6fad03cd263f032fdc40889824:ublinvoice/app/core/__locale__back/fr/LC_MESSAGES/django.po
+#: app/core/templates/profile/form_password.html:31
+#: app/core/templates/profile/form_serie.html:30
+#: app/core/templates/profile/modal/delete_account.html:59
+#: app/core/templates/profile/modal/notification.html:15
+#: app/core/templates/profile/modal/serie_editar.html:15
+msgid "Cancel"
+msgstr ""
+
+#: app/core/templates/profile/form_csd.html:49
+msgid "Status"
+msgstr ""
+
+#: app/core/templates/profile/form_csd.html:50
+#: app/core/templates/profile/form_serie.html:9
+#: app/core/templates/profile/form_serie.html:36
+msgid "Serie"
+msgstr ""
+
+#: app/core/templates/profile/form_csd.html:52
+msgid "Expiration date"
+msgstr ""
+
+#: app/core/templates/profile/form_csd.html:53
+#: app/core/templates/profile/form_serie.html:38
+#: app/core/templates/profile/strings/action_serie.html:5
+msgid "Default"
+msgstr ""
+
+#: app/core/templates/profile/form_email.html:10
+msgid "New Email"
+msgstr ""
+
+#: app/core/templates/profile/form_email.html:29
+msgid "Mailing list"
+msgstr ""
+
+#: app/core/templates/profile/form_email.html:30
+msgid ""
+"At this section you are able to add, edit or delete your email addresses."
+msgstr ""
+
+#: app/core/templates/profile/form_email.html:34
+#: app/core/templates/profile/form_fiscaldata.html:14
+#: app/core/templates/profile/form_fiscaldata.html:17
+#: app/core/templates/profile/info.html:6
+#: app/core/templates/profile/modal/delete_account.html:32
+#: app/core/templates/profile/modal/delete_account.html:33
+#: app/core/templates/profile/profile.html:53
+msgid "Email"
+msgstr ""
+
+#: app/core/templates/profile/form_fiscaldata.html:5
+#: app/core/templates/profile/modal/delete_account.html:24
+#: app/core/templates/profile/modal/delete_account.html:25
+#: app/core/templates/wizard/form_account.html:30
+#: app/core/templates/wizard/form_account.html:33
+msgid "Name"
+msgstr ""
+
+#: app/core/templates/profile/form_fiscaldata.html:97
+#: app/core/templates/profile/form_fiscaldata.html:100
+#: app/core/templates/profile/modal/delete_account.html:28
+#: app/core/templates/profile/modal/delete_account.html:29
+msgid "Phone"
+msgstr ""
+
+#: app/core/templates/profile/form_fiscaldata.html:106
+#: app/core/templates/wizard/form_account.html:64
+msgid "Country"
+msgstr ""
+
+<<<<<<< HEAD:ublinvoice/app/core/locale/fr/LC_MESSAGES/django.po
+#: app/core/templates/profile/form_fiscaldata.html:137
+#: app/core/templates/profile/form_fiscaldata.html:140
+=======
+#: app/core/templates/profile/form_fiscaldata.html:136
+#: app/core/templates/profile/form_fiscaldata.html:139
+>>>>>>> 32212685a8758a6fad03cd263f032fdc40889824:ublinvoice/app/core/__locale__back/fr/LC_MESSAGES/django.po
+#: app/core/templates/wizard/form_account.html:122
+#: app/core/templates/wizard/form_account.html:125
+msgid "Country Subentity"
+msgstr ""
+
+<<<<<<< HEAD:ublinvoice/app/core/locale/fr/LC_MESSAGES/django.po
+#: app/core/templates/profile/form_fiscaldata.html:146
+msgid "City"
+msgstr ""
+
+#: app/core/templates/profile/form_fiscaldata.html:149
+msgid "Locality"
+msgstr ""
+
+#: app/core/templates/profile/form_fiscaldata.html:155
+=======
+#: app/core/templates/profile/form_fiscaldata.html:145
+msgid "City"
+msgstr ""
+
+#: app/core/templates/profile/form_fiscaldata.html:148
+msgid "Locality"
+msgstr ""
+
+#: app/core/templates/profile/form_fiscaldata.html:154
+>>>>>>> 32212685a8758a6fad03cd263f032fdc40889824:ublinvoice/app/core/__locale__back/fr/LC_MESSAGES/django.po
+#: app/core/templates/wizard/form_account.html:114
+#: app/core/templates/wizard/form_account.html:117
+msgid "Postal Zone"
+msgstr ""
+
+<<<<<<< HEAD:ublinvoice/app/core/locale/fr/LC_MESSAGES/django.po
+#: app/core/templates/profile/form_fiscaldata.html:158
+msgid "Zip code"
+msgstr ""
+
+#: app/core/templates/profile/form_fiscaldata.html:198
+#: app/core/templates/profile/form_fiscaldata.html:201
+msgid "Street name"
+msgstr ""
+
+#: app/core/templates/profile/form_fiscaldata.html:206
+#: app/core/templates/profile/form_fiscaldata.html:209
+=======
+#: app/core/templates/profile/form_fiscaldata.html:157
+msgid "Zip code"
+msgstr ""
+
+#: app/core/templates/profile/form_fiscaldata.html:197
+#: app/core/templates/profile/form_fiscaldata.html:200
+msgid "Street name"
+msgstr ""
+
+#: app/core/templates/profile/form_fiscaldata.html:205
+#: app/core/templates/profile/form_fiscaldata.html:208
+>>>>>>> 32212685a8758a6fad03cd263f032fdc40889824:ublinvoice/app/core/__locale__back/fr/LC_MESSAGES/django.po
+#: app/core/templates/wizard/form_account.html:98
+msgid "Additional Street Name"
+msgstr ""
+
+<<<<<<< HEAD:ublinvoice/app/core/locale/fr/LC_MESSAGES/django.po
+#: app/core/templates/profile/form_fiscaldata.html:216
+#: app/core/templates/profile/form_fiscaldata.html:219
+=======
+#: app/core/templates/profile/form_fiscaldata.html:215
+#: app/core/templates/profile/form_fiscaldata.html:218
+>>>>>>> 32212685a8758a6fad03cd263f032fdc40889824:ublinvoice/app/core/__locale__back/fr/LC_MESSAGES/django.po
+#: app/core/templates/wizard/form_account.html:131
+#: app/core/templates/wizard/form_account.html:134
+msgid "Address Line"
+msgstr ""
+
+<<<<<<< HEAD:ublinvoice/app/core/locale/fr/LC_MESSAGES/django.po
+#: app/core/templates/profile/form_fiscaldata.html:265
+=======
+#: app/core/templates/profile/form_fiscaldata.html:264
+>>>>>>> 32212685a8758a6fad03cd263f032fdc40889824:ublinvoice/app/core/__locale__back/fr/LC_MESSAGES/django.po
+#: app/core/templates/profile/strings/action.html:2
+#: app/core/templates/profile/strings/action_serie.html:3
+msgid "Edit"
+msgstr ""
+
+#: app/core/templates/profile/form_manifest.html:4
+#: app/core/templates/profile/profile.html:59
+msgid "Manifest"
+msgstr ""
+
+#: app/core/templates/profile/form_manifest.html:5
+msgid "At this section you be able to download the signed manifest."
+msgstr ""
+
+#: app/core/templates/profile/form_manifest.html:12
+msgid "Download XML file"
+msgstr ""
+
+#: app/core/templates/profile/form_manifest.html:17
+msgid "Download PDF file"
+msgstr ""
+
+#: app/core/templates/profile/form_manifest.html:22
+msgid "Download ZIP file"
+msgstr ""
+
+#: app/core/templates/profile/form_password.html:6
+#: app/core/templates/profile/form_password.html:9
+msgid "Current password"
+msgstr ""
+
+#: app/core/templates/profile/form_password.html:14
+#: app/core/templates/profile/form_password.html:17
+msgid "New password"
+msgstr ""
+
+#: app/core/templates/profile/form_password.html:22
+#: app/core/templates/profile/form_password.html:25
+msgid "Confirm password"
+msgstr ""
+
+#: app/core/templates/profile/form_password.html:35
+msgid "Your password must have"
+msgstr ""
+
+#: app/core/templates/profile/form_password.html:38
+msgid "Required"
+msgstr ""
+
+#: app/core/templates/profile/form_password.html:39
+msgid "Your password must have a number."
+msgstr ""
+
+#: app/core/templates/profile/form_password.html:40
+msgid "Your password must have at least 8 characters."
+msgstr ""
+
+#: app/core/templates/profile/form_password.html:41
+msgid "Your password must have a uppercase letter."
+msgstr ""
+
+#: app/core/templates/profile/form_password.html:42
+msgid "Your password must have a special character."
+msgstr ""
+
+#: app/core/templates/profile/form_password.html:45
+msgid "Your password must have a lowercase letter."
+msgstr ""
+
+#: app/core/templates/profile/form_password.html:46
+msgid "Your password must not have contain any space."
+msgstr ""
+
+#: app/core/templates/profile/form_password.html:47
+msgid "Your password must be different than previous one."
+msgstr ""
+
+#: app/core/templates/profile/form_serie.html:4
+msgid "Serie and Folio Management"
+msgstr ""
+
+#: app/core/templates/profile/form_serie.html:5
+msgid "At this section you are able to management your series and folios."
+msgstr ""
+
+#: app/core/templates/profile/form_serie.html:18
+#: app/core/templates/profile/form_serie.html:37
+msgid "Folio"
+msgstr ""
+
+#: app/core/templates/profile/info.html:5
+msgid "Profile"
+msgstr ""
+
+#: app/core/templates/profile/info.html:10
+#: app/core/templates/profile/info.html:17
+#: app/core/templates/profile/info.html:24
+msgid "Not registered"
+msgstr ""
+
+#: app/core/templates/profile/info.html:13
+msgid "Joined date"
+msgstr ""
+
+#: app/core/templates/profile/info.html:20
+msgid "Last login"
+msgstr ""
+
+#: app/core/templates/profile/modal/delete_account.html:6
+msgid "Disable my account"
+msgstr ""
+
+#: app/core/templates/profile/modal/delete_account.html:7
+msgid "Confirms disable process"
+msgstr ""
+
+#: app/core/templates/profile/modal/delete_account.html:12
+msgid "Before disable your account"
+msgstr ""
+
+#: app/core/templates/profile/modal/delete_account.html:12
+msgid "keep in mind:"
+msgstr ""
+
+#: app/core/templates/profile/modal/delete_account.html:14
+msgid "Your account will remain disabled until you enable it again."
+msgstr ""
+
+#: app/core/templates/profile/modal/delete_account.html:15
+#, python-format
+msgid "Your information will be 100%%%% safe."
+msgstr ""
+
+#: app/core/templates/profile/modal/delete_account.html:16
+msgid "Your won''t be able to access to platform."
+msgstr ""
+
+#: app/core/templates/profile/modal/delete_account.html:20
+msgid "Contact information."
+msgstr ""
+
+#: app/core/templates/profile/modal/delete_account.html:21
+msgid "These information will be used to contact you and confirm de process."
+msgstr ""
+
+#: app/core/templates/profile/modal/delete_account.html:40
+msgid "Reason to disable your account"
+msgstr ""
+
+#: app/core/templates/profile/modal/delete_account.html:60
+#: app/core/templates/profile/modal/password.html:15
+#: app/core/templates/profile/modal/serie_editar.html:16
+#: app/core/templates/wizard/agreement.html:21
+#: app/core/templates/wizard/agreement.html:44
+msgid "Accept"
+msgstr ""
+
+#: app/core/templates/profile/modal/password.html:9
+msgid "Your password was update!"
+msgstr ""
+
+#: app/core/templates/profile/modal/password.html:10
+msgid "Please, Sign in again to complete the process"
+msgstr ""
+
+#: app/core/templates/profile/modal/password.html:11
+msgid "This action will close session in all devices."
+msgstr ""
+
+#: app/core/templates/profile/profile.html:44
+msgid "Fiscal Data"
+msgstr ""
+
+#: app/core/templates/profile/profile.html:47
+msgid "Certificates"
+msgstr ""
+
+#: app/core/templates/profile/profile.html:50
+msgid "Serial"
+msgstr ""
+
+#: app/core/templates/profile/profile.html:56
+msgid "Password"
+msgstr ""
+
+#: app/core/templates/profile/profile.html:144
+msgid "Not established"
+msgstr ""
+
+#: app/core/templates/profile/profile.html:156
+msgid "Disable my account."
+msgstr ""
+
+#: app/core/templates/profile/strings/action_serie.html:6
+msgid "Deactivate"
+msgstr ""
+
+#: app/core/templates/profile/strings/action_serie.html:9
+msgid "Activate"
+msgstr ""
+
+#: app/core/templates/profile/strings/csd_additional.html:10
+msgid "Activated"
+msgstr ""
+
+#: app/core/templates/profile/strings/csd_additional.html:12
+msgid "Deactivated"
+msgstr ""
+
+#: app/core/templates/profile/strings/csd_additional.html:14
+msgid "Cancelled"
+msgstr ""
+
+#: app/core/templates/profile/strings/status_series.html:3
+msgid "Yes"
+msgstr ""
+
+#: app/core/templates/profile/strings/status_series.html:5
+msgid "No"
+msgstr ""
+
+#: app/core/templates/wizard/agreement.html:7
+msgid "Service contract"
+msgstr ""
+
+#: app/core/templates/wizard/agreement.html:30
+#: app/core/templates/wizard/wizard.html:41
+#: app/core/templates/wizard/wizard.html:175
+msgid "Privacy policy"
+msgstr ""
+
+#: app/core/templates/wizard/form_account.html:5
+#: app/core/templates/wizard/form_account.html:8
+msgid "Taxpayer Id"
+msgstr ""
+
+#: app/core/templates/wizard/form_account.html:42
+msgid "Zip Code"
+msgstr ""
+
+#: app/core/templates/wizard/form_account.html:45
+msgid "Choose your zip code"
+msgstr ""
+
+#: app/core/templates/wizard/form_account.html:67
+msgid "Choose your Country"
+msgstr ""
+
+#: app/core/templates/wizard/form_account.html:73
+#: app/core/templates/wizard/form_account.html:76
+msgid "Street Name"
+msgstr ""
+
+#: app/core/templates/wizard/form_account.html:101
+msgid "Additional StreetName"
+msgstr ""
+
+#: app/core/templates/wizard/form_account.html:106
+#: app/core/templates/wizard/form_account.html:109
+msgid "City Name"
+msgstr ""
+
+#: app/core/templates/wizard/form_csd.html:20
+msgid "Accept agreement"
+msgstr ""
+
+#: app/core/templates/wizard/form_csd.html:27
+msgid ""
+"Please, upload your private and public certificate to signing the manifest, "
+"or if you prefer you could sign the manifest later."
+msgstr ""
+
+#: app/core/templates/wizard/form_csd.html:31
+msgid "Private certificate"
+msgstr ""
+
+#: app/core/templates/wizard/form_csd.html:36
+msgid "Public certificate"
+msgstr ""
+
+#: app/core/templates/wizard/form_csd.html:49
+msgid "Sign"
+msgstr ""
+
+#: app/core/templates/wizard/form_csd.html:58
+msgid ""
+"You already signed the manifest, you could download it clicking the button "
+"below."
+msgstr ""
+
+#: app/core/templates/wizard/wizard.html:13
+msgid "Registration wizard"
+msgstr ""
+
+#: app/core/templates/wizard/wizard.html:26
+msgid "Account information"
+msgstr ""
+
+#: app/core/templates/wizard/wizard.html:34
+#: app/core/templates/wizard/wizard.html:95
+msgid "Agreement"
+msgstr ""
+
+#: app/core/templates/wizard/wizard.html:69
+#: app/core/templates/wizard/wizard.html:160
+#: app/core/templates/wizard/wizard.html:168
+msgid "Taxpayer information"
+msgstr ""
+
+#: app/core/templates/wizard/wizard.html:83
+#: app/core/templates/wizard/wizard.html:113
+msgid "Continue"
+msgstr ""
+
+#: app/core/templates/wizard/wizard.html:112
+#: app/core/templates/wizard/wizard.html:138
+msgid "Back"
+msgstr ""
+
+#: app/core/templates/wizard/wizard.html:125
+msgid "Privacy Policy"
+msgstr ""
+
+#: app/core/templates/wizard/wizard.html:139
+msgid "Sign in"
+msgstr ""
+
+#: app/core/templates/wizard/wizard.html:143
+#: app/core/templates/wizard/wizard.html:194
+msgid "Completed"
+msgstr ""
+
+#: app/core/templates/wizard/wizard.html:145
+msgid "You registered your information successfully."
+msgstr ""
+
+#: app/core/templates/wizard/wizard.html:146
+#: app/core/templates/wizard/wizard.html:147
+msgid "Dashboard"
+msgstr ""
+
+#: app/core/templates/wizard/wizard.html:196
+msgid "Your register is under review."
+msgstr ""
+
+#: app/core/utils/profile.py:177
+msgid "Serie and folio are to long."
+msgstr ""
+
+#: app/core/utils/wizard.py:17
+msgid "Taxpayer id is valid."
+msgstr ""
+
+#: app/core/utils/wizard.py:22
+msgid "Taxpayer id does not match with the pattern."
+msgstr ""
+
+#: app/core/utils/wizard.py:25
+msgid "Taxpayer id was register previously."
+msgstr ""
+
+#: app/core/utils/wizard.py:33
+msgid "An error occurred while validating the taxpayer id."
+msgstr ""
+
+#: app/core/utils/wizard.py:39
+msgid "The tax regime is valid."
+msgstr ""
+
+#: app/core/utils/wizard.py:41
+msgid "The tax regime {} was not found in the SAT catalog."
+msgstr ""
+
+#: app/core/utils/wizard.py:46
+msgid "An error occurred while validating tax regime"
+msgstr ""
+
+#: app/core/utils/wizard.py:52
+msgid "Zip code is valid."
+msgstr ""
+
+#: app/core/utils/wizard.py:54
+msgid "Zip code {} was not found in the SAT catalog."
+msgstr ""
+
+#: app/core/utils/wizard.py:58
+msgid "An error occurred while validation Zip code"
+msgstr ""
+
+#: app/core/views.py:100
+msgid "Transfers"
+msgstr ""
+
+#: app/core/views.py:101
+msgid "Payroll"
+msgstr ""
+
+#: app/core/views.py:203
+msgid "Account successfully registered."
+msgstr ""
+
+#: app/core/views.py:208
+msgid "Account previously registered."
+msgstr ""
+
+#: app/core/views.py:216
+msgid "Enter the password for the private key."
+msgstr ""
+
+#: app/core/views.py:231
+msgid ""
+"Private key is not valid, it is possible that it is corrupt or the password "
+"is not correct."
+msgstr ""
+
+#: app/core/views.py:248
+#, python-brace-format
+msgid "The user {request.user} does not have taxpayer id."
+msgstr ""
+
+#: app/core/views.py:272
+msgid "The private key is not valid, it may be corrupted."
+msgstr ""
+
+#: app/core/views.py:285
+msgid "Certificates are not type FIEL."
+msgstr ""
+
+#: app/core/views.py:297
+msgid "Certificate validity period begins on {}"
+msgstr ""
+
+#: app/core/views.py:302
+msgid "Certificate validity period ended on {}"
+msgstr ""
+
+#: app/core/views.py:313
+msgid "The certificates do not match."
+msgstr ""
+
+#: app/core/views.py:317
+msgid "The electronic signature does not correspond to the taxpayer"
+msgstr ""
+
+#: app/core/views.py:520 app/core/views.py:566
+msgid "Manifest signed correctly."
+msgstr ""
+
+#: app/core/views.py:526 app/core/views.py:532 app/core/views.py:537
+#: app/core/views.py:554
+msgid "An error occurred while signing the manifest."
+msgstr ""
+
+#: app/core/views.py:542
+msgid "You need to accept the contract."
+msgstr ""
+
+#: app/core/views.py:548
+msgid "An error occurred, could not get taxpayer information."
+msgstr ""
+
+#: app/core/views.py:568
+msgid "User does not have any taxpayer information registered."
+msgstr ""
+
+#: app/core/views.py:602 app/core/views.py:607
+msgid "Business was not found."
+msgstr ""
+
+#: app/core/views.py:812
+msgid "We are working on the report."
+msgstr ""
+
+#: app/core/views.py:816 app/core/views.py:1080 app/core/views.py:1099
+#: app/core/views.py:1115 app/core/views.py:1183
+msgid "An error occurred."
+msgstr ""
+
+#: app/core/views.py:870
+msgid "All fields * are required."
+msgstr ""
+
+#: app/core/views.py:889
+msgid "Zip code does not exist."
+msgstr ""
+
+#: app/core/views.py:892
+msgid "Fields must not contain only numbers."
+msgstr ""
+
+#: app/core/views.py:941
+msgid "An error occurred, mail can not be modified."
+msgstr ""
+
+#: app/core/views.py:953
+msgid "The mail was previously register."
+msgstr ""
+
+#: app/core/views.py:962
+msgid "An error occurred while trying register mail."
+msgstr ""
+
+#: app/core/views.py:968
+msgid "An error occurred while trying delete mail."
+msgstr ""
+
+#: app/core/views.py:1007
+msgid "An error occurred while trying to set default certificate."
+msgstr ""
+
+#: app/core/views.py:1025
+msgid "An error occurred while trying to change password."
+msgstr ""
+
+#: app/core/views.py:1034
+msgid "Password is not valid."
+msgstr ""
+
+#: app/core/views.py:1038
+msgid "The password must be different as the previously established."
+msgstr ""
+
+#: app/core/views.py:1057
+msgid "An error occurred, data is empty."
+msgstr ""
+
+#: app/core/views.py:1066
+msgid "Serie has been registered previously."
+msgstr ""
+
+#: app/core/views.py:1069
+msgid "An error occurred while registered the serie."
+msgstr ""
+
+#: app/core/views.py:1141
+msgid "Fields * are required."
+msgstr ""
+
+#: app/core/views.py:1143
+msgid ""
+"Hi support, the account has been requested to be removed {} :  Name: {},  "
+"Phone: {},  email: {},  comments: {}"
+msgstr ""
+
+#: app/core/views.py:1144
+msgid "Cancellation account request {}"
+msgstr ""
+
+#: app/core/views.py:1164
+msgid "Your request has been created."
+msgstr ""
+
+#: app/core/views.py:1169
+msgid "Invalid request."
+msgstr ""
