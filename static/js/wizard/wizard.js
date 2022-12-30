@@ -293,7 +293,7 @@ function validate_account(){
     // }
     var name = $('#name').val();
     var taxpayer_id_regex = /[A-Z&Ñ]{3,4}[0-9]{2}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])[A-Z0-9]{2}[0-9A]/;
-    
+
     // var taxpayer_id = $("#taxpayer_id").val();
     var scheme_id = $('#list_id_wizard').val();
     if (scheme_id == "" || scheme_id == null){
@@ -325,12 +325,12 @@ function validate_account(){
         return;
     }
 
-    if (organization_id.match(taxpayer_id_regex) === null){
-        $('#organization_id-help').text('RFC inválido.');
-        $('#organization_id-help').addClass('text-danger');
-        $("#organization_id-help").parent().closest('div').addClass('has-error');
-        return;
-    }
+    // if (organization_id.match(taxpayer_id_regex) === null){
+    //     $('#organization_id-help').text('RFC inválido.');
+    //     $('#organization_id-help').addClass('text-danger');
+    //     $("#organization_id-help").parent().closest('div').addClass('has-error');
+    //     return;
+    // }
 
     var org_id_party = $("#org_id_party").val();
     if (org_id_party == "" || org_id_party === null){
@@ -348,13 +348,13 @@ function validate_account(){
     //     return;
     // }
     
-    var cp = $("#zip_code").val();
-    if (cp == "" || cp === null){
-        $('#cp-help').text('Campo requerido');
-        $('#cp-help').addClass('text-danger');
-        $("#cp-help").parent().closest('div').addClass('has-error');
-        return;
-    }
+    // var cp = $("#zip_code").val();
+    // if (cp == "" || cp === null){
+    //     $('#cp-help').text('Campo requerido');
+    //     $('#cp-help').addClass('text-danger');
+    //     $("#cp-help").parent().closest('div').addClass('has-error');
+    //     return;
+    // }
 
     // var tax_regime = $("#tax_regime").val()
     // if (tax_regime == "" || tax_regime == null){
@@ -447,7 +447,7 @@ function validate_account(){
     // data.append('CountrySubentity', CountrySubentity);
     data.append('city', city);
     data.append('stree', stree);
-    data.append('cp', cp);
+    // data.append('cp', cp);
     // data.append('schemeid', SchemeID);
     data.append('schemeID', scheme_id);
     data.append('org_id', organization_id);
@@ -460,7 +460,7 @@ function validate_account(){
     // data.append('stree_additional', stree_additional);
     // data.append('address_line', address_line);
     // data.append('tax_regime', tax_regime);
-    
+
     $.ajax({
           type: 'POST',
           data: data,

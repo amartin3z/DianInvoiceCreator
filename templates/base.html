@@ -277,7 +277,7 @@
       </div>
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav pull-right">
-          {% if not request.user.is_superuser and request.user|has_groups:"emision,clients,False" %}
+          {% if True or not request.user.is_superuser and request.user|has_groups:"emision,clients,False" %}
           {% comment %} <li id="invoicing">
             <a class="dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
@@ -299,7 +299,7 @@
             </a>
           </li>
           {% endif %}
-          {% if request.user.is_superuser or request.user|has_groups:"admins,emision,clients,False"%}
+          {% if request.user.is_superuser or request.user|has_groups:"admins,clients,False"%}
           <li id="emision">
             <a class="nav-link" href="{% url 'invoicing:list-invoices' %}">
               <i class="fa fa-file-invoice"></i>
@@ -313,14 +313,12 @@
             </a>
           </li>
           {% endif %}
-          {% if not request.user.is_superuser and request.user|has_groups:"emision,clients,False" %}
           <li id="prodcerv">
             <a class="nav-link" href="{% url 'list-prodservs' %}">
               <i class="fa fa-archive"></i>
               <span class="title">{% trans 'Products and Services' %}</span>
             </a>
           </li>
-          {% endif %}
           {% comment %}
           {% if request.user.is_superuser or request.user|has_groups:"admins,cancelacion,clients,False" %}
           <li id="cancelacion">

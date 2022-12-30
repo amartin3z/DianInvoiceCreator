@@ -25,6 +25,7 @@ USER_GROUPS= (
   ('BI', 'Billing'),
   ('CA', u'Cancelación'),
   ('CL', 'Client'),
+  ('EM', 'Emission'),
   ('SA', 'Sat'),
   ('LO', 'Logs'),
   ('SU', 'Support'),
@@ -34,6 +35,7 @@ USER_GROUPS= (
 
 HBL_ROL_GROUP = {
     'AD': ['staff', 'admins'],
+    'EM': ['staff', 'emission'],
     'BI': ['staff', 'billing'],
     'CA': ['staff', 'cancelacion'],
     'CL': ['staff', 'clients'],

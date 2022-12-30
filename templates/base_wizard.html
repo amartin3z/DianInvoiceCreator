@@ -317,7 +317,6 @@
         } else {
           window.location = '/logout/';
         }
-        
       }
     });
   }, 30000);
@@ -343,7 +342,6 @@
           }).fail(function(jqXHR,status, errorThrown) {
               console.log(status);
           });
-          
       });
     </script>
     <script type="text/javascript">
@@ -366,7 +364,7 @@
               results: $.map(data, (item, idx) =>{
                 return {
                   text: `${item.code} - ${item.name}`,
-                  id: item.code, 
+                  id: item.code,
                 }
               }),
             }

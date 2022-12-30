@@ -327,14 +327,14 @@ def calculate_amounts(request, *args, **kwargs):
       currency = request.POST.get('currency', 'MXN')
       catalogos_obj = Catalogos(datetime.now())
       currency_obj = catalogos_obj.obtener('Moneda', currency)
-      decimales = currency_obj.decimales
+      decimales = 2 #currency_obj.decimales
 
       discount_trunc = Decimal(0.0)
       subtotal_trunc = Decimal(0.0)
       subtotal_ret_trunc = Decimal(0.0)
       subtotal_tras_trunc = Decimal(0.0)
       subtotal_taxes_trunc = Decimal(0.0)
-      
+
       if subtotal_amounts:
         subtotal_cal = sum(map(Decimal, subtotal_amounts))
         subtotal_trunc = normal_round(subtotal_cal, decimales)
@@ -369,7 +369,8 @@ def calculate_amounts(request, *args, **kwargs):
       catalogos_obj = Catalogos(datetime.now())
       currency_obj = catalogos_obj.obtener('Moneda', currency)
 
-      decimales = currency_obj.decimales
+      # decimales = currency_obj.decimales
+      decimales = 2
 
       zero = Decimal(0.0)
       

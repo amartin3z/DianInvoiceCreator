@@ -33,7 +33,7 @@ urlpatterns = [
     # URLS BUSINESS
     url(r'^business/', include('app.core.urls')),
         url(u'^profile/$', core_profile, name='profile'),
-    
+
     # URLS FACTURADOR Y OTROS
     url(r'^invoices/', include('app.invoicing.urls')),
         url(r'^Products-Services/', invoicing_prodservs, name='list-prodservs'),
@@ -43,7 +43,7 @@ urlpatterns = [
 
     # URLS SOPORTE
     url(r'^support/', include('app.support.urls'),),
-    
+
     # URL INDEX
     url(r'^$', index, name='index'),
 

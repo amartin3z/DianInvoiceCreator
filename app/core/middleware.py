@@ -16,7 +16,7 @@ def wizard_middleware(get_response):
       if settings.WIZARD_MIDDLEWARE:
         user = request.user
         url = request.path
-        if not user.is_anonymous:
+        if not user.is_anonymous and not user.is_superuser:
           role = user.profile.role
           if role in ("C",):
             account = user.business_set

@@ -211,13 +211,13 @@ def wizard(request, *args, **kwargs):
       # inter_numb = request.POST.get("inter_numb", '')
 
       #stree_additional = request.POST.get('stree_additional', None)
-      #address_line = request.POST.get('address_line', None) 
+      #address_line = request.POST.get('address_line', None)
       # or not CountrySubentity   or not exter_numb or not inter_numb  or not sl_elect_add
       if not country or not stree or not city or not org_id_party:
-        return  context.update({"success": False, "message": _("All fields * are required.")})        
+        return  context.update({"success": False, "message": _("All fields * are required.")})
 
       # context['taxpayer_id'] = taxpayer_id
-      
+
       context['taxpayer_id'] = org_id
       account_exists = user.business_set.exists()
       if not account_exists:

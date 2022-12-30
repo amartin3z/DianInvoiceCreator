@@ -75,8 +75,8 @@ def validate_csd(file_key, file_cer, pass_csd, user):
     # print(subject)
     # print(serial)
     #No borrar solo se comento para pruebas
-    if rfc_user not in subject:
-      return False, u'El certificado no corresponde con el RFC', obj_csd
+    # if rfc_user not in subject:
+    #   return False, u'El certificado no corresponde con el RFC', obj_csd
 
     #LCO 
     csd_lco = LCO.objects.filter(serial=serial, rfc=rfc_user)
